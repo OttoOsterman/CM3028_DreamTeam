@@ -5,21 +5,17 @@
 <body>
 <p>
     <?php
-    $myage = 7;
-    $myname = "Pushon";
-    print "Hi " . $myname . "! You can buy: ";
-    if($myage > 16){
-        print "specs";
+    //Connect to csdm-webserver and select database
+    $db = new mysqli(
+        'Us-cdbr-azure-southcentral-f.cloudapp.net',
+        'Be9b6ca39cad35',
+        'e7f30e0c',
+        'cm3028dreamteam'
+    );
+    //Test if connection was established, and print any errors
+    if($db->connection_errno){
+        die('Connectfailed['.$db->connect_error.']');
     }
-    if($myage > 18 && $myage < 22){
-        print " and mugs.";
-    }if($myage > 21){
-        print ", mugs and sausage rolls.";
-    }
-    else{
-        print "Nothing, soz!";
-    }
-
     ?>
 </p>
 </body>
