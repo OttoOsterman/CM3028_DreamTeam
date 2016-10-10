@@ -19,6 +19,7 @@
     if($db->connect_errno){
         die('Connectfailed['.$db->connect_error.']');
     }
+    echo "It's alive!";
 
     ?>
 </p>
