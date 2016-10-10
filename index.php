@@ -5,8 +5,8 @@
 <body>
 <p>
     <?php
-    $myage = 24;
-    $myname = "Andrew";
+    $myage = 7;
+    $myname = "Pushon";
     print "Hi " . $myname . "! You can buy: ";
     if($myage > 16){
         print "specs";
