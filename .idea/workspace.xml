@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f0034cac-44cc-4d70-ae62-ab25ecb192df" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbconnect.php" afterPath="$PROJECT_DIR$/dbconnect.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="CM3028_DreamTeam.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,17 +25,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="168">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbconnect.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dbconnect.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbconnect.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -59,8 +59,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/dbconnect.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -245,7 +245,7 @@
       <option name="presentableId" value="Default" />
       <updated>1476106122263</updated>
       <workItem from="1476106124507" duration="33000" />
-      <workItem from="1476107504457" duration="3931000" />
+      <workItem from="1476107504457" duration="4003000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1476109478612</created>
@@ -310,11 +310,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476113521001</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Database connect test">
+      <created>1476113704873</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1476113704873</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3964000" />
+    <option name="totallyTimeSpent" value="4036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2178" height="1410" extended-state="6" />
@@ -361,18 +368,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="19" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dbconnect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
           <folding />
         </state>
       </provider>

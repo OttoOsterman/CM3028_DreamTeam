@@ -1,4 +1,4 @@
-include("dbconnect.php");
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +6,8 @@ include("dbconnect.php");
 <body>
 <p>
     <?php
+    include("dbconnect.php");
+
     //Connect to csdm-webserver and select database
     $db = new mysqli(
         'Us-cdbr-azure-southcentral-f.cloudapp.net',
@@ -17,6 +19,7 @@ include("dbconnect.php");
     if($db->connect_errno){
         die('Connectfailed['.$db->connect_error.']');
     }
+
     ?>
 </p>
 </body>
