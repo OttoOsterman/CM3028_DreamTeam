@@ -14,7 +14,7 @@ include("dbconnect.php");
         'cm3028dreamteam'
     );
     //Test if connection was established, and print any errors
-    if($db->connection_errno){
+    if($db->connect_errno){
         die('Connectfailed['.$db->connect_error.']');
     }
     ?>
