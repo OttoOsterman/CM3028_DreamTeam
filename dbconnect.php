@@ -1,9 +1,9 @@
 <?php
 
-define('DB_SERVER', 'servername');
-define('DB_USERNAME', 'username');
-define('DB_PASSWORD', 'password');
-define('DB_DATABASE', 'database');
+define('DB_SERVER', 'Us-cdbr-azure-southcentral-f.cloudapp.net');
+define('DB_USERNAME', 'Be9b6ca39cad35');
+define('DB_PASSWORD', 'e7f30e0c');
+define('DB_DATABASE', 'cm3028dreamteam');
 
 $db = mysgli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 /**
