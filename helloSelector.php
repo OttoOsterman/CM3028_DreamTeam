@@ -14,9 +14,9 @@
 </p>
 
 <form action="helloPrinter.php" method ="post">
-    <input type="earth" value="Earth">
-    <input type="mars" value="Mars">
-    <input type="uranus" value="Uranus">
+    <input type="submit" value="Earth" name="earth">
+    <input type="submit" value="Mars" name="mars">
+    <input type="submit" value="Uranus" name="uranus">
 </form>
 
 </body>
