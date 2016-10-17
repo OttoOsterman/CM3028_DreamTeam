@@ -3,9 +3,7 @@
 <head>
 </head>
 <body>
-<form action="submitform.php" method ="post">
-    <input type="submit" value="Earth">
-</form>
+
 <p>
     <?php
 
@@ -14,5 +12,12 @@
 
     ?>
 </p>
+
+<form action="helloPrinter.php" method ="post">
+    <input type="earth" value="Earth">
+    <input type="mars" value="Mars">
+    <input type="uranus" value="Uranus">
+</form>
+
 </body>
 </html>
