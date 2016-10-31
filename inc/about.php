@@ -1,5 +1,5 @@
 <?php
-include ("scripts/tinymce/header.php");
+include ("scripts/header.php");
 echo "
 <main>
 <h2>About Me</h2>

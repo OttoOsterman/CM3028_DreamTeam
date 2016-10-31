@@ -1,6 +1,6 @@
 <?php
-include ("scripts/tinymce/dbconnect.php");
-include ("scripts/tinymce/header.php");
+include ("scripts/dbconnect.php");
+include ("scripts/header.php");
 echo "
 <main>
 <h2>Blog Articles</h2>
