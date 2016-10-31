@@ -1,5 +1,5 @@
 <?php
-include ("scripts/header.php");
+include ("/header.php");
 echo "
 <main>
 <h2>Contact</h2>

@@ -1,5 +1,5 @@
 <?php
-include ("scripts/dbconnect.php");
+include ("/dbconnect.php");
 include ("scripts/header.php");
 echo "
 <main>
