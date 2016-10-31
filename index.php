@@ -1,5 +1,5 @@
 <?
-define('INCLUDE_DIR', dirname(__FILE__));
+define('INCLUDE_DIR', dirname(__FILE__) . '/CM3028_DreamTeam/');
 $rules = array(
     //
     //main pages
