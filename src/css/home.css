@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+html {
+	background: url(../../images/background.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+#welcome {
+	size: 20%;
+}
+
+h1 {
+	text-align: center;
+}
