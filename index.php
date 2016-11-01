@@ -4,7 +4,9 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/src');
 
 $rules = array(
 		//TODO: REMOVE TESTING CODE
-		'database' => "/adminer"
+		'database' => "/adminer",
+		
+		'home' => '/'
 );
 
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
