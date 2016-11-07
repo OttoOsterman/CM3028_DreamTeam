@@ -6,7 +6,10 @@ $rules = array(
 		//TODO: REMOVE TESTING CODE
 		'database' => "/adminer",
 		
-		'home' => '/'
+		'home' => '/',
+		'clubs' => '/clubs',
+		'health_wellbeing' => '/health_wellbeing',
+		'map' => '/map'
 );
 
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
