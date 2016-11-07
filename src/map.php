@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/map.css"/>
-	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" type="text/JavaScript"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKI13n7BTCWoJj841jA6OielBD8bRbg6M" type="text/JavaScript"></script>
 	
 	<script type="text/JavaScript">
 	function load() {
