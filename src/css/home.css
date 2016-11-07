@@ -8,7 +8,5 @@ html {
 #welcome {
 	size: 20%;
 	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	margin: auto;
 }
