@@ -7,7 +7,7 @@ $rules = array(
 		'database' => "/adminer",
 		
 		'home' => '/',
-		'clubs' => '/clubs',
+		'clubs_societies' => '/clubs_societies',
 		'health_wellbeing' => '/health_wellbeing',
 		'map' => '/map'
 );

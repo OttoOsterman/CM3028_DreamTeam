@@ -7,5 +7,6 @@ echo('
 		<li><a href="http://go-portlethen.azurewebsites.net/health_wellbeing">Health and Wellbeing</a></li>
 		<li><a href="http://go-portlethen.azurewebsites.net/map">Map</a></li>
 	</ul>
+	</div>
 ');
 ?>
