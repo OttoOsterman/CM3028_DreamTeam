@@ -1,6 +1,6 @@
 <?
 
-define('INCLUDE_DIR', dirname(__FILE__) . '/src');
+define('INCLUDE_DIR', dirname(__FILE__) . '/src/');
 
 $rules = array(
 		//TODO: REMOVE TESTING CODE
