@@ -5,6 +5,7 @@
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="./src/css/home.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
+	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
 </head>
 
 <body>
