@@ -24,6 +24,10 @@
 	overflow: hidden;
 }
 
+#login_button {
+	float: right;
+}
+
 #navbar li {
 	float: left;
 }
