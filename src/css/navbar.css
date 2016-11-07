@@ -14,17 +14,14 @@
 
 #navbarlist {
 	list-style-type: none;
+	display: inline;
 	opacity: 1.0;
 	font-size: 16;
 	font-weight: bold;
 	color: #000000;
+	overflow: hidden;
 }
 
-
-li {
-	list-style-type: none;
-}
-
-ul {
-	list-style-type: none;
+#navbarlist li a {
+	
 }
