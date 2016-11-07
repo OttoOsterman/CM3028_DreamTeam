@@ -1,3 +1,3 @@
 <?php
-include(scripts/navbar.php);
+include('scripts/navbar.php');
 ?>
