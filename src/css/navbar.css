@@ -1,16 +1,19 @@
 @CHARSET "UTF-8";
 
 #navbar {
+	margin: 0;
+	padding: 0;
 	background-color: #FFFFFF;
 	display: block;
 	height: 20%;
 	width: 100%;
-	opacity: 0.6;
+	opacity: 0.8;
 	text-align: center;
 	
 }
 
 #navbarlist {
+	list-style-type: none;
 	opacity: 1.0;
 	font-size: 16;
 	font-weight: bold;
