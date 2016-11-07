@@ -11,8 +11,10 @@
 	<div id="navbar">
 		<?php include 'scripts/navbar.php' ?>
 	</div>
-	<h1 id="welcome">
-		Welcome to Go Portlethen
-	</h1>
+	<div id="welcome">
+		<h1>
+			Welcome to Go Portlethen
+		</h1>
+	</div>
 </body>
 </html>
