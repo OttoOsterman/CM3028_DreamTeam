@@ -15,7 +15,6 @@ $uri = urldecode($uri);
 
 foreach($rules as $action => $rule) {
 	if (preg_match('~^' . $rule . '$~i', $uri, $params)) {
-		echo("" . INCLUDE_DIR . $action);
 		include(INCLUDE_DIR . $action . '.php');
 		exit();
 	}
