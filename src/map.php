@@ -20,6 +20,6 @@
 <body onload="load()">
 <?php include('scripts/navbar.php'); ?>
 
-<div id="map" style="width: 500px; height: 300px"></div>
+<div id="map" style="width: 60%; height: 40%"></div>
 </body>
 </html>
