@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo($_SERVER['REQUEST_URI']); ?>/css/home.css"/>
+	<link rel="stylesheet" type="text/css" href="css/home.css"/>
 	<link rel="stylesheet" type="text/css" href="css/navbar.css"/>
 </head>
 
