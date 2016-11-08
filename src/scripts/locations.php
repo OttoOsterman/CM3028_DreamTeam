@@ -9,7 +9,8 @@ $dom = new DOMDocument("1.0");
 $node = $dom->createElement("markers");
 $parnode = $ $dom->appendChild($node);
 
-$query = "SELECT * FROM markers WHERE 1";
+//TODO: Select from production table
+$query = "SELECT * FROM staging WHERE 1";
 $result = $db->query($query);
 if(!$result) {
 	die("Nothing in result: ");
