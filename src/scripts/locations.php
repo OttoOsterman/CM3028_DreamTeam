@@ -10,7 +10,7 @@ $node = $dom->createElement("markers");
 $parnode = $ $dom->appendChild($node);
 
 //TODO: Select from production table
-$query = "SELECT * FROM staging WHERE 1";
+$query = "SELECT * FROM staging";
 $result = $db->query($query);
 if(!$result) {
 	die("Nothing in result: ");
