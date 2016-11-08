@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/map.css"/>
+	<script src="jquery-3.1.1.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKI13n7BTCWoJj841jA6OielBD8bRbg6M" type="text/JavaScript"></script>
 	
 	<script type="text/JavaScript">
@@ -11,15 +12,20 @@
    		var map = new google.maps.Map(document.getElementById("map"), {
  	      	center: new google.maps.LatLng(47.6145, -122.3418),
     	   	zoom: 13,
-        	mapTypeId: 'roadmap'
+			//Could change to satellite
+        	mapTypeId: 'terrain'
       	});
 	}
+
+
 	</script>
 </head>
 
 <body onload="load()">
 <?php include('scripts/navbar.php'); ?>
-
+<noscript>
+	<h1>Please enable javascript to access the maps feature of this website.</h1>
+</noscript>
 <div id="map" style="width: 650px; height: 400px"></div>
 </body>
 </html>

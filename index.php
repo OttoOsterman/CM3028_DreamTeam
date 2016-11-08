@@ -5,7 +5,8 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/src/');
 $rules = array(
 		//TODO: REMOVE TESTING CODE
 		'database' => "/adminer",
-		
+		'locations' => "/scripts/locations.php",
+
 		'home' => '/',
 		'clubs_societies' => '/clubs_societies',
 		'health_wellbeing' => '/health_wellbeing',
