@@ -1,15 +1,10 @@
-<?php
-echo('
-		<!DOCTYPE html>
-		<head>
-		<link rel="stylesheet" type="text/css" href="css/navbar.css"/>
-		</head>
-		<body>
-		');
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
+	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
+</head>
+<body>
 
-include('scripts/navbar.php');
+<?php include('scripts/navbar.php'); ?>
 
-echo('
-		</body>
-		');
-?>
+</body>
