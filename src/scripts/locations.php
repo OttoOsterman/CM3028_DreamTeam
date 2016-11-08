@@ -1,5 +1,9 @@
 <?php 
+//TODO: Uncomments prod code
+/*
 include("db_connect.php");
+*/
+include("db_connect_test.php");
 
 $dom = new DOMDocument("1.0");
 $node = $dom->createElement("markers");
