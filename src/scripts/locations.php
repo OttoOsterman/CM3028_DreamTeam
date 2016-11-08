@@ -13,6 +13,8 @@ if(!$result) {
 
 header("Content-type: text/xml");
 
+//TODO: Uncomment production code
+/*
 while($row = $result->fetch_array()) {
 	$node = $dom->createElement("marker");
 	$newnode = $parnode->appendChild($node);
@@ -21,6 +23,14 @@ while($row = $result->fetch_array()) {
 	$newnode->setAttribute("lat", $row['lat']);
 	$newnode->setAttribute("long", $row['long']);
 }
+*/
+while($row = $result->fetch_array()) {
+	$node = $dom->createElement("marker");
+	$newnode = $parnode->appendChild($node);
+	$newnode->setAttribute("arb_x", $row['arbitrary_x']);
+	$newnode->setAttribute("arb_y", $row['arbitrary_y']);
+}
+
 $result->close();
 $db->close();
 
