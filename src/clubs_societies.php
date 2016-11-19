@@ -6,5 +6,5 @@
 <link rel="stylesheet" type="text/css" href="./src/css/clubs.css"/>
 </head>
 <body>
-<?php include('scripts/header.php') ?>
+<?php include('scripts/navbar.php') ?>
 </body>
