@@ -47,6 +47,11 @@ else {
 				<button type="button" id="cancel_button">Cancel</button>
 			</form>
 		');
+	if (isset($_GET["error"])) {
+		if ($_GET["error"] === "incorrect_login") {
+			echo("<script>window.alert(\"Your username or password was incorrect\")");
+		}
+	}
 }
 echo('</div>');
 ?>
