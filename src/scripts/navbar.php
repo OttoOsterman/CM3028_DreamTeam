@@ -19,7 +19,7 @@ if (isset($_SESSION[username])) {
 						document.reload();
 					}
 				}
-				xmlhttp.open("POST", "logout.php");
+				xmlhttp.open("POST", "logout");
 				xmlhttp.send();
 			}
 		</script>
@@ -36,7 +36,7 @@ else {
 				}
 			</script>
 			<a id="login_button" onclick="login_popup();" style="cursor: pointer; cursor: hand;">Log in</a>
-			<form id="login_form" style="display: none" action="login.php" method="POST">
+			<form id="login_form" style="display: none" action="login" method="POST">
 				<label><b>Username: </b></label>
 				<input type="text" name="username" required>
 				<label><b>Password: </b></label>

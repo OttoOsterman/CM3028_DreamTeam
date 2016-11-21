@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7cedb068-bc2f-40e1-90e2-4fa8d7c7531b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/navbar.php" afterPath="$PROJECT_DIR$/src/scripts/navbar.php" />
     </list>
     <ignored path="CM3028_DreamTeam.iws" />
@@ -29,21 +28,21 @@
       <file leaf-file-name="navbar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scripts/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+            <state relative-caret-position="280">
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
               <folding>
-                <marker date="1479742758853" expanded="true" signature="30:404" ph="..." />
-                <marker date="1479742758853" expanded="true" signature="52:401" ph="..." />
-                <marker date="1479742758853" expanded="true" signature="592:870" ph="..." />
-                <marker date="1479742758853" expanded="true" signature="615:859" ph="{...}" />
-                <marker date="1479742758853" expanded="true" signature="701:794" ph="{...}" />
-                <marker date="1479742758853" expanded="true" signature="755:788" ph="{...}" />
-                <marker date="1479742758853" expanded="true" signature="927:1205" ph="..." />
-                <marker date="1479742758853" expanded="true" signature="956:1193" ph="{...}" />
-                <marker date="1479742758853" expanded="true" signature="1109:1185" ph="{...}" />
-                <marker date="1479742758853" expanded="true" signature="1263:1293" ph="..." />
-                <marker date="1479742758853" expanded="true" signature="1338:1351" ph="..." />
-                <marker date="1479742758853" expanded="true" signature="1385:1825" ph="..." />
+                <marker date="1479742912963" expanded="true" signature="30:404" ph="..." />
+                <marker date="1479742912963" expanded="true" signature="52:401" ph="..." />
+                <marker date="1479742912963" expanded="true" signature="592:866" ph="..." />
+                <marker date="1479742912963" expanded="true" signature="615:855" ph="{...}" />
+                <marker date="1479742912963" expanded="true" signature="701:794" ph="{...}" />
+                <marker date="1479742912963" expanded="true" signature="755:788" ph="{...}" />
+                <marker date="1479742912963" expanded="true" signature="923:1201" ph="..." />
+                <marker date="1479742912963" expanded="true" signature="952:1189" ph="{...}" />
+                <marker date="1479742912963" expanded="true" signature="1105:1181" ph="{...}" />
+                <marker date="1479742912963" expanded="true" signature="1259:1289" ph="..." />
+                <marker date="1479742912963" expanded="true" signature="1334:1347" ph="..." />
+                <marker date="1479742912963" expanded="true" signature="1377:1817" ph="..." />
               </folding>
             </state>
           </provider>
@@ -93,8 +92,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/scripts/logout.php" />
         <option value="$PROJECT_DIR$/src/scripts/login.php" />
-        <option value="$PROJECT_DIR$/src/scripts/navbar.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/src/scripts/navbar.php" />
       </list>
     </option>
   </component>
@@ -245,7 +244,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1479733516579</updated>
-      <workItem from="1479733519361" duration="8967000" />
+      <workItem from="1479733519361" duration="9078000" />
     </task>
     <task id="LOCAL-00001" summary="Moved login_popup() again">
       <created>1479739895105</created>
@@ -296,11 +295,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479742629901</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added login/out pages to index">
+      <created>1479742840707</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1479742840707</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8967000" />
+    <option name="totallyTimeSpent" value="9078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -354,7 +360,8 @@
     <MESSAGE value="Changed type of cancel button to button, added xmlhttprequest open and send methods" />
     <MESSAGE value="Added login logic" />
     <MESSAGE value="Added redirect logic to the logic functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added redirect logic to the logic functions" />
+    <MESSAGE value="Added login/out pages to index" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added login/out pages to index" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -415,21 +422,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        <state relative-caret-position="280">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
           <folding>
-            <marker date="1479742758853" expanded="true" signature="30:404" ph="..." />
-            <marker date="1479742758853" expanded="true" signature="52:401" ph="..." />
-            <marker date="1479742758853" expanded="true" signature="592:870" ph="..." />
-            <marker date="1479742758853" expanded="true" signature="615:859" ph="{...}" />
-            <marker date="1479742758853" expanded="true" signature="701:794" ph="{...}" />
-            <marker date="1479742758853" expanded="true" signature="755:788" ph="{...}" />
-            <marker date="1479742758853" expanded="true" signature="927:1205" ph="..." />
-            <marker date="1479742758853" expanded="true" signature="956:1193" ph="{...}" />
-            <marker date="1479742758853" expanded="true" signature="1109:1185" ph="{...}" />
-            <marker date="1479742758853" expanded="true" signature="1263:1293" ph="..." />
-            <marker date="1479742758853" expanded="true" signature="1338:1351" ph="..." />
-            <marker date="1479742758853" expanded="true" signature="1385:1825" ph="..." />
+            <marker date="1479742912963" expanded="true" signature="30:404" ph="..." />
+            <marker date="1479742912963" expanded="true" signature="52:401" ph="..." />
+            <marker date="1479742912963" expanded="true" signature="592:866" ph="..." />
+            <marker date="1479742912963" expanded="true" signature="615:855" ph="{...}" />
+            <marker date="1479742912963" expanded="true" signature="701:794" ph="{...}" />
+            <marker date="1479742912963" expanded="true" signature="755:788" ph="{...}" />
+            <marker date="1479742912963" expanded="true" signature="923:1201" ph="..." />
+            <marker date="1479742912963" expanded="true" signature="952:1189" ph="{...}" />
+            <marker date="1479742912963" expanded="true" signature="1105:1181" ph="{...}" />
+            <marker date="1479742912963" expanded="true" signature="1259:1289" ph="..." />
+            <marker date="1479742912963" expanded="true" signature="1334:1347" ph="..." />
+            <marker date="1479742912963" expanded="true" signature="1377:1817" ph="..." />
           </folding>
         </state>
       </provider>
