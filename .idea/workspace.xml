@@ -38,21 +38,21 @@
       <file leaf-file-name="navbar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scripts/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="97" selection-start-line="36" selection-start-column="97" selection-end-line="36" selection-end-column="97" />
+            <state relative-caret-position="433">
+              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
               <folding>
-                <marker date="1479740587105" expanded="true" signature="30:404" ph="..." />
-                <marker date="1479740587105" expanded="true" signature="52:401" ph="..." />
-                <marker date="1479740587105" expanded="true" signature="592:810" ph="..." />
-                <marker date="1479740587105" expanded="true" signature="615:799" ph="{...}" />
-                <marker date="1479740587105" expanded="true" signature="701:794" ph="{...}" />
-                <marker date="1479740587105" expanded="true" signature="755:788" ph="{...}" />
-                <marker date="1479740587105" expanded="true" signature="867:1145" ph="..." />
-                <marker date="1479740587105" expanded="true" signature="896:1133" ph="{...}" />
-                <marker date="1479740587105" expanded="true" signature="1049:1125" ph="{...}" />
-                <marker date="1479740587105" expanded="true" signature="1203:1233" ph="..." />
-                <marker date="1479740587105" expanded="true" signature="1278:1291" ph="..." />
-                <marker date="1479740587105" expanded="true" signature="1333:1625" ph="..." />
+                <marker date="1479741021910" expanded="true" signature="30:404" ph="..." />
+                <marker date="1479741021910" expanded="true" signature="52:401" ph="..." />
+                <marker date="1479741021910" expanded="true" signature="592:878" ph="..." />
+                <marker date="1479741021910" expanded="true" signature="615:867" ph="{...}" />
+                <marker date="1479741021910" expanded="true" signature="701:794" ph="{...}" />
+                <marker date="1479741021910" expanded="true" signature="755:788" ph="{...}" />
+                <marker date="1479741021910" expanded="true" signature="935:1213" ph="..." />
+                <marker date="1479741021910" expanded="true" signature="964:1201" ph="{...}" />
+                <marker date="1479741021910" expanded="true" signature="1117:1193" ph="{...}" />
+                <marker date="1479741021910" expanded="true" signature="1271:1301" ph="..." />
+                <marker date="1479741021910" expanded="true" signature="1346:1359" ph="..." />
+                <marker date="1479741021910" expanded="true" signature="1401:1690" ph="..." />
               </folding>
             </state>
           </provider>
@@ -239,7 +239,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1479733516579</updated>
-      <workItem from="1479733519361" duration="6831000" />
+      <workItem from="1479733519361" duration="7208000" />
     </task>
     <task id="LOCAL-00001" summary="Moved login_popup() again">
       <created>1479739895105</created>
@@ -262,11 +262,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479740473533</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed form method to post">
+      <created>1479740691390</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1479740691390</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6831000" />
+    <option name="totallyTimeSpent" value="7208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -297,7 +304,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Moved login_popup() again" />
     <MESSAGE value="Added semicolons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added semicolons" />
+    <MESSAGE value="Changed form method to post" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed form method to post" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -330,21 +338,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="97" selection-start-line="36" selection-start-column="97" selection-end-line="36" selection-end-column="97" />
+        <state relative-caret-position="433">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
           <folding>
-            <marker date="1479740587105" expanded="true" signature="30:404" ph="..." />
-            <marker date="1479740587105" expanded="true" signature="52:401" ph="..." />
-            <marker date="1479740587105" expanded="true" signature="592:810" ph="..." />
-            <marker date="1479740587105" expanded="true" signature="615:799" ph="{...}" />
-            <marker date="1479740587105" expanded="true" signature="701:794" ph="{...}" />
-            <marker date="1479740587105" expanded="true" signature="755:788" ph="{...}" />
-            <marker date="1479740587105" expanded="true" signature="867:1145" ph="..." />
-            <marker date="1479740587105" expanded="true" signature="896:1133" ph="{...}" />
-            <marker date="1479740587105" expanded="true" signature="1049:1125" ph="{...}" />
-            <marker date="1479740587105" expanded="true" signature="1203:1233" ph="..." />
-            <marker date="1479740587105" expanded="true" signature="1278:1291" ph="..." />
-            <marker date="1479740587105" expanded="true" signature="1333:1625" ph="..." />
+            <marker date="1479741021910" expanded="true" signature="30:404" ph="..." />
+            <marker date="1479741021910" expanded="true" signature="52:401" ph="..." />
+            <marker date="1479741021910" expanded="true" signature="592:878" ph="..." />
+            <marker date="1479741021910" expanded="true" signature="615:867" ph="{...}" />
+            <marker date="1479741021910" expanded="true" signature="701:794" ph="{...}" />
+            <marker date="1479741021910" expanded="true" signature="755:788" ph="{...}" />
+            <marker date="1479741021910" expanded="true" signature="935:1213" ph="..." />
+            <marker date="1479741021910" expanded="true" signature="964:1201" ph="{...}" />
+            <marker date="1479741021910" expanded="true" signature="1117:1193" ph="{...}" />
+            <marker date="1479741021910" expanded="true" signature="1271:1301" ph="..." />
+            <marker date="1479741021910" expanded="true" signature="1346:1359" ph="..." />
+            <marker date="1479741021910" expanded="true" signature="1401:1690" ph="..." />
           </folding>
         </state>
       </provider>

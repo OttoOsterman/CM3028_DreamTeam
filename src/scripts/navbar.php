@@ -19,6 +19,8 @@ if (isset($_SESSION[username])) {
 						document.reload();
 					}
 				}
+				xmlhttp.open("POST", "scripts/logout.php");
+				xmlhttp.send();
 			}
 		</script>
 	');
@@ -40,7 +42,7 @@ else {
 				<label><b>Password: </b></label>
 				<input type="password" name="password" required>
 				<button type="submit">Login</button>
-				<button type="cancelbtn" id="cancel_button">Cancel</button>
+				<button type="button" id="cancel_button">Cancel</button>
 			</form>
 		');
 }
