@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS News, Permission, Event, Photo, User, Club, Calendar, ClubM
 CREATE TABLE Club (club_id int NOT NULL, name nvarchar(255) NOT NULL, genre nvarchar(50), description text, contact_info nvarchar(255), 
 	CONSTRAINT pk_club_id PRIMARY KEY (club_id), CHECK (genre in ('placeholder')));
 
-CREATE TABLE Photo (photo_id int NOT NULL, photo_path nvarchar(255), club_id NOT NULL, CONSTRAINT pk_photo_id PRIMARY KEY (photo_id), 
+CREATE TABLE Photo (photo_id int NOT NULL, photo_path nvarchar(255), club_id int NOT NULL, CONSTRAINT pk_photo_id PRIMARY KEY (photo_id), 
 	CONSTRAINT fk_club_id FOREIGN KEY (club_id) REFERENCES Club(club_id);
 
 CREATE TABLE Event (event_id int NOT NULL, name nvarchar(255) NOT NULL, description text, date DATETIME NOT NULL, 
