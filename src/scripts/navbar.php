@@ -23,15 +23,7 @@ if (isset($_SESSION[username])) {
 }
 else {
 	echo('
-			<script type="text/javascript">
-				function login_popup() {
-					$.getElementById("login_form").style.display = "block";
-					$.getElementById("cancel_button").addEventListener("click", function() {
-						$.getElementById("login_form").style.display = "none";
-					});
-				}
-			</script>
-			<a id="login_button" onclick="login_popup()">Log in</a>
+			<a id="login_button" onClick="login_popup()" style="cursor: pointer; cursor: hand;">Log in</a>
 			<form id="login_form" style="display: none" action="scripts/login.php">
 				<label><b>Username: </b></label>
 				<input type="text" name="username" required>
@@ -40,6 +32,14 @@ else {
 				<button type="submit">Login</button>
 				<button type="cancelbtn" id="cancel_button">Cancel</button>
 			</form>
+			<script type="text/javascript">
+				function login_popup() {
+					$.getElementById("login_form").style.display = "block";
+					$.getElementById("cancel_button").addEventListener("click", function() {
+						$.getElementById("login_form").style.display = "none";
+					});
+				}
+			</script>
 		');
 }
 echo('</div>');
