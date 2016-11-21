@@ -1,6 +1,5 @@
 <?php
 echo('
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<div id="navbar">
 	<ul id="navbarlist">
 		<li><a href="http://go-portlethen.azurewebsites.net/">Home</a></li>
@@ -14,9 +13,12 @@ if (isset($_SESSION[username])) {
 		<a id="logout_button" onclick="logout();" href="http://go-portlethen.azurewebsites.net/logout">Log out</a>
 		<script type="text/javascript">
 			function logout() {
-				$.post("srcipts/logout.php", function() {
-					location.reload();
-				});
+				var xmlhttp = new XMLHttpRequest();
+				xmlhttp.onreadystatechange = function() {
+					if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+						document.reload();
+					}
+				}
 			}
 		</script>
 	');
@@ -25,9 +27,9 @@ else {
 	echo('
 			<script type="text/javascript">
 				function login_popup() {
-					$.getElementById("login_form").style.display = "block";
-					$.getElementById("cancel_button").addEventListener("click", function() {
-						$.getElementById("login_form").style.display = "none";
+					document.getElementById("login_form").style.display = "block";
+					document.getElementById("cancel_button").addEventListener("click", function() {
+						document.getElementById("login_form").style.display = "none";
 					});
 				}
 			</script>
