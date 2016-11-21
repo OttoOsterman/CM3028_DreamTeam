@@ -23,15 +23,6 @@ if (isset($_SESSION[username])) {
 }
 else {
 	echo('
-			<a id="login_button" onClick="login_popup()" style="cursor: pointer; cursor: hand;">Log in</a>
-			<form id="login_form" style="display: none" action="scripts/login.php">
-				<label><b>Username: </b></label>
-				<input type="text" name="username" required>
-				<label><b>Password: </b></label>
-				<input type="password" name="password" required>
-				<button type="submit">Login</button>
-				<button type="cancelbtn" id="cancel_button">Cancel</button>
-			</form>
 			<script type="text/javascript">
 				function login_popup() {
 					$.getElementById("login_form").style.display = "block";
@@ -40,6 +31,15 @@ else {
 					});
 				}
 			</script>
+			<a id="login_button" onclick="login_popup()" style="cursor: pointer; cursor: hand;">Log in</a>
+			<form id="login_form" style="display: none" action="scripts/login.php">
+				<label><b>Username: </b></label>
+				<input type="text" name="username" required>
+				<label><b>Password: </b></label>
+				<input type="password" name="password" required>
+				<button type="submit">Login</button>
+				<button type="cancelbtn" id="cancel_button">Cancel</button>
+			</form>
 		');
 }
 echo('</div>');
