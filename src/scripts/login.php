@@ -12,5 +12,6 @@ if (mysql_num_rows($result) != 0) {
     if ($hashed_password === $hash) {
         $_SESSION["username"] = $username;
     }
+    header($_POST["location"]);
 }
 ?>

@@ -41,7 +41,9 @@ else {
 				<input type="text" name="username" required>
 				<label><b>Password: </b></label>
 				<input type="password" name="password" required>
+				<input type="hidden" id="location" name="location" value="">
 				<button type="submit">Login</button>
+				<script>document.getElementById("location").value = window.location.href</script>
 				<button type="button" id="cancel_button">Cancel</button>
 			</form>
 		');
