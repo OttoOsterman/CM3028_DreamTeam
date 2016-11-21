@@ -11,7 +11,7 @@ echo('
 		');
 if (isset($_SESSION[username])) {
 	echo('
-		<a id="logout_button" onclick="logout()" href="http://go-portlethen.azurewebsites.net/logout">Log out</a>
+		<a id="logout_button" onclick="logout();" href="http://go-portlethen.azurewebsites.net/logout">Log out</a>
 		<script type="text/javascript">
 			function logout() {
 				$.post("srcipts/logout.php", function() {
@@ -31,7 +31,7 @@ else {
 					});
 				}
 			</script>
-			<a id="login_button" onclick="login_popup()" style="cursor: pointer; cursor: hand;">Log in</a>
+			<a id="login_button" onclick="login_popup();" style="cursor: pointer; cursor: hand;">Log in</a>
 			<form id="login_form" style="display: none" action="scripts/login.php">
 				<label><b>Username: </b></label>
 				<input type="text" name="username" required>
