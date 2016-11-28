@@ -14,9 +14,6 @@
 	$sql = "SELECT Club.id, Club.name, Club.genre, Club.description, Photo.photo_path FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id";
 	$result = $db->query($sql);
 
-    $row = $result->fetch_array();
-    echo($row["name"]);
-	
 	while ($row = $result->fetch_array()) {
         if (isset($row['photo_path'])) {
             echo("
