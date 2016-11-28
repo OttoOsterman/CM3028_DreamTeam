@@ -22,7 +22,7 @@ $uri = '/' . trim(str_replace($uri, '', $_SERVER['REQUEST_URI']), '/');
 $uri = urldecode($uri);
 
 foreach($rules as $action => $rule) {
-    $params = $_SERVER['REQUEST_URI'][0];
+    $params = $_SERVER['REQUEST_URI'];
     var_dump($params);
 	if (preg_match('~^' . $rule . '$~i', $uri, $params)) {
         echo(INCLUDE_DIR . $action . '.php' . $params);
