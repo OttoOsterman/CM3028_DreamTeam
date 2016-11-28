@@ -57,8 +57,8 @@ echo('
 <body>
 <?php include('scripts/navbar.php') ?>
 <div id=clublist>
-	<?php 
-	$sql = "SELECT Club.name, Club.genre, Club.description, Photo.photo_path FROM Club INNER JOIN Photo ON Club.club_id = Photo.club_id";
+	<?php
+	$sql = "SELECT Club.name, Club.genre, Club.description, Photo.photo_path FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id";
 	$result = $db->query($sql);
 
     $row = $result->fetch_array();
