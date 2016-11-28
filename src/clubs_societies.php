@@ -15,6 +15,16 @@
 	$result = $db->query($sql);
 	
 	while ($row = $result->fetch_array()) {
+        if (isset($row['photo_path'])) {
+            echo("
+			<img src={$row['photo_path']}></img><h1>{$row['name']}</h1>" . $row['genre'] . $row['description']
+            );
+        }
+        else {
+            echo("
+			<img src='images/default.jpg'><h1>{$row['name']}</h1>" . $row['genre'] . $row['description']
+            );
+        }
 		echo("
 			<img src={$row['photo_path']}></img><h1>{$row['name']}</h1>" . $row['genre'] . $row['description']
 		);
