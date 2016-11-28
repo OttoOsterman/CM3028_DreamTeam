@@ -75,9 +75,6 @@ echo('
 			<img src='images/default.jpg'><h1>{$row['name']}</h1>" . $row['genre'] . $row['description']
             );
         }
-		echo("
-			<img src={$row['photo_path']}></img><h1>{$row['name']}</h1>" . $row['genre'] . $row['description']
-		);
 	}
 	?>
 </div>
