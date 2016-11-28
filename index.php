@@ -12,7 +12,7 @@ $rules = array(
 
 		'home' => '/',
 		'clubs_societies' => '/clubs_societies',
-        'club' => '/club',
+        //'club' => '/club',
 		'health_wellbeing' => '/health_wellbeing',
 		'map' => '/map'
 );
