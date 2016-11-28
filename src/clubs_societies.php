@@ -60,11 +60,14 @@ echo('
 	<?php 
 	$sql = "SELECT Club.name, Club.genre, Club.description, Photo.photo_path FROM Club INNER JOIN Photo ON Club.club_id = Photo.club_id";
 	$result = $db->query($sql);
+
+    $row = $result->fetch_array();
+    echo($row["name"]);
 	
 	while ($row = $result->fetch_array()) {
         if (isset($row['photo_path'])) {
             echo("
-			<img src={$row['photo_path']}></img><h1>{$row['name']}</h1>" . $row['genre'] . $row['description']
+			<img src={$row['photo_path']}><h1>{$row['name']}</h1>" . $row['genre'] . $row['description']
             );
         }
         else {
