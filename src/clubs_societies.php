@@ -38,13 +38,13 @@ echo('
 	while ($row = $result->fetch_array()) {
         if (isset($row['photo_path'])) {
             echo("
-			<img src={$row['photo_path']}><h1 id='clubName'><a href='club.php?club_id={$row["Club.id"]}'{$row['name']}</a></h1>" . "<div id='clubGenre'>{$row['genre']}</div>"
+			<img src={$row['photo_path']}><h1 id='clubName'><a href='club.php?club_id={$row["id"]}'>{$row['name']}</a></h1>" . "<div id='clubGenre'>{$row['genre']}</div>"
                 . "<div id='clubDesc'>{$row['description']}</div>"
             );
         }
         else {
             echo("
-			<img src='images/default.jpg'><h1>{$row['name']}</h1>" . $row['genre'] . $row['description']
+			<img src='images/default.jpg'><h1><a href='club.php?club_id={$row['id']}'>{$row['name']}</a></h1>" . $row['genre'] . $row['description']
             );
         }
 	}
