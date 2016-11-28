@@ -30,6 +30,6 @@ foreach($rules as $action => $rule) {
 	}
 }
 
-include(INCLUDE_DIR . '404.php');
+//include(INCLUDE_DIR . '404.php');
 
 ?>
