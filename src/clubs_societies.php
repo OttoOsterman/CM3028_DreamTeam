@@ -6,36 +6,7 @@ echo('
 		</head>
 		<body>
 		
-		<div class="flex-container">
-<header>
-  <h1>Clubs and Societies</h1>
-</header>
-
-<nav class="nav">
-<ul>
-  <li><a href="#">Football</a></li>
-  <li><a href="#">Ice Hockey</a></li>
-  <li><a href="#">Tennis</a></li>
-</ul>
-</nav>
-
-<article class="article">
-  <h1>Football</h1>
-  <p>Spicy jalapeno bacon ipsum dolor amet t-bone jerky doner picanha. Spare ribs cupim tenderloin venison.
-   Ground round kevin landjaeger, sausage filet mignon turducken pig salami burgdoggen alcatra chuck.
-    Strip steak corned beef hamburger shoulder filet mignon brisket doner pork loin ball tip, chicken meatloaf.</p>
-  <p>Meatball burgdoggen corned beef t-bone shankle bacon. 
-  Burgdoggen landjaeger pork belly turducken meatloaf filet mignon ham hock boudin prosciutto. 
-  Pork belly turducken chuck sirloin hamburger tenderloin. Kielbasa ham hock tri-tip alcatra rump,
-   strip steak t-bone pork chop swine prosciutto ham tail. Beef sirloin shoulder, turkey prosciutto kevin brisket. 
-   Biltong shankle meatloaf, jerky doner bresaola t-bone corned beef burgdoggen pork belly jowl filet mignon.
-    Ball tip tri-tip meatball short loin pastrami.</p>
-</article>
-
-<footer>Copyright © DreamTeam</footer>
-</div>
-		
-		');
+');
 
 include('scripts/navbar.php');
 
@@ -50,7 +21,7 @@ echo('
 <title>Clubs</title>
 <link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
 <link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
-<link rel="stylesheet" type="text/css" href="./src/css/clubs.css"/>
+<link rel="stylesheet" type="text/css" href="./src/css/clubs_societies.css"/>
 <!-- TODO: Remove testing code -->
 <?php include('scripts/db_connect_test.php') ?>
 </head>
@@ -67,7 +38,8 @@ echo('
 	while ($row = $result->fetch_array()) {
         if (isset($row['photo_path'])) {
             echo("
-			<img src={$row['photo_path']}><h1>{$row['name']}</h1>" . $row['genre'] . $row['description']
+			<img src={$row['photo_path']}><h1 id='clubName'>{$row['name']}</h1>" . "<div id='clubGenre'>{$row['genre']}</div>"
+                . "<div id='clubDesc'>{$row['description']}</div>"
             );
         }
         else {
