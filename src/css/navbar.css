@@ -17,14 +17,14 @@
 
 #navbarlist {
 	list-style-type: none;
-	display: inline;
+	display: block;
 	opacity: 0.75;
-	font-size: 16;
+	font-size: 16px;
 	font-weight: bold;
 	overflow: hidden;
 }
 
-#navbar li {
+#navbar li a{
 	float: left;
 }
 
