@@ -1,17 +1,5 @@
 @CHARSET "UTF-8";
 
-* {
-	margin: 0;
-	border: 0;
-	padding: 0;
-}
-
-html {
-	background: url(../../images/background.jpg) no-repeat center center fixed;
-	background-size: cover;
-	background-color: #000000;
-}
-
 #welcome {
 	display: flex;
 	color: #FFFFFF;
