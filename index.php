@@ -4,7 +4,11 @@ define('INCLUDE_DIR', dirname(__FILE__) . '/src/');
 
 $rules = array(
 		//TODO: REMOVE TESTING CODE
+		'scripts/adminer' => "/database",
+
 		'scripts/locations' => "/locations",
+		'scripts/login' => '/login',
+		'scripts/logout' => '/logout',
 
 		'home' => '/',
 		'clubs_societies' => '/clubs_societies',
