@@ -22,7 +22,7 @@
         }
         else {
             echo("
-			<img src='images/default.jpg'><h1><a href='club?club_id={$row['club_id']}'>{$row['name']}</a></h1>{$row['genre']}{$row['description']}
+			<img src='images/default.jpg'><h1><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>{$row['genre']}{$row['description']}
             ");
         }
 	}
