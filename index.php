@@ -23,7 +23,7 @@ $uri = urldecode($uri);
 
 foreach($rules as $action => $rule) {
     $placeholder = explode('?', $rule);
-    $rule = $rule[0];
+    $rule = $placeholder[0];
     echo($rule);
 	if (preg_match('~^' . $rule . '$~i', $uri, $params)) {
         $params = explode('&', substr($_SERVER['REQUEST_URI'], 6));
