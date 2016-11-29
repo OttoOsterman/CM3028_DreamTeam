@@ -16,6 +16,7 @@
     include('scripts/db_connect_test.php');
     $request_array = explode("/", $_SERVER["REQUEST_URI"]);
     $club_id = end($request_array);
+    echo($club_id);
     $sql = "SELECT Club.name, Club.genre, Club.description, Club.contact_info FROM Club WHERE club_id = " . mysqli_real_escape_string($club_id);
     echo($sql);
     $results = $db->query($sql);
