@@ -23,6 +23,8 @@ $uri = urldecode($uri);
 
 foreach($rules as $action => $rule) {
 	if (preg_match('~^' . $rule . '$~i', $uri, $params)) {
+        $params = $_SERVER['REQUEST_URI'];
+        echo($params);
 		include(INCLUDE_DIR . $action . '.php');
 		exit();
 	}
