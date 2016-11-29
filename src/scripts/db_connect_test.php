@@ -1,4 +1,4 @@
-<<?php
+<?php
 echo("nothing wrong");
 $db = new mysqli(
 		"us-cdbr-azure-southcentral-f.cloudapp.net",
