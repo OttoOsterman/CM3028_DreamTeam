@@ -14,21 +14,25 @@
     <?php
     //TODO: Remove testing code
     include("scripts/db_connect_test.php");
+    echo("working");
     $sql = $db->prepare("SELECT Club.name, Club.genre, Club.description, Club.contact_info FROM Club WHERE club_id = ?");
     $request_array = explode("/", $_SERVER["REQUEST_URI"]);
-    $club_id = end($request_array);
+    $club_id = substr(1,end($request_array));
     echo($club_id);
+    echo("working");
     $sql->bind_param("s", $club_id);
     $results = $sql->execute();
     $row = $results->fetch_array();
+    echo("working");
 
-    if(!(is_null($row["name"])) && isset($row["name"])) {
+    if(isset($row["name"]) && $row["name"] !== null) {
         echo("
             {$row["name"]}
         ");
     } else {
         echo ("<h1>Club not found</h1>");
     }
+    echo("working");
     ?>
 </div>
 </body>
