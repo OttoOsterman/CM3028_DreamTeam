@@ -9,9 +9,7 @@
 </head>
 
 <body>
-<div id="navbar">
     <?php include('scripts/navbar.php') ?>
-</div>
 <div>
     <?php
     //TODO: Remove testing code

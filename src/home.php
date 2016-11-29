@@ -9,9 +9,7 @@
 </head>
 
 <body>
-	<div id="navbar">
 		<?php include('scripts/navbar.php') ?>
-	</div>
 	<div id="welcome">
 		<h1>
 			Welcome to Go Portlethen

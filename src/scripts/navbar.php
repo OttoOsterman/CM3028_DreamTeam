@@ -49,7 +49,7 @@ else {
 		');
 	if (isset($_GET["error"])) {
 		if ($_GET["error"] === "incorrect_login") {
-			echo("<script>window.alert(\"Your username or password was incorrect\")");
+			echo("<script>window.alert(\"Your username or password was incorrect\")</script>");
 		}
 	}
 }
