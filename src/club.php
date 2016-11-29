@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="./src/css/club.css"/>
-    <link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
-    <link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/club.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo($_SERVER["SERVER_NAME"] . "/src/css/navbar.css");?>"
 </head>
 
 <body>
