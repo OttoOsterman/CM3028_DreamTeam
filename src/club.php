@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="./css/club.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/navbar.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/general.css"/>
+    <link rel="stylesheet" type="text/css" href="./src/css/club.css"/>
+    <link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
 </head>
 
 <body>
