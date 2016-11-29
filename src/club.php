@@ -18,7 +18,7 @@
     $request_array = explode("/", $_SERVER["REQUEST_URI"]);
     $club_id = end($request_array);
     echo($club_id);
-    $sql->bind_param("s", $club_id);
+    $sql->bind_param("i", $club_id);
     $results = $sql->execute();
     $row = $results->fetch_array();
 
