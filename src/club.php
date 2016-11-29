@@ -22,6 +22,8 @@
     $results = $sql->execute();
     $row = $results->fetch_array();
 
+    var_dump($row);
+
     if(isset($row["name"]) && $row["name"] !== null) {
         echo("
             {$row["name"]}
