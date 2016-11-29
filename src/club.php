@@ -14,7 +14,7 @@
     <?php
     //TODO: Remove testing code
     echo("test");
-    require('scripts/db_connect_test.php');
+    include('scripts/db_connect_test.php');
     echo("working");
     $sql = $db->prepare("SELECT Club.name, Club.genre, Club.description, Club.contact_info FROM Club WHERE club_id = ?");
     $request_array = explode("/", $_SERVER["REQUEST_URI"]);
