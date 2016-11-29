@@ -21,7 +21,7 @@
     $results = $sql->execute();
     $row = $results->fetch_array();
 
-    if(!(is_null($row["name"])) && isset($row["name"])) {
+    if($row["name"] != "") {
         echo("
             {$row["name"]}
         ");
