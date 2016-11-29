@@ -22,10 +22,15 @@ $uri = '/' . trim(str_replace($uri, '', $_SERVER['REQUEST_URI']), '/');
 $uri = urldecode($uri);
 
 foreach($rules as $action => $rule) {
+    $params = explode('&', substr($_SERVER['REQUEST_URI'], 6));
+    var_dump($params);
 	if (preg_match('~^' . $rule . '$~i', $uri, $params)) {
-        $params = $_SERVER['REQUEST_URI'];
-        echo($params);
-		include(INCLUDE_DIR . $action . '.php');
+        echo(INCLUDE_DIR . $action . '.php' . $params);
+        if (isset($params[0])) {
+            include(INCLUDE_DIR . $action . '.php?' . $params[0]);
+            exit();
+        }
+		include(INCLUDE_DIR . $action . '.php' . $params);
 		exit();
 	}
 }
