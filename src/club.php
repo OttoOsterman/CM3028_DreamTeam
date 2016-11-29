@@ -16,7 +16,7 @@
     include("scripts/db_connect_test.php");
     echo($params["club_id"]);
     $sql = $db->prepare("SELECT Club.name, Club.genre, Club.description, Club.contact_info FROM Club WHERE club_id = ?");
-    $club_id = mysqli_real_escape_string($params["club_id"]);
+    $club_id = $params["club_id"];
     $sql->bind_param("s", $club_id);
     $results = $sql->execute();
     $row = $results->fetch_array();
