@@ -5,7 +5,11 @@ $db = new mysqli(
 		"3d705615",
 		"acsm_c7b68337b4bae6d"
 		);
+//TODO: REMOVE TESTING CODE
+echo("Attempted connection");
 if($db->connect_errno) {
+    echo("Connection Failed");
 	die('Connectfailed['.$db->connect_error.']');
 }
+echo("Conncetion succeeded");
 ?>
