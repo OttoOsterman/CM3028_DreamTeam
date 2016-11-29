@@ -14,14 +14,15 @@
     <?php
     //TODO: Remove testing code
     include("scripts/db_connect_test.php");
-    echo($params["club_id"]);
     $sql = $db->prepare("SELECT Club.name, Club.genre, Club.description, Club.contact_info FROM Club WHERE club_id = ?");
-    $club_id = $params["club_id"];
+    $request_array = explode("/", $_SERVER["REQUEST_URI"]);
+    $club_id = end($request_array);
+    echo($club_id);
     $sql->bind_param("s", $club_id);
     $results = $sql->execute();
     $row = $results->fetch_array();
 
-    if($row["name"] != "") {
+    if(!(is_null($row["name"])) && isset($row["name"])) {
         echo("
             {$row["name"]}
         ");
