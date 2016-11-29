@@ -26,7 +26,7 @@ foreach($rules as $action => $rule) {
         $params = explode('&', substr($_SERVER['REQUEST_URI'], 6));
         var_dump($params);
         echo(INCLUDE_DIR . $action . '.php' . $params[0]);
-        if (isset($params[0])) {
+        if ($params[o] != "") {
             include(INCLUDE_DIR . $action . '.php?' . $params[0]);
             exit();
         }
