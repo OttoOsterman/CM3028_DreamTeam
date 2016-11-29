@@ -18,7 +18,7 @@
     echo("working");
     $sql = $db->prepare("SELECT Club.name, Club.genre, Club.description, Club.contact_info FROM Club WHERE club_id = ?");
     $request_array = explode("/", $_SERVER["REQUEST_URI"]);
-    $club_id = substr(1,end($request_array));
+    $club_id = end($request_array);
     echo($club_id);
     echo("working");
     $sql->bind_param("s", $club_id);
