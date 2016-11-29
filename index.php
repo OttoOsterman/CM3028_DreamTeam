@@ -22,6 +22,9 @@ $uri = '/' . trim(str_replace($uri, '', $_SERVER['REQUEST_URI']), '/');
 $uri = urldecode($uri);
 
 foreach($rules as $action => $rule) {
+    $placeholder = explode('?', $rule);
+    $rule = $rule[0];
+    echo($rule);
 	if (preg_match('~^' . $rule . '$~i', $uri, $params)) {
         $params = explode('&', substr($_SERVER['REQUEST_URI'], 6));
         var_dump($params);
