@@ -1,3 +1,7 @@
+#clublist {
+    padding: 10px;
+}
+
 #clubName {
      font-size: 30px;
      color: #FFFFFF;
@@ -5,15 +9,23 @@
  }
 
 #clubGenre {
-    color: #FFFFFF;
+    color: black;
+    padding: 10px;
+}
+
+#clubDesc {
+    color: black;
+    padding: 10px;
 }
 
 #clubImage {
-    height: 150%;
-    width: 150%;
+    float: right;
 }
 
 #clubSection {
     padding: 10px;
-    margin-left: 10px;
+    width: 50%;
+    color: white;
+    background-color: darkgray;
+    margin: 10px;
 }
