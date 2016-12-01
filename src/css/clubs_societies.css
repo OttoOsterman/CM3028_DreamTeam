@@ -1,8 +1,14 @@
-.clubName {
+#clubName {
      font-size: 30px;
      color: #FFFFFF;
+     padding: 10px;
  }
 
-.clubGenre {
+#clubGenre {
     color: #FFFFFF;
+}
+
+#clubImage {
+    height: 150%;
+    width: 150%;
 }
