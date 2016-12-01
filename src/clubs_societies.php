@@ -3,7 +3,7 @@
 <title>Clubs</title>
 <link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
 <link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
-<link rel="stylesheet" type="text/css" href="css/clubs_societies.css"/>
+<link rel="stylesheet" type="text/css" href="./src/css/clubs_societies.css"/>
 <!-- TODO: Remove testing code -->
 <?php include('scripts/db_connect_test.php') ?>
 </head>
@@ -22,7 +22,7 @@
         }
         else {
             echo("
-			<img src='images/default.jpg'><h1><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>{$row['genre']}{$row['description']}
+			<img src='images/default.jpg'><h1 id='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1><div id='clubGenre'>{$row['genre']}</div><div id='clubDesc'>{$row['description']}</div>
             ");
         }
 	}
