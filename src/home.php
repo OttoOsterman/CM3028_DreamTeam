@@ -14,14 +14,15 @@
 		
 <div class="banner">
 	
-	<img src="/src/images/go-portlethen.jpg"/>
+	<img src="/src/images/go-portlethen.jpg" style="width:80%";/>
 	
 </div>
 	
 <div class="information">
-	<h3> "the club@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-		
-	</h3>
+	<center>
+		<h3> "<<insert text here>> <<insert text here>> <<insert text here>> <<insert text here>> <<insert text here>> <<insert text here>> <<insert text here>> <<insert text here>> <<insert text here></h3>
+	</center>
+
 </div>
 
 </body>
