@@ -10,7 +10,7 @@
 
 <body>
     <?php include('scripts/navbar.php') ?>
-<div>
+<div id="clubContainer">
     <?php
     //TODO: Remove testing code
     include('scripts/db_connect_test.php');

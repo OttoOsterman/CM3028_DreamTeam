@@ -5,6 +5,10 @@
     font-family: "Helvetica";
 }
 
+#clubContainer {
+    padding-top: 50px;
+}
+
 .clubSection {
     padding: 10px;
     width: 80%;
