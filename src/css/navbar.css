@@ -43,25 +43,25 @@
 }
 
 /* Experimental Nav */
-@media screen and (max-width: 2000px){
+@media screen and (max-width: 1000px){
 	.nav{
 		visibility: hidden;
 		clear: both;
 		float: left;
 		margin: 10px auto 5px 20px;
-		width: 30%;
+		width: 28%;
 		display: none;
 	}
 }
 .nav{
-	max-width: 2000px; height: 90px;
+	max-width: 1000px; height: 90px;
 	overflow: hidden;
 	padding: 0px;
 	margin: auto;
 	float: left;
 }
 .nav ul{
-	width: 2500px;
+	width: 2000px;
 }
 .nav li{
 	position: relative;
