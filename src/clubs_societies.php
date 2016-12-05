@@ -28,7 +28,7 @@
         else {
             echo("
 			<section class='clubSection'>
-			    <img class='clubImage' src='../src/images/p_club.png'>
+			    <img class='clubImage' src='../src/images/placeholder.png'>
 			    <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
 			    <div class='clubGenre'>{$row['genre']}</div>
 			    <div class='clubDesc'>{$row['description']}</div>
