@@ -17,12 +17,22 @@
 	while ($row = $result->fetch_array()) {
         if (isset($row['photo_path'])) {
             echo("
-			<img src={$row['photo_path']}><h1 id='clubName'><a href='club?club_id={$row['club_id']}'>{$row['name']}</a></h1><div id='clubGenre'>{$row['genre']}</div><div id='clubDesc'>{$row['description']}</div>
+            <section class='clubSection'>
+                <img class='clubImage' src={$row['photo_path']}>
+                <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
+                <div class='clubGenre'>{$row['genre']}</div>
+                <div class='clubDesc'>{$row['description']}</div>
+            </section>
 			");
         }
         else {
             echo("
-			<section id='clubSection'><img id='clubImage' src='images/p_club.png'><h1 id='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1><div id='clubGenre'>{$row['genre']}</div><div id='clubDesc'>{$row['description']}</div></section>
+			<section class='clubSection'>
+			    <img class='clubImage' src='images/p_club.png'>
+			    <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
+			    <div class='clubGenre'>{$row['genre']}</div>
+			    <div class='clubDesc'>{$row['description']}</div>
+			</section>
             ");
         }
 	}

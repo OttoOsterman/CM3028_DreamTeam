@@ -1,29 +1,29 @@
-#clublist {
+.clublist {
     padding: 10px;
     padding-top: 80px;
 }
 
-#clubName {
+.clubName {
      font-size: 30px;
      color: #FFFFFF;
      padding: 10px;
  }
 
-#clubGenre {
+.clubGenre {
     color: black;
     padding: 10px;
 }
 
-#clubDesc {
+.clubDesc {
     color: black;
     padding: 10px;
 }
 
-#clubImage {
+.clubImage {
     float: right;
 }
 
-#clubSection {
+.clubSection {
     padding: 10px;
     width: 50%;
     color: white;
