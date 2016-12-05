@@ -80,7 +80,7 @@
 	display: block;
 }
 .nav ul li:hover{
-	width: 350px;
+	width: 50%;
 }
 
 /* Some extra CSS stuff */
