@@ -45,6 +45,7 @@
 /* Experimental Nav */
 @media screen{
 	.nav{
+
 		visibility: hidden;
 		clear: both;
 		float: left;
