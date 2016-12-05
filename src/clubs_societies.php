@@ -22,7 +22,7 @@
 </script>
 
 <!--Contains a list of all clubs w/ an associated profile photo -->
-<div id=clublist>
+<div id="clubList">
     <!--Facebook plugin-->
     <div class="fb-page" data-href="https://www.facebook.com/Sportlethen"
          data-tabs="timeline" data-width="400" data-height="600" data-small-header="false"
