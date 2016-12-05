@@ -15,7 +15,8 @@
     align-self: center;
     color: white;
     background-color: gray;
-    margin: 10px;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .clubName {
