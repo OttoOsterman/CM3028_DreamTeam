@@ -25,8 +25,11 @@
 		<p> this is where we will add text regarding what the website is all about </p>
 
 	<!--best photo of portlethen -->
+	
 		<div class="placeholder">
+			
 			<div class="myimage" style="background-image:"><img src="src/images/beachimage.jpg"/></div>
+			
 		</div>
 
 </body>
