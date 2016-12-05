@@ -23,6 +23,9 @@
 
 <body onload="load()">
 <?php include('scripts/navbar.php'); ?>
+
+<img src="/src/images/go-portlethen.jpg"/>
+
 <noscript>
 	<h1>Please enable javascript to access the maps feature of this website.</h1>
 </noscript>

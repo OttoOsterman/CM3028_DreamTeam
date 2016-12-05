@@ -10,6 +10,10 @@
 <body>
 <?php include('scripts/navbar.php') ?>
 
+
+<img src="/src/images/go-portlethen.jpg"/>
+
+
 <!--Facebook include script -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {

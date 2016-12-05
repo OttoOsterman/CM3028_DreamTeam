@@ -7,4 +7,7 @@
 
 <?php include('scripts/navbar.php'); ?>
 
+
+<img src="/src/images/go-portlethen.jpg"/>
+
 </body>
