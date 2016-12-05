@@ -23,6 +23,14 @@
 
 <!--Contains a list of all clubs w/ an associated profile photo -->
 <div id=clublist>
+    <!--Facebook plugin-->
+    <div class="fb-page" data-href="https://www.facebook.com/Sportlethen"
+         data-tabs="timeline" data-width="400" data-height="600" data-small-header="false"
+         data-adapt-container-width="true" data-hide-cover="false"
+         data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/Sportlethen" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/Sportlethen">Sportlethen CSH</a></blockquote>
+    </div>
 	<?php
 	$sql = "SELECT Club.club_id, Club.name, Club.genre, Club.description, Photo.photo_path, Photo.is_profile_photo FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id";
 	$result = $db->query($sql);
@@ -50,13 +58,5 @@
         }
 	}
 	?>
-    <!--Facebook plugin-->
-    <div class="fb-page" data-href="https://www.facebook.com/Sportlethen"
-         data-tabs="timeline" data-width="400" data-height="600" data-small-header="false"
-         data-adapt-container-width="true" data-hide-cover="false"
-         data-show-facepile="true">
-        <blockquote cite="https://www.facebook.com/Sportlethen" class="fb-xfbml-parse-ignore">
-            <a href="https://www.facebook.com/Sportlethen">Sportlethen CSH</a></blockquote>
-    </div>
 </div>
 </body>

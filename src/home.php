@@ -11,15 +11,15 @@
 
 <body>
 		<?php include('scripts/navbar.php') ?>
-	<!--<div id="welcome">
+	<div id="welcome">
 		<h1>
 			Welcome to Go Portlethen
 		</h1>
-	</div>-->
+	</div>
 
 		<div class="div1"><h2>Demo 1 - Menucool Image Slider</h2>
-			<p>Demos: <a href="demo1.html" class="current">1</a><a href="demo2.html">2</a><a href="demo3.html">3</a><a href="demo4.html">4</a>
-				<a href="demo5.html">5</a><a href="demo6.html">6</a><a href="demo7.html">7</a><a href="demo8.html">8</a></p>
+			<p>Demos: <a href="demo1.html" class="current">1</a><a href="demo2.html">2</a> <!--<a href="demo3.html">3</a><a href="demo4.html">4</a>
+				<a href="demo5.html">5</a><a href="demo6.html">6</a><a href="demo7.html">7</a><a href="demo8.html">8</a>--></p>
 		</div>
 		<div id="sliderFrame">
 			<div id="slider">
