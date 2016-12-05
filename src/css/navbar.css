@@ -74,13 +74,13 @@
 	-moz-transition: all 0.5s;
 }
 .nav ul:hover li {
-	width: 16%;
+	width: 20%;
 }
 .nav li img {
 	display: block;
 }
 .nav ul li:hover{
-	width: 50%;
+	width: 40%;
 }
 
 /* Some extra CSS stuff */
