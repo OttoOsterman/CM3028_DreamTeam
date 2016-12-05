@@ -12,7 +12,7 @@
 <body>
 		<?php include('scripts/navbar.php') ?>
 		
-			<img src="../src/images/go-portlethen.psd" width="95%" height="10%" title = "logo"/>
+			<img src="../src/images/go-portlethen.jpg" width=95%; height=10% ;title = "logo"/>
 
 
 </body>
