@@ -22,8 +22,12 @@
 
     if(isset($row["name"]) && $row["name"] !== null) {
         echo("
-            {$row["name"]}{$row["genre"]}{$row["description"]}{$row["contact_info"]}
-        ");
+        <section class='clubSection'>
+        <h1 class='clubName'>{$row["name"]}</h1>
+        <section class='clubGenre'>{$row["genre"]}</section>
+        <section class='clubDesc'>{$row["description"]}</section>
+        <section class='clubContact'>{$row["contact_info"]}</section>
+        </section>");
     } else {
         echo ("<h1>Club not found</h1>");
     }
