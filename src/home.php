@@ -23,7 +23,7 @@
 						<a href="about.html">About Us</a>
 					</div>
 					<a href="about.html">
-						<img src="images/hillside.jpg" alt="Group Photo">
+						<img src="../src/images/hillside.jpg" alt="Group Photo">
 					</a>
 				</li>
 				<li>
@@ -31,7 +31,7 @@
 						<a href="volunteer.html">Volunteer</a>
 					</div>
 					<a href="volunteer.html">
-						<img src="images/FishersOnCoast.jpg" alt="Child placing ball">
+						<img src="../src/images/FishersOnCoast.jpg" alt="Child placing ball">
 					</a>
 				</li>
 				<
@@ -40,7 +40,7 @@
 						<a href="news.html">News</a>
 					</div>
 					<a href="news.html">
-						<img src="img/RealHeroesCrop.jpg" alt="Winners of RBS Real Heroes 2014">
+						<img src="../src/images/p_club.png" alt="Winners of RBS Real Heroes 2014">
 					</a>
 				</li>
 				<!--
