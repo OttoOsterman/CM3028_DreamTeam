@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <head>
 <title>Clubs and Societies</title>
-<link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
-<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
-<link rel="stylesheet" type="text/css" href="./src/css/clubs_societies.css"/>
+<link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
+<link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
+<link rel="stylesheet" type="text/css" href="../src/css/clubs_societies.css"/>
 <!-- TODO: Remove testing code -->
 <?php include('scripts/db_connect_test.php') ?>
 </head>
@@ -50,6 +50,7 @@
         }
 	}
 	?>
+    <!--Facebook plugin-->
     <div class="fb-page" data-href="https://www.facebook.com/Sportlethen"
          data-tabs="timeline" data-width="400" data-height="600" data-small-header="false"
          data-adapt-container-width="true" data-hide-cover="false"
