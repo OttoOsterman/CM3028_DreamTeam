@@ -12,7 +12,10 @@
 .information{
 	width:400px;
 	height:600px;
-	text-align: left;
+	text-align: right;
 	font-family:Calibri;
-	font-size: 10px;
+	font-size: 20px;
+	padding-right: 10%;
+
+
 }
