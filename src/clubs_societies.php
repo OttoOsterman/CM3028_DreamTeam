@@ -15,8 +15,6 @@
 	$result = $db->query($sql);
 
 	while ($row = $result->fetch_array()) {
-        //TODO: Add check for display image
-        echo (substr($row['photo_path'], -12, -4));
         if (isset($row['photo_path']) && substr($row['photo_path'], -12, -4) == "_profile") {
             echo("
             <section class='clubSection'>
@@ -27,7 +25,7 @@
             </section>
 			");
         }
-        else {
+        else if (!(isset($row['photo_path']))) {
             echo("
 			<section class='clubSection'>
 			    <img class='clubImage' src='../src/images/placeholder.png'>
