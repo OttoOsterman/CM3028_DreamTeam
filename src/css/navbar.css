@@ -43,18 +43,18 @@
 }
 
 /* Experimental Nav */
-@media screen and (max-width: 2500px){
+@media screen and (max-width: 2000px){
 	.nav{
 		visibility: hidden;
 		clear: both;
 		float: left;
 		margin: 10px auto 5px 20px;
-		width: 28%;
+		width: 100%;
 		display: none;
 	}
 }
 .nav{
-	max-width: 2500px; height: 90px;
+	max-width: 2000px; height: 90px;
 	overflow: hidden;
 	padding: 0px;
 	margin: auto;
@@ -76,7 +76,9 @@
 .nav ul:hover li {
 	width: 200px;
 }
-
+.nav li img {
+	display: block;
+}
 .nav ul li:hover{
 	width: 450px;
 }
