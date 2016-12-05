@@ -15,5 +15,7 @@
 			
 </body>
 
+<!--image header-->
+<img src="/src/images/go-portlethen.jpg"/>
 
 </html>
