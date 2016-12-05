@@ -14,7 +14,7 @@
 		
 	<div id="welcome">
 		<h1>
-			Welcome to Go Portlethen
+			<img href="../src/images/go-portlethen.psd"
 		</h1>
 	</div>
 
