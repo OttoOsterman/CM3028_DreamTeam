@@ -1,11 +1,39 @@
 <?php
 echo('
-	<div id="navbar">
-	<ul id="navbarlist">
-		<li><a href="http://go-portlethen.azurewebsites.net/">Home</a></li>
-		<li><a href="http://go-portlethen.azurewebsites.net/clubs_societies">Clubs & Societies</a></li>
-		<li><a href="http://go-portlethen.azurewebsites.net/health_wellbeing">Health and Wellbeing</a></li>
-		<li><a href="http://go-portlethen.azurewebsites.net/map">Map</a></li>
+	<div class="nav">
+	<ul>
+		<li>
+			<div class="green slide">
+				<a href="http://go-portlethen.azurewebsites.net/">Home</a>
+			</div>
+			<a href="#">
+				<img src="">
+			</a>
+		</li>
+		<li>
+			<div class="yellow slide">
+				<a href="http://go-portlethen.azurewebsites.net/clubs_societies">Clubs & Societies</a>
+			</div>
+			<a href="#">
+				<img src="">
+			</a>
+		</li>
+		<li>
+			<div class="blue slide">
+				<a href="http://go-portlethen.azurewebsites.net/health_wellbeing">Health and Wellbeing</a>
+			</div>
+			<a href="#">
+				<img src="">
+			</a>
+		</li>
+		<li>
+			<div class="pink slide">
+				<a href="http://go-portlethen.azurewebsites.net/map">Map</a>
+			</div>
+			<a href="#">
+				<img src="">
+			</a>
+		</li>
 	</ul>
 		');
 if (isset($_SESSION[username])) {
