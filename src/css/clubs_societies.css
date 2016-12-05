@@ -32,4 +32,5 @@
     color: white;
     background-color: gray;
     margin: 10px;
+    overflow: auto;
 }
