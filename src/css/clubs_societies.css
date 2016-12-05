@@ -21,6 +21,8 @@
 
 .clubImage {
     float: right;
+    height: 150px;
+    width: 120px;
 }
 
 .clubSection {
