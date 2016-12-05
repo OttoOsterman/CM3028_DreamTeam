@@ -15,53 +15,30 @@
 			Welcome to Go Portlethen
 		</h1>
 	</div>
-		<!-- Navigation Slider -->
-		<div class="navSlider">
-			<ul>
-				<li>
-					<div class="about green slide">
-						<a href="about.html">About Us</a>
-					</div>
-					<a href="about.html">
-						<img src="../src/images/hillside.jpg" alt="Group Photo">
-					</a>
-				</li>
-				<li>
-					<div class="yellow slide">
-						<a href="volunteer.html">Volunteer</a>
-					</div>
-					<a href="volunteer.html">
-						<img src="../src/images/FishersOnCoast.jpg" alt="Child placing ball">
-					</a>
-				</li>
-				<
-				<li>
-					<div class="blue slide">
-						<a href="news.html">News</a>
-					</div>
-					<a href="news.html">
-						<img src="../src/images/p_club.png" alt="Winners of RBS Real Heroes 2014">
-					</a>
-				</li>
-				<!--
-				<li>
-					<div class="pink slide">
-						<a href="gallery.html">Gallery</a>
-					</div>
-					<a href="gallery.html">
-						<img src="img/HorseWalkCrop.jpg" alt="RDA Horse walkies">
-					</a>
-				</li>
-				<li>
-					<div class="purple slide">
-						<a href="contact.html">Contact Us</a>
-					</div>
-					<a href="contact">
-						<img src="img/AwardCrop.jpg" alt="Receiving RBS Real Heroes Award">
-					</a>
-				</li>
-				-->
-			</ul>
+
+		<div class="div1"><h2>Demo 1 - Menucool Image Slider</h2>
+			<p>Demos: <a href="demo1.html" class="current">1</a><a href="demo2.html">2</a><a href="demo3.html">3</a><a href="demo4.html">4</a>
+				<a href="demo5.html">5</a><a href="demo6.html">6</a><a href="demo7.html">7</a><a href="demo8.html">8</a></p>
 		</div>
+		<div id="sliderFrame">
+			<div id="slider">
+				<a href="http://www.menucool.com/javascript-image-slider" target="_blank">
+					<img src="images/image-slider-1.jpg" alt="Welcome to Menucool.com" />
+				</a>
+				<img src="../src/images/FishersOnCoast.jpg" />
+				<img src="images/hillside.jpg" alt="" />
+				<!--
+				<img src="images/image-slider-4.jpg" alt="#htmlcaption" />
+				<img src="images/image-slider-5.jpg" />
+				-->
+			</div>
+			<div id="htmlcaption" style="display: none;">
+				<em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
+			</div>
+		</div>
+
+		<div class="div2">
+
+
 </body>
 </html>
