@@ -10,12 +10,12 @@
 <?php include('scripts/navbar.php'); ?>
 
 <?php
-$sql = "SELECT News.news_id, news.title, Nesw.content, news.date FROM News";
+$sql = "SELECT News.news_id, News.title, News.content, News.date FROM News";
 $result = $db->query($sql);
 
 echo("
             <section class='newsSection'>
-                <img class='newsTitle' src={$row['title']}>
+                <section class='newsTitle'>{$row['title']}</section>
                 <h1 class='newsContent'>{$row['content']}</h1>
                 <div class='newsDate'>{$row['date']}</div>
             </section>
