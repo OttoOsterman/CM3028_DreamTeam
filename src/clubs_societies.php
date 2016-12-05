@@ -9,6 +9,8 @@
 </head>
 <body>
 <?php include('scripts/navbar.php') ?>
+
+<!--Facebook include script -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -16,7 +18,10 @@
         js = d.createElement(s); js.id = id;
         js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=985300261517338";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!--Contains a list of all clubs w/ an associated profile photo -->
 <div id=clublist>
 	<?php
 	$sql = "SELECT Club.club_id, Club.name, Club.genre, Club.description, Photo.photo_path, Photo.is_profile_photo FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id";
@@ -50,6 +55,7 @@
          data-adapt-container-width="true" data-hide-cover="false"
          data-show-facepile="true">
         <blockquote cite="https://www.facebook.com/Sportlethen" class="fb-xfbml-parse-ignore">
-            <a href="https://www.facebook.com/Sportlethen">Sportlethen CSH</a></blockquote></div>
+            <a href="https://www.facebook.com/Sportlethen">Sportlethen CSH</a></blockquote>
+    </div>
 </div>
 </body>
