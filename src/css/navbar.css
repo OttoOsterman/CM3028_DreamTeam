@@ -74,13 +74,13 @@
 	-moz-transition: all 0.5s;
 }
 .nav ul:hover li {
-	width: 17.5%;
+	width: 18.75%;
 }
 .nav li img {
 	display: block;
 }
 .nav ul li:hover{
-	width: 30%;
+	width: 25%;
 }
 
 /* Some extra CSS stuff */
@@ -109,7 +109,7 @@
 .slide{
 	position: absolute;
 	left: 0; top: -90px;
-	width: 800px;
+	width: 700px;
 }
 .slide a{
 	display:block;
