@@ -15,7 +15,8 @@
 	$result = $db->query($sql);
 
 	while ($row = $result->fetch_array()) {
-        if (isset($row['photo_path'])) {
+        //TODO: Add check for display image
+        if (isset($row['photo_path']) && $row['photo_path']) {
             echo("
             <section class='clubSection'>
                 <img class='clubImage' src={$row['photo_path']}>
