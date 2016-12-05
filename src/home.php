@@ -11,6 +11,7 @@
 
 <body>
 		<?php include('scripts/navbar.php') ?>
+		
 	<div id="welcome">
 		<h1>
 			Welcome to Go Portlethen
