@@ -12,10 +12,10 @@
 <body>
 		<?php include('scripts/navbar.php') ?>
 		
-			
-</body>
+		
+		<img src="/src/images/go-portlethen.jpg"/>
 
-<!--image header-->
-<img src="/src/images/go-portlethen.jpg"/>
+
+</body>
 
 </html>
