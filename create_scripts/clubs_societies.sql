@@ -5,7 +5,7 @@ SET FOREIGN_KEY_CHECKS=1;
 CREATE TABLE Club (club_id int NOT NULL AUTO_INCREMENT, name nvarchar(255) NOT NULL, genre nvarchar(50), description text, contact_info nvarchar(255),
 	CONSTRAINT pk_club_id PRIMARY KEY (club_id), CHECK (genre in ('placeholder')));
 
-CREATE TABLE Photo (photo_id int NOT NULL AUTO_INCREMENT, photo_path nvarchar(255), is_photo_id tinyint(1) NOT NULL, club_id int NOT NULL, CONSTRAINT pk_photo_id PRIMARY KEY (photo_id),
+CREATE TABLE Photo (photo_id int NOT NULL AUTO_INCREMENT, photo_path nvarchar(255), is_profile_photo tinyint(1) NOT NULL, club_id int NOT NULL, CONSTRAINT pk_photo_id PRIMARY KEY (photo_id),
   CONSTRAINT photo_fk_club_id FOREIGN KEY (club_id) REFERENCES Club (club_id));
 
 CREATE TABLE Event (event_id int NOT NULL AUTO_INCREMENT, name nvarchar(255) NOT NULL, description text, date DATETIME NOT NULL,

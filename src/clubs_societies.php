@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<title>Clubs</title>
+<title>Clubs and Societies</title>
 <link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
 <link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
 <link rel="stylesheet" type="text/css" href="./src/css/clubs_societies.css"/>
@@ -19,11 +19,11 @@
     }(document, 'script', 'facebook-jssdk'));</script>
 <div id=clublist>
 	<?php
-	$sql = "SELECT Club.club_id, Club.name, Club.genre, Club.description, Photo.photo_path FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id";
+	$sql = "SELECT Club.club_id, Club.name, Club.genre, Club.description, Photo.photo_path, Photo.is_profile_photo FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id";
 	$result = $db->query($sql);
 
 	while ($row = $result->fetch_array()) {
-        if (isset($row['photo_path']) && substr($row['photo_path'], -12, -4) == "_profile") {
+        if (isset($row['photo_path']) && $row['is_profile_photo'] == '1') {
             echo("
             <section class='clubSection'>
                 <img class='clubImage' src={$row['photo_path']}>
