@@ -19,9 +19,8 @@
 </div>
 	
 <div class="information">
-	<center>
-		<h3> "<<insert text here>> <<insert text here>> <<insert text here>> <<insert text here>> <<insert text here>> <<insert text here>> <<insert text here>> <<insert text here>> <<insert text here></h3>
-	</center>
+
+		<p> some text </p>
 
 </div>
 

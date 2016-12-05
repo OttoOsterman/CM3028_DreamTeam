@@ -12,5 +12,7 @@
 .information{
 	width:400px;
 	height:600px;
-
+	text-align: left;
+	font-family:Calibri;
+	font-size: 10px;
 }
