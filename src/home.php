@@ -10,19 +10,24 @@
 </head>
 
 <body>
+<!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
 		
 <div class="banner">
-	
+	<!--Main banner-->
 	<img src="/src/images/go-portlethen.jpg" style="width:80%";/>
 	
 </div>
-	
+
+<!-- about the website section-->
 <div class="information">
 
-		<p> some text </p>
+		<p> this is where we will add text regarding what the website is all about </p>
 
-</div>
+	<!--best photo of portlethen -->
+		<div class="placeholder">
+			<div class="myimage" style="background-image:"><img src="src/images/beachimage.jpg"/></div>
+		</div>
 
 </body>
 
