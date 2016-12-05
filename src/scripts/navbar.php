@@ -3,7 +3,7 @@ echo('
 	<div class="nav">
 	<ul>
 		<li>
-			<div class="green slide">
+			<div class="about green slide">
 				<a href="http://go-portlethen.azurewebsites.net/">Home</a>
 			</div>
 			<a href="#">
@@ -29,6 +29,14 @@ echo('
 		<li>
 			<div class="pink slide">
 				<a href="http://go-portlethen.azurewebsites.net/map">Map</a>
+			</div>
+			<a href="#">
+				<img src="">
+			</a>
+		</li>
+		<li>
+			<div class="purple slide">
+				<a href="#">Login</a>
 			</div>
 			<a href="#">
 				<img src="">
