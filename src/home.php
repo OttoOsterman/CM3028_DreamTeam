@@ -34,7 +34,7 @@
 						<img src="images/FishersOnCoast.jpg" alt="Child placing ball">
 					</a>
 				</li>
-				<!--
+				<
 				<li>
 					<div class="blue slide">
 						<a href="news.html">News</a>
@@ -43,6 +43,7 @@
 						<img src="img/RealHeroesCrop.jpg" alt="Winners of RBS Real Heroes 2014">
 					</a>
 				</li>
+				<!--
 				<li>
 					<div class="pink slide">
 						<a href="gallery.html">Gallery</a>
