@@ -16,7 +16,8 @@
 
 	while ($row = $result->fetch_array()) {
         //TODO: Add check for display image
-        if (isset($row['photo_path']) && $row['photo_path']) {
+        echo (substr($row['photo_path'], -12, -4));
+        if (isset($row['photo_path']) && substr($row['photo_path'], -12, -4) == "_profile") {
             echo("
             <section class='clubSection'>
                 <img class='clubImage' src={$row['photo_path']}>
