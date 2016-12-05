@@ -35,9 +35,9 @@
         <section class='clubGenre'>{$row["genre"]}</section>
         <section class='clubDesc'>{$row["description"]}</section>
         <section class='clubContact'>{$row["contact_info"]}</section>
-        <img src='{$row['photo_path']}'>");
+        <img class='clubImage' src='{$row['photo_path']}'>");
         while ($row = $results->fetch_array()) {
-            echo("<img src='{$row['photo_path']}'>");
+            echo("<img class='clubImage' src='{$row['photo_path']}'>");
         }
         echo "</section>";
     } else {
