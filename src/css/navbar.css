@@ -76,9 +76,7 @@
 .nav ul:hover li {
 	width: 200px;
 }
-.nav li img {
-	display: block;
-}
+
 .nav ul li:hover{
 	width: 450px;
 }
