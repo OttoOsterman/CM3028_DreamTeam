@@ -31,11 +31,12 @@
     if(isset($row["name"]) && $row["name"] !== null) {
         echo("
         <section class='clubSection'>
+        <img class='clubImage' src='{$row['photo_path']}'>
         <h1 class='clubName'>{$row["name"]}</h1>
         <section class='clubGenre'>{$row["genre"]}</section>
         <section class='clubDesc'>{$row["description"]}</section>
         <section class='clubContact'>{$row["contact_info"]}</section>
-        <img class='clubImage' src='{$row['photo_path']}'>");
+        ");
         while ($row = $results->fetch_array()) {
             echo("<img class='clubImage' src='{$row['photo_path']}'>");
         }
