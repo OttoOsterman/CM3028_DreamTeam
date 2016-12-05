@@ -12,8 +12,12 @@
 <body>
 		<?php include('scripts/navbar.php') ?>
 		
-		
-		<img src="/src/images/go-portlethen.jpg"/>
+<div class="banner">
+	
+	<img src="/src/images/go-portlethen.jpg"/>
+	
+</div>
+	
 
 
 </body>

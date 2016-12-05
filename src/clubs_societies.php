@@ -10,9 +10,10 @@
 <body>
 <?php include('scripts/navbar.php') ?>
 
+<div class="banner">
+    <img src="/src/images/go-portlethen.jpg"/>
 
-<img src="/src/images/go-portlethen.jpg"/>
-
+</div>
 
 <!--Facebook include script -->
 <div id="fb-root"></div>
