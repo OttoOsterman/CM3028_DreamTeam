@@ -2,13 +2,10 @@
 
 #welcome {
 	display: flex;
-	color: #FFFFFF;
+	color: #040404;
 	align-content: center;
 	justify-content: center;
 	padding-top: 100px;
 	width: 100%;
 }
 
-body {
-	background: rgba(216, 255, 211, 0);
-}
