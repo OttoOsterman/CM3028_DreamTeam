@@ -34,3 +34,7 @@
     margin: 10px;
     overflow: auto;
 }
+
+.fb-page {
+    float: right;
+}
