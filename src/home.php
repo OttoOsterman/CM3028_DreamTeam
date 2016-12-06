@@ -22,10 +22,12 @@
 	</center>
 </div>
 
-<!-- about the website section-->
+<!-- about the website section
+
 <div class="information">
 
 		<p> this is where we will add text regarding what the website is all about </p>
+-->
 
 	<!--best photo of portlethen -->
 	<div id="container">
