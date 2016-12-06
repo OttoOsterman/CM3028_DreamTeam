@@ -15,11 +15,11 @@
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
 
-<center>
+
 	<!--Main banner-->
 	
 <div class="banner">
-	<img src="/src/images/go-portlethen.jpg"/>
+	<img src="/src/images/go-portlethen.jpg" style= "width:100%"/>
 </div>
 
 
@@ -38,7 +38,7 @@
 		
 	</div>	
 	
-</center>
+
 </body>
 
 </html>
