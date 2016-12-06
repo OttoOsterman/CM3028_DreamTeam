@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html onload="slideAuto()">
+<html>
 <head>
 	<meta charset="utf-8">
 	<title>Home</title>
@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body onload="">
 
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
@@ -25,6 +25,7 @@
 
 	<!--best photo of portlethen -->
 	<div id="container">
+		
 		<img id="img" src="/src/imageSlider/img.jpg"/>
 		
 		<div id=left_holder">
