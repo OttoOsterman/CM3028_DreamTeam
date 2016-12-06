@@ -6,7 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="./src/css/home.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
-	
+	<link rel="javascript" type="text/javascript" href="./src/javaScript/general.js"/>
+
 </head>
 
 <body>
@@ -15,8 +16,9 @@
 		
 <div class="banner">
 	<!--Main banner-->
-	<img src="/src/images/go-portlethen.jpg" style="width:80%";/>
-	
+	<center>
+	<img src="/src/images/go-portlethen.jpg" style="width:100%";/>
+	</center>
 </div>
 
 <!-- about the website section-->
@@ -25,12 +27,12 @@
 		<p> this is where we will add text regarding what the website is all about </p>
 
 	<!--best photo of portlethen -->
-	
-		<div class="placeholder">
-			
-			<div class="myimage" style="background-image:"><img src="src/images/beachimage.jpg"/></div>
-			
+	<div id="container">
+		<img id="img" src="/src/imageSlider/img.jpg"/>
+		<div id=left_holder"><img onClick="slide(-1)" class="left" src="/src/imageSlider/left.png"/> </div>
+		<div id="right_holder"><img onClick="slide(1)" class="right" src="/src/imageSlider/right.png"/><div>
 		</div>
+
 
 </body>
 
