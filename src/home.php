@@ -18,9 +18,9 @@
 
 <!-- logo -->
 <div class="banner">
-	<center>
+
 	<img src="/src/images/go-portlethen.jpg" style="width:100%";/>
-	</center>
+
 </div>
 
 
