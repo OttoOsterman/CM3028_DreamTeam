@@ -14,29 +14,31 @@
 
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
-		
+
+<center>	
+	
 <div class="banner">
 	<!--Main banner-->
-	<center>
+	
 	<img src="/src/images/go-portlethen.jpg" style="width:100%";/>
-	</center>
+	
 </div>
 
-<!-- about the website section
-
-<div class="information">
-
-		<p> this is where we will add text regarding what the website is all about </p>
--->
 
 	<!--best photo of portlethen -->
 	<div id="container">
 		<img id="img" src="/src/imageSlider/img.jpg"/>
-		<div id=left_holder"><img onClick="slide(-1)" class="left" src="/src/imageSlider/left.png"/> </div>
-		<div id="right_holder"><img onClick="slide(1)" class="right" src="/src/imageSlider/right.png"/><div>
+		
+		<div id=left_holder">
+			<img onClick="slide(-1)" class="left" src="/src/imageSlider/left.png"/> 
+		</div>
+		
+		<div id="right_holder">
+			<img onClick="slide(1)" class="right" src="/src/imageSlider/right.png"/>
+			<div>
 		</div>
 
-
+</center>
 </body>
 
 </html>
