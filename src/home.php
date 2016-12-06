@@ -15,13 +15,11 @@
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
 
-<center>	
-	
-<div class="banner">
+<center>
 	<!--Main banner-->
 	
-	<img src="/src/images/go-portlethen.jpg" style="width:100%";/>
-	
+<div class="banner">
+	<img src="/src/images/go-portlethen.jpg"/>
 </div>
 
 
@@ -35,9 +33,10 @@
 		
 		<div id="right_holder">
 			<img onClick="slide(1)" class="right" src="/src/imageSlider/right.png"/>
-			<div>
 		</div>
-
+		
+	</div>	
+	
 </center>
 </body>
 
