@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html onload="slideAuto()">
 <head>
 	<meta charset="utf-8">
 	<title>Home</title>
@@ -10,34 +10,27 @@
 
 </head>
 
-<body onload="">
+<body>
 
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
 
 
-	<!--Main banner-->
-	
+<!-- logo -->
 <div class="banner">
-	<img src="/src/images/go-portlethen.jpg" style= "width:100%"/>
+	<center>
+	<img src="/src/images/go-portlethen.jpg" style="width:100%";/>
+	</center>
 </div>
 
 
 	<!--best photo of portlethen -->
 	<div id="container">
-		
 		<img id="img" src="/src/imageSlider/img.jpg"/>
-		
-		<div id=left_holder">
-			<img onClick="slide(-1)" class="left" src="/src/imageSlider/left.png"/> 
+		<div id=left_holder"><img onClick="slide(-1)" class="left" src="/src/imageSlider/left.png"/> </div>
+		<div id="right_holder"><img onClick="slide(1)" class="right" src="/src/imageSlider/right.png"/><div>
 		</div>
-		
-		<div id="right_holder">
-			<img onClick="slide(1)" class="right" src="/src/imageSlider/right.png"/>
-		</div>
-		
-	</div>	
-	
+
 
 </body>
 
