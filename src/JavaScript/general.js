@@ -3,19 +3,33 @@
  */
 
     var imageCount = 1;
-    var total = 5;
+    var total = 2;
 
 
 function slide(x) {
-    var total = 2;
     var Image = document.getElementById('img');
-    imageCount = imagecount+x;
-    if(imageCount > total){
-        imageCount = 1;
-    }
-    if(imageCount < 1 ){
-        imagecount = total;
-    }
-    Image.src="/src/imageSlider/img" +imagecount + ".jpg"
+
+    imageCount = imageCount+x;
+
+    if(imageCount > total){imageCount = 1;}
+
+    if(imageCount < 1 ){imageCount = total;}
+
+    Image.src="/src/imageSlider/img" +imageCount + ".jpg";
 }
+
+window.setInterval(function slideAuto(){
+    
+    var Image = document.getElementById('img');
+
+    imageCount = imageCount+1;
+
+    if(imageCount > total){imageCount = 1;}
+
+    if(imageCount < 1 ){imageCount = total;}
+
+    Image.src="/src/imageSlider/img" +imageCount + ".jpg";
+    
+},5000);
+
 
