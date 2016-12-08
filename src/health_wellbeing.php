@@ -16,8 +16,8 @@
 
 <div id="healthSection">
     <div class="staticInfoContainer">
-        <h1 id="staticInfoHeader">
-            Bacon is good for you
+        <h1 class="staticInfoHeader">
+            Bacon Is Good For You
         </h1>
         Spicy jalapeno bacon ipsum dolor amet ham doner labore dolor veniam flank tempor. Deserunt burgdoggen ad
         porchetta sunt pastrami boudin sed magna corned beef nisi. Lorem pastrami ullamco jerky tongue officia laborum
@@ -34,7 +34,7 @@
         aute excepteur id esse turducken proident short ribs cow commodo nostrud ham frankfurter ut.
     </div>
     <div class="staticInfoContainer">
-        <h1 id="staticInfoHeader">
+        <h1 class="staticInfoHeader">
             Annual Bacon Eating Contest 20.1.2017
         </h1>
         Spicy jalapeno bacon ipsum dolor amet ham doner labore dolor veniam flank tempor. Deserunt burgdoggen ad
