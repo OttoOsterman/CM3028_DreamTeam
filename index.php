@@ -9,6 +9,7 @@ $rules = array(
 		'scripts/locations' => "/locations",
 		'scripts/login' => '/login',
 		'scripts/logout' => '/logout',
+        'scripts/locations' => '/location_data',
 
 		'home' => '/',
 		'clubs_societies' => '/clubs_societies',
