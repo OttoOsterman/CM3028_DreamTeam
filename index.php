@@ -14,7 +14,8 @@ $rules = array(
 		'clubs_societies' => '/clubs_societies',
         'club' => '/club/(?\'club_id\'[\w\-]+)',
 		'health_wellbeing' => '/health_wellbeing',
-		'map' => '/map'
+		'map' => '/map',
+        'signup' => '/signup'
 );
 
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
