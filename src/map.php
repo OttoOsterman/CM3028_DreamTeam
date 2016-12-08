@@ -47,7 +47,8 @@
 						parseFloat(markers[i].getAttribute("lng"))
 					);
 					var name = markers[i].getAttribute("name");
-					var html = "<b>" + name + "</b>";
+					var html = "<h1>" + name + "</h1>";
+					html += "<br/><div>" + markers[i].getAttribute("description") + "</div>"
 					var media = markers[i].childNodes;
 					for (var iterator = 0; iterator < media.length; iterator++) {
 						html += "<br/><img src='";
