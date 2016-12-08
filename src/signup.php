@@ -34,7 +34,7 @@ if (isset($_SESSION["username"])) {
 		$sql = "SELECT username FROM User WHERE username = '{$username}'";
 		echo($sql);
 		$result = $db->query($sql);
-		echo($result);
+		echo("Working");
 		if ($result->num_rows > 0) {
 			echo("<h2>This e-mail is already in use.</h2>");
 		} else {
