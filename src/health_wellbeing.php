@@ -20,6 +20,8 @@
 <!-- Container for health and wellbeing content -->
 <div id="healthWellbeing">
 
+    <h1 id="pageHeader">Health and Wellbeing</h1>
+
     <!-- Static information about health and wellbeing -->
     <div id="staticHealthSection">
         <!-- Container for a static information article -->
@@ -71,30 +73,6 @@
 
     <!-- Dynamic news section that pulls news articles and events from the database -->
     <div id="dynamicNewsSection">
-        <!-- Container for a single news/event article -->
-        <div class="dynamicNewsContainer">
-            <!-- Header for a single news/event article -->
-            <h1 class="dynamicNewsTitle">
-                Can't Wait For Christmas Turkey
-            </h1>
-            Spicy jalapeno bacon ipsum dolor amet ham doner labore dolor veniam flank tempor. Deserunt burgdoggen ad
-            porchetta sunt pastrami boudin sed magna corned beef nisi. Lorem pastrami ullamco jerky tongue officia
-            laborum
-            in tempor beef ribs magna turkey. Lorem dolore incididunt, leberkas filet mignon swine shank.
-
-            Flank deserunt doner, velit t-bone landjaeger leberkas. Doner veniam strip steak, est turkey tempor proident
-            sint pork loin andouille voluptate. Tenderloin shoulder nulla burgdoggen ground round reprehenderit boudin
-            mollit cupim pancetta tri-tip consectetur filet mignon salami in. Kielbasa in ground round frankfurter.
-            Shankle
-            aliquip doner, brisket in enim pork chop.
-
-            Strip steak beef ribs lorem aliqua leberkas short ribs commodo proident pork chop tenderloin esse laborum
-            ex.
-            Salami frankfurter alcatra duis. Ex beef nulla proident eu dolore tenderloin beef ribs shank nostrud anim
-            turkey. Bacon fatback shank velit, ex proident tri-tip minim. Turkey cupim exercitation ut. Chuck spare ribs
-            aute excepteur id esse turducken proident short ribs cow commodo nostrud ham frankfurter ut.
-        </div>
-
 
         <?php
         $sql = "SELECT News.news_id, News.title, News.content, News.date FROM News";
@@ -102,7 +80,9 @@
 
         while ($row = $result->fetch_array()) {
                 echo("
+            <!-- Container for a single news/event article -->
             <div class='dynamicNewsContainer'>
+                <!-- Get header for a single news/event article -->
                 <h1 class='dynamicNewsTitle'><a href='news/{$row['news_id']}'>{$row['title']}</a></h1>
                 <div class='newsContent'>{$row['content']}</div>
                 <div class='newsDate'>{$row['date']}</div>
@@ -110,7 +90,6 @@
 			");
         }
         ?>
-
 
     </div>
 

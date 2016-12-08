@@ -1,6 +1,12 @@
 #healthWellbeing {
     width: 1800px;
+    margin: auto;
 }
+
+#pageHeader {
+    margin: auto;
+}
+
 #staticHealthSection, #dynamicNewsSection {
     padding: 40px;
     width: 700px;
@@ -26,5 +32,9 @@
 }
 
 .dynamicNewsTitle {
+    padding: 10px;
+}
+
+.newsDate {
     padding: 10px;
 }
