@@ -102,11 +102,12 @@
         <h1 class="sectionHeader">Events</h1>
 
         <?php
-        $sql = "SELECT Event.event_id, Event.name, Event.description, Event.date FROM Event";
+        $sql = "SELECT Event.event_id, Event.name, Event.description, Event.date FROM Event WHERE Event.date > CURRENT_DATE - INTERVAL 7 DAY";
         $result = $db->query($sql);
 
         while ($row = $result->fetch_array()) {
-            echo("
+
+                echo("
             <!-- Container for a single event -->
             <div class='dynamicEventContainer'>
                 <!-- Get header for a single event -->
