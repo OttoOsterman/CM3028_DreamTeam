@@ -17,6 +17,7 @@
     width: 80%;
     background-color: grey;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 .staticInfoContainer, .dynamicNewsContainer, .dynamicEventContainer {
