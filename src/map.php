@@ -48,10 +48,10 @@
 					);
 					var name = markers[i].getAttribute("name");
 					var html = "<b>" + name + "</b>";
-					var media = markers[i].getElementsByTagName("media");
+					var media = markers[i].childNodes;
 					for (var iterator = 0; iterator < media.length; iterator++) {
 						html += "<br/><img src='";
-						html += media.getAttribute("path");
+						html += media[iterator].getAttribute("path");
 						html += "'></img>"
 					}
 					var marker = new google.maps.Marker({
