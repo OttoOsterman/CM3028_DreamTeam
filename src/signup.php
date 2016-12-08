@@ -31,7 +31,7 @@ if (isset($_SESSION["username"])) {
 		echo($_POST["username"]);
         $username = $_POST["username"];
         $username = stripslashes($username);
-        $username = mysqli_real_escape_string($username);
+        $username = mysqli_real_escape_string($db, $username);
 
 		$sql = "SELECT username FROM User WHERE username = {$username}";
 		$result = $db->query($sql);
