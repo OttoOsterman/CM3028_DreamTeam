@@ -71,7 +71,7 @@
         </div>
     </div>
 
-    <!-- Dynamic news section that pulls news articles and events from the database -->
+    <!-- Dynamic news section that pulls news articles from the database -->
     <div id="dynamicNewsSection">
 
         <?php
@@ -80,12 +80,34 @@
 
         while ($row = $result->fetch_array()) {
                 echo("
-            <!-- Container for a single news/event article -->
+            <!-- Container for a single news article -->
             <div class='dynamicNewsContainer'>
-                <!-- Get header for a single news/event article -->
+                <!-- Get header for a single news article -->
                 <h1 class='dynamicNewsTitle'><a href='news/{$row['news_id']}'>{$row['title']}</a></h1>
                 <div class='newsContent'>{$row['content']}</div>
                 <div class='newsDate'>{$row['date']}</div>
+            </div>
+			");
+        }
+        ?>
+
+    </div>
+
+    <!-- Dynamic events section that pulls events from the database -->
+    <div id="dynamicEventsSection">
+
+        <?php
+        $sql = "SELECT Events.event_id, Event.name, Event.description, Event.date FROM Event";
+        $result = $db->query($sql);
+
+        while ($row = $result->fetch_array()) {
+            echo("
+            <!-- Container for a single event -->
+            <div class='dynamicEventContainer'>
+                <!-- Get header for a single event -->
+                <h1 class='dynamicEventName'><a href='news/{$row['event_id']}'>{$row['name']}</a></h1>
+                <div class='eventDescription'>{$row['description']}</div>
+                <div class='eventDate'>{$row['date']}</div>
             </div>
 			");
         }
