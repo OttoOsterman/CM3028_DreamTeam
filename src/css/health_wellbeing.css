@@ -1,16 +1,11 @@
-#staticHealthSection {
-    padding: 40px;
-    width: 40%;
-    background-color: grey;
-    margin: 10px;
+#healthWellbeing {
+    width: 1500px;
 }
-
-#dynamicNewsSection {
+#staticHealthSection, #dynamicNewsSection {
     padding: 40px;
-    width: 40%;
+    width: 600px;
     background-color: grey;
     margin: 10px;
-    float: right;
 }
 
 .staticInfoContainer {
