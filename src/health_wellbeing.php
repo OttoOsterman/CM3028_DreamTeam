@@ -14,6 +14,7 @@
 
 </div>
 
+<div id="healthWellbeing">
 <!-- Static information about health and wellbeing -->
 <div id="staticHealthSection">
     <!-- Container for a static information article -->
@@ -75,6 +76,7 @@
         turkey. Bacon fatback shank velit, ex proident tri-tip minim. Turkey cupim exercitation ut. Chuck spare ribs
         aute excepteur id esse turducken proident short ribs cow commodo nostrud ham frankfurter ut.
     </div>
+</div>
 </div>
 
 </body>
