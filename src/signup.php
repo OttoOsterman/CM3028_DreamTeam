@@ -33,14 +33,16 @@ if (isset($_SESSION["username"])) {
         $username = stripslashes($username);
         $username = mysqli_real_escape_string($username);
 
-		echo($username);
-        $getusername = $db->prepare("SELECT username FROM User WHERE username = ?");
-        $getusername->bind_param("s", $username);
-        $getusername->execute();
-        $getusername->bind_result($result);
-        $getusername->fetch();
-
-        echo("Result is " . $result);
+		$sql = "SELECT username FROM User WHERE username = {$username}";
+		$result = $db->query($sql);
+		if (@mysql_num_rows($result) > 0) {
+			echo("<h2>This e-mail is already in use.</h2>");
+		} else {
+			$password = $_POST["password"];
+			$salt = date('U');
+			$password_hash = hash('sha256', $password . $salt);
+			$sql = "INSERT INTO User (username, hash, salt, acc_type) VALUES ('{$username}', '{$password_hash}', '{$salt}', 'general_user')";
+		}
     }
 }
 ?>
