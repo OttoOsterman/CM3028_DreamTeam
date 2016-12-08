@@ -102,7 +102,7 @@
         <h1 class="sectionHeader">Events</h1>
 
         <?php
-        $sql = "SELECT Event.event_id, Event.name, Event.description, Event.date FROM Event WHERE Event.date > CURRENT_DATE - INTERVAL 7 DAY";
+        $sql = "SELECT Event.event_id, Event.name, Event.description, Event.date FROM Event WHERE Event.date > {time() - 604800}";
         $result = $db->query($sql);
 
         while ($row = $result->fetch_array()) {
