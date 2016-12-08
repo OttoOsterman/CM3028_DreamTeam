@@ -28,6 +28,7 @@ if (isset($_SESSION["username"])) {
 		echo("Working");
         //TODO: REMOVE TESTING CODE
         include("scripts/db_connect_test.php");
+		echo($_POST["username"]);
         $username = $_POST["username"];
         $username = stripslashes($username);
         $username = mysqli_real_escape_string($username);
