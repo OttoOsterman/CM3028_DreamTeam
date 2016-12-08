@@ -4,14 +4,14 @@
 }
 
 #pageHeader {
-    margin: auto;
+    text-align: center;
 }
 
 #staticHealthSection, #dynamicNewsSection {
     padding: 40px;
     width: 700px;
     background-color: grey;
-    margin: 10px;
+    margin: 20px;
     float: left;
 }
 
