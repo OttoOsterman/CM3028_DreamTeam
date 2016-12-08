@@ -102,16 +102,10 @@
         <h1 class="sectionHeader">Events</h1>
 
         <?php
-        $sql = "SELECT Event.event_id, Event.name, Event.description, Event.date FROM Event";
+        $sql = "SELECT Event.event_id, Event.name, Event.description, Event.date FROM Event WHERE Event.date > {time() - 604800}";
         $result = $db->query($sql);
 
         while ($row = $result->fetch_array()) {
-
-            $date = new DateTime('-1 week');
-            $date = $date->format('Y-m-d H:i:s');
-
-            if($row['date'] <$date ) {
-
 
                 echo("
             <!-- Container for a single event -->
@@ -122,7 +116,6 @@
                 <div class='eventDate'>{$row['date']}</div>
             </div>
 			");
-            }
         }
         ?>
 
