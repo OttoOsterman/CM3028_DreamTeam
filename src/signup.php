@@ -38,6 +38,7 @@ if (isset($_SESSION["username"])) {
 		if ($result->num_rows > 0) {
 			echo("<h2>This e-mail is already in use.</h2>");
 		} else {
+			echo('working');
 			$password = $_POST["password"];
 			$salt = date('U');
 			$password_hash = hash('sha256', $password . $salt);
