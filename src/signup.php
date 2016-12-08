@@ -24,7 +24,7 @@ if (isset($_SESSION["username"])) {
                 <button type='submit'>Submit</button>
             </form>
         ");
-    if($POST) {
+    if($_SERVER['REQUEST_METHOD'] === 'POST') {
 		echo("Working");
         //TODO: REMOVE TESTING CODE
         include("db_connect_test.php");
