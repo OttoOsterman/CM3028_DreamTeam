@@ -28,6 +28,7 @@ while($row = $result->fetch_array()) {
             $media_node->setAttribute("path", $media_row["media_path"]);
         }
     }
+    mysqli_data_seek($media_row, 0);
 }
 
 $result->close();

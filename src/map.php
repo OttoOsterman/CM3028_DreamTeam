@@ -48,7 +48,7 @@
 					);
 					var name = markers[i].getAttribute("name");
 					var html = "<b>" + name + "</b>";
-					var media = xml.documentElement.getElementsByTagName("media");
+					var media = markers[i].childNodes[0];
 					for (var iterator = 0; iterator < media.length; iterator++) {
 						html += "<br/><img src='";
 						html += media.getAttribute("path");
