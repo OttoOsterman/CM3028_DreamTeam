@@ -11,6 +11,8 @@ $result = $db->query($query);
 if(!$result) {
 	die("Nothing in result: ");
 }
+$media_query = "SELECT media_path, location_id FROM Media";
+$media_result = $db->query($media_query);
 
 header("Content-type: text/xml");
 while($row = $result->fetch_array()) {
@@ -19,6 +21,14 @@ while($row = $result->fetch_array()) {
     $new_node->setAttribute("name", $row["name"]);
     $new_node->setAttribute("lat", $row["latitude"]);
     $new_node->setAttribute("lng", $row["longitude"]);
+    $new_node->setAttribute("description", $row["description"]);
+    $new_node->setAttribute("media", "");
+    while($media_row = $media_result->fetch_array()) {
+        if ($media_row["location_id"] == $row["location_id"]) {
+            $media_node = $new_node->appendChild($dom->createElement("media"));
+            $media_node->setAttribute("path", $media_row["media_path"]);
+        }
+    }
 }
 
 $result->close();
