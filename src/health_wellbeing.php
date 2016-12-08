@@ -97,7 +97,7 @@
     <div id="dynamicEventsSection">
 
         <?php
-        $sql = "SELECT Events.event_id, Event.name, Event.description, Event.date FROM Event";
+        $sql = "SELECT Event.event_id, Event.name, Event.description, Event.date FROM Event";
         $result = $db->query($sql);
 
         while ($row = $result->fetch_array()) {
@@ -105,7 +105,7 @@
             <!-- Container for a single event -->
             <div class='dynamicEventContainer'>
                 <!-- Get header for a single event -->
-                <h1 class='dynamicEventName'><a href='news/{$row['event_id']}'>{$row['name']}</a></h1>
+                <h1 class='dynamicEventName'><a href='event/{$row['event_id']}'>{$row['name']}</a></h1>
                 <div class='eventDescription'>{$row['description']}</div>
                 <div class='eventDate'>{$row['date']}</div>
             </div>
