@@ -8,12 +8,13 @@
 
 <?php include('scripts/navbar.php'); ?>
 
-<section id="healthSection">
-
-</section>
-
 <div class="banner">
 	<img src="/src/images/go-portlethen.jpg"/>
 
 </div>
+
+<div id="healthSection">
+
+</div>
+
 </body>
