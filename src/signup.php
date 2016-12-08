@@ -32,6 +32,7 @@ if (isset($_SESSION["username"])) {
         $username = stripslashes($username);
         $username = mysqli_real_escape_string($username);
 
+		echo($username);
         $getusername = $db->prepare("SELECT username FROM User WHERE username = ?");
         $getusername->bind_param("s", $username);
         $getusername->execute();
