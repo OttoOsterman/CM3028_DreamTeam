@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-#staticHealthSection, #dynamicNewsSection {
+#staticHealthSection, #dynamicNewsSection, #dynamicEventsSection {
     padding: 40px;
     width: 700px;
     background-color: grey;
