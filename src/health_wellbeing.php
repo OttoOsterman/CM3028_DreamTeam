@@ -106,7 +106,14 @@
         $result = $db->query($sql);
 
         while ($row = $result->fetch_array()) {
-            echo("
+
+            $date = new DateTime('-1 week');
+            $date = $date->format('Y-m-d H:i:s');
+
+            if($row['date'] <$date ) {
+
+
+                echo("
             <!-- Container for a single event -->
             <div class='dynamicEventContainer'>
                 <!-- Get header for a single event -->
@@ -115,6 +122,7 @@
                 <div class='eventDate'>{$row['date']}</div>
             </div>
 			");
+            }
         }
         ?>
 
