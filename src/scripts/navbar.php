@@ -3,44 +3,29 @@ echo('
 	<div class="nav">
 	<ul>
 		<li>
-			<div class="about green slide">
+			<div id="home_slide">
 				<a href="http://go-portlethen.azurewebsites.net/">Home</a>
 			</div>
-			<a href="#">
-				<img src="">
-			</a>
 		</li>
 		<li>
-			<div class="yellow slide">
+			<div class="clubs_societies_slide">
 				<a href="http://go-portlethen.azurewebsites.net/clubs_societies">Clubs & Societies</a>
 			</div>
-			<a href="#">
-				<img src="">
-			</a>
 		</li>
 		<li>
-			<div class="blue slide">
+			<div class="health_wellbeing_slide">
 				<a href="http://go-portlethen.azurewebsites.net/health_wellbeing">Health and Wellbeing</a>
 			</div>
-			<a href="#">
-				<img src="">
-			</a>
 		</li>
 		<li>
-			<div class="pink slide">
+			<div class="map_slide">
 				<a href="http://go-portlethen.azurewebsites.net/map">Map</a>
 			</div>
-			<a href="#">
-				<img src="">
-			</a>
 		</li>
 		<li>
-			<div class="purple slide">
+			<div class="login_slide">
 				<a href="#">Login</a>
 			</div>
-			<a href="#">
-				<img src="">
-			</a>
 		</li>
 	</ul>
 		');
