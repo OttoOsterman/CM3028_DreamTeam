@@ -35,7 +35,7 @@ if (isset($_SESSION["username"])) {
 		echo($sql);
 		$result = $db->query($sql);
 		echo($result);
-		if (mysql_num_rows($result) > 0) {
+		if ($result->num_rows > 0) {
 			echo("<h2>This e-mail is already in use.</h2>");
 		} else {
 			$password = $_POST["password"];
