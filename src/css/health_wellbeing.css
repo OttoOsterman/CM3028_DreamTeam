@@ -15,17 +15,16 @@
 
 #staticHealthSection, #dynamicNewsSection, #dynamicEventsSection {
     padding: 40px;
-    width: 80%;
+    width: 700px;
     background-color: grey;
-    margin: auto;
+    margin: 20px;
+    float: left;
 }
 
 .staticInfoContainer, .dynamicNewsContainer, .dynamicEventContainer {
     padding: 40px;
-    margin: 10px;
+    margin-bottom: 30px;
     background-color: white;
-    width: 40%;
-    float: left;
 }
 
 .staticInfoHeader, .dynamicNewsTitle, .dynamicEventName {
