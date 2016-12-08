@@ -102,7 +102,7 @@
         <h1 class="sectionHeader">Events</h1>
 
         <?php
-        $sql = "SELECT Event.event_id, Event.name, Event.description, Event.date FROM Event WHERE Event.date > DATEADD(week, -1, NOW());";
+        $sql = "SELECT Event.event_id, Event.name, Event.description, Event.date FROM Event WHERE Event.date > DATE_ADD(NOW(), INTERVAL -1 week);";
         $result = $db->query($sql);
 
         while ($row = $result->fetch_array()) {
