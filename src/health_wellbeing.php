@@ -14,8 +14,11 @@
 
 </div>
 
+<!-- Static information about health and wellbeing -->
 <div id="healthSection">
+    <!-- Container for a static information article -->
     <div class="staticInfoContainer">
+        <!-- Header for a static information article -->
         <h1 class="staticInfoHeader">
             Bacon Is Good For You
         </h1>
