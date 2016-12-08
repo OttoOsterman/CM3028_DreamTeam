@@ -24,6 +24,7 @@
 
     <!-- Static information about health and wellbeing -->
     <div id="staticHealthSection">
+        <h1 class="sectionHeader">Health and Wellbeing information</h1>
         <!-- Container for a static information article -->
         <div class="staticInfoContainer">
             <!-- Header for a static information article -->
@@ -74,12 +75,14 @@
     <!-- Dynamic news section that pulls news articles from the database -->
     <div id="dynamicNewsSection">
 
+        <h1 class="sectionHeader">News</h1>
+
         <?php
         $sql = "SELECT News.news_id, News.title, News.content, News.date FROM News";
         $result = $db->query($sql);
 
         while ($row = $result->fetch_array()) {
-                echo("
+            echo("
             <!-- Container for a single news article -->
             <div class='dynamicNewsContainer'>
                 <!-- Get header for a single news article -->
@@ -95,6 +98,8 @@
 
     <!-- Dynamic events section that pulls events from the database -->
     <div id="dynamicEventsSection">
+
+        <h1 class="sectionHeader">Events</h1>
 
         <?php
         $sql = "SELECT Event.event_id, Event.name, Event.description, Event.date FROM Event";

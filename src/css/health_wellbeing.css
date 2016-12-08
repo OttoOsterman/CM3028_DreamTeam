@@ -1,37 +1,31 @@
 #healthWellbeing {
-    width: 1800px;
+    width: 100%;
     margin: auto;
 }
 
 #pageHeader {
     text-align: center;
+    padding: 50px;
+}
+
+.sectionHeader {
+    text-align: center;
 }
 
 #staticHealthSection, #dynamicNewsSection, #dynamicEventsSection {
     padding: 40px;
-    width: 700px;
+    width: 80%;
     background-color: grey;
-    margin: 20px;
-    float: left;
+    margin: auto;
 }
 
-.staticInfoContainer {
+.staticInfoContainer, .dynamicNewsContainer, .dynamicEventContainer {
     padding: 40px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     background-color: white;
 }
 
-.staticInfoHeader {
-    padding: 10px;
-}
-
-.dynamicNewsContainer, .dynamicEventContainer {
-    padding: 40px;
-    margin-bottom: 30px;
-    background-color: white;
-}
-
-.dynamicNewsTitle, .dynamicEventName {
+.staticInfoHeader, .dynamicNewsTitle, .dynamicEventName {
     padding: 10px;
 }
 
