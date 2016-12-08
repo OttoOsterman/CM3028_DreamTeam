@@ -18,9 +18,9 @@ if (isset($_SESSION["username"])) {
     echo("
             <form action='signup' method='POST'>
                 <label>Please enter an e-mail address</label>
-                <input type='text' id='username' required>
+                <input type='text' name='username' required>
                 <label>Please enter a new password</label>
-                <input type='password' id='password' required>
+                <input type='password' name='password' required>
                 <button type='submit'>Submit</button>
             </form>
         ");
