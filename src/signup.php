@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
 </head>
 <?php
-include("navbar.php");
+include("scripts/navbar.php");
 if (isset($_SESSION["username"])) {
     echo("
         <body>
@@ -27,7 +27,7 @@ if (isset($_SESSION["username"])) {
     if($_SERVER['REQUEST_METHOD'] === 'POST') {
 		echo("Working");
         //TODO: REMOVE TESTING CODE
-        include("db_connect_test.php");
+        include("scripts/db_connect_test.php");
         $username = $_POST["username"];
         $username = stripslashes($username);
         $username = mysqli_real_escape_string($username);
