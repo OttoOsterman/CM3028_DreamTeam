@@ -16,7 +16,7 @@ if (isset($_SESSION["username"])) {
     ");
 } else {
     echo("
-            <form action='signup' method='POST'>
+            <form id='signup_form' action='signup' method='POST'>
                 <label>Please enter an e-mail address</label>
                 <input type='text' name='username' required>
                 <label>Please enter a new password</label>
@@ -42,6 +42,13 @@ if (isset($_SESSION["username"])) {
 			$salt = date('U');
 			$password_hash = hash('sha256', $password . $salt);
 			$sql = "INSERT INTO User (username, hash, salt, acc_type) VALUES ('{$username}', '{$password_hash}', '{$salt}', 'general_user')";
+			$db->query($sql);
+			echo("
+				<script>
+					document.getElementById('signup_form').style.display = 'none';
+				</script>
+				<h2>Your account has been successfully created, please log in.</h2>
+				");
 		}
     }
 }
