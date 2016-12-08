@@ -1,5 +1,5 @@
 #healthWellbeing {
-    width: 1800px;
+    width: 100%;
     margin: auto;
 }
 
@@ -15,10 +15,9 @@
 
 #staticHealthSection, #dynamicNewsSection, #dynamicEventsSection {
     padding: 40px;
-    width: 700px;
+    width: 80%;
     background-color: grey;
-    margin: 20px;
-    float: left;
+    margin: auto;
 }
 
 .staticInfoContainer, .dynamicNewsContainer, .dynamicEventContainer {

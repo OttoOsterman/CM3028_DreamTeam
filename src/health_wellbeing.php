@@ -82,7 +82,7 @@
         $result = $db->query($sql);
 
         while ($row = $result->fetch_array()) {
-                echo("
+            echo("
             <!-- Container for a single news article -->
             <div class='dynamicNewsContainer'>
                 <!-- Get header for a single news article -->
@@ -96,10 +96,10 @@
 
     </div>
 
-    <h1 class="sectionHeader">Events</h1>
-
     <!-- Dynamic events section that pulls events from the database -->
     <div id="dynamicEventsSection">
+
+        <h1 class="sectionHeader">Events</h1>
 
         <?php
         $sql = "SELECT Event.event_id, Event.name, Event.description, Event.date FROM Event";
