@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<title>Home</title>
+	<title>Sign up</title>
 	<link rel="stylesheet" type="text/css" href="./src/css/signup.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
@@ -17,14 +17,15 @@ if (isset($_SESSION["username"])) {
 } else {
     echo("
             <form action='signup'>
-                <label>Please enter your e-mail address</label>
+                <label>Please enter an e-mail address</label>
                 <input type='text' id='username' required>
-                <label>Please enter your password</label>
+                <label>Please enter a new password</label>
                 <input type='password' id='password' required>
                 <button type='submit'>Submit</button>
             </form>
         ");
     if($POST) {
+		echo("Working");
         //TODO: REMOVE TESTING CODE
         include("db_connect_test.php");
         $username = $_POST["username"];
