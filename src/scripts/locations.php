@@ -22,7 +22,6 @@ while($row = $result->fetch_array()) {
     $new_node->setAttribute("lat", $row["latitude"]);
     $new_node->setAttribute("lng", $row["longitude"]);
     $new_node->setAttribute("description", $row["description"]);
-    $new_node->setAttribute("media", "");
     while($media_row = $media_result->fetch_array()) {
         if ($media_row["location_id"] == $row["location_id"]) {
             $media_node = $new_node->appendChild($dom->createElement("media"));
