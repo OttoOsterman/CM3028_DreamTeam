@@ -35,7 +35,7 @@
 		function load() {
    			var map = new google.maps.Map(document.getElementById("map"), {
  	      		center: new google.maps.LatLng(57.061961, -2.129379),
-    	   		zoom: 13,
+    	   		zoom: 10,
         		mapTypeId: 'satellite'
       		});
 			downloadUrl("https://go-portlethen.azurewebsites.net/location_data", function (data) {
