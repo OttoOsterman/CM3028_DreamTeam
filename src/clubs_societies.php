@@ -28,18 +28,6 @@
 
 <!--Contains a list of all clubs w/ an associated profile photo -->
 <div id="clubList">
-    <script>
-        (function() {
-            var cx = '015355440252061248234:4b5f7asl8oa';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-        })();
-    </script>
-    <gcse:search></gcse:search>
     <!--Facebook plugin-->
     <div class="fb-page" data-href="https://www.facebook.com/Sportlethen"
          data-tabs="timeline" data-width="400" data-height="600" data-small-header="false"
