@@ -28,9 +28,9 @@
  	      		center: new google.maps.LatLng(57.061961, -2.129379),
     	   		zoom: 13,
 				//Could change to satellite
-        		mapTypeId: 'satellite'
+        		mapTypeId: 'roadmap'
       		});
-			downloadUrl("../scripts/locations.php", function (data) {
+			downloadUrl("https://go-portlethen.azurewebsites.net/location_data", function (data) {
 				var xml = data.responseXML;
 				var markers = xml.documentElement.getElementsByTagName("marker");
 				for (var i = 0; i < markers.length; i++) {
