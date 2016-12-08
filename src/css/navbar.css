@@ -76,25 +76,28 @@
 .nav ul:hover li {
 	width: 18.75vw;
 }
+.nav li img {
+	display: block;
+}
 .nav ul li:hover{
 	width: 25vw;
 }
 
 /* Some extra CSS stuff */
 
-#home_slide{
+.green{
 	background-color: #7cb342;
 }
-#clubs_societies_slide{
+.yellow{
 	background-color: #ffb300;
 }
-#health_wellbeing_slide{
+.blue{
 	background-color: #1e88e5;
 }
-#map_slide{
+.pink{
 	background-color: #e91e63;
 }
-#login_slide{
+.purple{
 	background-color: #8e24aa;
 }
 .about{
