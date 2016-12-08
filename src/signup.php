@@ -15,8 +15,7 @@ if (isset($_SESSION["username"])) {
         </body>
     ");
 } else {
-    echo("
-        <div id=\"signup_form\">
+    echo(">
             <form action='signup.php'>
                 <label>Please enter your e-mail address</label>
                 <input type='text' id='username' required>
