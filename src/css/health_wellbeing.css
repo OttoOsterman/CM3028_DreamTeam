@@ -10,7 +10,6 @@
 
 .sectionHeader {
     text-align: center;
-    padding: 30px;
 }
 
 #staticHealthSection, #dynamicNewsSection, #dynamicEventsSection {
@@ -22,7 +21,7 @@
 
 .staticInfoContainer, .dynamicNewsContainer, .dynamicEventContainer {
     padding: 40px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     background-color: white;
 }
 
