@@ -25,17 +25,17 @@ if (isset($_SESSION["username"])) {
             </form>
         ");
     if($_SERVER['REQUEST_METHOD'] === 'POST') {
-		echo("Working");
         //TODO: REMOVE TESTING CODE
         include("scripts/db_connect_test.php");
-		echo($_POST["username"]);
         $username = $_POST["username"];
         $username = stripslashes($username);
         $username = mysqli_real_escape_string($db, $username);
 
 		$sql = "SELECT username FROM User WHERE username = {$username}";
+		echo($sql);
 		$result = $db->query($sql);
-		if (@mysql_num_rows($result) > 0) {
+		echo($result);
+		if (mysql_num_rows($result) > 0) {
 			echo("<h2>This e-mail is already in use.</h2>");
 		} else {
 			$password = $_POST["password"];
