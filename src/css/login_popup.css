@@ -1,7 +1,9 @@
 #login_popup {
     display: none;
     position: relative;
-    background-color: #FFFFFF;
+    z-index: 1;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     margin: auto;
     padding: 0;
     border: 1px solid #000000;
@@ -11,6 +13,20 @@
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
+}
+
+#close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 @-webkit-keyframes animatetop {
