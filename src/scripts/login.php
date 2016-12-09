@@ -6,7 +6,7 @@ if(session_status() == PHP_SESSION_NONE) {
 $_SESSION["error"] = "couldn't connect to db";
 include("db_connect_test.php");
 $username = stripslashes($_POST["username"]);
-$username = mysqli_real_escape_string($username);
+$username = mysqli_real_escape_string($db, $username);
 $password = $_POST["password"];
 
 $sql = "SELECT hash, salt FROM User WHERE username = {$username}";
