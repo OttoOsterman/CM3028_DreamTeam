@@ -18,7 +18,7 @@ if ($result->num_rows > 0) {
         $_SESSION["error"] = "no error";
         $_SESSION["username"] = $username;
     } else {
-        $_SESSION["error"] = "wrongpassword, hash is " . $hashed_password . " expected " . $hash;
+        $_SESSION["error"] = "wrongpassword";
     }
 }
 ?>
