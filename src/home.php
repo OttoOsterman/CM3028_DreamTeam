@@ -57,9 +57,7 @@
 </script>
 
 <?php
-if (isset($_SESSION["error"])) {
-	echo('Not working');
-}
+echo($_SESSION["error"]);
 ?>
 </body>
 
