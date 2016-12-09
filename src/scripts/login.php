@@ -19,7 +19,6 @@ if ($result->num_rows != 0) {
     if ($hashed_password === $hash) {
         $_SESSION["error"] = null;
         $_SESSION["username"] = $username;
-        header("https://go-portlethen.azurewebsites.net");
     } else {
         $_SESSION["error"] = "wrongpassword";
     }

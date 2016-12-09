@@ -34,7 +34,7 @@ echo('
 				<img src="">
 			</a>
 		</li>');
-        if (isset($_SESSION[username])) {
+        if (isset($_SESSION["username"])) {
             echo('
             <li>
                 <div class="purple slide">
