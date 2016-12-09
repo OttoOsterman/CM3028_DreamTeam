@@ -37,3 +37,10 @@
 .newsDate, .eventDate {
     padding: 10px;
 }
+
+.banner {
+    width: 100%;
+    left: 0;
+    right: 0;
+
+}
