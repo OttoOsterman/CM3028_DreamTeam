@@ -1,5 +1,8 @@
 <?php
 //TODO: Remove testing code
+if(session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 include("scripts/db_connect_test.php");
 $username = stripslashes($_POST["username"]);
 $username = mysqli_real_escape_string($username);
@@ -12,15 +15,10 @@ if ($result->num_rows != 0) {
     $hash = $row["hash"];
     $hashed_password = hash("sha256", $password . $row["salt"]);
     if ($hashed_password === $hash) {
-        if(session_status() == PHP_SESSION_NONE) {
-            session_start();
-        } $_SESSION["error"] = null;
+        $_SESSION["error"] = null;
         $_SESSION["username"] = $username;
         header("https://go-portlethen.azurewebsites.net");
     } else {
-        if(session_status() == PHP_SESSION_NONE) {
-            session_start();
-        }
         $_SESSION["error"] = "wrongpassword";
     }
 }

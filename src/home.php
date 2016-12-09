@@ -55,7 +55,7 @@
 	<input type="text" id="username">
 	<label>Password</label>
 	<input type="password" id="password">
-	<input type="button" onclick="login()">
+	<input type="button" onclick="login()" value="Log in">
 </form>
 
 <script>
@@ -73,6 +73,12 @@
 		req.send(args);
 	}
 </script>
+
+<?php
+if (isset($_SESSION["error"])) {
+	echo('Not working');
+}
+?>
 </body>
 
 </html>
