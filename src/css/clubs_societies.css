@@ -1,7 +1,7 @@
 #clubList {
     padding: 10px;
     padding-top: 80px;
-    width: 60%;
+    width: 80%;
     float: left;
 }
 
@@ -30,7 +30,7 @@
 
 .clubSection {
     padding: 10px;
-    width: 40%;
+    width: 80%;
     color: white;
     background-color: gray;
     margin: 10px;
@@ -38,6 +38,6 @@
 }
 
 .fb-page {
-    float: left;
+    float: right;
     padding: 50px;
 }
