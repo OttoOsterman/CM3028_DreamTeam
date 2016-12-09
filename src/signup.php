@@ -46,8 +46,9 @@ if (isset($_SESSION["username"])) {
 				<script>
 					document.getElementById('signup_form').style.display = 'none';
 				</script>
-				<h2>Your account has been successfully created, please log in.</h2>
+				<h2>Your account has been successfully created.</h2>
 				");
+			$_SESSION["username"] = $username;
 		}
     }
 }
