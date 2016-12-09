@@ -3,7 +3,7 @@
 if(session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-include("scripts/db_connect_test.php");
+include("db_connect_test.php");
 $username = stripslashes($_POST["username"]);
 $username = mysqli_real_escape_string($username);
 $password = $_POST["password"];
