@@ -7,7 +7,7 @@ $username = stripslashes($_POST["username"]);
 $username = mysqli_real_escape_string($db, $username);
 $password = $_POST["password"];
 
-$sql = "SELECT hash, salt FROM User WHERE username = {$username}";
+$sql = "SELECT hash, salt FROM User WHERE username = '{$username}'";
 $result = $db->query($sql);
 $resultdata = var_dump($result);
 $_SESSION["error"] = "num rows returned 0, username {$_POST["username"]}, sql {$sql}, result {$resultdata}";
