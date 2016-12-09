@@ -1,7 +1,8 @@
 <?php
 //TODO: Remove testing code
 include("scripts/db_connect_test.php");
-$username = mysqli_real_escape_string($_POST["username"]);
+$username = stripslashes($_POST["username"]);
+$username = mysqli_real_escape_string($username);
 $password = $_POST["password"];
 
 $sql = "SELECT hash, salt FROM User WHERE username = {$username}";

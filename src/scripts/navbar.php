@@ -52,6 +52,8 @@ echo('
                     <img src="">
                 </a>
             </li>
+		    </ul>
+		    
 		    <script type="text/javascript">
 			function logout() {
 				var req = new XMLHttpRequest();
@@ -77,13 +79,32 @@ echo('
             </li>
 		    <li>
 			    <div class="purple slide">
-				    <a href="#">Log in</a>
+				    <a href="#" onclick="login_popup()">Log in</a>
 			    </div>
 			    <a href="#">
 				    <img src="">
 			    </a>
 		    </li>
 	    </ul>
+	    
+	    <script type="text/javascript">
+	    function login_popup() {
+	        
+	    }
+        </script>
+        
+        <!-- Modal login popup -->
+        <link rel="stylesheet" type="text/css" href="https://go-portlethen.azurewebsites.net/src/css/login_popup.css"/>
+        <div id="login_popup">
+            <span id="close">&times;</span>
+            <form action="https://go-portlethen.azurewebsites.net/login" method="POST">
+                <label>Please enter your e-mail address</label>
+                <input type="text" name="username">
+                <label>Please enter your password</label>
+                <input type="password" name="password">
+                <input type="submit" value="Log in">
+            </form>
+        </div>
 		');
 }
 echo('</div>');
