@@ -22,9 +22,9 @@ session_start();
 
 
 <!-- logo -->
-<div class="banner">
+<div class="pageWidth">
 	<img src="/src/images/go-portlethen.jpg" style="width:100%";/>
-</div>
+
 
 <div id="container">
 	<img src="/src/imageSlider/img1.jpg" id="img"/>
@@ -63,6 +63,8 @@ session_start();
 <?php
 echo("Session error value is: " . $_SESSION["error"]);
 ?>
+</div>
+
 </body>
 
 </html>
