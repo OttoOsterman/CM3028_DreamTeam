@@ -46,7 +46,7 @@
 		var args = "username=" + username + "&password=" + password;
 		var req = new XMLHttpRequest();
 		req.onreadystatechange = function() {
-			if (req.readyState == XMLHttpRequest.DONE) {
+			if (req.readyState == XMLHttpRequest.DONE && req.status == 200) {
 				location.reload();
 			}
 		}
