@@ -6,7 +6,9 @@
     include('scripts/db_connect_test.php');
     $request_array = explode("/", $_SERVER["REQUEST_URI"]);
     $club_id = end($request_array);
-    $sql = "SELECT Club.name, Club.genre, Club.description, Club.contact_info, Photo.photo_path FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id WHERE Club.club_id = " . mysqli_real_escape_string($db, $club_id);
+    $club_id = stripslashes($club_id);
+    $club_id = mysqli_real_escape_string($db, $club_id);
+    $sql = "SELECT Club.name, Club.genre, Club.description, Club.contact_info, Photo.photo_path FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id WHERE Club.club_id = " . $club_id;
     $results = $db->query($sql);
     $row = $results->fetch_array();
     ?>
