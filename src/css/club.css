@@ -11,20 +11,12 @@
 
 .clubSection {
     padding: 10px;
-    width: 40%;
+    width: 80%;
     color: white;
     background-color: gray;
     margin: auto;
     margin-top: 20px;
     overflow: auto;
-}
-
-.imgSection {
-    padding: 10px;
-    width: 40%;
-    margin: auto;
-    margin-top: 20px;
-    background-color: gray;
 }
 
 .clubName {
