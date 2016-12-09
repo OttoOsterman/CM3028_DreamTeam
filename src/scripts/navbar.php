@@ -52,8 +52,6 @@ echo('
                     <img src="">
                 </a>
             </li>
-		    </ul>
-		    
 		    <script type="text/javascript">
 			function logout() {
 				var req = new XMLHttpRequest();
@@ -79,58 +77,13 @@ echo('
             </li>
 		    <li>
 			    <div class="black slide">
-				    <a href="#" onclick="login_popup()">Log in</a>
+				    <a href="#">Log in</a>
 			    </div>
 			    <a href="#">
 				    <img src="">
 			    </a>
 		    </li>
 	    </ul>
-	    
-	    <script type="text/javascript">
-	    window.onclick = function(event) {
-	        if(event.target == document.getElementById("login_container")) {
-	            document.getElementById("login_container").style.display = "none";
-	        }
-	    }
-	    function login_popup() {
-	        document.getElementById("login_container").style.display = "block";
-	    }
-	    
-	    function close_popup() {
-	        document.getElementById("login_container").style.display = "none";
-	    }
-        </script>
-        <!-- Modal login popup -->
-        <link rel="stylesheet" type="text/css" href="https://go-portlethen.azurewebsites.net/src/css/login_popup.css"/>
-        <div id="login_container">
-        <div id="login_popup">
-            <span id="close" onclick="close_popup()">&times;</span>
-            <form id="login_form">
-                <label>Please enter your e-mail address</label>
-                <input type="text" name="username" id="username">
-                <label>Please enter your password</label>
-                <input type="password" name="password" id="password">
-                <input type="submit" value="Log in">
-            </form>
-        </div>
-        </div>
-        <script>
-        document.getElementById("login_form").onsubmit = function(event) {
-            event.preventDefault();
-            var req = new XMLHttpRequest();
-			req.onreadystatechange = function() {
-				if (req.readyState == XMLHttpRequest.DONE) {
-					location.reload();
-				}
-			}
-			var username = document.getElementById("username").value;
-			var password = document.getElementById("password").value;
-			req.open("POST", "https://go-portlethen.azurewebsites.net/login");
-			req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-			req.send("username=" + username + "&password=" + password);
-        }
-        </script>
 		');
 }
 echo('</div>');

@@ -1,35 +1,23 @@
-/**
- * Created by 1405741 on 06/12/2016.
- */
 
-    var imageCount = 1;
-    var total = 2;
+var myImage = document.getElementById("homepage");
 
+var imageArray=["downies.jpg","beachSunset.jpg"];
 
-function slide(x) {
-    var Image = document.getElementById('img');
+var imageIndex = 0;
 
-    imageCount = imageCount+x;
+function changeImage(){
+    myPhoto.setAttribute("/src/images",imageArray [imageIndex]);
 
-    if(imageCount > total){imageCount = 1;}
+    imageIndex++;
 
-    if(imageCount < 1 ){imageCount = total;}
-
-    Image.src="/src/imageSlider/img" +imageCount + ".jpg";
+    if(imageindex >=imageArray.length){
+        imageIndex=0;
+    }
 }
 
-window.setInterval(function slideAuto(){
-    
-    var Image = document.getElementById('img');
+var intervalHandle = setInterval(changeImage,3000);
 
-    imageCount = imageCount+1;
-
-    if(imageCount > total){imageCount = 1;}
-
-    if(imageCount < 1 ){imageCount = total;}
-
-    Image.src="/src/imageSlider/img" +imageCount + ".jpg";
-    
-},5000);
-
+myPhoto.onclick=function(){
+    clearInterval(intervalHandle);
+}
 
