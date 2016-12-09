@@ -107,7 +107,7 @@ echo('
         <div id="login_container">
         <div id="login_popup">
             <span id="close" onclick="close_popup()">&times;</span>
-            <form id="login_form" action="https://go-portlethen.azurewebsites.net/login" method="POST">
+            <form id="login_form" action="#" method="POST">
                 <label>Please enter your e-mail address</label>
                 <input type="text" name="username" id="username">
                 <label>Please enter your password</label>
@@ -131,7 +131,6 @@ echo('
 			req.open("POST", "https://go-portlethen.azurewebsites.net/login");
 			req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			req.send("username=" + username + "&password=" + password);
-			return false;
         });
 </script>
 		');
