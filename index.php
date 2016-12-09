@@ -1,22 +1,20 @@
-<?
-
+<?php
 define('INCLUDE_DIR', dirname(__FILE__) . '/src/');
 
 $rules = array(
-		//TODO: REMOVE TESTING CODE
-		'scripts/adminer' => "/database",
-
 		'scripts/locations' => "/locations",
 		'scripts/login' => '/login',
 		'scripts/logout' => '/logout',
         'scripts/locations' => '/location_data',
+        'scripts/logout' => '/logout',
 
 		'home' => '/',
 		'clubs_societies' => '/clubs_societies',
         'club' => '/club/(?\'club_id\'[\w\-]+)',
 		'health_wellbeing' => '/health_wellbeing',
 		'map' => '/map',
-        'signup' => '/signup'
+        'signup' => '/signup',
+        'profile' => '/profile'
 );
 
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
@@ -31,5 +29,4 @@ foreach($rules as $action => $rule) {
 }
 
 include(INCLUDE_DIR . '404.php');
-
 ?>

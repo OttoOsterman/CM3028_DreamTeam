@@ -36,17 +36,32 @@ echo('
 		</li>');
         if (isset($_SESSION[username])) {
             echo('
-		    <a id="logout_button" onclick="logout();" href="#">Log out</a>
+            <li>
+                <div class="black slide">
+                    <a href="https://go-portlethen.azurewebsites.net/profile">Profile</a>
+                </div>
+                <a href="#">
+                    <img src="">
+                </a>
+            </li>
+            <li>
+                <div class="purple slide">
+                    <a href="#" onclick="logout()">Log out</a>
+                </div>
+                <a href="#">
+                    <img src="">
+                </a>
+            </li>
 		    <script type="text/javascript">
 			function logout() {
-				var xmlhttp = new XMLHttpRequest();
-				xmlhttp.onreadystatechange = function() {
+				var req = new XMLHttpRequest();
+				req.onreadystatechange = function() {
 					if (xmlhttp.readyState == XMLHttpRequest.DONE) {
 						document.reload();
 					}
 				}
-				xmlhttp.open("POST", "https://go-portlethen.azurewebsites.net/logout");
-				xmlhttp.send();
+				req.open("POST", "https://go-portlethen.azurewebsites.net/logout");
+				req.send();
 			}
 		    </script>
 	        ');
@@ -54,7 +69,7 @@ echo('
             echo('
             <li>
 		        <div class="black slide">
-		            <a href="https://go-portlethen.azurewebsites.net/signup">Sign Up</a>
+		            <a href="https://go-portlethen.azurewebsites.net/signup">Sign up</a>
                 </div>
                 <a href="#">
                     <img src="">
@@ -62,7 +77,7 @@ echo('
             </li>
 		    <li>
 			    <div class="purple slide">
-				    <a href="#">Login</a>
+				    <a href="#">Log in</a>
 			    </div>
 			    <a href="#">
 				    <img src="">
