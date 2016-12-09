@@ -61,11 +61,12 @@
 	top:40%;
 	right:0px;
 }
+
 #right:hover{
 	height:54px;
 	Width:54px;
 	position:absolute;
 	top:40%;
-	left:0px;
+	right:0px;
 
 }
