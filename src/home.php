@@ -18,12 +18,17 @@
 
 <!-- logo -->
 <div class="banner">
-
 	<img src="/src/images/go-portlethen.jpg" style="width:100%";/>
-
 </div>
 
-<img id="myPhoto" src="/src/images/downies.jpg" alt="homepage"/>
+<div id="container">/
+	<img class="img" src="/src/imageSlider/img.jpg"/>
+	<div id="left_arrow"> <img class="left" src="/src/imageSlider/arrow_right.png"/></div>
+	<div id="right_arrow"> <img class="right" src="/src/imageSlider/arrow_right.png"/></div>
+	
+</div>
+
+
 
 </body>
 
