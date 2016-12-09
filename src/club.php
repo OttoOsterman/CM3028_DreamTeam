@@ -45,11 +45,7 @@
         <section class='clubContact'>{$row["contact_info"]}</section>
         ");
         while ($row = $results->fetch_array()) {
-            echo("
-<section class='imgSection'>
-<img class='clubImage' src='{$row['photo_path']}'>
-</section>
-");
+            echo("<img class='clubImage' src='{$row['photo_path']}'>");
         }
         echo "</section>";
     } else {
