@@ -107,15 +107,32 @@ echo('
         <div id="login_container">
         <div id="login_popup">
             <span id="close" onclick="close_popup()">&times;</span>
-            <form action="https://go-portlethen.azurewebsites.net/login" method="POST">
+            <form id="login_form" action="https://go-portlethen.azurewebsites.net/login" method="POST">
                 <label>Please enter your e-mail address</label>
-                <input type="text" name="username">
+                <input type="text" name="username" id="username">
                 <label>Please enter your password</label>
-                <input type="password" name="password">
+                <input type="password" name="password" id="password">
                 <input type="submit" value="Log in">
             </form>
         </div>
         </div>
+        
+        <script>
+        document.getElementById("login_form").submit(function(event) {
+            event.preventDefault();
+            var req = new XMLHttpRequest();
+			req.onreadystatechange = function() {
+				if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+					document.reload();
+				}
+			}
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			req.open("POST", "https://go-portlethen.azurewebsites.net/login");
+			req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			req.send("username=" + username + "&password=" + password);
+        });
+</script>
 		');
 }
 echo('</div>');

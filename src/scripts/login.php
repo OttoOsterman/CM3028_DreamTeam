@@ -12,8 +12,6 @@ if (mysql_num_rows($result) != 0) {
     $hashed_password = hash("sha256", $hashed_password);
     if ($hashed_password === $hash) {
         $_SESSION["username"] = $username;
-        header($_POST["location"]);
     }
 }
-header($_POST["location"] . "?error=incorrect_login");
 ?>
