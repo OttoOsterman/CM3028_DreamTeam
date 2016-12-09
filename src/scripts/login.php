@@ -1,8 +1,6 @@
 <?php
 //TODO: Remove testing code
-if(session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
+session_start();
 $_SESSION["error"] = "couldn't connect to db";
 include("db_connect_test.php");
 $username = stripslashes($_POST["username"]);
