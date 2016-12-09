@@ -12,13 +12,12 @@
 
 <?php include('scripts/navbar.php'); ?>
 
-<div class="banner">
-    <img src="/src/images/go-portlethen.jpg"/>
-
-</div>
-
 <!-- Container for health and wellbeing content -->
 <div id="healthWellbeing">
+
+    <div class="banner">
+        <img src="/src/images/go-portlethen.jpg"/>
+    </div>
 
     <h1 id="pageHeader">Health and Wellbeing</h1>
 
