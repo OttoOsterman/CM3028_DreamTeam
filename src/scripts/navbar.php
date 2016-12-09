@@ -105,7 +105,7 @@ echo('
         <!-- Modal login popup -->
         <link rel="stylesheet" type="text/css" href="https://go-portlethen.azurewebsites.net/src/css/login_popup.css"/>
         <div id="login_popup">
-            <span id="close">&times;</span>
+            <span id="close" onclick="close_popup()">&times;</span>
             <form action="https://go-portlethen.azurewebsites.net/login" method="POST">
                 <label>Please enter your e-mail address</label>
                 <input type="text" name="username">
