@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html >
 
@@ -46,7 +50,7 @@
 		var args = "username=" + username + "&password=" + password;
 		var req = new XMLHttpRequest();
 		req.onreadystatechange = function() {
-			if (req.readyState == XMLHttpRequest.DONE && req.status == 200) {
+			if (req.readyState == XMLHttpRequest.DONE) {
 				location.reload();
 			}
 		}
