@@ -37,7 +37,7 @@ echo('
         if (isset($_SESSION[username])) {
             echo('
             <li>
-                <div class="black slide">
+                <div class="purple slide">
                     <a href="https://go-portlethen.azurewebsites.net/profile">Profile</a>
                 </div>
                 <a href="#">
@@ -45,7 +45,7 @@ echo('
                 </a>
             </li>
             <li>
-                <div class="purple slide">
+                <div class="black slide">
                     <a href="#" onclick="logout()">Log out</a>
                 </div>
                 <a href="#">
@@ -70,7 +70,7 @@ echo('
         } else {
             echo('
             <li>
-		        <div class="black slide">
+		        <div class="purple slide">
 		            <a href="https://go-portlethen.azurewebsites.net/signup">Sign up</a>
                 </div>
                 <a href="#">
@@ -78,7 +78,7 @@ echo('
                 </a>
             </li>
 		    <li>
-			    <div class="purple slide">
+			    <div class="black slide">
 				    <a href="#" onclick="login_popup()">Log in</a>
 			    </div>
 			    <a href="#">
