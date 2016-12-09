@@ -23,14 +23,7 @@
 
 </div>
 
-
-	<!--best photo of portlethen -->
-	<div id="container">
-		<img id="img" src="/src/imageSlider/img.jpg"/>
-		<div id=left_holder"><img onClick="slide(-1)" class="left" src="/src/imageSlider/left.png"/> </div>
-		<div id="right_holder"><img onClick="slide(1)" class="right" src="/src/imageSlider/right.png"/><div>
-		</div>
-
+<img id="myPhoto" src="/src/images/downies.jpg" alt="homepage"/>
 
 </body>
 
