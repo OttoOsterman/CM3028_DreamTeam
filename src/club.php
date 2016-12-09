@@ -19,9 +19,9 @@
         }
         ?>
     </title>
-    <link rel="stylesheet" type="text/css" href="go-portlethen.azurewebsites.net/src/css/club.css"/>
-    <link rel="stylesheet" type="text/css" href="go-portlethen.azurewebsites.net/src/css/navbar.css"/>
-    <link rel="stylesheet" type="text/css" href="go-portlethen.azurewebsites.net/src/css/general.css"/>
+    <link rel="stylesheet" type="text/css" href="https://go-portlethen.azurewebsites.net/src/css/club.css"/>
+    <link rel="stylesheet" type="text/css" href="https://go-portlethen.azurewebsites.net/src/css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="https://go-portlethen.azurewebsites.net/src/css/general.css"/>
 </head>
 
 <body>
