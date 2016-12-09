@@ -1,6 +1,8 @@
 #clubList {
     padding: 10px;
     padding-top: 80px;
+    width: 60%;
+    float: left;
 }
 
 .clubName {
@@ -36,6 +38,6 @@
 }
 
 .fb-page {
-    float: right;
+    float: left;
     padding: 50px;
 }
