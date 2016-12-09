@@ -66,7 +66,7 @@
 		var req = new XMLHttpRequest();
 		req.onreadystatechange = function() {
 			if (req.readyState == XMLHttpRequest.DONE) {
-				document.reload();
+				location.reload();
 			}
 		}
 		req.open("POST", "https://go-portlethen.azurewebsites.net/login");
