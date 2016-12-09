@@ -93,7 +93,6 @@
 			");
         }
         ?>
-
     </div>
 
     <!-- Dynamic events section that pulls events from the database -->
@@ -118,9 +117,6 @@
 			");
         }
         ?>
-
     </div>
-
 </div>
-
 </body>
