@@ -58,7 +58,7 @@ echo('
 			function logout() {
 				var req = new XMLHttpRequest();
 				req.onreadystatechange = function() {
-					if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+					if (req.readyState == XMLHttpRequest.DONE) {
 						document.reload();
 					}
 				}
@@ -120,7 +120,7 @@ echo('
             event.preventDefault();
             var req = new XMLHttpRequest();
 			req.onreadystatechange = function() {
-				if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+				if (req.readyState == XMLHttpRequest.DONE) {
 					document.reload();
 				}
 			}
