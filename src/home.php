@@ -51,12 +51,13 @@
 			}
 		}
 		req.open("POST", "https://go-portlethen.azurewebsites.net/login");
+		req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		req.send(args);
 	}
 </script>
 
 <?php
-echo($_SESSION["error"]);
+echo("Session error value is: " . $_SESSION["error"]);
 ?>
 </body>
 
