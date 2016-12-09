@@ -71,7 +71,6 @@
 		}
 		req.open("POST", "https://go-portlethen.azurewebsites.net/login");
 		req.send(args);
-		alert("Worked");
 	}
 </script>
 
