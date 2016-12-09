@@ -23,8 +23,10 @@ session_start();
 
 <!-- logo -->
 <div class="pageWidth">
-	<img src="/src/images/go-portlethen.jpg" style="width:100%";/>
-
+	<center>
+		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
+	</center>
+	
 
 <div id="container">
 	<img src="/src/imageSlider/img1.jpg" id="img"/>
