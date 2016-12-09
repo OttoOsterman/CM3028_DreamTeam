@@ -88,8 +88,17 @@ echo('
 	    </ul>
 	    
 	    <script type="text/javascript">
+	    window.onclick = function(event) {
+	        if(event.target == document.getElementById("login_poup")) {
+	            document.getElementById("login_popup").style.display = "none";
+	        }
+	    }
 	    function login_popup() {
-	        
+	        document.getElementById("login_popup").style.display = "block";
+	    }
+	    
+	    function close_popup() {
+	        document.getElementById("login_popup").style.display = "none";
 	    }
         </script>
         
