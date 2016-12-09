@@ -9,7 +9,8 @@ $password = $_POST["password"];
 
 $sql = "SELECT hash, salt FROM User WHERE username = {$username}";
 $result = $db->query($sql);
-$_SESSION["error"] = "num rows returned 0, username {$_POST["username"]}";
+$resultdata = var_dump($result);
+$_SESSION["error"] = "num rows returned 0, username {$_POST["username"]}, sql {$sql}, result {$resultdata}";
 if ($result->num_rows > 0) {
     $row = $result->fetch_array();
     $hash = $row["hash"];
