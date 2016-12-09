@@ -114,7 +114,7 @@ echo('
 			req.open("POST", "https://go-portlethen.azurewebsites.net/login");
 			req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			req.send("username=" + username + "&password=" + password);
-        });
+        }
         </script>
         <!-- Modal login popup -->
         <link rel="stylesheet" type="text/css" href="https://go-portlethen.azurewebsites.net/src/css/login_popup.css"/>
