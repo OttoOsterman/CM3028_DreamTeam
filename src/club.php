@@ -33,7 +33,11 @@
     if(isset($row["name"]) && $row["name"] !== null) {
         echo("
         <section class='clubSection'>
-        <img class='clubImage' src='{$row['photo_path']}'>
+        ");
+        if(isset($row["photo_path"]) && $row["photo_path"] !== null) {
+            echo("<img class='clubImage' src='{$row['photo_path']}'>");
+        }
+        echo("
         <h1 class='clubName'>{$row["name"]}</h1>
         <section class='clubGenre'>{$row["genre"]}</section>
         <section class='clubDesc'>{$row["description"]}</section>
