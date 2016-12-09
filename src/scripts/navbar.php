@@ -118,7 +118,7 @@ echo('
         </div>
         
         <script>
-        document.getElementById("login_form").submit(function(event) {
+        document.getElementById("login_form").onsubmit = function(event) {
             event.preventDefault();
             var req = new XMLHttpRequest();
 			req.onreadystatechange = function() {
@@ -131,6 +131,7 @@ echo('
 			req.open("POST", "https://go-portlethen.azurewebsites.net/login");
 			req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			req.send("username=" + username + "&password=" + password);
+			return false;
         });
 </script>
 		');
