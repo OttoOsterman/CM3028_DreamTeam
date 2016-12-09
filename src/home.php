@@ -25,6 +25,30 @@
 
 <img id="myPhoto" src="/src/images/downies.jpg" alt="homepage"/>
 
+<!-- Placeholder login form, REMOVE ASAP -->
+<form>
+	<label>E-mail address</label>
+	<input type="text" id="username">
+	<label>Password</label>
+	<input type="password" id="password">
+	<input type="button" onclick="login()">
+</form>
+
+<script>
+	function login() {
+		var username = document.getElementById("username");
+		var password = document.getElementById("password");
+		var args = "username=" + username + "&password=" + password;
+		var req = new XMLHttpRequest();
+		req.onreadystatechange = function() {
+			if (req.readyState == XMLHttpRequest.DONE) {
+				document.reload();
+			}
+		}
+		req.open("POST", "https://go-portlethen.azurewebsites.net/login");
+		req.send(args);
+	}
+</script>
 </body>
 
 </html>

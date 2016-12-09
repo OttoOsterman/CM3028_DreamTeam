@@ -52,6 +52,7 @@ echo('
                     <img src="">
                 </a>
             </li>
+            </ul>
 		    <script type="text/javascript">
 			function logout() {
 				var req = new XMLHttpRequest();
@@ -60,7 +61,7 @@ echo('
 						document.reload();
 					}
 				}
-				req.open("POST", "https://go-portlethen.azurewebsites.net/logout");
+				req.open("GET", "https://go-portlethen.azurewebsites.net/logout");
 				req.send();
 			}
 		    </script>

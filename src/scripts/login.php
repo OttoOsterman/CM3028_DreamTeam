@@ -12,7 +12,16 @@ if ($result->num_rows != 0) {
     $hash = $row["hash"];
     $hashed_password = hash("sha256", $password . $row["salt"]);
     if ($hashed_password === $hash) {
+        if(session_status() == PHP_SESSION_NONE) {
+            session_start();
+        } $_SESSION["error"] = null;
         $_SESSION["username"] = $username;
+        header("https://go-portlethen.azurewebsites.net");
+    } else {
+        if(session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+        $_SESSION["error"] = "wrongpassword";
     }
 }
 ?>
