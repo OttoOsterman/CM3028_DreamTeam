@@ -41,8 +41,8 @@
 
 <script>
 	function login() {
-		var username = document.getElementById("username");
-		var password = document.getElementById("password");
+		var username = document.getElementById("username").value;
+		var password = document.getElementById("password").value;
 		var args = "username=" + username + "&password=" + password;
 		var req = new XMLHttpRequest();
 		req.onreadystatechange = function() {
