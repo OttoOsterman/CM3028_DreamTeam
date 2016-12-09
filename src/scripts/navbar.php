@@ -106,7 +106,7 @@ echo('
         <div id="login_container">
         <div id="login_popup">
             <span id="close" onclick="close_popup()">&times;</span>
-            <form id="login_form" action="#" method="POST">
+            <form id="login_form">
                 <label>Please enter your e-mail address</label>
                 <input type="text" name="username" id="username">
                 <label>Please enter your password</label>
@@ -121,7 +121,7 @@ echo('
             var req = new XMLHttpRequest();
 			req.onreadystatechange = function() {
 				if (req.readyState == XMLHttpRequest.DONE) {
-					document.reload();
+					location.reload();
 				}
 			}
 			var username = document.getElementById("username").value;
