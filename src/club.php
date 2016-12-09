@@ -36,9 +36,7 @@
         ");
         if (isset($row["photo_path"]) && $row["photo_path"] !== null) {
             echo("
-<section class='imgSection'>
-<img class='clubImage' src='{$row['photo_path']}'>
-</section>");
+<img class='clubImage' src='{$row['photo_path']}'>");
         }
         echo("
         <h1 class='clubName'>{$row["name"]}</h1>
@@ -47,7 +45,11 @@
         <section class='clubContact'>{$row["contact_info"]}</section>
         ");
         while ($row = $results->fetch_array()) {
-            echo("<img class='clubImage' src='{$row['photo_path']}'>");
+            echo("
+<section class='imgSection'>
+<img class='clubImage' src='{$row['photo_path']}'>
+</section>
+");
         }
         echo "</section>";
     } else {
