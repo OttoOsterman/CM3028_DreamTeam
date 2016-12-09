@@ -18,14 +18,14 @@
 }
 #container {
 	height:400px;
-	Width: 1000px;
+	Width: 950px;
 	margin:20px auto;
 	position:relative;
 }
 
 #img{
 	height:400px;
-	Width: 900px;
+	Width: 950px;
 	position:absolute;
 }
 
