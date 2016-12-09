@@ -89,16 +89,16 @@ echo('
 	    
 	    <script type="text/javascript">
 	    window.onclick = function(event) {
-	        if(event.target == document.getElementById("login_poup")) {
-	            document.getElementById("login_popup").style.display = "none";
+	        if(event.target == document.getElementById("login_container")) {
+	            document.getElementById("login_container").style.display = "none";
 	        }
 	    }
 	    function login_popup() {
-	        document.getElementById("login_popup").style.display = "block";
+	        document.getElementById("login_container").style.display = "block";
 	    }
 	    
 	    function close_popup() {
-	        document.getElementById("login_popup").style.display = "none";
+	        document.getElementById("login_container").style.display = "none";
 	    }
         </script>
         
