@@ -17,20 +17,20 @@
 	width:100%;
 }
 #container {
-	height:600px;
-	Width: 800px;
+	height:400px;
+	Width: 950px;
 	margin:20px auto;
 	position:relative;
 }
 
 #img{
-	height:600px;
-	Width: 800px;
+	height:400px;
+	Width: 950px;
 	position:absolute;
 }
 
 #right_arrow{
-	height:600px;
+	height:400px;
 	width:100px;
 	position:absolute;
 	right:0px;
@@ -38,7 +38,7 @@
 }
 
 #left_arrow{
-	height:600px;
+	height:400px;
 	width:100px;
 	position:absolute;
 	left:0px;
