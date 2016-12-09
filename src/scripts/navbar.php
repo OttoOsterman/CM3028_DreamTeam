@@ -100,8 +100,22 @@ echo('
 	    function close_popup() {
 	        document.getElementById("login_container").style.display = "none";
 	    }
-        </script>
         
+        document.getElementById("login_form").onsubmit = function(event) {
+            event.preventDefault();
+            var req = new XMLHttpRequest();
+			req.onreadystatechange = function() {
+				if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+					document.reload();
+				}
+			}
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			req.open("POST", "https://go-portlethen.azurewebsites.net/login");
+			req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			req.send("username=" + username + "&password=" + password);
+        });
+        </script>
         <!-- Modal login popup -->
         <link rel="stylesheet" type="text/css" href="https://go-portlethen.azurewebsites.net/src/css/login_popup.css"/>
         <div id="login_container">
@@ -117,22 +131,7 @@ echo('
         </div>
         </div>
         
-        <script>
-        document.getElementById("login_form").onsubmit = function(event) {
-            event.preventDefault();
-            var req = new XMLHttpRequest();
-			req.onreadystatechange = function() {
-				if (xmlhttp.readyState == XMLHttpRequest.DONE) {
-					document.reload();
-				}
-			}
-			var username = document.getElementById("username").value;
-			var password = document.getElementById("password").value;
-			req.open("POST", "https://go-portlethen.azurewebsites.net/login");
-			req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-			req.send("username=" + username + "&password=" + password);
-        });
-</script>
+        
 		');
 }
 echo('</div>');
