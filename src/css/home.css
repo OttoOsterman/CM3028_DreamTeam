@@ -9,7 +9,47 @@
 	width: 100%;
 }
 
-#{
+#container {
 	height:600px;
-	Width:800px;
+	Width: 800px;
+	margin:20px auto;
+	position:relative;
+}
+
+#img{
+	height:600px;
+	Width: 800px;
+	position:absolute;
+}
+
+#right_arrow{
+	height:600px;
+	width:100px
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+
+#left_arrow{
+	height:600px;
+	width:100px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+.left{
+	height:50px;
+	Width:50px;
+	position:absolute;
+	top:40%;
+	left:0px;
+}
+
+.right{
+	height:50px;
+	Width:50px;
+	position:absolute;
+	top:40%;
+	right:0px;
 }
