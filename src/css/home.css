@@ -1,15 +1,24 @@
 @CHARSET "UTF-8";
 
 
-
-.pageWidth{
-	width:1800px;
-	transition: width 0.3s ease;
-	margin-left:auto;
-	margin-right: auto;
-	background: #fafafa;
+@media (min-width:1800px) {
+	.pageWidth {
+		width: 1800px;
+		transition: width 0.3s ease;
+		margin-left: auto;
+		margin-right: auto;
+		background: #fafafa;
+	}
 }
-
+@media (max-width:1800px){
+	.pageWidth {
+		width: 100%;
+		transition: width 0.3s ease;
+		margin-left: auto;
+		margin-right: auto;
+		background: #fafafa;
+	}
+}
 
 #banner{
 	width:100%;
