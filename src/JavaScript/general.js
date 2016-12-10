@@ -3,7 +3,7 @@ var total = 2;
 
 function slide(x) {
     var Image = document.getElementById('img');
-    Image.src = "/src/imageSlider/img" + imageCount + ".jpg";
+    Image.src = "./src/imageSlider/img" + imageCount + ".jpg";
 
     imageCount + 1;
 
