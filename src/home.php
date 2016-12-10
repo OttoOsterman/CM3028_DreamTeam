@@ -28,9 +28,7 @@ session_start();
 <!-- logo -->
 
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
-
-
-
+	
 <!-- Placeholder login form, REMOVE ASAP -->
 <form>
 	<label>E-mail address</label>
@@ -63,8 +61,10 @@ echo("Session error value is: " . $_SESSION["error"]);
 
     <!--Image Slider-->
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
     <div class="w3-content w3-display-container">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
         <img class="mySlides" src=".\src\imageSlider\img1.jpg" style="width:100%">
         <img class="mySlides" src=".\src\imageSlider\beachSunset3.jpg" style="width:100%">
 
@@ -73,7 +73,8 @@ echo("Session error value is: " . $_SESSION["error"]);
         <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
 
     </div>
-
+	
+	
 	<script>
 		var slideIndex = 1;
 		showDivs(slideIndex);
