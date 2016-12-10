@@ -10,8 +10,9 @@
 }
 
 .pageWidth{
-	Width:100%;
-	height:2000px;
+	float:right;
+	width:100%;
+	transition: width 0.3s ease;
 }
 #banner{
 	width:100%;
