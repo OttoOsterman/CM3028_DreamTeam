@@ -86,7 +86,7 @@ echo('
 	                <form action="javascript:return login()">
 	                <label>E-mail address</label>
 	                <input type="text" id="username" required>
-	                <label>Password</label>
+	                <label><br>Password</label>
 	                <input type="password" id="password" required>
 	                <input type="submit" onclick="login()" value="Log in">
 	                </form>
@@ -95,7 +95,7 @@ echo('
 		                if($_SESSION["error"] == "username_not_found") {
 			                echo("<label>The username entered wasn't found, please try again </label > ");
 		                } elseif ($_SESSION["error"] == "wrong_password") {
-			                echo(" <label>The password entered didn't match the username, please try again</label>");
+			                echo("<label>The password entered didn't match the username, please try again</label>");
 		                }
 	                }
                     echo('
