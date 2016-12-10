@@ -30,11 +30,7 @@ session_start();
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 	
 <!-- Placeholder login form, REMOVE ASAP -->
-<<<<<<< HEAD
-<form>
-=======
 <form action="javascript:return login()">
->>>>>>> origin/master
 	<label>E-mail address</label>
 	<input type="text" id="username">
 	<label>Password</label>
