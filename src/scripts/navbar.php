@@ -46,25 +46,13 @@ echo('
             </li>
             <li>
                 <div class="black slide">
-                    <a href="#" onclick="logout()">Log out</a>
+                    <a href="https://go-portlethen.azurewebsites.net/logout">Log out</a>
                 </div>
                 <a href="#">
                     <img src="">
                 </a>
             </li>
             </ul>
-		    <script type="text/javascript">
-			function logout() {
-				var req = new XMLHttpRequest();
-				req.onreadystatechange = function() {
-					if (req.readyState == XMLHttpRequest.DONE) {
-						document.reload();
-					}
-				}
-				req.open("GET", "https://go-portlethen.azurewebsites.net/logout");
-				req.send();
-			}
-		    </script>
 	        ');
         } else {
             echo('
