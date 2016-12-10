@@ -5,9 +5,9 @@ session_start();
 <!DOCTYPE html>
 <head>
 	<title>Maps</title>
-	<link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
-	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
-	<link rel="stylesheet" type="text/css" href="./src/css/map.css"/>
+	<link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
+	<link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
+	<link rel="stylesheet" type="text/css" href="../src/css/map.css"/>
 	<script src="jquery-3.1.1.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKI13n7BTCWoJj841jA6OielBD8bRbg6M" type="text/JavaScript"></script>
 	
@@ -80,6 +80,6 @@ session_start();
 <noscript>
 	<h1>Please enable javascript to access the maps feature of this website.</h1>
 </noscript>
-<div id="map" style="width: 650px; height: 400px"></div>
+<div id="map" style="width: 80%; height: 70%"></div>
 </body>
 </html>
