@@ -3,5 +3,5 @@
     session_unset();
     session_destroy();
     session_regenerate_id(true);
-    header("Location: https://www.go-portlethen.azurewebsites.net");
+    header("Location: https://go-portlethen.azurewebsites.net");
 ?>
