@@ -42,7 +42,7 @@
 	-moz-transition: all 0.5s;
 }
 .nav ul:hover li {
-	width: 20vw;
+	width: 16vw;
 }
 .nav li img {
 	display: block;
