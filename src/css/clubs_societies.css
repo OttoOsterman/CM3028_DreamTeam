@@ -1,12 +1,11 @@
 #clubList {
-    padding: 10px;
-    padding-top: 80px;
-    float: left;
+    float: right;
+    width: 540px;
 }
 
 #clubContainer {
     padding: 40px;
-    width: 74%;
+    width: 55%;
     margin: 30px;
     display: inline-block;
     border-radius: 8px;
