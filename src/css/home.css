@@ -319,6 +319,8 @@ span.buttonText {
 	outline-style: double;
 	outline-color: lightblue;
 	outline-width: 3px;
+	position:absolute;
+
 }
 
 #content{
