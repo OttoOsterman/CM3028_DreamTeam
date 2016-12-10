@@ -1,13 +1,6 @@
 @CHARSET "UTF-8";
 
-#welcome {
-	display: flex;
-	color: #040404;
-	align-content: center;
-	justify-content: center;
-	padding-top: 100px;
-	width: 100%;
-}
+
 
 .pageWidth{
 	float:right;
