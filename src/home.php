@@ -32,9 +32,9 @@ session_start();
 <!-- Placeholder login form, REMOVE ASAP -->
 <form action="javascript:return login()">
 	<label>E-mail address</label>
-	<input type="text" id="username">
+	<input type="text" id="username" required>
 	<label>Password</label>
-	<input type="password" id="password">
+	<input type="password" id="password" required>
 	<input type="submit" onclick="login()" value="Log in">
 	<?php
 	if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
