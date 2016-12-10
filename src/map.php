@@ -80,6 +80,6 @@ session_start();
 <noscript>
 	<h1>Please enable javascript to access the maps feature of this website.</h1>
 </noscript>
-<div id="map" style="width: 80%; height: 70%"></div>
+<div id="map" style="width: 1200px; height: 1000px"></div>
 </body>
 </html>
