@@ -31,6 +31,8 @@ if ($get_clubs_result->num_rows > 0) {
     while($row = $get_clubs_result->fetch_array()) {
         $sql = $sql . " OR Club.club_id = '{$row["club_id"]}'";
     }
+    echo($sql);
+    die();
     $result = $db->query($sql);
     while ($row = $result->fetch_array()) {
         if (isset($row['photo_path']) && $row['is_profile_photo'] == '1') {
