@@ -97,7 +97,12 @@ echo('
 	?>
 </form>
 
-<script>
+
+                </div>
+            </div>
+	    
+        </div>
+        <script>
 	function login() {
 		var username = document.getElementById("username").value;
 		var password = document.getElementById("password").value;
@@ -113,10 +118,6 @@ echo('
 		req.send(args);
 	}
 </script>
-                </div>
-            </div>
-	    
-        </div>
 		');
 }
 echo('</div>');
