@@ -13,9 +13,6 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
 	<link rel="script" type="text/javascript" href="./src/JavaScript/general.js"/>
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-
-	<script src=".src/JavaScript/general.js" type="text/javascript"></script>
 
 
 
@@ -67,28 +64,95 @@ session_start();
 	}
 </script>
     <!--Image Slider-->
+<script>
 	
-	<script src=".src/JavaScript/general.js" type="text/javascript"></script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
 
-	<div class="div1"><h2>Portlethen Images</h2>
-		<p>Demos: <a href="demo1.html" class="current">1</a><a href="demo2.html">2</a><a href="demo3.html">3</a><a href="demo4.html">4</a>
-			<a href="demo5.html">5</a><a href="demo6.html">6</a><a href="demo7.html">7</a><a href="demo8.html">8</a></p>
-	</div>
-	<div id="sliderFrame">
-		<div id="slider">
-			<a href="http://www.menucool.com/javascript-image-slider" target="_blank">
-				<img src="/src/imageSlider/beachSunset1.jpg" alt="" />
-			</a>
-			<img src="/src/imageSlider/beachSunset1.jpg" />
-			<img src="/src/imageSlider/beachSunset2.jpg" alt="" />
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
 
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+	}
+
+
+
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex> slides.length) {slideIndex = 1}
+		slides[slideIndex-1].style.display = "block";
+		setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+	
+
+</script>
+	
+	
+	
+	
+	
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="/src/imageSlider/img1.jpg" style="width:100%">
+			<div class="text">life's</div>
 		</div>
-		<div id="htmlcaption" style="display: none;">
-			<em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="/src/imageSlider/img2.jpg" style="width:100%">
+			<div class="text">a</div>
 		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="/src/imageSlider/img3.jpg" style="width:100%">
+			<div class="text">beach</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+	
+	
 
 	
+	
+	
+
 </div>
 
 </body>
