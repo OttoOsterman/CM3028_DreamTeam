@@ -8,6 +8,7 @@
     <?php include('scripts/db_connect_test.php') ?>
 </head>
 <body>
+<div id="pageWidth">
 <?php include('scripts/navbar.php') ?>
 
 <div id="banner">
