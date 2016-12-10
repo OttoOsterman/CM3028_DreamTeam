@@ -27,8 +27,11 @@
 </head>
 
 <body>
+
+<div id="pageWidth">
+
 <?php include('scripts/navbar.php') ?>
-<div id="clubContainer">
+
     <?php
     if (isset($row["name"]) && $row["name"] !== null) {
         echo("

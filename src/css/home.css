@@ -314,12 +314,13 @@ span.buttonText {
 
 
 #text box{
-	width: 1000px;
+	width: 800px;
 	height:300px;
 	outline-style: double;
 	outline-color: lightblue;
 	outline-width: 3px;
-	position:absolute;
+	float:left;
+	padding-left:0px;
 
 }
 
