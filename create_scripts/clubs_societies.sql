@@ -21,7 +21,7 @@ CREATE TABLE User (user_id int NOT NULL AUTO_INCREMENT, username nvarchar(255) N
 	acc_type varchar(50) NOT NULL, CONSTRAINT pk_user_id PRIMARY KEY (user_id),
 	CONSTRAINT user_fk_acc_type FOREIGN KEY (acc_type) REFERENCES Permission (acc_type));
 	
-CREATE TABLE ClubMember (user_id int NOT NULL AUTO_INCREMENT, club_id int NOT NULL, CONSTRAINT pk_user_club_id PRIMARY KEY (user_id, club_id),
+CREATE TABLE ClubMember (user_id int NOT NULL, club_id int NOT NULL, CONSTRAINT pk_user_club_id PRIMARY KEY (user_id, club_id),
 	CONSTRAINT clubmember_fk_user_id FOREIGN KEY (user_id) REFERENCES User(user_id), CONSTRAINT clubmember_fk_club_id FOREIGN KEY (club_id) REFERENCES Club (club_id));
 		
 CREATE TABLE News (news_id int NOT NULL AUTO_INCREMENT, title nvarchar(255) NOT NULL, content text NOT NULL, date DATETIME NOT NULL, CONSTRAINT pk_news_id PRIMARY KEY (news_id));

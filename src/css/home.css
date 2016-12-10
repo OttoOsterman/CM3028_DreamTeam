@@ -18,10 +18,13 @@
 
 .slideshow-container {
 	max-width: 1000px;
-	position: absolute;
+	position: relative;
 	margin: auto;
 }
-
+#picture{
+	height:450px;
+	width:100%;
+}
 /* Next & previous buttons */
 .prev, .next {
 	cursor: pointer;

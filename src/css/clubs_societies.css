@@ -4,6 +4,16 @@
     float: left;
 }
 
+#clubContainer {
+    padding: 40px;
+    width: 74%;
+    margin: 30px;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
 .clubName {
      font-size: 30px;
      color: #FFFFFF;
@@ -28,14 +38,19 @@
 }
 
 .clubSection {
-    padding: 20px;
+    padding: 30px;
     color: white;
-    background-color: gray;
-    margin: 30px;
     overflow: auto;
+    background-color: white;
+    display: inline-block;
+    width: auto;
+    float: left;
+    margin: 1%;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
 .fb-page {
     float: right;
-    padding: 50px;
+    padding: 30px;
 }

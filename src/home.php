@@ -91,15 +91,15 @@ session_start();
 		<?php include('scripts/navbar.php') ?>
 <a id="loginBtn" class="login" href="#">Login</a>
 <!-- logo -->
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 	
 <!-- Placeholder login form, REMOVE ASAP -->
 <form action="javascript:return login()">
 	<label>E-mail address</label>
-	<input type="text" id="username">
+	<input type="text" id="username" required>
 	<label>Password</label>
-	<input type="password" id="password">
+	<input type="password" id="password" required>
 	<input type="submit" onclick="login()" value="Log in">
 	<?php
 	if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
@@ -159,6 +159,7 @@ session_start();
 	}
 
 
+/*   Do not un-comment if you suffer from epilepsy....
 
 	var slideIndex = 0;
 	showSlides();
@@ -172,39 +173,43 @@ session_start();
 		slideIndex++;
 		if (slideIndex> slides.length) {slideIndex = 1}
 		slides[slideIndex-1].style.display = "block";
-		setTimeout(showSlides, 2000); // Change image every 2 seconds
+		setTimeout(showSlides, 7000); // Change image every 2 seconds
 	}
 	
+*/
 
 </script>
 	
-	
-	
-	
-	
+
 	<div class="slideshow-container">
 		<div class="mySlides fade">
 			<div class="numbertext">1 / 3</div>
-			<img src="/src/imageSlider/img1.jpg" style="width:100%">
-			<div class="text">life's</div>
+			<img id="picture" src="/src/imageSlider/img1.jpg" style="width:100%">
+			<div class="text">Go Portlethen</div>
 		</div>
+
 
 		<div class="mySlides fade">
 			<div class="numbertext">2 / 3</div>
-			<img src="/src/imageSlider/img2.jpg" style="width:100%">
-			<div class="text">a</div>
+			<img id="picture" src="/src/imageSlider/img2.jpg" style="width:100%">
+			<div class="text">Go Portlethen</div>
 		</div>
+
 
 		<div class="mySlides fade">
 			<div class="numbertext">3 / 3</div>
-			<img src="/src/imageSlider/img3.jpg" style="width:100%">
-			<div class="text">beach</div>
-		</div>
+			<img id="picture" src="/src/imageSlider/img3.jpg" style="width:100%">
+			<div class="text">Go Portlethen</div>
 
+
+		</div>
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	</div>
+
 	<br>
+
+<!--add buttons here to take you to slide X-->
 
 	<div style="text-align:center">
 		<span class="dot" onclick="currentSlide(1)"></span>
