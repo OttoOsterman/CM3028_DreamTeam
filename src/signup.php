@@ -19,7 +19,7 @@ if (isset($_SESSION["username"])) {
             <form id='signup_form' action='signup' method='POST'>
                 <label>Please enter an e-mail address</label>
                 <input type='text' name='username' required>
-                <label>Please enter a new password</label>
+                <label>Please enter a password</label>
                 <input type='password' name='password' required>
                 <button type='submit'>Submit</button>
             </form>
@@ -46,9 +46,8 @@ if (isset($_SESSION["username"])) {
 				<script>
 					document.getElementById('signup_form').style.display = 'none';
 				</script>
-				<h2>Your account has been successfully created.</h2>
+				<h2>Your account has been successfully created, please log in.</h2>
 				");
-			$_SESSION["username"] = $username;
 		}
     }
 }

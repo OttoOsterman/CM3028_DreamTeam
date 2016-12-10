@@ -7,7 +7,7 @@ $username = stripslashes($_POST["username"]);
 $username = mysqli_real_escape_string($db, $username);
 $password = $_POST["password"];
 
-$sql = "SELECT user_id, hash, salt FROM User WHERE username = '{$username}'";
+$sql = "SELECT user_id, hash, salt, acc_type FROM User WHERE username = '{$username}'";
 $result = $db->query($sql);
 $_SESSION["error"] = "num rows returned 0, username {$_POST["username"]}, sql {$sql}";
 if ($result->num_rows > 0) {
@@ -17,6 +17,7 @@ if ($result->num_rows > 0) {
             $_SESSION["error"] = null;
             $_SESSION["username"] = $username;
             $_SESSION["user_id"] = $row["user_id"];
+            $_SESSION["acc_type"] = $row["acc_type"];
             die();
         } else {
             $_SESSION["error"] = "wrong_password";

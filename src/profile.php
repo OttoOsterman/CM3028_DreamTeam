@@ -8,10 +8,9 @@ session_start();
     <meta charset="utf-8">
     <title></title>
 
-    <link rel="stylesheet" type="text/css" href="./src/css/home.css"/>
+    <link rel="stylesheet" type="text/css" href="./src/css/profile.css"/>
     <link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
-    <link rel="script" type="text/javascript" href="./src/JavaScript/general.js"/>
 </head>
 <body>
 <?php
@@ -29,7 +28,6 @@ if ($get_clubs_result->num_rows > 0) {
         $sql = $sql . " OR Club.club_id = '{$row["club_id"]}'";
     }
     $sql = $sql . ");";
-    echo($sql);
     $result = $db->query($sql);
     while ($row = $result->fetch_array()) {
         if (isset($row['photo_path']) && $row['is_profile_photo'] == '1') {
@@ -52,8 +50,13 @@ if ($get_clubs_result->num_rows > 0) {
             ");
         }
     }
-} else {
-    echo("num rows eval'd to false");
 }
+
+if ($_SESSION["acc_type"] == "write-clubs" || $_SESSION["acc_type"] == 'admin') {
+    echo("<button onclick='show_addclub()' value='Add Club'");
+}
+
+
 ?>
+
 </body>
