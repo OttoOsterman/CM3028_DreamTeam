@@ -76,7 +76,7 @@ echo('
 	    
 	    <div id="popup1" class="overlay">
 	        <div class="popup">
-	            <h2>Here i am</h2>
+	            <h2>Please Login</h2>
 	            <a class="close" href="#">x</a>
 	            <div class="content">
 	                this is the popup content
