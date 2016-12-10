@@ -15,7 +15,10 @@ session_start();
 	<link rel="script" type="text/javascript" href="./src/JavaScript/general.js"/>
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
-    
+	<script src=".src/JavaScript/general.js" type="text/javascript"></script>
+
+
+
 
 </head>
 
@@ -35,7 +38,7 @@ session_start();
 	<input type="text" id="username">
 	<label>Password</label>
 	<input type="password" id="password">
-	<input type="button" onclick="login()" value="Log in">
+	<input type="submit" onclick="login()" value="Log in">
 </form>
 
 <script>
@@ -52,7 +55,6 @@ session_start();
 		req.open("POST", "https://go-portlethen.azurewebsites.net/login");
 		req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		req.send(args);
-		return false;
 	}
 </script>
 
@@ -61,47 +63,26 @@ echo("Session error value is: " . $_SESSION["error"]);
 ?>
 
     <!--Image Slider-->
-
 	
+	<script src=".src/JavaScript/general.js" type="text/javascript"></script>
 
-    <div class="w3-content w3-display-container">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <img class="mySlides" src=".\src\imageSlider\img1.jpg" style="width:100%">
-        <img class="mySlides" src=".\src\imageSlider\beachSunset3.jpg" style="width:100%">
+	<div class="div1"><h2>Portlethen Images</h2>
+		<p>Demos: <a href="demo1.html" class="current">1</a><a href="demo2.html">2</a><a href="demo3.html">3</a><a href="demo4.html">4</a>
+			<a href="demo5.html">5</a><a href="demo6.html">6</a><a href="demo7.html">7</a><a href="demo8.html">8</a></p>
+	</div>
+	<div id="sliderFrame">
+		<div id="slider">
+			<a href="http://www.menucool.com/javascript-image-slider" target="_blank">
+				<img src="/src/imageSlider/beachSunset1.jpg" alt="" />
+			</a>
+			<img src="/src/imageSlider/beachSunset1.jpg" />
+			<img src="/src/imageSlider/beachSunset2.jpg" alt="" />
 
-
-        <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-        <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
-
-    </div>
-	
-	
-	<script>
-		var slideIndex = 1;
-		showDivs(slideIndex);
-
-		function plusDivs(n) {
-			showDivs(slideIndex += n);
-		}
-
-		function showDivs(n) {
-			var i;
-			var x = document.getElementsByClassName("mySlides");
-			if (n > x.length) {slideIndex = 1}
-			if (n < 1) {slideIndex = x.length}
-			for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}
-			x[slideIndex-1].style.display = "block";
-		}
-
-
-	</script>
-
-
-		<!--text-->
-
-
+		</div>
+		<div id="htmlcaption" style="display: none;">
+			<em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
+		</div>
+	</div>
 
 	
 </div>
