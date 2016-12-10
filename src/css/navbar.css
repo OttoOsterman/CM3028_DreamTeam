@@ -39,14 +39,14 @@
 }
 /*Width of each of remaining menu items (100-active item width, divided by remaining items)*/
 .nav ul:hover li {
-	width: 260px;
+	width: 270px;
 }
 .nav li img {
 	display: block;
 }
 /*Width of active item*/
 .nav ul li:hover{
-	width: 500px;
+	width: 450px;
 }
 
 /* Some extra CSS stuff */
