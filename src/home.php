@@ -16,13 +16,13 @@ session_start();
 </head>
 
 <body>
-
+<div class="pageWidth">
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
 
 
 <!-- logo -->
-<div class="pageWidth">
+
 	<center>
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 	</center>
