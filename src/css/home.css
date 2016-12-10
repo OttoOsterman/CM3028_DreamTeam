@@ -3,10 +3,11 @@
 
 
 .pageWidth{
-	width:1440px;
+	width:1800px;
 	transition: width 0.3s ease;
 	margin-left:auto;
 	margin-right: auto;
+	background: #fafafa;
 }
 
 

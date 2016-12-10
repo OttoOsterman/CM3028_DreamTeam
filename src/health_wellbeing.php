@@ -10,6 +10,8 @@
 </head>
 <body>
 
+<div id="pageWidth">
+
 <?php include('scripts/navbar.php'); ?>
 
 <!-- Container for health and wellbeing content -->
@@ -117,5 +119,6 @@
         }
         ?>
     </div>
+</div>
 </div>
 </body>

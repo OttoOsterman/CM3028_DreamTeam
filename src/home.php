@@ -107,7 +107,7 @@ session_start();
 		slideIndex++;
 		if (slideIndex> slides.length) {slideIndex = 1}
 		slides[slideIndex-1].style.display = "block";
-		setTimeout(showSlides, 2000); // Change image every 2 seconds
+		setTimeout(showSlides, 7000); // Change image every 2 seconds
 	}
 	
 
@@ -138,7 +138,9 @@ session_start();
 
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 	</div>
+
 	<br>
 
 	<div style="text-align:center">
