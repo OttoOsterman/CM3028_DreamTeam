@@ -87,7 +87,7 @@ and (min-device-width:100px ){
 	#container {
 		height: 10%;
 		Width: 100%;
-		margin: 20px auto;
+		margin: 5px auto;
 		position: relative;
 	}
 
@@ -117,7 +117,7 @@ and (min-device-width:100px ){
 		height: 25px;
 		Width: 25px;
 		position: absolute;
-		top: 60%;
+		top: 5%;
 		left: 0px;
 	}
 
@@ -134,7 +134,7 @@ and (min-device-width:100px ){
 		height: 25px;
 		Width: 25px;
 		position: absolute;
-		top: 60%;
+		top: 5%;
 		right: 0px;
 	}
 
