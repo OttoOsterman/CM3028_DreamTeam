@@ -107,7 +107,7 @@ session_start();
 		slideIndex++;
 		if (slideIndex> slides.length) {slideIndex = 1}
 		slides[slideIndex-1].style.display = "block";
-		setTimeout(showSlides, 5000); // Change image every 2 seconds
+		setTimeout(showSlides, 7000); // Change image every 2 seconds
 	}
 	
 
