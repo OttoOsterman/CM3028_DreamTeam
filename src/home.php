@@ -26,6 +26,9 @@ session_start();
 
 <!-- logo -->
 
+
+
+
 	<center>
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 	</center>
