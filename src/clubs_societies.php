@@ -23,29 +23,27 @@
         js.id = id;
         js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=985300261517338";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
+    }(document, 'script', 'facebook-jssdk'));</script>
 
 <!--Contains a list of all clubs w/ an associated profile photo -->
 <div id="clubList">
     <!--Facebook plugin-->
-    <div class="fb-page" data-href="https://www.facebook.com/Sportlethen"
-         data-tabs="timeline" data-width="500" data-height="600" data-small-header="false"
-         data-adapt-container-width="true" data-hide-cover="false"
+    <div class="fb-page" data-href="https://www.facebook.com/Sportlethen" data-tabs="timeline" data-width="500"
+         data-height="1000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
          data-show-facepile="true">
-        <blockquote cite="https://www.facebook.com/Sportlethen" class="fb-xfbml-parse-ignore">
-            <a href="https://www.facebook.com/Sportlethen">Sportlethen CSH</a></blockquote>
+        <blockquote cite="https://www.facebook.com/Sportlethen" class="fb-xfbml-parse-ignore"><a
+                href="https://www.facebook.com/Sportlethen">Sportlethen CSH</a></blockquote>
     </div>
 
     <div id="clubContainer">
 
-    <?php
-    $sql = "SELECT Club.club_id, Club.name, Club.genre, Club.description, Photo.photo_path, Photo.is_profile_photo FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id";
-    $result = $db->query($sql);
+        <?php
+        $sql = "SELECT Club.club_id, Club.name, Club.genre, Club.description, Photo.photo_path, Photo.is_profile_photo FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id";
+        $result = $db->query($sql);
 
-    while ($row = $result->fetch_array()) {
-        if (isset($row['photo_path']) && $row['is_profile_photo'] == '1') {
-            echo("
+        while ($row = $result->fetch_array()) {
+            if (isset($row['photo_path']) && $row['is_profile_photo'] == '1') {
+                echo("
             <section class='clubSection'>
                 <img class='clubImage' src={$row['photo_path']}>
                 <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
@@ -53,8 +51,8 @@
                 <div class='clubDesc'>{$row['description']}</div>
             </section>
 			");
-        } else if (!(isset($row['photo_path']))) {
-            echo("
+            } else if (!(isset($row['photo_path']))) {
+                echo("
 			<section class='clubSection'>
 			    <img class='clubImage' src='../src/images/placeholder.png'>
 			    <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
@@ -62,9 +60,9 @@
 			    <div class='clubDesc'>{$row['description']}</div>
 			</section>
             ");
+            }
         }
-    }
-    ?>
-</div>
+        ?>
+    </div>
 </div>
 </body>
