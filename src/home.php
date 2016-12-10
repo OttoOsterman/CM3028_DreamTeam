@@ -19,14 +19,16 @@ session_start();
 
 <body onLoad="plusSlides(1)">
 
-<div class="pageWidth">
+
 
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
+
+<div class="pageWidth">
 <!-- logo -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
-	
+
     <!--Image Slider-->
 <script>
 	
