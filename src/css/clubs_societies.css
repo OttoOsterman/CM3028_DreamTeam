@@ -1,3 +1,10 @@
+#pageWidth {
+    width: 1800px;
+    transition: width 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #clubList {
     float: right;
     width: 30%;
@@ -53,4 +60,6 @@
 .fb-page {
     float: right;
     padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
