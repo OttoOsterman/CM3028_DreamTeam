@@ -15,9 +15,46 @@ session_start();
 	<link rel="script" type="text/javascript" href="./src/JavaScript/general.js"/>
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
+    
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+
+        window.setInterval(function showA(){
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+
+            if (n > x.length) {slideIndex = 1}
+
+            if (n < 1) {slideIndex = x.length}
+
+            for (i = 0; i < x.length; i++) {
+
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        },5000);
+    </script>
+    
+    
 </head>
 
-<body>
+<body onLoad="showA()">
 
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
@@ -75,26 +112,7 @@ echo("Session error value is: " . $_SESSION["error"]);
 
     </div>
 
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex-1].style.display = "block";
-        }
-    </script>
-
+   
 
 
 
