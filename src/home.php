@@ -35,7 +35,7 @@ session_start();
 	<input type="text" id="username">
 	<label>Password</label>
 	<input type="password" id="password">
-	<input type="button" onclick="login()" value="Log in">
+	<input type="button" onclick="javascript:return login()" value="Log in">
 </form>
 
 <script>

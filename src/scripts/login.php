@@ -14,7 +14,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_array()) {
         $hashed_password = hash("sha256", $password . $row["salt"]);
         if ($hashed_password === $row["hash"]) {
-            $_SESSION["error"] = "no error";
+            $_SESSION["error"] = null;
             $_SESSION["username"] = $username;
             die();
         } else {
