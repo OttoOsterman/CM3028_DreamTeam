@@ -16,7 +16,7 @@ echo('
 				<a href="https://go-portlethen.azurewebsites.net/clubs_societies">Clubs & Societies</a>
 			</div>
 			<a href="#">
-			    <img src="">
+			    <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Spacer.gif">
 			</a>
 		</li>
 		<li>
