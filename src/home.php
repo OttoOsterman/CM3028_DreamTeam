@@ -63,13 +63,12 @@ echo("Session error value is: " . $_SESSION["error"]);
     <!--Image Slider-->
 
 
-
-
-
     <div class="w3-content w3-display-container">
         <img class="mySlides" src=".\src\imageSlider\img1.jpg" style="width:100%">
-        <img class="mySlides" src=".\src\imageSlider\img2.jpg" style="width:100%">
-        <img class="mySlides" src=".\src\imageSlider\img3.jpg" style="width:100%">
+        <img class="mySlides" src=".\src\imageSlider\beachSunset1.jpg" style="width:100%">
+        <img class="mySlides" src=".\src\imageSlider\beachSunset2.jpg" style="width:100%">
+        <img class="mySlides" src=".\src\imageSlider\beachSunset3.jpg" style="width:100%">
+
 
         <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
         <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
