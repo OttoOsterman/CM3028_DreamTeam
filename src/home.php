@@ -20,7 +20,6 @@ session_start();
 <body onLoad="plusSlides(1)">
 
 <div class="pageWidth">
-	
 
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
