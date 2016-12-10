@@ -5,6 +5,11 @@
     font-family: "Helvetica";
 }
 
+#clubContainer {
+    width: 100%;
+
+}
+
 .clubSection {
     padding: 30px;
     width: 70%;
@@ -48,7 +53,5 @@
 .clubImage {
     float: right;
     height: 150px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    padding: 10px;
 }

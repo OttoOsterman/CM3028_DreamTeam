@@ -32,6 +32,8 @@
 
 <?php include('scripts/navbar.php') ?>
 
+<div id="clubContainer">
+
     <?php
     if (isset($row["name"]) && $row["name"] !== null) {
         echo("
@@ -55,6 +57,7 @@
         echo("<h1>Club not found</h1>");
     }
     ?>
+</div>
 </div>
 </body>
 </html>
