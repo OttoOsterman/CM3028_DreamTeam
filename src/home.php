@@ -8,7 +8,7 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 	<link rel="stylesheet" type="text/css" href="./src/css/home.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
@@ -25,6 +25,8 @@ session_start();
 		<?php include('scripts/navbar.php') ?>
 
 <!-- logo -->
+
+
 <div class="pageWidth">
 	<center>
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
@@ -62,7 +64,7 @@ echo("Session error value is: " . $_SESSION["error"]);
 ?>
 
     <!--Image Slider-->
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <div class="w3-content w3-display-container">
         <img class="mySlides" src=".\src\imageSlider\img1.jpg" style="width:100%">
         <img class="mySlides" src=".\src\imageSlider\beachSunset1.jpg" style="width:100%">
