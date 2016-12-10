@@ -61,7 +61,7 @@ echo('
 						document.reload();
 					}
 				}
-				req.open("GET", "https://go-portlethen.azurewebsites.net/logout");
+				req.open("POST", "https://go-portlethen.azurewebsites.net/logout");
 				req.send();
 			}
 		    </script>
