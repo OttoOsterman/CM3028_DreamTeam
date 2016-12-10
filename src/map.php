@@ -80,6 +80,7 @@ session_start();
 <noscript>
 	<h1>Please enable javascript to access the maps feature of this website.</h1>
 </noscript>
-<div id="map" style="width: 1200px; height: 1000px"></div>
+<h1 id="mapHeader">Portlethen Activity Map</h1>
+<div id="map" style="width: 1600px; height: 1000px"></div>
 </body>
 </html>
