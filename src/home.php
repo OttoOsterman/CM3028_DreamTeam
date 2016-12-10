@@ -20,14 +20,15 @@ session_start();
 </head>
 
 <body>
+<center>
 <div class="pageWidth">
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
 
 <!-- logo -->
-	<center>
+
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
-	</center>
+
 
 
 <!-- Placeholder login form, REMOVE ASAP -->
@@ -100,10 +101,8 @@ echo("Session error value is: " . $_SESSION["error"]);
 		<!--Image Slider CLOSED-->
 
 
-
-
-
-</div>
+</center>
+</div> 
 
 </body>
 
