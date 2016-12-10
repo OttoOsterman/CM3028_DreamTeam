@@ -8,10 +8,12 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./src/css/home.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
 	<link rel="script" type="text/javascript" href="./src/JavaScript/general.js"/>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
 </head>
 
@@ -60,8 +62,8 @@ echo("Session error value is: " . $_SESSION["error"]);
 
     <!--Image Slider-->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+
 
 
     <div class="w3-content w3-display-container">
@@ -71,7 +73,7 @@ echo("Session error value is: " . $_SESSION["error"]);
 
         <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
         <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
-        
+
     </div>
 
     <script>
