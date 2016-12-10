@@ -1,6 +1,6 @@
 #clubList {
     float: right;
-    width: 501px;
+    width: 540px;
 }
 
 #clubContainer {
@@ -51,5 +51,5 @@
 
 .fb-page {
     float: right;
-    padding: 30px;
+    padding: 10px;
 }

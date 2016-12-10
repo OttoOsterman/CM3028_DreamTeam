@@ -20,109 +20,15 @@ session_start();
 <body onLoad="plusSlides(1)">
 
 <div class="pageWidth">
-
-	<section id="myPopup" class="popup">
-		<!-- Popup content -->
-		<section class="popup-content">
-			<span class="close">X</span>
-			<!--Google login button-->
-			
-			<section id="name"></section>
-			<script>startApp();</script>
-			<script>
-				//Login function
-				function login1() {
-					if ($('.login').text('Login')) {
-						$('.login').text('Logout')
-					}
-				}
-			</script>
-			<!--Facebook login-->
-			<section id="fb-root"></section>
-			<script>(function (d, s, id) {
-					var js, fjs = d.getElementsByTagName(s)[0];
-					if (d.getElementById(id)) return;
-					js = d.createElement(s);
-					js.id = id;
-					js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
-					fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));</script>
-			<section class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false"
-					 data-auto-logout-link="true"></section>
-			<!--Logout button-->
-			<a href="#" class="logout" onclick="logout1()">Logout</a>
-			<script>
-				//Signout function
-				function signOut2() {
-					FB.logout();
-// user is now logged out of Facebook
-					console.log('User signed out of Facebook');
-				}
-
-			</script>
-			<!--Google sign out function-->
-			<script>
-				function signOut1() {
-					var auth2 = gapi.auth2.getAuthInstance();
-					auth2.signOut().then(function () {
-// user is now logged out of Google+
-						console.log('User signed out of Google+.');
-					});
-					$('#name').text('Signed out.')
-				}
-			</script>
-			<script>
-				//Logout function
-				function logout1() {
-					signOut1();
-					signOut2();
-					$('.login').text('Login')
-				}
-			</script>
-		</section>
-	</section>
+	
 
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
-<a id="loginBtn" class="login" href="#">Login</a>
 <!-- logo -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 	
-<!-- Placeholder login form, REMOVE ASAP -->
-<form action="javascript:return login()">
-	<label>E-mail address</label>
-	<input type="text" id="username" required>
-	<label>Password</label>
-	<input type="password" id="password" required>
-	<input type="submit" onclick="login()" value="Log in">
-	<?php
-	if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
-		if($_SESSION["error"] == "username_not_found") {
-			echo("<label>The username entered wasn't found, please try again</label>");
-		} elseif ($_SESSION["error"] == "wrong_password") {
-			echo("<label>The password entered didn't match the username, please try again</label>");
-		}
-	}
-	?>
-</form>
 
-<script>
-	function login() {
-		var username = document.getElementById("username").value;
-		var password = document.getElementById("password").value;
-		var args = "username=" + username + "&password=" + password;
-		var req = new XMLHttpRequest();
-		req.onreadystatechange = function() {
-			if (req.readyState == XMLHttpRequest.DONE) {
-				location.reload();
-			}
-		};
-		req.open("POST", "https://go-portlethen.azurewebsites.net/login");
-		req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-		req.send(args);
-	}
-</script>
     <!--Image Slider-->
 <script>
 	
