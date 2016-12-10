@@ -14,16 +14,82 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
 	<link rel="script" type="text/javascript" href="./src/JavaScript/general.js"/>
 
-	
+
+
+
 </head>
 
 <body onLoad="plusSlides(1)">
 
 <div class="pageWidth">
-	
+
+	<section id="myPopup" class="popup">
+		<!-- Popup content -->
+		<section class="popup-content">
+			<span class="close">X</span>
+			<!--Google login button-->
+			<section id="customBtn" class="customGPlusSignIn" data-onsuccess="onSignIn" onclick="login1()">
+				<span class="icon"></span>
+				<span class="buttonText">Google</span>
+			</section>
+			<section id="name"></section>
+			<script>startApp();</script>
+			<script>
+				//Login function
+				function login1() {
+					if ($('.login').text('Login')) {
+						$('.login').text('Logout')
+					}
+				}
+			</script>
+			<!--Facebook login-->
+			<section id="fb-root"></section>
+			<script>(function (d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+			<section class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false"
+					 data-auto-logout-link="true"></section>
+			<!--Logout button-->
+			<a href="#" class="logout" onclick="logout1()">Logout</a>
+			<script>
+				//Signout function
+				function signOut2() {
+					FB.logout();
+// user is now logged out of Facebook
+					console.log('User signed out of Facebook');
+				}
+
+			</script>
+			<!--Google sign out function-->
+			<script>
+				function signOut1() {
+					var auth2 = gapi.auth2.getAuthInstance();
+					auth2.signOut().then(function () {
+// user is now logged out of Google+
+						console.log('User signed out of Google+.');
+					});
+					$('#name').text('Signed out.')
+				}
+			</script>
+			<script>
+				//Logout function
+				function logout1() {
+					signOut1();
+					signOut2();
+					$('.login').text('Login')
+				}
+			</script>
+		</section>
+	</section>
 
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
+<a id="loginBtn" class="login" href="#">Login</a>
 <!-- logo -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
@@ -93,7 +159,7 @@ session_start();
 	}
 
 
-/*   Do not un-comment if you suffer from epilepsy....
+/*   Do not un-comment this if you suffer from epilepsy....
 
 	var slideIndex = 0;
 	showSlides();
@@ -150,150 +216,17 @@ session_start();
 		<span class="dot" onclick="currentSlide(2)"></span>
 		<span class="dot" onclick="currentSlide(3)"></span>
 	</div>
+	
+	
+<!-- text -->
+	
+	<div id="text box">
+		<h3 id="title">Go-Portlethen!</h3>
+		<p id="content"> here we will add the content </p>
+	</div>
+	
 
-
-	<script>
-	//Function declaration
-	$('a[href^="#"]').on('click', function (e) {
-	e.preventDefault();
-	var target = this.hash;
-	var $target = $(target);
-	$('html, body').stop().animate({
-	'scrollTop': $target.offset().top
-	}, 900, 'swing');
-	});
-	<!--Blur background when login button is clicked-->
-	function Blur() {
-	$('#Title, .results, #LeftBar, #PageFooter, #MainHeader').css({
-	'filter': 'blur(2px)',
-	'-webkit-filter': 'blur(2px)',
-	'-moz-filter': 'blur(2px)',
-	'-o-filter': 'blur(2px)',
-	'-ms-filter': 'blur(2px)',
-	transition: 'all 0.3s ease-in-out'
-	})
-	}
-
-
-	<!--unblur background when popup is closed-->
-	function unBlur() {
-	$(' #Title, .results, #LeftBar, #PageFooter,#MainHeader').css({
-	'z-index': 900,
-	'filter': 'none',
-	'-webkit-filter': 'none',
-	'-moz-filter': 'none',
-	'-o-filter': 'none',
-	'-ms-filter': 'none',
-	transition: 'all 0.3s ease-in-out'
-	});
-	}
-
-
-	<!-- Popup Script -->
-	// Get the popup
-	var popup = document.getElementById('myPopup');
-	// Get the button that opens the popup
-	var a = document.getElementById("loginBtn");
-	// Get the <span> element that closes the popup
-            var span = document.getElementsByClassName("close")[0];
-            // When the user clicks on the button, open the popup
-            a.onclick = function () {
-                popup.style.display = "block";
-                Blur();
-            };
-            // When the user clicks on <span> (x), close the popup
-            span.onclick = function () {
-                popup.style.display = "none";
-                unBlur();
-            };
-            // When the user clicks anywhere outside of the popup, close it
-            window.onclick = function (event) {
-                if (event.target == popup) {
-                    popup.style.display = "none";
-                    unBlur();
-                }
-            };
-			<!-- End of popup script -->
-        });
-
-
-			<!-- Facebook Script -->
-        //First Part
-        // This is called with the results from from FB.getLoginStatus().
-        function statusChangeCallback(response) {
-            console.log('statusChangeCallback');
-            console.log(response);
-            // The response object is returned with a status field that lets the
-            // app know the current login status of the person.
-            // Full docs on the response object can be found in the documentation
-            // for FB.getLoginStatus().
-            if (response.status === 'connected') {
-                // Logged into your app and Facebook.
-                testAPI();
-            } else if (response.status === 'not_authorized') {
-                // The person is logged into Facebook, but not your app.
-                document.getElementById('status').innerHTML = 'Please log ' +
-                        'into this app.';
-            } else {
-                // The person is not logged into Facebook, so we're not sure if
-                // they are logged into this app or not.
-                document.getElementById('status').innerHTML = 'Please log ' +
-                        'into Facebook.';
-            }
-        }
-        // This function is called when someone finishes with the Login
-        // Button.  See the onlogin handler attached to it in the sample
-        // code below.
-        function checkLoginState() {
-            FB.getLoginStatus(function (response) {
-                statusChangeCallback(response);
-            });
-        }
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '985300261517338',
-                cookie: true,  // enable cookies to allow the server to access
-                               // the session
-                xfbml: true,  // parse social plugins on this page
-                version: 'v2.6' // use graph api version 2.6
-            });
-            FB.getLoginStatus(function (response) {
-                statusChangeCallback(response);
-            });
-        };
-        // Load the SDK asynchronously
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-        // Here we run a very simple test of the Graph API after login is
-        // successful.  See statusChangeCallback() for when this call is made.
-        function testAPI() {
-            console.log('Welcome!  Fetching your information.... ');
-            FB.api('/me', function (response) {
-                console.log('Successful login for: ' + response.name);
-                document.getElementById('status').innerHTML =
-                        'Thanks for logging in, ' + response.name + '!';
-            });
-        }
-        FB.logout(function (response) {
-            FB.Auth.setAuthResponse(null, 'unknown');
-        });
-			<!-- End of Facebook Script -->
-			</script>
-
-
-
-
-
-
-
-
-			</div>
+</div>
 
 </body>
 

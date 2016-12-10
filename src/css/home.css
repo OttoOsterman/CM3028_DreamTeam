@@ -105,4 +105,216 @@
 	to {opacity: 1}
 }
 
+/* The Popup (background) */
+.popup {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 10000; /* Sit on top */
+	padding-top: 30px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 110%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Popup Content */
+.popup-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: 0 auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 25%;
+	height: 70%;
+	box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.29);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+	transition: all 0.5s;
+	text-align: center;
+}
+/*Responsive*/
+@media all and (max-width: 700px) {
+	.popup {
+		width: 50%;
+		height: 50%;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	.popup-content {
+		width: 10%;
+		height: 10%;
+
+	}
+}
+
+/*Facebook login*/
+.logout, .fb-login-button {
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 7%;
+}
+
+.fb-login-button {
+	text-align: center;
+	width: 60%;
+	border-radius: 4px;
+	padding: 15px 32px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	background-color: white;
+	color: black;
+	border: 3px solid #3b5998;
+	margin: 10% 1% 1% 20%;
+}
+.fb-login-button:hover {
+	background-color: #3b5998;
+	border-color: #FF6138;
+	color: white;
+}
+
+.logout {
+	text-align: center;
+	width: 60%;
+	margin: 10% 10% 10% 20%;
+	border-radius: 4px;
+	padding: 15px 32px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	background-color: white;
+	color: black;
+	border: 3px solid red;
+}
+
+/*Change button color when mouse is hovered over*/
+.logout:hover {
+	background-color: #FF6138;
+	color: white;
+}
+a.logout {
+	font-size: large;
+}
+@-webkit-keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0
+	}
+	to {
+		top: 0;
+		opacity: 1
+	}
+}
+
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0
+	}
+	to {
+		top: 0;
+		opacity: 1
+	}
+}
+
+/* The Close Button */
+.close {
+	float: right;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin: 4%;
+	width: 10%;
+	padding: 8px;
+	text-decoration: none;
+	display: inline-block;
+	transition-duration: 0.4s;
+	background-color: white;
+	color: black;
+	border: 3px solid red;
+	border-radius: 100%;
+}
+
+/*Change button color when mouse is hovered over*/
+.close:hover {
+	background-color: #FF6138;
+	color: white;
+}
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*Google sign in button*/
+#customBtn {
+	background-color: white; /* Google red */
+	border-radius: 4px;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	color: black;
+	border: 3px solid #FF6138;
+	margin-top: 25%;
+	margin-left: 19%;
+	width: 60%;
+}
+
+/*Change color on hover*/
+#customBtn:hover {
+	cursor: pointer;
+	background-color: #D50F25;
+	color: white;
+	border: 3px solid #FF6138;
+}
+span.label {
+	font-weight: normal;
+}
+span.icon {
+	background: url('Pictures/new-google-favicon-128.png') transparent 5px 50% no-repeat;
+	background-size: 90% 90%;
+	display: inline-block;
+	vertical-align: middle;
+	width: 42px;
+	height: 42px;
+}
+span.buttonText {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 42px;
+	padding-right: 42px;
+	font-size: 20px;
+	font-weight: bold;
+	/* Use the Roboto font that is loaded in the <head> */
+	font-family: 'Roboto', sans-serif;
+}
+
+
+#text box{
+	width:100%;
+	height:300px;
+	outline-style: double;
+	outline-color: lightblue;
+	outline-width: 3px;
+}
+
+#content{
+	Text-align:left;
+	font-style:oblique;
+	font-size:10px;
+}
 
