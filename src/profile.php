@@ -29,6 +29,7 @@ if ($result->num_rows > 0) {
         $sql = $sql . " OR Club.club_id = {$row["club_id"]}";
     }
 }
+echo($sql);
 
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
