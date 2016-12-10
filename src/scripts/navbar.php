@@ -68,9 +68,6 @@ echo('
 			    <div class="black slide">
 				    <a href="#">Log in</a>
 			    </div>
-			    <a href="#">
-				    <img src="">
-			    </a>
 		    </li>
 	    </ul>
 		');
