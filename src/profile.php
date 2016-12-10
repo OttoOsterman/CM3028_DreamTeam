@@ -23,6 +23,7 @@ include ("scripts/db_connect_test.php");
 $get_clubs_sql = "SELECT club_id FROM ClubMember WHERE user_id = {$_SESSION['user_id']}";
 echo($get_clubs_sql);
 $get_clubs_result = $db->query($get_clubs_sql);
+echo("db cound't be queried");
 if ($get_clubs_result->num_rows > 0) {
     $row = $result->fetch_array();
     echo($row["club_id"]);
@@ -54,6 +55,8 @@ if ($get_clubs_result->num_rows > 0) {
             ");
         }
     }
+} else {
+    echo("num rows eval'd to 0");
 }
 ?>
 </body>
