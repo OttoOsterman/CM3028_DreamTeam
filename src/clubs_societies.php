@@ -34,6 +34,7 @@
         <blockquote cite="https://www.facebook.com/Sportlethen" class="fb-xfbml-parse-ignore"><a
                 href="https://www.facebook.com/Sportlethen">Sportlethen CSH</a></blockquote>
     </div>
+</div>
 
     <div id="clubContainer">
 
