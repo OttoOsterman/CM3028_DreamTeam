@@ -100,7 +100,7 @@ and (min-device-width:100px ){
 	#right_arrow {
 		height: 20%;
 		width: 40px;
-		position: absolute;
+		position: relative;
 		right: 0px;
 		top: 0px;
 	}
@@ -108,7 +108,7 @@ and (min-device-width:100px ){
 	#left_arrow {
 		height: 20%;
 		width: 40px;
-		position: absolute;
+		position: relative;
 		left: 0px;
 		top: 0px;
 	}
