@@ -27,25 +27,6 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 	
-<!-- Placeholder login form, REMOVE ASAP -->
-
-
-<script>
-	function login() {
-		var username = document.getElementById("username").value;
-		var password = document.getElementById("password").value;
-		var args = "username=" + username + "&password=" + password;
-		var req = new XMLHttpRequest();
-		req.onreadystatechange = function() {
-			if (req.readyState == XMLHttpRequest.DONE) {
-				location.reload();
-			}
-		};
-		req.open("POST", "https://go-portlethen.azurewebsites.net/login");
-		req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-		req.send(args);
-	}
-</script>
     <!--Image Slider-->
 <script>
 	
