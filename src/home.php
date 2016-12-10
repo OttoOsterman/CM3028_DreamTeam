@@ -14,9 +14,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
 	<link rel="script" type="text/javascript" href="./src/JavaScript/general.js"/>
 
-
-
-
+	
 </head>
 
 <body>
