@@ -7,40 +7,7 @@
 	font-family: "Helvetica";
 }
 
-#navbar {
-	margin: 0;
-	padding: 0;
-	background-color: darkgray;
-	width: 100%;
-	height: inherit;
-	text-align: center;
-	position: fixed;
-}
 
-#navbarlist {
-	list-style-type: none;
-	display: block;
-	opacity: 0.75;
-	font-size: 16px;
-	font-weight: bold;
-}
-
-#navbar li a{
-	float: left;
-}
-
-#navbarlist li a {
-	text-decoration: none;
-	color: #FFFFFF;
-	padding: 14px;
-	display: block;
-}
-
-#navbar li a:hover {
-	background-color: #3F3F3F;
-	opacity: 1;
-	color: #FFFFFF;
-}
 
 /* Experimental Nav */
 @media screen and (max-width: 1000px){
