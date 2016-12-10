@@ -79,7 +79,23 @@ echo('
 	            <h2>Please Login</h2>
 	            <a class="close" href="#">x</a>
 	            <div class="content">
-	                this is the popup content
+	                <form action="javascript:return login()">
+	                <label>E-mail address</label>
+	                <input type="text" id="username" required>
+	                <label>Password</label>
+	                <input type="password" id="password" required>
+	                <input type="submit" onclick="login()" value="Log in">
+	                ');
+	                if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
+		                if($_SESSION["error"] == "username_not_found") {
+			                echo("<label>The username entered wasn\'t found, please try again</label>");
+		                } elseif ($_SESSION["error"] == "wrong_password") {
+			                echo("<label>The password entered didn\'t match the username, please try again</label>");
+		                }
+	                }
+	                ?>
+echo('
+                    </form>
                 </div>
             </div>
 	    
