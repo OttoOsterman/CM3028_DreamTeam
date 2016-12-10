@@ -20,7 +20,8 @@ include ("scripts/navbar.php");
 //TODO: REMOVE TESTING CODE
 include ("scripts/db_connect_test.php");
 
-$get_clubs_sql = "SELECT club_id FROM ClubMember WHERE user_id = {$_SESSION['user_id']}";
+$get_clubs_sql = "SELECT club_id FROM ClubMember WHERE user_id = '{$_SESSION['user_id']}'";
+echo($get_clubs_sql);
 $get_clubs_result = $db->query($get_clubs_sql);
 if ($get_clubs_result->num_rows > 0) {
     $row = $result->fetch_array();
@@ -54,9 +55,5 @@ if ($get_clubs_result->num_rows > 0) {
         }
     }
 }
-echo($get_clubs_sql);
-echo($sql);
-
-
 ?>
 </body>
