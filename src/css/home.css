@@ -4,7 +4,7 @@
 
 .pageWidth{
 	float:right;
-	width:100%;
+	width:1400px;
 	transition: width 0.3s ease;
 }
 #banner{
