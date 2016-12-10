@@ -79,9 +79,8 @@
 }
 .slide{
 	position: absolute;
-	left: 0; top: -90px;
+	top: -90px;
 	width: 600px;
-    vertical-align: middle;
 }
 .slide a{
 	display:block;
