@@ -94,7 +94,7 @@ session_start();
 	}
 
 
-
+/*
 	var slideIndex = 0;
 	showSlides();
 
@@ -110,7 +110,7 @@ session_start();
 		setTimeout(showSlides, 7000); // Change image every 2 seconds
 	}
 	
-
+*/
 </script>
 	
 	
@@ -120,19 +120,19 @@ session_start();
 	<div class="slideshow-container">
 		<div class="mySlides fade">
 			<div class="numbertext">1 / 3</div>
-			<img src="/src/imageSlider/img1.jpg" style="width:100%">
+			<img id="picture" src="/src/imageSlider/img1.jpg" style="width:100%">
 			<div class="text">life's</div>
 		</div>
 
 		<div class="mySlides fade">
 			<div class="numbertext">2 / 3</div>
-			<img src="/src/imageSlider/img2.jpg" style="width:100%">
+			<img id="picture" src="/src/imageSlider/img2.jpg" style="width:100%">
 			<div class="text">a</div>
 		</div>
 
 		<div class="mySlides fade">
 			<div class="numbertext">3 / 3</div>
-			<img src="/src/imageSlider/img3.jpg" style="width:100%">
+			<img id="picture" src="/src/imageSlider/img3.jpg" style="width:100%">
 			<div class="text">beach</div>
 		</div>
 

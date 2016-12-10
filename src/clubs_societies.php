@@ -36,6 +36,9 @@
         <blockquote cite="https://www.facebook.com/Sportlethen" class="fb-xfbml-parse-ignore">
             <a href="https://www.facebook.com/Sportlethen">Sportlethen CSH</a></blockquote>
     </div>
+
+    <div id="clubContainer">
+
     <?php
     $sql = "SELECT Club.club_id, Club.name, Club.genre, Club.description, Photo.photo_path, Photo.is_profile_photo FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id";
     $result = $db->query($sql);
@@ -62,5 +65,6 @@
         }
     }
     ?>
+</div>
 </div>
 </body>
