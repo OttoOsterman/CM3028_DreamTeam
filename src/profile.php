@@ -54,7 +54,7 @@ if ($get_clubs_result->num_rows > 0) {
 
 if ($_SESSION["acc_type"] == 'admin') {
     echo ("
-    <form action='addclub.php'>
+    <form action='javascript:return add_club()'>
     <label>Club Name: </label>
     <input type='text' id='name'>
     <br>
@@ -66,7 +66,14 @@ if ($_SESSION["acc_type"] == 'admin') {
     <br>
     <label>Contact info: </label>
     <input type='text' id='contact_info'>
+    <br>
     <input type='submit' value='Add club'>
+    
+    <script>
+    function add_club() {
+    
+    }
+    </script>
     ");
 }
 
