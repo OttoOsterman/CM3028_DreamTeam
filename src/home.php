@@ -35,10 +35,12 @@ session_start();
 	<input type="text" id="username">
 	<label>Password</label>
 	<input type="password" id="password">
-	<input type="button" onclick="login()" value="Log in">
+	<input type="submit" onclick="login()" value="Log in">
 </form>
 
 <script>
+	
+
 	function login() {
 		var username = document.getElementById("username").value;
 		var password = document.getElementById("password").value;
