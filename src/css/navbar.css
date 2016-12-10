@@ -29,7 +29,7 @@
 
 .nav li{
 	position: relative;
-	display: block;
+	/*display: block;*/
 	width: 300px;
 	top: 90px;
 	float: left;
