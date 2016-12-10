@@ -65,8 +65,6 @@ echo("Session error value is: " . $_SESSION["error"]);
 
     <div class="w3-content w3-display-container">
         <img class="mySlides" src=".\src\imageSlider\img1.jpg" style="width:100%">
-        <img class="mySlides" src=".\src\imageSlider\beachSunset1.jpg" style="width:100%">
-        <img class="mySlides" src=".\src\imageSlider\beachSunset2.jpg" style="width:100%">
         <img class="mySlides" src=".\src\imageSlider\beachSunset3.jpg" style="width:100%">
 
 
@@ -102,7 +100,7 @@ echo("Session error value is: " . $_SESSION["error"]);
 
 
 </center>
-</div> 
+</div>
 
 </body>
 
