@@ -15,10 +15,12 @@
 #staticHealthSection, #dynamicNewsSection, #dynamicEventsSection {
     padding: 40px;
     width: 80%;
-    background-color: grey;
     margin: auto;
     margin-bottom: 30px;
     display: inline-block;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
 .staticInfoContainer, .dynamicNewsContainer, .dynamicEventContainer {
@@ -30,6 +32,8 @@
     margin: 20px;
     height: 350px;
     overflow: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
 .staticInfoHeader, .dynamicNewsTitle, .dynamicEventName {
