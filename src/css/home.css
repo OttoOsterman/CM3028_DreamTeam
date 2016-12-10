@@ -117,15 +117,15 @@ and (min-device-width:100px ){
 		height: 25px;
 		Width: 25px;
 		position: absolute;
-		top: 5%;
+		top: 40%;
 		left: 0px;
 	}
 
 	#left:hover {
-		height: 28px;
-		Width: 26px;
+		height: 30px;
+		Width: 30px;
 		position: absolute;
-		top: 60%;
+		top: 40%;
 		left: 0px;
 
 	}
@@ -134,15 +134,15 @@ and (min-device-width:100px ){
 		height: 25px;
 		Width: 25px;
 		position: absolute;
-		top: 5%;
+		top: 40%;
 		right: 0px;
 	}
 
 	#right:hover {
-		height: 15px;
-		Width: 15px;
+		height: 30px;
+		Width: 30px;
 		position: absolute;
-		top: 60%;
+		top: 40%;
 		right: 0px;
 
 	}
