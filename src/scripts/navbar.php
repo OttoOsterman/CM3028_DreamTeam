@@ -12,7 +12,7 @@ echo('
 		</li>
 		<li>
 			<div class="yellow slide">
-				<a href="https://go-portlethen.azurewebsites.net/clubs_societies">Clubs &<br> Societies</a>
+				<a href="https://go-portlethen.azurewebsites.net/clubs_societies">Clubs & Societies</a>
 			</div>
 			<a href="#">
 				<img src="">
