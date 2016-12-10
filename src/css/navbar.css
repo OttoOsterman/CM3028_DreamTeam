@@ -41,13 +41,13 @@
 	-moz-transition: all 0.5s;
 }
 .nav ul:hover li {
-	width: 18.75vw;
+	width: 15vw;
 }
 .nav li img {
 	display: block;
 }
 .nav ul li:hover{
-	width: 25vw;
+	width: 20vw;
 }
 
 /* Some extra CSS stuff */
