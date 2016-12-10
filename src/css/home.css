@@ -86,7 +86,7 @@ and (min-device-width:950px ){
 and (min-device-width:100px ){
 	#container {
 		height: 10%;
-		Width: 80%;
+		Width: 100%;
 		margin: 20px auto;
 		position: relative;
 	}
@@ -100,7 +100,7 @@ and (min-device-width:100px ){
 	#right_arrow {
 		height: 100%;
 		width: 40px;
-		position: relative;
+		position: absolute;
 		right: 0px;
 		top: 0px;
 	}
@@ -108,22 +108,22 @@ and (min-device-width:100px ){
 	#left_arrow {
 		height: 100%;
 		width: 40px;
-		position: relative;
+		position:absolute;
 		left: 0px;
 		top: 0px;
 	}
 
 	#left {
-		height: 10%;
-		Width: 15%;
-		position:fixed;
+		height: 25px;
+		Width: 25px;
+		position: absolute;
 		top: 40%;
 		left: 0px;
 	}
 
 	#left:hover {
-		height: 15px;
-		Width: 15px;
+		height: 28px;
+		Width: 26px;
 		position: absolute;
 		top: 40%;
 		left: 0px;
@@ -131,8 +131,8 @@ and (min-device-width:100px ){
 	}
 
 	#right {
-		height: 10%;
-		Width: 15%;
+		height: 50px;
+		Width: 50px;
 		position: absolute;
 		top: 40%;
 		right: 0px;
