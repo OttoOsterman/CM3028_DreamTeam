@@ -29,7 +29,7 @@
 	float: left;
 }
 .nav ul{
-	width: 100vw;
+	width: 120vw;
 }
 .nav li{
 	position: relative;
@@ -48,7 +48,7 @@
 	display: block;
 }
 .nav ul li:hover{
-	width: 25vw;
+	width: 30vw;
 }
 
 /* Some extra CSS stuff */
