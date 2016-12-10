@@ -1,11 +1,5 @@
 <?php
 echo('
-/**
- * Created by PhpStorm.
- * User: Andrew
- * Date: 10/12/2016
- * Time: 09:38 PM
- */
 <div id="popup1" class="overlay">
 	        <div class="popup">
 	            <h2>Please Login</h2>
