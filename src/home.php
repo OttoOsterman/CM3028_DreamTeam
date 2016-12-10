@@ -24,7 +24,7 @@ session_start();
             showDivs(slideIndex += n);
         }
 
-        window.setInterval(function showDivs(n) {
+        function showDivs(n) {
             var i;
             var x = document.getElementsByClassName("mySlides");
             if (n > x.length) {slideIndex = 1}
@@ -33,7 +33,7 @@ session_start();
                 x[i].style.display = "none";
             }
             x[slideIndex-1].style.display = "block";
-        },5000);
+        }
 
         
     </script>
@@ -41,7 +41,7 @@ session_start();
     
 </head>
 
-<body onLoad="showDivs(n)">
+<body>
 
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
