@@ -46,7 +46,6 @@ session_start();
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
 
-
 <!-- logo -->
 <div class="pageWidth">
 	<center>
@@ -86,7 +85,6 @@ echo("Session error value is: " . $_SESSION["error"]);
 
     <!--Image Slider-->
 
-
     <div class="w3-content w3-display-container">
         <img class="mySlides" src=".\src\imageSlider\img1.jpg" style="width:100%">
         <img class="mySlides" src=".\src\imageSlider\beachSunset1.jpg" style="width:100%">
@@ -99,7 +97,10 @@ echo("Session error value is: " . $_SESSION["error"]);
 
     </div>
 
-   
+	
+
+
+
 
 
 
