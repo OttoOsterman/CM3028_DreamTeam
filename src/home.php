@@ -37,12 +37,13 @@ session_start();
 	<style>
 		.carousel-inner > .item > img,
 		.carousel-inner > .item > a > img {
-			width: 70%;
+			width: 100%;
 			margin: auto;
 		}
 	</style>
 	</head>
 	<body>
+
 
 	<div class="container">
 		<br>
