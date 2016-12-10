@@ -20,7 +20,7 @@ include ("scripts/navbar.php");
 //TODO: REMOVE TESTING CODE
 include ("scripts/db_connect_test.php");
 
-$sql = "SELECT Club.club_id FROM ClubMember WHERE user_id = {$_SESSION['user_id']}";
+$sql = "SELECT club_id FROM ClubMember WHERE user_id = {$_SESSION['user_id']}";
 $result = $db->query($sql);
 if ($result->num_rows > 0) {
     $row = $result->fetch_array();
