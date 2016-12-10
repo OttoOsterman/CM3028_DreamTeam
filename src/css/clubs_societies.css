@@ -17,6 +17,11 @@
     }
 }
 
+#banner{
+    width:100%;
+
+}
+
 #clubList {
     float: right;
     width: 30%;
