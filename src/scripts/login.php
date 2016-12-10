@@ -18,8 +18,7 @@ if ($result->num_rows > 0) {
             $_SESSION["username"] = $username;
             die();
         } else {
-            $retval = "wrong password, password is: {$password}, hash is: {$hashed_password}, expected: {$row["hash"]}";
-            $_SESSION["error"] = $retval;
+            $_SESSION["error"] = "wrong_password";
         }
     }
 } else {
