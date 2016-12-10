@@ -1,6 +1,11 @@
 @CHARSET "UTF-8";
+
+#mapHeader {
+    margin: auto;
+    margin-top: 100px;
+}
+
 #map {
     margin: auto;
-    padding: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
