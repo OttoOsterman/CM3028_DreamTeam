@@ -20,7 +20,7 @@ session_start();
 </head>
 
 <body>
-<center>
+
 <div class="pageWidth">
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
@@ -96,10 +96,17 @@ echo("Session error value is: " . $_SESSION["error"]);
 	</script>
 
 
-		<!--Image Slider CLOSED-->
+		<!--text-->
 
 
-</center>
+
+
+
+
+
+
+
+	
 </div>
 
 </body>
