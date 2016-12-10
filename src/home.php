@@ -39,6 +39,15 @@ session_start();
 	<label>Password</label>
 	<input type="password" id="password">
 	<input type="submit" onclick="login()" value="Log in">
+	<?php
+	if (isset($_SESSION{"error"})) {
+		if($_SESSION["error"] == "username_not_found") {
+			echo("<label>The username entered wasn't found, please try again</label>");
+		} elseif ($_SESSION["error"] == "wrong_password") {
+			echo("<label>The password entered didn't match the username, please try again</label>");
+		}
+	}
+	?>
 </form>
 
 <script>
@@ -57,11 +66,6 @@ session_start();
 		req.send(args);
 	}
 </script>
-
-<?php
-echo("Session error value is: " . $_SESSION["error"]);
-?>
-
     <!--Image Slider-->
 	
 	<script src=".src/JavaScript/general.js" type="text/javascript"></script>
