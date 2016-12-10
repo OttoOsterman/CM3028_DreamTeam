@@ -15,7 +15,10 @@ session_start();
 	<link rel="script" type="text/javascript" href="./src/JavaScript/general.js"/>
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
-    
+	<script src=".src/JavaScript/general.js" type="text/javascript"></script>
+
+
+
 
 </head>
 
@@ -67,8 +70,6 @@ echo("Session error value is: " . $_SESSION["error"]);
 	
 	<script src=".src/JavaScript/general.js" type="text/javascript"></script>
 
-	</head>
-	<body>
 	<div class="div1"><h2>Portlethen Images</h2>
 		<p>Demos: <a href="demo1.html" class="current">1</a><a href="demo2.html">2</a><a href="demo3.html">3</a><a href="demo4.html">4</a>
 			<a href="demo5.html">5</a><a href="demo6.html">6</a><a href="demo7.html">7</a><a href="demo8.html">8</a></p>
@@ -86,11 +87,6 @@ echo("Session error value is: " . $_SESSION["error"]);
 			<em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
 		</div>
 	</div>
-
-
-		<!--text-->
-
-
 
 	
 </div>
