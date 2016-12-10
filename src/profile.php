@@ -6,7 +6,7 @@ session_start();
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Profile</title>
 
     <link rel="stylesheet" type="text/css" href="./src/css/profile.css"/>
     <link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
@@ -52,8 +52,29 @@ if ($get_clubs_result->num_rows > 0) {
     }
 }
 
-if ($_SESSION["acc_type"] == "write-clubs" || $_SESSION["acc_type"] == 'admin') {
-    echo("<button onclick='show_addclub()' value='Add Club'");
+if ($_SESSION["acc_type"] == 'admin') {
+    echo ("
+    <form action='javascript:return add_club()'>
+    <label>Club Name: </label>
+    <input type='text' id='name'>
+    <br>
+    <label>Club Genre: </label>
+    <input type='text' id='genre'>
+    <br>
+    <label>Description: </label>
+    <input type='text'id='description'>
+    <br>
+    <label>Contact info: </label>
+    <input type='text' id='contact_info'>
+    <br>
+    <input type='submit' value='Add club'>
+    
+    <script>
+    function add_club() {
+    
+    }
+    </script>
+    ");
 }
 
 

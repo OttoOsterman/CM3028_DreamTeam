@@ -136,8 +136,10 @@ session_start();
 
 
 		</div>
+
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
 	</div>
 
 	<br>
@@ -149,7 +151,20 @@ session_start();
 		<span class="dot" onclick="currentSlide(2)"></span>
 		<span class="dot" onclick="currentSlide(3)"></span>
 	</div>
+	
+	
+	
+	<div id="text-box">
+		<h2 id="title"> Go Portlethen! </h2> 
+		<p id="content">   here we will add the text for the page</p>
+	</div>
+	
+		
+		
+	</div>
 
+	
+	
 
 </body>
 

@@ -25,3 +25,5 @@ CREATE TABLE ClubMember (user_id int NOT NULL, club_id int NOT NULL, CONSTRAINT 
 	CONSTRAINT clubmember_fk_user_id FOREIGN KEY (user_id) REFERENCES User(user_id), CONSTRAINT clubmember_fk_club_id FOREIGN KEY (club_id) REFERENCES Club (club_id));
 		
 CREATE TABLE News (news_id int NOT NULL AUTO_INCREMENT, title nvarchar(255) NOT NULL, content text NOT NULL, date DATETIME NOT NULL, CONSTRAINT pk_news_id PRIMARY KEY (news_id));
+
+INSERT INTO Permission (acc_type, access_level) VALUES ("general_user", "readonly"), ("contributor", "contribute-only"), ("club_admin", "write-clubs"), ("NKPAG", "write-maps"), ("admin", "admin");
