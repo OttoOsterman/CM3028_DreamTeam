@@ -1,7 +1,7 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] === 'POST') {
     session_start();
     session_unset();
     session_destroy();
-}
+    session_regenerate_id(true);
+    header("Location: https://go-portlethen.azurewebsites.net");
 ?>
