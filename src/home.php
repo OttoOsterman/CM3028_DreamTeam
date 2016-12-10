@@ -37,7 +37,7 @@ session_start();
 	<input type="password" id="password">
 	<input type="submit" onclick="login()" value="Log in">
 	<?php
-	if (isset($_SESSION{"error"})) {
+	if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
 		if($_SESSION["error"] == "username_not_found") {
 			echo("<label>The username entered wasn't found, please try again</label>");
 		} elseif ($_SESSION["error"] == "wrong_password") {
