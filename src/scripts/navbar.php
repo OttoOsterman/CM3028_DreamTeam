@@ -60,11 +60,17 @@ echo('
 		        <div class="purple slide">
 		            <a href="https://go-portlethen.azurewebsites.net/signup">Sign up</a>
                 </div>
+                <a href="#">
+			    <img src="">
+			</a>
             </li>
 		    <li>
 			    <div class="black slide">
 				    <a href="#">Log in</a>
 			    </div>
+			    <a href="#">
+			    <img src="">
+			</a>
 		    </li>
 	    </ul>
 		');
