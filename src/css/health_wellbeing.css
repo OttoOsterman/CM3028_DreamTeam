@@ -1,6 +1,6 @@
 #healthWellbeing {
     width: 100%;
-    margin: auto;
+    text-align: center;
 }
 
 #pageHeader {
@@ -18,12 +18,18 @@
     background-color: grey;
     margin: auto;
     margin-bottom: 30px;
+    display: inline-block;
 }
 
 .staticInfoContainer, .dynamicNewsContainer, .dynamicEventContainer {
     padding: 40px;
-    margin-top: 30px;
     background-color: white;
+    display: inline-block;
+    width: 40%;
+    float: left;
+    margin: 20px;
+    height: 350px;
+    overflow: auto;
 }
 
 .staticInfoHeader, .dynamicNewsTitle, .dynamicEventName {
@@ -36,8 +42,4 @@
 
 .newsDate, .eventDate {
     padding: 10px;
-}
-
-.banner {
-    max-width: 99%;
 }
