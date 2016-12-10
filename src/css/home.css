@@ -5,7 +5,6 @@
 .pageWidth{
 	width:1400px;
 	transition: width 0.3s ease;
-	position:absolute;
 }
 #banner{
 	width:100%;
