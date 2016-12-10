@@ -94,7 +94,7 @@ session_start();
 	}
 
 
-
+/*
 	var slideIndex = 0;
 	showSlides();
 
@@ -110,7 +110,7 @@ session_start();
 		setTimeout(showSlides, 7000); // Change image every 2 seconds
 	}
 	
-
+*/
 </script>
 	
 	
