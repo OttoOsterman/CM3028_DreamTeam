@@ -3,9 +3,11 @@
 
 
 .pageWidth{
-	width:1400px;
+	width:1440px;
 	transition: width 0.3s ease;
 }
+
+
 #banner{
 	width:100%;
 }
