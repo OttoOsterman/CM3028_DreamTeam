@@ -30,12 +30,12 @@ session_start();
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 	
 <!-- Placeholder login form, REMOVE ASAP -->
-<form action="login()">
+<form action="javascript:return login()">
 	<label>E-mail address</label>
 	<input type="text" id="username">
 	<label>Password</label>
 	<input type="password" id="password">
-	<input type="button" onclick="javascript:return login()" value="Log in">
+	<input type="button" onclick="login()" value="Log in">
 </form>
 
 <script>
