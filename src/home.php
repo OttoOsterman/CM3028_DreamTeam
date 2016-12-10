@@ -24,37 +24,24 @@ session_start();
             showDivs(slideIndex += n);
         }
 
-        function showDivs(n) {
+        window.setInterval(function showDivs(n) {
             var i;
             var x = document.getElementsByClassName("mySlides");
             if (n > x.length) {slideIndex = 1}
             if (n < 1) {slideIndex = x.length}
             for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex-1].style.display = "block";
-        }
-
-        window.setInterval(function showA(){
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-
-            if (n > x.length) {slideIndex = 1}
-
-            if (n < 1) {slideIndex = x.length}
-
-            for (i = 0; i < x.length; i++) {
-
                 x[i].style.display = "none";
             }
             x[slideIndex-1].style.display = "block";
         },5000);
+
+        
     </script>
     
     
 </head>
 
-<body onLoad="showA()">
+<body onLoad="showDivs(n)">
 
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
