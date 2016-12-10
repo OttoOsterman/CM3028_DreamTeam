@@ -66,13 +66,24 @@ echo('
             </li>
 		    <li>
 			    <div class="black slide">
-				    <a href="#">Log in</a>
+				    <a href="#popup1">Log in</a>
 			    </div>
 			    <a href="#">
 			    <img src="">
 			</a>
 		    </li>
 	    </ul>
+	    
+	    <div id="popup1" class="overlay">
+	        <div class="popup">
+	            <h2>Here i am</h2>
+	            <a class="close" href="#">x</a>
+	            <div class="content">
+	                This is the popup content ;)
+                </div>
+            </div>
+	    
+        </div>
 		');
 }
 echo('</div>');
