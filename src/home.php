@@ -20,67 +20,7 @@ session_start();
 <body onLoad="plusSlides(1)">
 
 <div class="pageWidth">
-
-	<section id="myPopup" class="popup">
-		<!-- Popup content -->
-		<section class="popup-content">
-			<span class="close">X</span>
-			<!--Google login button-->
-			
-			<section id="name"></section>
-			<script>startApp();</script>
-			<script>
-				//Login function
-				function login1() {
-					if ($('.login').text('Login')) {
-						$('.login').text('Logout')
-					}
-				}
-			</script>
-			<!--Facebook login-->
-			<section id="fb-root"></section>
-			<script>(function (d, s, id) {
-					var js, fjs = d.getElementsByTagName(s)[0];
-					if (d.getElementById(id)) return;
-					js = d.createElement(s);
-					js.id = id;
-					js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
-					fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));</script>
-			<section class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false"
-					 data-auto-logout-link="true"></section>
-			<!--Logout button-->
-			<a href="#" class="logout" onclick="logout1()">Logout</a>
-			<script>
-				//Signout function
-				function signOut2() {
-					FB.logout();
-// user is now logged out of Facebook
-					console.log('User signed out of Facebook');
-				}
-
-			</script>
-			<!--Google sign out function-->
-			<script>
-				function signOut1() {
-					var auth2 = gapi.auth2.getAuthInstance();
-					auth2.signOut().then(function () {
-// user is now logged out of Google+
-						console.log('User signed out of Google+.');
-					});
-					$('#name').text('Signed out.')
-				}
-			</script>
-			<script>
-				//Logout function
-				function logout1() {
-					signOut1();
-					signOut2();
-					$('.login').text('Login')
-				}
-			</script>
-		</section>
-	</section>
+	
 
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
