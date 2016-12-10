@@ -75,6 +75,7 @@
 }
 .about a{
 	padding-top: 40px;
+    height: 110px;
 }
 .slide{
 	position: absolute;
