@@ -30,7 +30,7 @@ session_start();
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 	
 <!-- Placeholder login form, REMOVE ASAP -->
-<form>
+<form action="login()">
 	<label>E-mail address</label>
 	<input type="text" id="username">
 	<label>Password</label>
@@ -52,6 +52,7 @@ session_start();
 		req.open("POST", "https://go-portlethen.azurewebsites.net/login");
 		req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		req.send(args);
+		return false;
 	}
 </script>
 
