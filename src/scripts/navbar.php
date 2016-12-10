@@ -1,5 +1,17 @@
 <?php
-include('scripts/popup.php');
+echo('
+<div id="popup1" class="overlay">
+	        <div class="popup">
+	            <h2>Please Login</h2>
+	            <a class="close" href="#">x</a>
+	            <div class="content">
+	                <form action="javascript:return login()">
+	                <label>E-mail address</label>
+	                <input type="text" id="username" required>
+	                <label>Password</label>
+	                <input type="password" id="password" required>
+	                <input type="submit" onclick="login()" value="Log in">
+    ');
 echo('
 	<div class="nav" id="navbar">
 	<ul>
