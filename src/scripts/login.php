@@ -12,13 +12,15 @@ $result = $db->query($sql);
 $_SESSION["error"] = "num rows returned 0, username {$_POST["username"]}, sql {$sql}";
 if ($result->num_rows > 0) {
     $row = $result->fetch_array();
-    $hash = $row["hash"];
     $hashed_password = hash("sha256", $password . $row["salt"]);
-    if ($hashed_password === $hash) {
+    if ($hashed_password === $row["hash"]) {
         $_SESSION["error"] = "no error";
         $_SESSION["username"] = $username;
     } else {
-        $_SESSION["error"] = "wrongpassword";
+        $retval = "wrong password, password is: {$password}, hash is: {$hashed_password}, expected: {$row["hash"]}";
+        $_SESSION["error"] = $retval;
     }
+} else {
+    $_SESSION{"error"} = "username_not_found";
 }
 ?>
