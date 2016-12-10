@@ -117,7 +117,7 @@ and (min-device-width:100px ){
 		height: 25px;
 		Width: 25px;
 		position: absolute;
-		top: 40%;
+		top: 60%;
 		left: 0px;
 	}
 
@@ -125,16 +125,16 @@ and (min-device-width:100px ){
 		height: 28px;
 		Width: 26px;
 		position: absolute;
-		top: 40%;
+		top: 60%;
 		left: 0px;
 
 	}
 
 	#right {
-		height: 50px;
-		Width: 50px;
+		height: 25px;
+		Width: 25px;
 		position: absolute;
-		top: 40%;
+		top: 60%;
 		right: 0px;
 	}
 
@@ -142,7 +142,7 @@ and (min-device-width:100px ){
 		height: 15px;
 		Width: 15px;
 		position: absolute;
-		top: 40%;
+		top: 60%;
 		right: 0px;
 
 	}
