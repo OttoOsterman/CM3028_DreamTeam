@@ -20,7 +20,7 @@ echo('
 		</li>
 		<li>
 			<div class="blue slide">
-				<br href="https://go-portlethen.azurewebsites.net/health_wellbeing">Health &<br> Wellbeing</a>
+				<br href="https://go-portlethen.azurewebsites.net/health_wellbeing">Health & Wellbeing</a>
 			</div>
 			<a href="#">
 				<img src="">
