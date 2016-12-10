@@ -93,7 +93,7 @@ echo('
 			                echo("<label>The password entered didn\'t match the username, please try again</label>");
 		                }
 	                }
-	                ?>
+	                
 echo('
                     </form>
                 </div>
