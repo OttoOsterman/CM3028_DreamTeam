@@ -17,7 +17,7 @@ session_start();
 	
 </head>
 
-<body>
+<body onLoad="plusSlides(1)">
 
 <div class="pageWidth">
 

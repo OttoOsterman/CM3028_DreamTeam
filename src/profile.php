@@ -25,7 +25,9 @@ echo($get_clubs_sql);
 $get_clubs_result = $db->query($get_clubs_sql);
 echo("db cound't be queried");
 if ($get_clubs_result->num_rows > 0) {
+    echo("num rows eval'd to true");
     $row = $result->fetch_array();
+    echo("array fetched");
     echo($row["club_id"]);
     $sql = "SELECT Club.club_id, Club.name, Club.genre, Club.description, Photo.photo_path, Photo.is_profile_photo FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id WHERE Club.club_id = '{$row["club_id"]}'";
     while($row = $get_clubs_result->fetch_array()) {
