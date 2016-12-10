@@ -12,7 +12,7 @@ echo('
 		</li>
 		<li>
 			<div class="yellow slide">
-				<a href="https://go-portlethen.azurewebsites.net/clubs_societies">Clubs & Societies</a>
+				<a href="https://go-portlethen.azurewebsites.net/clubs_societies">Clubs &<br> Societies</a>
 			</div>
 			<a href="#">
 				<img src="">
@@ -20,7 +20,7 @@ echo('
 		</li>
 		<li>
 			<div class="blue slide">
-				<a href="https://go-portlethen.azurewebsites.net/health_wellbeing">Health and Wellbeing</a>
+				<br href="https://go-portlethen.azurewebsites.net/health_wellbeing">Health &<br> Wellbeing</a>
 			</div>
 			<a href="#">
 				<img src="">
