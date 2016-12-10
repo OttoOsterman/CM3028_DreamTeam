@@ -30,6 +30,7 @@ if ($result->num_rows > 0) {
     }
 }
 
+$result = $db->query($sql);
 while ($row = $result->fetch_array()) {
 if (isset($row['photo_path']) && $row['is_profile_photo'] == '1') {
 echo("
