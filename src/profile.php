@@ -42,7 +42,30 @@ if ($_SESSION["acc_type"] == "admin") {
 			</section>
             ");
         }
+
     }
+    echo ("
+    <form action='javascript:return add_club()'>
+    <label>Club Name: </label>
+    <input type='text' id='name'>
+    <br>
+    <label>Club Genre: </label>
+    <input type='text' id='genre'>
+    <br>
+    <label>Description: </label>
+    <input type='text' id='description'>
+    <br>
+    <label>Contact info: </label>
+    <input type='text' id='contact_info'>
+    <br>
+    <input type='submit' value='Add club'>
+    
+    <script>
+    function add_club() {
+    
+    }
+    </script>
+    ");
 } else {
     $get_clubs_sql = "SELECT club_id FROM ClubMember WHERE user_id = {$_SESSION['user_id']}";
     $get_clubs_result = $db->query($get_clubs_sql);
@@ -79,34 +102,6 @@ if ($_SESSION["acc_type"] == "admin") {
         echo("<h1>Oops! It looks like you aren't a member of any clubs yet.</h1>");
     }
 }
-
-
-if ($_SESSION["acc_type"] == 'admin') {
-    echo ("
-    <form action='javascript:return add_club()'>
-    <label>Club Name: </label>
-    <input type='text' id='name'>
-    <br>
-    <label>Club Genre: </label>
-    <input type='text' id='genre'>
-    <br>
-    <label>Description: </label>
-    <input type='text'id='description'>
-    <br>
-    <label>Contact info: </label>
-    <input type='text' id='contact_info'>
-    <br>
-    <input type='submit' value='Add club'>
-    
-    <script>
-    function add_club() {
-    
-    }
-    </script>
-    ");
-}
-
-
 ?>
 
 </body>
