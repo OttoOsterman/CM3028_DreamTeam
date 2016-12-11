@@ -122,31 +122,26 @@ echo('
     ');
             //Signup Pop-up
             echo('
-<div id="popup2" class="overlay">
-	        <div class="popup">
+                <div id="popup2" class="overlay">
+	                <div class="popup">
 	        ');
             if (isset($_SESSION["username"])) {
                 echo("
-        <body>
-        <h1>Please log out before attempting to create a new account.</h1>
-        </body>
-    ");
+                    <h1>Please log out before attempting to create a new account.</h1>
+                ");
             } else {
-
-
                 echo('
-                <h2>Create Account</h2>
-	            <section class="content form-wrapper">
-	                <form id=\'signup_form\' action=\'signup\' method=\'POST\'>
-	                    <input class="text-box" placeholder="Please enter an e-mail address" type="text" id="username" required>
-	                    <input class="text-box" placeholder="Please enter a password" type="password" id="password" required>
-	                </form>
-	            <section class="action-buttons">
-	                <button class="greenButton button" type="submit">Create</button>
-	                <a href="#"><button class="closebutton button">Close</button></a>
-	            </section>
-	            
-	                ');
+                    <h2>Create Account</h2>
+	                <section class="content form-wrapper">
+	                    <form id=\'signup_form\' action=\'signup\' method=\'POST\'>
+	                        <input class="text-box" placeholder="Please enter an e-mail address" type="text" id="username" required>
+	                        <input class="text-box" placeholder="Please enter a password" type="password" id="password" required>
+	                    </form>
+	                    <section class="action-buttons">
+	                        <button class="greenButton button" type="submit">Create</button>
+	                        <a href="#"><button class="closebutton button">Close</button></a>
+	                    </section>
+	            ');
                 if($_SERVER['REQUEST_METHOD'] === 'POST') {
                     //TODO: REMOVE TESTING CODE
                     include("scripts/db_connect_test.php");
@@ -165,10 +160,10 @@ echo('
                         $sql = "INSERT INTO User (username, hash, salt, acc_type) VALUES ('{$username}', '{$password_hash}', '{$salt}', 'general_user')";
                         $db->query($sql);
                         echo("
-				<script>
-					document.getElementById('signup_form').style.display = 'none';
-				</script>
-				<h2>Your account has been successfully created, please log in.</h2>
+				    <script>
+					    document.getElementById('signup_form').style.display = 'none';
+				    </script>
+				    <h2>Your account has been successfully created, please log in.</h2>
 				");
                     }
                 }
