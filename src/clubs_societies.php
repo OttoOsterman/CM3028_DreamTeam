@@ -42,7 +42,7 @@ session_start();
     </div>
 </div>
 
-<div id="clubContainer">
+<!-- <div id="clubContainer"> -->
 
     <?php
     $sql = "SELECT Club.club_id, Club.name, Club.genre, Club.description, Photo.photo_path, Photo.is_profile_photo FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id";
@@ -70,6 +70,6 @@ session_start();
         }
     }
     ?>
-</div>
+<!-- </div> -->
 </div>
 </body>
