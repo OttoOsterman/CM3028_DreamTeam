@@ -209,7 +209,7 @@
     z-index: 9;
 }
 
-.action-buttons{
+.action-buttons button{
     border:none;
     height: 50px;
     border-radius: 4px;
@@ -225,11 +225,15 @@
     transition-duration: 0.2s;
 }
 
-.login{
+.greenButton{
     background-color: #00a388;
     color: black;
     border: 3px solid #00a388;
     float: left;
+}
+
+.greenButton:hover{
+    background-color: #007d67;
 }
 
 .closebutton{
@@ -237,6 +241,9 @@
     color: black;
     border: 3px solid #FF6138;
     float: left;
+}
+.closebutton:hover{
+    background-color: #bd4829;
 }
 
 /* End of Popup CSS */
