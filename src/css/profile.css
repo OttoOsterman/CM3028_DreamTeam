@@ -93,5 +93,8 @@
 }
 
 #name, #genre, #description, #contact_info {
-
+    border: black;
+    box-shadow: inherit;
+    margin: 10px;
+    padding: 4px;
 }

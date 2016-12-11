@@ -45,8 +45,8 @@ if ($res->num_rows > 0) {
     </script>
     <!-- REMOVE ASAP -->
     <div id='debug'>
-    
-</div>
+    {$_SESSION['error']}
+    </div>
     ");
 } else {
     echo("<h1>Club not found.</h1>");

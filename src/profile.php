@@ -72,13 +72,13 @@ if ($result->num_rows > 0) {
 if ($_SESSION["acc_type"] == "admin") {
     echo ("
     <form id='clubForm' action='javascript:return add_club()'>
-    <label id='clubLabel'>Club Name: </label>
+    <label id='clubLabel'>Club Name:   </label>
     <input type='text' id='name'>
     <br>
-    <label id='genreLabel'>Club Genre: </label>
+    <label id='genreLabel'>Club Genre:  </label>
     <input type='text' id='genre'>
     <br>
-    <label id='descLabel'>Description: </label>
+    <label id='descLabel'>Description:   </label>
     <input type='text' id='description'>
     <br>
     <label id='contactLabel'>Contact info: </label>
