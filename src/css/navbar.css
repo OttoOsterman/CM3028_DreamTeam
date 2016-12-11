@@ -1,9 +1,6 @@
 @CHARSET "UTF-8";
 
 
-
-
-
 /* Experimental Nav */
 @media screen and (max-width: 1000px){
 	.nav{
@@ -15,6 +12,7 @@
 		display: none;
 	}
 }
+
 .nav{
 	max-width: 100%;
     height: 95px;
@@ -24,6 +22,7 @@
 	float: left;
     box-shadow: 0px 5px 5px #888888;
 }
+
 .nav ul{
 	width: 120vw;
 }
