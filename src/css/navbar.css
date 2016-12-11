@@ -209,6 +209,22 @@
     z-index: 9;
 }
 
+.action-buttons{
+    border:none;
+    height: 50px;
+    border-radius: 4px;
+    color: white;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin: 0 5% 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font: bold 16px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    transition-duration: 0.2s;
+}
+
 .login{
     background-color: #00a388;
     color: black;
