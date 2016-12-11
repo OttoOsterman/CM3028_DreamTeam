@@ -1,13 +1,14 @@
-#editClubHeader {
+#editClubHeader, #editUsersHeader {
     text-align: center;
     padding-top: 150px;
     padding-bottom: 50px;
 }
 
-#editContainer {
+#editContainer, #editUsersContainer {
     padding: 40px;
     width: 50%;
     margin: auto;
+    margin-bottom: 100px;
     border-radius: 8px;
     background-color: white;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
