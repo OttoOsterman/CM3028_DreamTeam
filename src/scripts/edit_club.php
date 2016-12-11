@@ -10,12 +10,16 @@ $res = $db->query($sql);
 if ($res->num_rows > 0) {
     $_SESSION["curr_club"] = $_POST["club_id"];
     $row = $res->fetch_array();
+    $name = htmlspecialchars($row["name"]);
+    $genre = htmlspecialchars($row["genre"]);
+    $description = htmlspecialchars($row["description"]);
+    $contact_info = htmlspecialchars($row["contact_info"]);
     echo ("
     <form action='javascript:return update_club()'>
-    <input type='text' id='name' value='{$row["name"]}'>
-    <input type='text' id='genre' value='{$row["genre"]}'>
-    <input type='text' id='description' value='{$row["description"]}'>
-    <input type='text' id='contact_info' value='{$row["contact_info"]}'>
+    <input type='text' id='name' value='{$name}'>
+    <input type='text' id='genre' value='{$genre}'>
+    <input type='text' id='description' value='{$description}'>
+    <input type='text' id='contact_info' value='{$contact_info}'>
     <input type='submit' value='submit'>
     </form>
     
