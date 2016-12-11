@@ -84,11 +84,10 @@ echo('
 	            <a class="close" href="#">x</a>
 	            <div class="content">
 	                <form action="javascript:return login()" class="form-wrapper cf add">
-	                
 	                <input class="text-box" placeholder="email address" type="text" id="username" required>
-	                
 	                <input class="text-box" placeholder="password" type="password" id="password" required>
-	                <br><button class="button" type="submit" onclick="login()">Login</button>
+	                <button class="button" type="submit" onclick="login()">Login</button>
+	                <button class="button" href="#">Close</button>
 	                </form>
 	                ');
 	                if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
