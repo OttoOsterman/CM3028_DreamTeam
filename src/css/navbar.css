@@ -216,14 +216,14 @@
 }
 
 .greenButton{
-    background-color: #00a388;
+    background-color: #7cb342;
     color: black;
-    border: 3px solid #00a388;
+    border: 3px solid #7cb342;
     float: left;
 }
 
 .greenButton:hover{
-    background-color: #007d67;
+    background-color: #6a9938;
 }
 
 .closebutton{

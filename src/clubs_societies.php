@@ -55,6 +55,7 @@ session_start();
                 <img class='clubImage' src={$row['photo_path']}>
                 <div class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></div>
                 <div class='clubGenre'>{$row['genre']}</div>
+                <div class='img-wrapper'></div>
                 <div class='clubDesc'>{$row['description']}</div>
             </section>
 			");

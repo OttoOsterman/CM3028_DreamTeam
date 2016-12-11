@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Edit Users</title>
+    <link rel="stylesheet" type="text/css" href="../src/css/edit_users.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
+</head>
+<body>
+<h2 id="editUsersHeader">Edit Users</h2>
+<div id="editUsersContainer">
+
 <?php
 include("scripts/navbar.php");
 //TODO: REMOVE TESING CODE
@@ -38,3 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 $sql = "UPDATE User SET acc_type";
+?>
+</div>
+</body>
+    
