@@ -39,15 +39,28 @@ session_start();
             echo("</select><br>");
         }
 
+        //TODO: REMOVE DEBUG CODE
         echo("
-    <script>
-    var selected = document.getElementsByClassName('selected');
-    var retval = selected.item(0).id + '=' + document.getElementById(selected.item(0).id).options[document.getElementById(selected.item(0).id).selectedIndex].text;
-    for (var i = 1; i < selected.length; i++) {
-        retval  = retval + '&' + selected.item(i).id + '=' + document.getElementById(selected.item(i).id).options[document.getElementById(selected.item(i).id).selectedIndex].text;
-    }
-    </script>
-    ");
+        <div id='debug'>
+        
+        </div>
+
+        <form action='javascript:return edit_users()'>
+            <input type='submit' onclick='edit_users()'>
+        </form>
+
+        <script>
+        function edit_users() {
+            var selected = document.getElementsByClassName('selected');
+            var retval = selected.item(0).id + '=' + document.getElementById(selected.item(0).id).options[document.getElementById(selected.item(0).id).selectedIndex].text;
+            for (var i = 1; i < selected.length; i++) {
+                retval  = retval + '&' + selected.item(i).id + '=' + document.getElementById(selected.item(i).id).options[document.getElementById(selected.item(i).id).selectedIndex].text;
+            }
+            document.getElementById('debug').innerHTML = retval;
+            
+        }
+        </script>
+        ");
     }
 
 
