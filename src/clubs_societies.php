@@ -51,12 +51,14 @@ session_start();
     while ($row = $result->fetch_array()) {
         if (isset($row['photo_path']) && $row['is_profile_photo'] == '1') {
             echo("
+            <a href='club/{$row['club_id']}'>
             <section class='clubSection'>
                 <img class='clubImage' src={$row['photo_path']}>
-                <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
+                <h1 class='clubName'>{$row['name']}</h1>
                 <div class='clubGenre'>{$row['genre']}</div>
                 <div class='clubDesc'>{$row['description']}</div>
             </section>
+            </a>
 			");
         } else if (!(isset($row['photo_path']))) {
             echo("
