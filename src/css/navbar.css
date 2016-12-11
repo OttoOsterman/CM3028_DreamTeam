@@ -231,6 +231,7 @@
     border: 3px solid #00a388;
     float: left;
 }
+
 .login:hover{
     background-color: #007d67;
 }
