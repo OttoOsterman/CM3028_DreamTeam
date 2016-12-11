@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
@@ -14,7 +17,7 @@
 
 <div id="editUsersContainer">
 
-//TODO: REMOVE TESING CODE
+<!--TODO: REMOVE TESING CODE-->
 <?php include("scripts/db_connect_test.php");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
