@@ -6,8 +6,8 @@ echo('
 	            <a class="close" href="#">x</a>
 	            <div class="content">
 	                <form action="javascript:return login()">
-	                <label>E-mail address</label>
-	                <input type="text" id="username" required>
+	                
+	                <input class="text-box" placeholder="email address" type="text" id="username" required>
 	                <label>Password</label>
 	                <input type="password" id="password" required>
 	                <input type="submit" onclick="login()" value="Log in">

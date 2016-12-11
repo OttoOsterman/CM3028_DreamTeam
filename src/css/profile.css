@@ -1,4 +1,80 @@
+@media (min-width:1800px) {
+    .pageWidth {
+        width: 1800px;
+        transition: width 0.3s ease;
+        margin-left: auto;
+        margin-right: auto;
+        background: #fafafa;
+    }
+}
+@media (max-width:1800px){
+    .pageWidth {
+        width: 100%;
+        transition: width 0.3s ease;
+        margin-left: auto;
+        margin-right: auto;
+        background: #fafafa;
+    }
+}
+
 #notMember {
     text-align: center;
     padding-top: 200px;
+}
+
+#banner{
+    width:100%;
+
+}
+
+#clubList {
+    float: right;
+    width: 30%;
+    padding: 30px;
+}
+
+#clubContainer {
+    padding: 40px;
+    width: 55%;
+    margin: 30px;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.clubName {
+    font-size: 30px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.clubGenre {
+    color: black;
+    padding: 10px;
+}
+
+.clubDesc {
+    color: black;
+    padding: 10px;
+    width: 80%;
+}
+
+.clubImage {
+    float: right;
+    height: 150px;
+    width: 120px;
+}
+
+.clubSection {
+    padding: 30px;
+    color: white;
+    overflow: auto;
+    background-color: white;
+    display: inline-block;
+    width: auto;
+    float: left;
+    margin: 1%;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
