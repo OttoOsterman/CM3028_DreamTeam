@@ -34,7 +34,7 @@ session_start();
 <!--Contains a list of all clubs w/ an associated profile photo -->
 <div id="clubList">
     <!--Facebook plugin-->
-    <div class="fb-page" data-href="https://www.facebook.com/Sportlethen" data-tabs="timeline" data-width="500"
+    <div class="fb-page" data-href="https://www.facebook.com/Sportlethen" data-tabs="timeline" data-width="700"
          data-height="1000" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false"
          data-show-facepile="true">
         <blockquote cite="https://www.facebook.com/Sportlethen" class="fb-xfbml-parse-ignore"><a

@@ -47,6 +47,7 @@ if (isset($_SESSION["username"])) {
 			$db->query($sql);
 			echo("
 				<script>
+				
 					document.getElementById('signup_form').style.display = 'none';
 				</script>
 				<h2>Your account has been successfully created, please log in.</h2>
