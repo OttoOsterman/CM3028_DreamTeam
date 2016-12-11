@@ -14,12 +14,11 @@ session_start();
 </head>
 <body>
 
-<div id="clubList">
-<?php
-
-include ("scripts/navbar.php");
+<?php include ("scripts/navbar.php"); ?>
 //TODO: REMOVE TESTING CODE
-include ("scripts/db_connect_test.php");
+
+<div id="clubList">
+<?php include ("scripts/db_connect_test.php");
 
 if ($_SESSION["acc_type"] == "admin") {
     $sql = "SELECT Club.club_id, Club.name, Club.genre, Club.description, Photo.photo_path, Photo.is_profile_photo FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id;";
