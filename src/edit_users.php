@@ -20,7 +20,7 @@ session_start();
     <!--TODO: REMOVE TESTING CODE-->
     <?php
     include("scripts/db_connect_test.php");
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $sql = "SELECT username, acc_type FROM User";
         $acc_type_sql = "SELECT acc_type FROM Permission";
 
