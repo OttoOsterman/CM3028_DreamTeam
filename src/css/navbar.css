@@ -1,4 +1,10 @@
 @CHARSET "UTF-8";
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 /* Experimental Nav */
@@ -90,7 +96,7 @@
     padding-bottom:41px;
 	padding-left: 20px;
 	font-family: Raleway-Regular, verdana;
-	font-size:25px;
+	font-size:30px;
     height:110px;
 }
 

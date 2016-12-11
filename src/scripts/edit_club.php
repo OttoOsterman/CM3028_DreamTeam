@@ -15,8 +15,8 @@ session_start();
 <?php include ("navbar.php"); ?>
 <!--TODO: REMOVE TESTING CODE-->
 
-    <h2 id="profileHeader">Edit Club</h2>
-<div id="container">
+    <h2 id="editClubHeader">Edit Club</h2>
+<div id="editContainer">
 
 <?php
 include ("db_connect_test.php");
@@ -35,7 +35,7 @@ if ($res->num_rows > 0) {
     <input type='text' id='genre' value='{$genre}'>
     <input type='text' id='description' value='{$description}'>
     <input type='text' id='contact_info' value='{$contact_info}'>
-    <input type='submit' value='submit' onclick='update_club()'>
+    <input type='submit' value='submit' class='greenButton' onclick='update_club()'>
     </form>
     
     <script>
