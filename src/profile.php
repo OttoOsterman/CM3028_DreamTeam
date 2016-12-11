@@ -73,26 +73,46 @@ if ($_SESSION["acc_type"] == "admin") {
     echo ("
     <form id='clubForm' action='javascript:return add_club()'>
     <label id='clubLabel'>Club Name:   </label>
-    <input type='text' id='name'>
+    <input type='text' id='name' required>
     <br>
     <label id='genreLabel'>Club Genre:  </label>
-    <input type='text' id='genre'>
+    <input type='text' id='genre' required>
     <br>
     <label id='descLabel'>Description:   </label>
-    <input type='text' id='description'>
+    <input type='text' id='description' required>
     <br>
     <label id='contactLabel'>Contact info: </label>
-    <input type='text' id='contact_info'>
+    <input type='text' id='contact_info' required>
     <br>
-    <input type='submit' class='greenButton' value='Add Club'>
+    <input type='submit' class='greenButton' value='Add Club' onclick='add_club()'>
     
     
     <script>
     function add_club() {
-    
+        var name = encodeURIComponent(document.getElementById('name').value);
+        var genre = encodeURIComponent(document.getElementById('genre').value);
+        var description = encodeURIComponent(document.getElementById('description').value);
+        var contact_info = encodeURIComponent(document.getElementById('contact_info').value);
+        var args = 'name=' + name + '&genre=' + genre + '&description=' + description + '&contact_info=' + contact_info;
+        
+        var req = new XMLHttpRequest();
+        req.onreadystatechange = function() {
+            if(req.readyState == XMLHttpRequest.DONE) {
+                window.location = 'https://go-portlethen.azurewebsites.net/profile';
+            }
+        };
+        req.open('POST', 'https://go-portlethen.azurewebsites.net/add_club');
+        req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        req.send(args);
     }
     </script>
     ");
+
+    if (isset($_SESSION['error'])) {
+        if ($_SESSION['error'] == 'club_already_exists') {
+            echo('<h1>It looks like that club already exists.</h1>');
+        }
+    }
 }
 ?>
 </div>
