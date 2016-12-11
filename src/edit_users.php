@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <title>Edit Users</title>
-    <link rel="stylesheet" type="text/css" href="../src/css/edit_users.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/edit_club.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
 </head>
@@ -51,6 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 $sql = "UPDATE User SET acc_type";
 ?>
+    ?>
 </div>
 </body>
     
