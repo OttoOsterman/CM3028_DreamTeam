@@ -87,7 +87,7 @@ echo('
 	                <input class="text-box" placeholder="email address" type="text" id="username" required>
 	                <input class="text-box" placeholder="password" type="password" id="password" required>
 	                <button class="login button" type="submit" onclick="login()">Login</button>
-	                <button class="close button" href="#">Close</button>
+	                <button class="closebutton button" href="#">Close</button>
 	                </form>
 	                ');
 	                if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
