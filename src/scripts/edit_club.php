@@ -28,7 +28,7 @@ if ($res->num_rows > 0) {
         var req = new XMLHttpRequest();
         req.onreadystatechange = function() {
             if (req.readyState == XMLHttpRequest.DONE) {
-                window.location('https://go-portlethen.azurewebsites.net');
+                window.location('https://go-portlethen.azurewebsites.net/profile');
             }
         };
         req.open('POST', 'https://go-portlethen.azurewebsites.net/update_club');
