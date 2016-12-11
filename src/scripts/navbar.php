@@ -88,10 +88,10 @@ echo('
 	                    <input class="text-box" placeholder="password" type="password" id="password" required>
 	                </form>
 	            
-	            <div class="action-buttons">
+	            <section class="action-buttons">
 	                <button class="greenButton button" type="submit" onclick="login()">Login</button>
 	                <button class="closebutton button" href="#">Close</button>
-	            </div>
+	            </section>
 	            </section>
 	                ');
 	                if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
