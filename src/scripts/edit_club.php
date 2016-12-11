@@ -34,7 +34,7 @@ if ($res->num_rows > 0) {
         var req = new XMLHttpRequest();
         req.onreadystatechange = function() {
             if (req.readyState == XMLHttpRequest.DONE) {
-                window.location('https://go-portlethen.azurewebsites.net/profile');
+                window.location = 'https://go-portlethen.azurewebsites.net/profile';
                 location.href = 'https://go-portlethen.azurewebsites.net/profile';
                 return false;
             }
