@@ -35,11 +35,13 @@ if ($res->num_rows > 0) {
         req.onreadystatechange = function() {
             if (req.readyState == XMLHttpRequest.DONE) {
                 window.location('https://go-portlethen.azurewebsites.net/profile');
+                return false;
             }
         };
         req.open('POST', 'https://go-portlethen.azurewebsites.net/updateclub');
         req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         req.send(args);
+        return false;
     }
     </script>
     ");
