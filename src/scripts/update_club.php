@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("db_connect_test.php");
 $name = mysqli_real_escape_string($db, stripslashes($_POST["name"]));
 $genre = mysqli_real_escape_string($db, stripslashes($_POST["genre"]));
