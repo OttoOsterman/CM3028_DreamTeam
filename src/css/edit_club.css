@@ -11,7 +11,6 @@
     border-radius: 8px;
     background-color: white;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-    text-align: center;
 }
 
 input[type=text], select {
@@ -50,8 +49,11 @@ input[type=button], input[type=submit], input[type=reset] {
     border: 3px solid #00a388;
 }
 
-#editContainer.editLabel {
+.editLabel {
     color: black;
     padding: 5px;
-    text-align: left;
+}
+
+#buttonContainer {
+    text-align: center;
 }
