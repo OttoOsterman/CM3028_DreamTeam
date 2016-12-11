@@ -8,6 +8,7 @@ include("db_connect_test.php");
 $sql = "SELECT * FROM Club WHERE club_id = {$_POST["club_id"]}";
 $res = $db->query($sql);
 if ($res->num_rows > 0) {
+    $_SESSION["curr_club"] = $_POST["club_id"];
     $row = $res->fetch_array();
     echo ("
     <form action='javascript:return update_club()'>
