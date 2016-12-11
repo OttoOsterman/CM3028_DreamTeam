@@ -29,10 +29,10 @@
 }
 
 #clubContainer {
-    padding: 40px;
-    width: 55%;
+    width: 60%;
     margin: 30px;
     display: inline-block;
+    margin-top: 20px;
 }
 
 .clubName {
