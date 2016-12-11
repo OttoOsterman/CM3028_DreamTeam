@@ -68,3 +68,5 @@ if ($res->num_rows > 0) {
 } else {
     echo("<h1>Club not found.</h1>");
 }
+?>
+</body>
