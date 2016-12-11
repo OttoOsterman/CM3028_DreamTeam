@@ -15,9 +15,10 @@ session_start();
 <body>
 
 <?php include ("scripts/navbar.php"); ?>
-//TODO: REMOVE TESTING CODE
+<!--TODO: REMOVE TESTING CODE-->
 
 <div id="clubList">
+
 <?php include ("scripts/db_connect_test.php");
 
 if ($_SESSION["acc_type"] == "admin") {
@@ -71,19 +72,19 @@ if ($result->num_rows > 0) {
 if ($_SESSION["acc_type"] == "admin") {
     echo ("
     <form id='clubForm' action='javascript:return add_club()'>
-    <label>Club Name: </label>
+    <label id='clubLabel'>Club Name: </label>
     <input type='text' id='name'>
     <br>
-    <label>Club Genre: </label>
+    <label id='genreLabel'>Club Genre: </label>
     <input type='text' id='genre'>
     <br>
-    <label>Description: </label>
+    <label id='descLabel'>Description: </label>
     <input type='text' id='description'>
     <br>
-    <label>Contact info: </label>
+    <label id='contactLabel'>Contact info: </label>
     <input type='text' id='contact_info'>
     <br>
-    <input type='submit' value='Add club'>
+    <input type='submit' value='Add club' id='addButton'>
     
     <script>
     function add_club() {
