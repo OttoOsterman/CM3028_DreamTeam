@@ -86,9 +86,10 @@ echo('
 	                <form action="javascript:return login()" class="form-wrapper cf add">
 	                <input class="text-box" placeholder="email address" type="text" id="username" required>
 	                <input class="text-box" placeholder="password" type="password" id="password" required>
+	                
+	                </form>
 	                <button class="login button" type="submit" onclick="login()">Login</button>
 	                <button class="closebutton button" href="#">Close</button>
-	                </form>
 	                ');
 	                if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
 		                if($_SESSION["error"] == "username_not_found") {
