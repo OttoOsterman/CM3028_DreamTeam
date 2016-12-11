@@ -59,7 +59,7 @@ echo('
             echo('
             <li>
 		        <div class="purple slide">
-		            <a href="https://go-portlethen.azurewebsites.net/signup">Sign up</a>
+		            <a href="#popup2">Sign up</a>
                 </div>
                 <a href="#">
 			    <img src="">
@@ -92,14 +92,57 @@ echo('
 	            </section>
 	            
 	                ');
-	                if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
-		                if($_SESSION["error"] == "username_not_found") {
-			                echo("<label>The username entered wasn't found, please try again </label > ");
-		                } elseif ($_SESSION["error"] == "wrong_password") {
-			                echo("<label>The password entered didn't match the username, please try again</label>");
-		                }
-	                }
-                    echo('
+            if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
+                if($_SESSION["error"] == "username_not_found") {
+                    echo("<label>The username entered wasn't found, please try again </label > ");
+                } elseif ($_SESSION["error"] == "wrong_password") {
+                    echo("<label>The password entered didn't match the username, please try again</label>");
+                }
+            }
+            echo('
+<script>
+	function login() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var args = "username=" + username + "&password=" + password;
+        var req = new XMLHttpRequest();
+        req.onreadystatechange = function() {
+            if (req.readyState == XMLHttpRequest.DONE) {
+                location.reload();
+            }
+        };
+        req.open("POST", "https://go-portlethen.azurewebsites.net/login");
+        req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        req.send(args);
+    }
+</script>
+	            </section>
+	        </div>
+	  </div>          
+    ');
+            echo('
+<div id="popup2" class="overlay">
+	        <div class="popup">
+	            <h2>Create Account</h2>
+	            <section class="content form-wrapper">
+	                <form action="javascript:return login()">
+	                    <input class="text-box" placeholder="email address" type="text" id="username" required>
+	                    <input class="text-box" placeholder="password" type="password" id="password" required>
+	                </form>
+	            <section class="action-buttons">
+	                <button class="greenButton button" type="submit" onclick="login()">Login</button>
+	                <a href="#"><button class="closebutton button">Close</button></a>
+	            </section>
+	            
+	                ');
+            if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
+                if($_SESSION["error"] == "username_not_found") {
+                    echo("<label>The username entered wasn't found, please try again </label > ");
+                } elseif ($_SESSION["error"] == "wrong_password") {
+                    echo("<label>The password entered didn't match the username, please try again</label>");
+                }
+            }
+            echo('
 <script>
 	function login() {
         var username = document.getElementById("username").value;
