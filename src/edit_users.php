@@ -7,13 +7,15 @@
     <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
 </head>
 <body>
+
+<?php include("scripts/navbar.php");?>
+
 <h2 id="editUsersHeader">Edit Users</h2>
+
 <div id="editUsersContainer">
 
-<?php
-include("scripts/navbar.php");
 //TODO: REMOVE TESING CODE
-include("scripts/db_connect_test.php");
+<?php include("scripts/db_connect_test.php");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $sql = "SELECT username, acc_type FROM User";
