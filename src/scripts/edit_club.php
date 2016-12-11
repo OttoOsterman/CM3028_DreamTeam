@@ -35,6 +35,7 @@ if ($res->num_rows > 0) {
         req.onreadystatechange = function() {
             if (req.readyState == XMLHttpRequest.DONE) {
                 window.location('https://go-portlethen.azurewebsites.net/profile');
+                location.href = 'https://go-portlethen.azurewebsites.net/profile';
                 return false;
             }
         };
