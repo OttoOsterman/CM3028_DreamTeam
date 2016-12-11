@@ -82,12 +82,14 @@ echo('
 	        <div class="popup">
 	            <h2>Please Login</h2>
 	            <a class="close" href="#">x</a>
-	            <div class="content">
-	                <form action="javascript:return login()" class="form-wrapper cf add">
+	            <div class="content form-wrapper cf add">
+	            <div>
+	                <form action="javascript:return login()">
 	                <input class="text-box" placeholder="email address" type="text" id="username" required>
 	                <input class="text-box" placeholder="password" type="password" id="password" required>
 	                
 	                </form>
+	                </div>
 	                <button class="login button" type="submit" onclick="login()">Login</button>
 	                <button class="closebutton button" href="#">Close</button>
 	                ');
