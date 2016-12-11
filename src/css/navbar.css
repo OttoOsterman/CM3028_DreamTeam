@@ -127,6 +127,7 @@
     width: 25%;
     position: relative;
     transition: all 5s ease-in-out;
+    z-index: 999;
 }
 
 .popup h2 {
