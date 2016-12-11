@@ -6,6 +6,7 @@
 
 #editContainer, #editUsersContainer {
     padding: 40px;
+    padding-bottom: 100px;
     width: 50%;
     margin: auto;
     border-radius: 8px;
