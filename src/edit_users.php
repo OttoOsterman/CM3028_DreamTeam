@@ -21,13 +21,13 @@ session_start();
     <?php
     include("scripts/db_connect_test.php");
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-        $sql = "SELECT username, acc_type FROM User";
+        $sql = "SELECT user_id, username, acc_type FROM User";
         $acc_type_sql = "SELECT acc_type FROM Permission";
 
         $result = $db->query($sql);
         $acc_types = $db->query($acc_type_sql);
         while ($row = $result->fetch_array()) {
-            echo("<label>{$row["username"]}</label><select class='selected' id='id_{$row["username"]}'>");
+            echo("<label>{$row["username"]}</label><select class='selected' id='{$row["user_id"]}'>");
             while ($acc_row = $acc_types->fetch_array()) {
                 if ($row["acc_type"] == $acc_row["acc_type"]) {
                     echo("<option selected='selected'>{$acc_row["acc_type"]}</option>");
