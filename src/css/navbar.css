@@ -209,4 +209,18 @@
     z-index: 9;
 }
 
+.login{
+    background-color: #00a388;
+    color: black;
+    border: 3px solid #00a388;
+    float: left;
+}
+
+.close{
+    background-color: #FF6138;
+    color: black;
+    border: 3px solid #FF6138;
+    float: left;
+}
+
 /* End of Popup CSS */
