@@ -84,7 +84,7 @@ if ($_SESSION["acc_type"] == "admin") {
     <label id='contactLabel'>Contact info: </label>
     <input type='text' id='contact_info'>
     <br>
-    <input type='submit' value='Add club' id='addButton'>
+    <input type='submit' value='Add club'>
     
     <script>
     function add_club() {
