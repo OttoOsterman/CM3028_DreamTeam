@@ -53,7 +53,7 @@ session_start();
             echo("
             <section class='clubSection'>
                 <img class='clubImage' src={$row['photo_path']}>
-                <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
+                <div class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></div>
                 <div class='clubGenre'>{$row['genre']}</div>
                 <div class='clubDesc'>{$row['description']}</div>
             </section>
