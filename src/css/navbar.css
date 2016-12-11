@@ -231,12 +231,18 @@
     border: 3px solid #00a388;
     float: left;
 }
+.login:hover{
+    background-color: #007d67;
+}
 
 .closebutton{
     background-color: #FF6138;
     color: black;
     border: 3px solid #FF6138;
     float: left;
+}
+.closebutton:hover{
+    background-color: #bd4829;
 }
 
 /* End of Popup CSS */
