@@ -96,6 +96,7 @@
 
 /* End of Experimental Nav */
 
+/* Popup CSS */
 .overlay {
     position: absolute;
     top: 0;
@@ -144,5 +145,49 @@
     max-height: 30%;
     padding-top: 10px;
     overflow: auto;
-
 }
+
+.form-wrapper {
+    width:100%;
+    margin: auto;
+    margin-bottom: 6%;
+}
+
+.form-wrapper input{
+    width:65%;
+    max-width: 100%;
+    height: 50px;
+    padding: 10px 5px;
+    float: left;
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    border-radius: 3px 0 0 3px;
+    outline: 0;
+    background: #eee;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+.form-wrapper input:focus{
+    outline:0;
+    background: #FFF;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+.form-wrapper input::-webkit-input-placeholder{
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.form-wrapper input::-moz-placeholder{
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+.form-wrapper input:-ms-input-placeholder{
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* End of Popup CSS */
