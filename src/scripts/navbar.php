@@ -81,7 +81,6 @@ echo('
 <div id="popup1" class="overlay">
 	        <div class="popup">
 	            <h2>Please Login</h2>
-	            <a class="close" href="#">x</a>
 	            <section class="content form-wrapper">
 	                <form action="javascript:return login()">
 	                    <input class="text-box" placeholder="email address" type="text" id="username" required>
