@@ -23,7 +23,6 @@ session_start();
 
 <!-- navigation bar-->
 		<?php include('scripts/navbar.php') ?>
-<div class="green indicator"></div>
 
 <div class="pageWidth">
 <!-- logo -->
