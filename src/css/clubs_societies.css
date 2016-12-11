@@ -33,9 +33,6 @@
     width: 55%;
     margin: 30px;
     display: inline-block;
-    border-radius: 8px;
-    background-color: white;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
 .clubName {
