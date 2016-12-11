@@ -37,7 +37,7 @@ if ($res->num_rows > 0) {
     <input type='text' id='genre' value='{$genre}'>
     <label class='editLabel'>Club description:</label>
     <!--<input type='text' id='description' value='{$description}'>-->
-    <textarea id='clubDescription'> </textarea>
+    <textarea id='clubDescription' rows='10'></textarea>
     <script>
       document.getElementById(\"clubDescription\").value = \"{$description}\";
     </script>
