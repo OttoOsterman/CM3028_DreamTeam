@@ -38,7 +38,7 @@ if ($res->num_rows > 0) {
                 window.location('https://go-portlethen.azurewebsites.net/profile');
             }
         };
-        req.open('POST', 'https://go-portlethen.azurewebsites.net/update_club');
+        req.open('POST', 'https://go-portlethen.azurewebsites.net/updateclub');
         req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         req.send(args);
     }
