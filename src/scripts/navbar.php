@@ -92,7 +92,7 @@ echo('
 	                <button class="greenButton button" type="submit" onclick="login()">Login</button>
 	                <button class="closebutton button" href="#">Close</button>
 	            </section>
-	            </section>
+	            
 	                ');
 	                if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
 		                if($_SESSION["error"] == "username_not_found") {
@@ -118,8 +118,8 @@ echo('
         req.send(args);
     }
 </script>
-	            </div>
-	        </div>>
+	            </section>
+	        </div>
 	  </div>          
     ');
 }
