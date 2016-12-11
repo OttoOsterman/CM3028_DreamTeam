@@ -31,7 +31,6 @@ if ($res->num_rows > 0) {
         var contact_info = encodeURIComponent(document.getElementById('contact_info').value);
         var args = 'name=' + name + '&genre=' + genre + '&description=' + description + '&contact_info=' + contact_info;
         //REMOVE DEBUG CODE
-        document.getElementById('debug').innerHTML = args;
         var req = new XMLHttpRequest();
         req.onreadystatechange = function() {
             if (req.readyState == XMLHttpRequest.DONE) {
@@ -43,10 +42,6 @@ if ($res->num_rows > 0) {
         req.send(args);
     }
     </script>
-    <!-- REMOVE ASAP -->
-    <div id='debug'>
-    {$_SESSION['error']}
-    </div>
     ");
 } else {
     echo("<h1>Club not found.</h1>");
