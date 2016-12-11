@@ -50,6 +50,10 @@ if ($result->num_rows > 0) {
                 <input type='hidden' name='club_id' value='{$row["club_id"]}'>
                 <input type='submit' class='greenButton' value='Edit Club'>
             </form>
+            <form action='remove_club' method='POST'>
+                <input type='hidden' name='club_id' value='{$row["club_id"]}'>
+                <input type='submit' class='greenButton' value='Remove Club'>
+            </form>
         </section>
 		");
         } else if (!(isset($row['photo_path']))) {
@@ -61,6 +65,10 @@ if ($result->num_rows > 0) {
 		    <form action='edit_club' method='POST'>
                 <input type='hidden' name='club_id' value='{$row["club_id"]}'>
                 <input type='submit' class='greenButton' value='Edit Club'>
+            </form>
+            <form action='remove_club' method='POST'>
+                <input type='hidden' name='club_id' value='{$row["club_id"]}'>
+                <input type='submit' class='greenButton' value='Remove Club'>
             </form>
 		</section>
        ");
