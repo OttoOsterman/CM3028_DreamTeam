@@ -13,6 +13,8 @@ session_start();
     <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
 </head>
 <body>
+
+<div id="clubList">
 <?php
 
 include ("scripts/navbar.php");
@@ -33,6 +35,7 @@ if ($_SESSION["acc_type"] == "admin") {
         $sql = $sql . ");";
     }
 }
+
 $result = $db->query($sql);
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_array()) {
@@ -91,4 +94,5 @@ if ($_SESSION["acc_type"] == "admin") {
     ");
 }
 ?>
+</div>
 </body>
