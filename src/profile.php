@@ -19,6 +19,8 @@ session_start();
 
 <div id="clubList">
 
+    <h2 id="profileHeader">Hello! Welcome to your profile page.</h2>
+
 <?php include ("scripts/db_connect_test.php");
 
 if ($_SESSION["acc_type"] == "admin") {
@@ -98,7 +100,7 @@ if ($_SESSION["acc_type"] == "admin") {
         var req = new XMLHttpRequest();
         req.onreadystatechange = function() {
             if(req.readyState == XMLHttpRequest.DONE) {
-                window.location = 'https://go-portlethen.azurewebsites.net/profile';
+                //window.location = 'https://go-portlethen.azurewebsites.net/profile';
             }
         };
         req.open('POST', 'https://go-portlethen.azurewebsites.net/add_club');
