@@ -62,11 +62,13 @@
      font-size: 30px;
      color: #FFFFFF;
      padding: 10px;
+     padding-bottom: 0px;
  }
 
 .clubGenre {
     color: black;
     padding: 10px;
+    padding-top: 0px;
 }
 
 .clubDesc {
