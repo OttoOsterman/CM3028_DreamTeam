@@ -6,9 +6,8 @@
 
 #editContainer {
     padding: 40px;
-    width: 80%;
+    width: 50%;
     margin: auto;
-    display: inline-block;
     border-radius: 8px;
     background-color: white;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
@@ -42,4 +41,8 @@ input[type=button], input[type=submit], input[type=reset] {
     font: bold 16px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
     text-shadow: 0 -1px 0 rgba(0,0,0,.3);
     transition-duration: 0.2s;
+}
+
+.greenButton {
+    margin: auto;
 }

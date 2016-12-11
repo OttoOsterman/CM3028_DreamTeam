@@ -35,7 +35,7 @@ if ($res->num_rows > 0) {
     <input type='text' id='genre' value='{$genre}'>
     <input type='text' id='description' value='{$description}'>
     <input type='text' id='contact_info' value='{$contact_info}'>
-    <input type='submit' value='submit' onclick='update_club()'>
+    <input type='submit' value='submit' class='greenButton' onclick='update_club()'>
     </form>
     
     <script>
