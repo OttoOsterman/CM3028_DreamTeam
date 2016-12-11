@@ -35,6 +35,11 @@
     margin-top: 20px;
 }
 
+#clubContainer h1{
+    text-decoration: none;
+    color: black;
+}
+
 .clubName {
      font-size: 30px;
      color: #FFFFFF;
