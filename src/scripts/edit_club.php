@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include("navbar.php");
+include ("scripts/navbar.php");
 //TODO: REMOVE TESTING CODE
 include("db_connect_test.php");
 
