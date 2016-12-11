@@ -19,6 +19,8 @@ session_start();
 
 <div id="clubList">
 
+    <h2 id="profileHeader">Hello! Welcome to your profile page.</h2>
+
 <?php include ("scripts/db_connect_test.php");
 
 if ($_SESSION["acc_type"] == "admin") {
