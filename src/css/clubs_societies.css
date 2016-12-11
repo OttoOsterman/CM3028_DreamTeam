@@ -35,8 +35,11 @@
     margin-top: 20px;
 }
 
-#clubContainer h1{
+#clubContainer a{
     text-decoration: none;
+}
+
+#clubContainer h1{
     color: black;
 }
 
