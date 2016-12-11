@@ -8,9 +8,9 @@ session_start();
     <meta charset="utf-8">
     <title>Profile</title>
 
-    <link rel="stylesheet" type="text/css" href="./src/css/profile.css"/>
-    <link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
-    <link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/profile.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
 </head>
 <body>
 <?php
@@ -63,7 +63,7 @@ if ($result->num_rows > 0) {
         }
     }
 } else {
-    echo ("<h2> Oops! It looks like you're not a member of any clubs yet.</h2>");
+    echo ("<h2 id='notMember'> Oops! It looks like you're not a member of any clubs yet.</h2>");
 }
 
 if ($_SESSION["acc_type"] == "admin") {
