@@ -18,5 +18,5 @@ while ($row = $result->fetch_array()) {
         }
     }
     $acc_types->data_seek(0);
-    echo("</select>");
+    echo("</select><br>");
 }
