@@ -4,7 +4,7 @@
     padding-bottom: 50px;
 }
 
-#editContainer, :not(.editLabel) {
+#editContainer {
     padding: 40px;
     width: 50%;
     margin: auto;
@@ -50,7 +50,8 @@ input[type=button], input[type=submit], input[type=reset] {
     border: 3px solid #00a388;
 }
 
-.editLabel {
+#editContainer.editLabel {
     color: black;
     padding: 5px;
+    text-align: left;
 }
