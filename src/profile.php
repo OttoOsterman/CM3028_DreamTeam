@@ -70,7 +70,7 @@ if ($result->num_rows > 0) {
 
 if ($_SESSION["acc_type"] == "admin") {
     echo ("
-    <form action='javascript:return add_club()'>
+    <form id='clubForm' action='javascript:return add_club()'>
     <label>Club Name: </label>
     <input type='text' id='name'>
     <br>
