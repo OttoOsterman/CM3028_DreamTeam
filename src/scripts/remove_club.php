@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (isset($_SESSION["acc_type"]) && isset($_POST["club_id"])) {
     if($_SESSION["acc_type"] == "admin") {
         include("db_connect_test.php");
