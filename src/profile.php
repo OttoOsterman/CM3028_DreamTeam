@@ -73,6 +73,24 @@ if ($result->num_rows > 0) {
 
 if ($_SESSION["acc_type"] == "admin") {
     echo ("
+    <button id='edit_users_button'><a href='https://go-portlethen.azurewebsites.net/edit_users'>Edit users</a></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <form id='clubForm' action='javascript:return add_club()'>
     <label id='clubLabel'>Club Name:   </label>
     <input type='text' id='name' required>
