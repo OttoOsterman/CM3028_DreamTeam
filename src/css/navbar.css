@@ -142,7 +142,7 @@
     color: orangered;
 }
 .popup .content {
-    max-height: 30%;
+    max-height: 40%;
     padding-top: 10px;
     overflow: auto;
 }
@@ -207,6 +207,22 @@
     border-radius: 0 3px 3px 0;
     text-shadow: 0 -1px 0 rgba(0,0,0,.3);
     z-index: 9;
+}
+
+.action-buttons{
+    border:none;
+    height: 50px;
+    border-radius: 4px;
+    color: white;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin: 0 5% 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font: bold 16px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    transition-duration: 0.2s;
 }
 
 .login{
