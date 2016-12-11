@@ -7,6 +7,7 @@ $rules = array(
 		'scripts/logout' => '/logout',
 		'scripts/edit_club' => '/edit_club',
 		'scripts/updateclub' => '/updateclub',
+		'scripts/add_club' => '/add_club',
 
 		'home' => '/',
 		'clubs_societies' => '/clubs_societies',
