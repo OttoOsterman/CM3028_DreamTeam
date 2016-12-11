@@ -82,17 +82,16 @@ echo('
 	        <div class="popup">
 	            <h2>Please Login</h2>
 	            <a class="close" href="#">x</a>
-	            <section class="content form-wrapper cf add">
+	            <section class="content form-wrapper">
 	                <form action="javascript:return login()">
 	                    <input class="text-box" placeholder="email address" type="text" id="username" required>
 	                    <input class="text-box" placeholder="password" type="password" id="password" required>
 	                </form>
-	            
-	            <div class="action-buttons">
+	            <section class="action-buttons">
 	                <button class="greenButton button" type="submit" onclick="login()">Login</button>
 	                <button class="closebutton button" href="#">Close</button>
-	            </div>
 	            </section>
+	            
 	                ');
 	                if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
 		                if($_SESSION["error"] == "username_not_found") {
@@ -118,8 +117,8 @@ echo('
         req.send(args);
     }
 </script>
-	            </div>
-	        </div>>
+	            </section>
+	        </div>
 	  </div>          
     ');
 }
