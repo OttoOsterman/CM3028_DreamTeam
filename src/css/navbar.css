@@ -209,7 +209,7 @@
     z-index: 9;
 }
 
-.action-buttons{
+.action-buttons button{
     border:none;
     height: 50px;
     border-radius: 4px;
