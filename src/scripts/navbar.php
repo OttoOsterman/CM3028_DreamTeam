@@ -93,7 +93,7 @@ echo('
 	            
 	                ');
             if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
-                if($_SESSION["error"] == "username_not_found") {
+                if ($_SESSION["error"] == "username_not_found") {
                     echo("<label>The username entered wasn't found, please try again </label > ");
                 } elseif ($_SESSION["error"] == "wrong_password") {
                     echo("<label>The password entered didn't match the username, please try again</label>");
@@ -124,11 +124,16 @@ echo('
 <div id="popup2" class="overlay">
 	        <div class="popup">
 	        ');
-	        
-	        
+            if (isset($_SESSION["username"])) {
+                echo("
+        <body>
+        <h1>Please log out before attempting to create a new account.</h1>
+        </body>
+    ");
+            } else {
 
-	            
-	           echo('
+
+                echo('
                 <h2>Create Account</h2>
 	            <section class="content form-wrapper">
 	                <form action="javascript:return login()">
@@ -141,14 +146,14 @@ echo('
 	            </section>
 	            
 	                ');
-            if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
-                if($_SESSION["error"] == "username_not_found") {
-                    echo("<label>The username entered wasn't found, please try again </label > ");
-                } elseif ($_SESSION["error"] == "wrong_password") {
-                    echo("<label>The password entered didn't match the username, please try again</label>");
+                if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {
+                    if ($_SESSION["error"] == "username_not_found") {
+                        echo("<label>The username entered wasn't found, please try again </label > ");
+                    } elseif ($_SESSION["error"] == "wrong_password") {
+                        echo("<label>The password entered didn't match the username, please try again</label>");
+                    }
                 }
-            }
-            echo('
+                echo('
 <script>
 	function login() {
         var username = document.getElementById("username").value;
@@ -169,6 +174,7 @@ echo('
 	        </div>
 	  </div>          
     ');
-}
+            }
+        }
 echo('</div>');
 ?>
