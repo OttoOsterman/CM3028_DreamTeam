@@ -123,7 +123,16 @@ echo('
             echo('
 <div id="popup2" class="overlay">
 	        <div class="popup">
-	            <h2>Create Account</h2>
+	            ');
+
+
+            if (isset($_SESSION["username"])) {
+                echo("
+        <h2>Please log out before attempting to create a new account.</h2>
+    ");
+            }else{
+	            echo ('
+                <h2>Create Account</h2>
 	            <section class="content form-wrapper">
 	                <form action="javascript:return login()">
 	                    <input class="text-box" placeholder="email address" type="text" id="username" required>
