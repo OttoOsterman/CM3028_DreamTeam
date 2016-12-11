@@ -11,6 +11,7 @@
     border-radius: 8px;
     background-color: white;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
 }
 
 input[type=text], select {
@@ -34,7 +35,7 @@ input[type=button], input[type=submit], input[type=reset] {
     color: white;
     padding-left: 7%;
     padding-right: 7%;
-    margin: 0 5% 15px 0;
+    margin: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -43,6 +44,8 @@ input[type=button], input[type=submit], input[type=reset] {
     transition-duration: 0.2s;
 }
 
-.greenButton {
-    margin: auto;
+.greenButton2 {
+    background-color: #00a388;
+    color: black;
+    border: 3px solid #00a388;
 }
