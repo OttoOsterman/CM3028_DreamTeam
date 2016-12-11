@@ -55,7 +55,7 @@ if ($result->num_rows > 0) {
 		    <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
 		    <div class='clubGenre'>{$row['genre']}</div>
 		    <form action='add_club' method='POST'>
-                <input type='hidden' name='club_id' value='{$row["club_id"]}'
+                <input type='hidden' name='club_id' value='{$row["club_id"]}'>
                 <input type='submit' value='Edit'>
             </form>
 		</section>
