@@ -28,9 +28,10 @@
 }
 
 #clubList {
-    float: right;
-    width: 30%;
+    float: left;
+    width: 80%;
     padding: 30px;
+    margin: auto;
 }
 
 #clubContainer {
@@ -46,18 +47,12 @@
 .clubName {
     font-size: 30px;
     color: #FFFFFF;
-    padding: 10px;
+    padding: 20px;
 }
 
 .clubGenre {
     color: black;
-    padding: 10px;
-}
-
-.clubDesc {
-    color: black;
-    padding: 10px;
-    width: 80%;
+    padding: 20px;
 }
 
 .clubImage {
@@ -77,4 +72,26 @@
     margin: 1%;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+#clubForm {
+    padding: 30px;
+    color: white;
+    overflow: auto;
+    background-color: white;
+    display: inline-block;
+    width: auto;
+    float: left;
+    margin: 1%;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+#clubLabel, #genreLabel, #descLabel, #contactLabel {
+    color: black;
+    padding: 5px;
+}
+
+#name, #genre, #description, #contact_info {
+
 }

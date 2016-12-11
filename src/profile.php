@@ -13,11 +13,13 @@ session_start();
     <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
 </head>
 <body>
-<?php
 
-include ("scripts/navbar.php");
-//TODO: REMOVE TESTING CODE
-include ("scripts/db_connect_test.php");
+<?php include ("scripts/navbar.php"); ?>
+<!--TODO: REMOVE TESTING CODE-->
+
+<div id="clubList">
+
+<?php include ("scripts/db_connect_test.php");
 
 if ($_SESSION["acc_type"] == "admin") {
     $sql = "SELECT Club.club_id, Club.name, Club.genre, Club.description, Photo.photo_path, Photo.is_profile_photo FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id;";
@@ -33,6 +35,7 @@ if ($_SESSION["acc_type"] == "admin") {
         $sql = $sql . ");";
     }
 }
+
 $result = $db->query($sql);
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_array()) {
@@ -68,20 +71,20 @@ if ($result->num_rows > 0) {
 
 if ($_SESSION["acc_type"] == "admin") {
     echo ("
-    <form action='javascript:return add_club()'>
-    <label>Club Name: </label>
+    <form id='clubForm' action='javascript:return add_club()'>
+    <label id='clubLabel'>Club Name: </label>
     <input type='text' id='name'>
     <br>
-    <label>Club Genre: </label>
+    <label id='genreLabel'>Club Genre: </label>
     <input type='text' id='genre'>
     <br>
-    <label>Description: </label>
+    <label id='descLabel'>Description: </label>
     <input type='text' id='description'>
     <br>
-    <label>Contact info: </label>
+    <label id='contactLabel'>Contact info: </label>
     <input type='text' id='contact_info'>
     <br>
-    <input type='submit' value='Add club'>
+    <input type='submit' value='Add club' id='addButton'>
     
     <script>
     function add_club() {
@@ -91,4 +94,5 @@ if ($_SESSION["acc_type"] == "admin") {
     ");
 }
 ?>
+</div>
 </body>
