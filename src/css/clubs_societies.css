@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @media (min-width:1800px) {
     .pageWidth {
         width: 1800px;
@@ -38,10 +45,14 @@
 #clubContainer a{
     text-decoration: none;
     color: black;
+    font-family: Raleway-Regular, verdana;
+    font-weight: normal;
+    font-size: 25px;
+
 }
 
 #clubContainer h1{
-    color: black;
+
 }
 
 .clubName {
