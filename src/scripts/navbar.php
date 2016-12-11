@@ -83,7 +83,7 @@ echo('
 	            <h2>Please Login</h2>
 	            <a class="close" href="#">x</a>
 	            <div class="content form-wrapper cf add">
-	                <div>
+	                <div class="input-wrapper">
 	                    <form action="javascript:return login()">
 	                        <input class="text-box" placeholder="email address" type="text" id="username" required>
 	                        <input class="text-box" placeholder="password" type="password" id="password" required>
