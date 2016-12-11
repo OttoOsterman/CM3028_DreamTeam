@@ -39,7 +39,9 @@ if ($res->num_rows > 0) {
     <input type='text' id='description' value='{$description}'>
     <label class='editLabel'>Contact info:</label>
     <input type='text' id='contact_info' value='{$contact_info}'>
+    <div id='buttonContainer'>
     <input type='submit' value='submit' class='greenButton2' onclick='update_club()'>
+    </div>
     </form>
     
     <script>
