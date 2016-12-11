@@ -98,7 +98,7 @@ if ($_SESSION["acc_type"] == "admin") {
         var req = new XMLHttpRequest();
         req.onreadystatechange = function() {
             if(req.readyState == XMLHttpRequest.DONE) {
-                window.location = 'https://go-portlethen.azurewebsites.net/profile';
+                //window.location = 'https://go-portlethen.azurewebsites.net/profile';
             }
         };
         req.open('POST', 'https://go-portlethen.azurewebsites.net/add_club');
