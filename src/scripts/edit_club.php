@@ -1,20 +1,24 @@
 <?php
 session_start();
 ?>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Profile</title>
+<head>
+    <meta charset="utf-8">
+    <title>Edit Club</title>
 
-        <link rel="stylesheet" type="text/css" href="../src/css/profile.css"/>
-        <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
-        <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
-    </head>
-<?php
-include("scripts/navbar.php");
-//TODO: REMOVE TESTING CODE
-include("db_connect_test.php");
+    <link rel="stylesheet" type="text/css" href="../src/css/edit_club.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
+</head>
+<body>
+
+<?php include ("scripts/navbar.php"); ?>
+<!--TODO: REMOVE TESTING CODE-->
+
+    <h2 id="profileHeader">Edit Club</h2>
+
+<?php include ("scripts/db_connect_test.php");
 
 $sql = "SELECT * FROM Club WHERE club_id = {$_POST["club_id"]}";
 $res = $db->query($sql);
@@ -25,7 +29,7 @@ if ($res->num_rows > 0) {
     $genre = htmlspecialchars($row["genre"], ENT_QUOTES | ENT_HTML5);
     $description = htmlspecialchars($row["description"], ENT_QUOTES | ENT_HTML5);
     $contact_info = htmlspecialchars($row["contact_info"], ENT_QUOTES | ENT_HTML5);
-    echo("
+    echo ("
     <form action='javascript:return update_club()'>
     <input type='text' id='name' value='{$name}'>
     <input type='text' id='genre' value='{$genre}'>
@@ -57,10 +61,12 @@ if ($res->num_rows > 0) {
     ");
 
     if (isset($_SESSION{"error"})) {
-        if ($_SESSION["error"] == "club_name_already_exists") {
+        if($_SESSION["error"] == "club_name_already_exists") {
             echo("<h1>Oops! Two clubs can't have the same name.</h1>");
         }
     }
 } else {
     echo("<h1>Club not found.</h1>");
 }
+?>
+</body>
