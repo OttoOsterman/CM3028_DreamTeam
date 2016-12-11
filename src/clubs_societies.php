@@ -57,10 +57,7 @@ session_start();
                 <div class='clubGenre'>{$row['genre']}</div>
                 ");
 
-            if (isset($row["photo_path"]) && $row["photo_path"] !== null) {
-                echo("
-<img class='clubImage' src='{$row['photo_path']}'>");
-            }
+            
 
                 echo("
                 <div class='img-wrapper'></div>
