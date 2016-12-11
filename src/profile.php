@@ -59,7 +59,7 @@ if ($result->num_rows > 0) {
 		    <div class='clubGenre'>{$row['genre']}</div>
 		    <form action='edit_club' method='POST'>
                 <input type='hidden' name='club_id' value='{$row["club_id"]}'>
-                <input type='submit' value='Edit'>
+                <input type='submit' class='greenButton' value='Edit Club'>
             </form>
 		</section>
        ");
@@ -84,7 +84,7 @@ if ($_SESSION["acc_type"] == "admin") {
     <label id='contactLabel'>Contact info: </label>
     <input type='text' id='contact_info'>
     <br>
-    <input type='submit' class='login' value='Add club'>
+    <input type='submit' class='greenButton' value='Add Club'>
     
     
     <script>
