@@ -15,8 +15,8 @@ session_start();
 <?php include ("navbar.php"); ?>
 <!--TODO: REMOVE TESTING CODE-->
 
-    <h2 id="profileHeader">Edit Club</h2>
-<div id="container">
+    <h2 id="editClubHeader">Edit Club</h2>
+<div id="editContainer">
 
 <?php
 include ("db_connect_test.php");
