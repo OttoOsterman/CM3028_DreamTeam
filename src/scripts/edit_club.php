@@ -1,7 +1,18 @@
 <?php
 session_start();
+?>
+    <!DOCTYPE html>
 
-include ("scripts/navbar.php");
+    <head>
+        <meta charset="utf-8">
+        <title>Profile</title>
+
+        <link rel="stylesheet" type="text/css" href="../src/css/profile.css"/>
+        <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
+        <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
+    </head>
+<?php
+include("scripts/navbar.php");
 //TODO: REMOVE TESTING CODE
 include("db_connect_test.php");
 
@@ -14,7 +25,7 @@ if ($res->num_rows > 0) {
     $genre = htmlspecialchars($row["genre"], ENT_QUOTES | ENT_HTML5);
     $description = htmlspecialchars($row["description"], ENT_QUOTES | ENT_HTML5);
     $contact_info = htmlspecialchars($row["contact_info"], ENT_QUOTES | ENT_HTML5);
-    echo ("
+    echo("
     <form action='javascript:return update_club()'>
     <input type='text' id='name' value='{$name}'>
     <input type='text' id='genre' value='{$genre}'>
@@ -46,7 +57,7 @@ if ($res->num_rows > 0) {
     ");
 
     if (isset($_SESSION{"error"})) {
-        if($_SESSION["error"] == "club_name_already_exists") {
+        if ($_SESSION["error"] == "club_name_already_exists") {
             echo("<h1>Oops! Two clubs can't have the same name.</h1>");
         }
     }
