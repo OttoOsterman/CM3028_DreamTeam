@@ -123,11 +123,13 @@ echo('
             echo('
 <div id="popup2" class="overlay">
 	        <div class="popup">
+	        ');
 	        
 	        
-	            <h2>Create Account</h2>
+
 	            
-	            
+	           echo('
+                <h2>Create Account</h2>
 	            <section class="content form-wrapper">
 	                <form action="javascript:return login()">
 	                    <input class="text-box" placeholder="email address" type="text" id="username" required>
