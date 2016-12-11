@@ -4,7 +4,7 @@
     padding-bottom: 50px;
 }
 
-#editContainer {
+#editContainer, :not(.editLabel) {
     padding: 40px;
     width: 50%;
     margin: auto;
