@@ -72,7 +72,9 @@ if ($result->num_rows > 0) {
 
 if ($_SESSION["acc_type"] == "admin") {
     echo ("
-    <button id='edit_users_button'><a href='https://go-portlethen.azurewebsites.net/edit_users'>Edit users</a></button>
+    <form action='edit_users'>
+        <input type='submit' class='greenButton' value='Edit Users'>
+    </form>
 
 
 
