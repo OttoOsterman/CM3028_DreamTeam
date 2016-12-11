@@ -33,6 +33,7 @@ if ($_SESSION["acc_type"] == "admin") {
         $sql = $sql . ");";
     }
 }
+echo("sql is: " . $sql);
 $result = $db->query($sql);
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_array()) {
