@@ -15,7 +15,8 @@ $rules = array(
 		'health_wellbeing' => '/health_wellbeing',
 		'map' => '/map',
         'signup' => '/signup',
-        'profile' => '/profile'
+        'profile' => '/profile',
+		'edit_users' => '/edit_users'
 );
 
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
