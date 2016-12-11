@@ -22,9 +22,8 @@ session_start();
 <!-- Container for health and wellbeing content -->
 <div id="healthWellbeing">
 
-    <div class="banner">
-        <img src="/src/images/go-portlethen.jpg"/>
-    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 
     <h1 id="pageHeader">Health and Wellbeing</h1>
 

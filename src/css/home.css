@@ -24,6 +24,15 @@
 	width:100%;
 }
 
+.green{
+	background-color: #7cb342;
+}
+
+.indicator{
+	width:100vw;
+	height:10px;
+}
+
 .slideshow-container {
 	max-width: 1000px;
 	position: relative;
