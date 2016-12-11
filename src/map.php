@@ -80,7 +80,7 @@ session_start();
 <noscript>
 	<h1>Please enable javascript to access the maps feature of this website.</h1>
 </noscript>
-<h1 id="mapHeader">Portlethen Activity Map</h1>
+<h1 id="mapHeader">Discover North Kincardineshire</h1>
 <div id="map" style="width: 1600px; height: 800px"></div>
 </body>
 </html>
