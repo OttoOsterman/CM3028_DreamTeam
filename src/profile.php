@@ -42,7 +42,7 @@ if ($result->num_rows > 0) {
             <img class='clubImage' src={$row['photo_path']}>
             <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
             <div class='clubGenre'>{$row['genre']}</div>
-            <form action='add_club' method='POST'>
+            <form action='edit_club' method='POST'>
                 <input type='hidden' name='club_id' value='{$row["club_id"]}'>
                 <input type='submit' value='Edit'>
             </form>
@@ -54,7 +54,7 @@ if ($result->num_rows > 0) {
 		    <img class='clubImage' src='../src/images/placeholder.png'>
 		    <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
 		    <div class='clubGenre'>{$row['genre']}</div>
-		    <form action='add_club' method='POST'>
+		    <form action='edit_club' method='POST'>
                 <input type='hidden' name='club_id' value='{$row["club_id"]}'>
                 <input type='submit' value='Edit'>
             </form>
