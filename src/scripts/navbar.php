@@ -87,7 +87,6 @@ echo('
 	                <form action="javascript:return login()">
 	                <input class="text-box" placeholder="email address" type="text" id="username" required>
 	                <input class="text-box" placeholder="password" type="password" id="password" required>
-	                
 	                </form>
 	                </div>
 	                <section class="action-buttons">
