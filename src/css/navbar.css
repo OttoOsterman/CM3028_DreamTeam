@@ -225,14 +225,14 @@
     transition-duration: 0.2s;
 }
 
-.login{
+.greenButton{
     background-color: #00a388;
     color: black;
     border: 3px solid #00a388;
     float: left;
 }
 
-.login:hover{
+.greenButton:hover{
     background-color: #007d67;
 }
 

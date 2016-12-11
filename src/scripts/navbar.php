@@ -91,7 +91,7 @@ echo('
 	                </form>
 	                </div>
 	                <section class="action-buttons">
-	                <button class="login button" type="submit" onclick="login()">Login</button>
+	                <button class="greenButton button" type="submit" onclick="login()">Login</button>
 	                <button class="closebutton button" href="#">Close</button>
 	                </section>
 	                ');
