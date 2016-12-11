@@ -49,3 +49,8 @@ input[type=button], input[type=submit], input[type=reset] {
     color: black;
     border: 3px solid #00a388;
 }
+
+.editLabel {
+    color: black;
+    padding: 5px;
+}
