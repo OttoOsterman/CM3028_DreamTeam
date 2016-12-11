@@ -142,7 +142,7 @@
     color: orangered;
 }
 .popup .content {
-    max-height: 30%;
+    max-height: 40%;
     padding-top: 10px;
     overflow: auto;
 }
