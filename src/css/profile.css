@@ -109,3 +109,7 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+input[type=text]:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
