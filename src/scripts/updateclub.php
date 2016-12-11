@@ -11,8 +11,8 @@ $result = $db->query($sql);
 if ($result->num_rows > 0) {
     $_SESSION["error"] = "club_name_already_exists";
     die();
+} else {
+    $sql = "UPDATE Club SET name = '{$name}', genre = '{$genre}', description='{$description}', contact_info='{$contact_info}' WHERE club_id={$_SESSION['curr_club']}";
+    $_SESSION["error"] = $sql;
+    $db->query($sql);
 }
-
-$sql = "UPDATE Club SET name = '{$name}', genre = '{$genre}', description='{$description}', contact_info='{$contact_info}' WHERE club_id={$_SESSION['curr_club']}";
-$_SESSION["error"] = $sql;
-$db->query($sql);
