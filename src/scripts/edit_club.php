@@ -25,10 +25,10 @@ if ($res->num_rows > 0) {
     
     <script>
     function update_club() {
-        var name = document.getElementById('name').value;
-        var genre = document.getElementById('genre').value;
-        var description = document.getElementById('description').value;
-        var contact_info = document.getElementById('contact_info').value;
+        var name = encodeURIComponent(document.getElementById('name').value);
+        var genre = encodeURIComponent(document.getElementById('genre').value);
+        var description = encodeURIComponent(document.getElementById('description').value);
+        var contact_info = encodeURIComponent(document.getElementById('contact_info').value);
         var args = 'name=' + name + '&genre=' + genre + '&description=' + description + '&contact_info=' + contact_info;
         //REMOVE DEBUG CODE
         document.getElementById('debug').innerHTML = args;
