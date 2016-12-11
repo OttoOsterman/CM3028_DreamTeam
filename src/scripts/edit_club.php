@@ -12,14 +12,14 @@ session_start();
 </head>
 <body>
 
-<?php include ("scripts/navbar.php"); ?>
+<?php include ("navbar.php"); ?>
 <!--TODO: REMOVE TESTING CODE-->
 
     <h2 id="profileHeader">Edit Club</h2>
 <div id="container">
 
 <?php
-include ("scripts/db_connect_test.php");
+include ("db_connect_test.php");
 $sql = "SELECT * FROM Club WHERE club_id = {$_POST["club_id"]}";
 $res = $db->query($sql);
 if ($res->num_rows > 0) {
