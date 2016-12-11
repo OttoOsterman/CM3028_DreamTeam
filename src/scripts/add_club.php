@@ -12,7 +12,7 @@ if ($result->num_rows > 0) {
     $_SESSION["error"] = "club_already_exists";
     die();
 } else {
-    $sql = "INSERT INTO Club (name, genre, description, contact_info) VALUES ({$name}, {$genre}, {$description}, {$contact_info})";
+    $sql = "INSERT INTO Club (name, genre, description, contact_info) VALUES ('{$name}', '{$genre}', '{$description}', '{$contact_info}')";
     $db->query($sql);
     $_SESSION["error"] = null;
 }
