@@ -36,7 +36,11 @@ if ($res->num_rows > 0) {
     <label class='editLabel'>Club genre:</label>
     <input type='text' id='genre' value='{$genre}'>
     <label class='editLabel'>Club description:</label>
-    <input type='text' id='description' value='{$description}'>
+    <!--<input type='text' id='description' value='{$description}'>-->
+    <textarea id='clubDescription'> </textarea>
+    <script>
+      document.getElementById(\"clubDescription\").value = \"{$description}\";
+    </script>
     <label class='editLabel'>Contact info:</label>
     <input type='text' id='contact_info' value='{$contact_info}'>
     <div id='buttonContainer'>
