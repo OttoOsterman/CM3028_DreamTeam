@@ -17,7 +17,7 @@ session_start();
 
 
 <?php include('scripts/navbar.php'); ?>
-<div id="pageWidth">
+<div class="pageWidth">
 
 <!-- Container for health and wellbeing content -->
 <div id="healthWellbeing">
