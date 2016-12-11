@@ -64,7 +64,7 @@ if ($result->num_rows > 0) {
 		    <div class='clubGenre'>{$row['genre']}</div>
 		    <form action='edit_club' method='POST'>
                 <input type='hidden' name='club_id' value='{$row["club_id"]}'>
-                <input type='submit' class='greenButton' value='Edit Club'>
+                <input type='submit' class='greenButton2' value='Edit Club'>
             </form>
             <form action='remove_club' method='POST'>
                 <input type='hidden' name='club_id' value='{$row["club_id"]}'>
