@@ -191,7 +191,9 @@
     font-style: italic;
 }
 
-
+.input-wrapper{
+    width: 25%;
+}
 
 .action-buttons button{
     border:none;
