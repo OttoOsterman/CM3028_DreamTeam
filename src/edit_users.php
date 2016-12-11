@@ -51,7 +51,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 $sql = "UPDATE User SET acc_type";
 ?>
-    ?>
 </div>
 </body>
     
