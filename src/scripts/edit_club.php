@@ -6,12 +6,9 @@ session_start();
 <head>
     <meta charset="utf-8">
     <title>Edit Club</title>
-
     <link rel="stylesheet" type="text/css" href="../src/css/edit_club.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
-
-    <?php include ("scripts/db_connect_test.php");?>
 </head>
 <body>
 
@@ -22,7 +19,7 @@ session_start();
 <div id="container">
 
 <?php
-
+include ("scripts/db_connect_test.php");
 $sql = "SELECT * FROM Club WHERE club_id = {$_POST["club_id"]}";
 $res = $db->query($sql);
 if ($res->num_rows > 0) {
