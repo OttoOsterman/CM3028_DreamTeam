@@ -86,9 +86,9 @@ echo('
 	                <form action="javascript:return login()" class="form-wrapper cf add">
 	                
 	                <input class="text-box" placeholder="email address" type="text" id="username" required>
-	                <label><br>Password</label>
-	                <input type="password" id="password" required>
-	                <br><input type="submit" onclick="login()" value="Log in">
+	                
+	                <input class="text-box" placeholder="password" type="password" id="password" required>
+	                <br><input class="button" type="submit" onclick="login()" value="Log in">
 	                </form>
 	                ');
 	                if (isset($_SESSION{"error"}) && !(is_null($_SESSION["error"]))) {

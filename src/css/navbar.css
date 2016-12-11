@@ -190,4 +190,23 @@
     font-style: italic;
 }
 
+.form-wrapper button{
+    overflow: visible;
+    position: relative;
+    border: 0;
+    padding: 0;
+    padding-left: 4%;
+    padding-right: 4%;
+    cursor: pointer;
+    height: 50px;
+    max-width: 110px;
+    min-width: 60px;
+    font: bold 20px/40px 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0 3px 3px 0;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    z-index: 9;
+}
+
 /* End of Popup CSS */
