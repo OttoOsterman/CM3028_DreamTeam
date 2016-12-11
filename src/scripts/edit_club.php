@@ -10,6 +10,8 @@ session_start();
     <link rel="stylesheet" type="text/css" href="../src/css/edit_club.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
+
+    <?php include ("scripts/db_connect_test.php");?>
 </head>
 <body>
 
@@ -17,8 +19,9 @@ session_start();
 <!--TODO: REMOVE TESTING CODE-->
 
     <h2 id="profileHeader">Edit Club</h2>
+<div id="container">
 
-<?php include ("scripts/db_connect_test.php");
+<?php
 
 $sql = "SELECT * FROM Club WHERE club_id = {$_POST["club_id"]}";
 $res = $db->query($sql);
@@ -69,4 +72,5 @@ if ($res->num_rows > 0) {
     echo("<h1>Club not found.</h1>");
 }
 ?>
+</div>
 </body>
