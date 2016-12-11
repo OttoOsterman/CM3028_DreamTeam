@@ -31,9 +31,13 @@ if ($res->num_rows > 0) {
     $contact_info = htmlspecialchars($row["contact_info"], ENT_QUOTES | ENT_HTML5);
     echo ("
     <form action='javascript:return update_club()'>
+    <label class='editLabel'>Club name:</label>
     <input type='text' id='name' value='{$name}'>
+    <label class='editLabel'>Club genre:</label>
     <input type='text' id='genre' value='{$genre}'>
+    <label class='editLabel'>Club description:</label>
     <input type='text' id='description' value='{$description}'>
+    <label class='editLabel'>Contact info:</label>
     <input type='text' id='contact_info' value='{$contact_info}'>
     <input type='submit' value='submit' class='greenButton2' onclick='update_club()'>
     </form>
