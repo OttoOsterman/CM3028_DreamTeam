@@ -1,9 +1,24 @@
 <?php
 session_start();
+?>
+<!DOCTYPE html>
 
-include("navbar.php");
-//TODO: REMOVE TESTING CODE
-include("db_connect_test.php");
+<head>
+    <meta charset="utf-8">
+    <title>Edit Club</title>
+
+    <link rel="stylesheet" type="text/css" href="../src/css/edit_club.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
+</head>
+<body>
+
+<?php include ("scripts/navbar.php"); ?>
+<!--TODO: REMOVE TESTING CODE-->
+
+    <h2 id="profileHeader">Edit Club</h2>
+
+<?php include ("scripts/db_connect_test.php");
 
 $sql = "SELECT * FROM Club WHERE club_id = {$_POST["club_id"]}";
 $res = $db->query($sql);
@@ -53,3 +68,5 @@ if ($res->num_rows > 0) {
 } else {
     echo("<h1>Club not found.</h1>");
 }
+?>
+</body>
