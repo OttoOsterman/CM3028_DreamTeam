@@ -89,7 +89,7 @@ echo('
 	                </form>
 	            <section class="action-buttons">
 	                <button class="greenButton button" type="submit" onclick="login()">Login</button>
-	                <button class="closebutton button" href="#">Close</button>
+	                <a href="#"><button class="closebutton button">Close</button></a>
 	            </section>
 	            
 	                ');
