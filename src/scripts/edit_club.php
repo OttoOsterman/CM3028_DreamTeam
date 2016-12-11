@@ -29,19 +29,27 @@ if ($res->num_rows > 0) {
         var genre = encodeURIComponent(document.getElementById('genre').value);
         var description = encodeURIComponent(document.getElementById('description').value);
         var contact_info = encodeURIComponent(document.getElementById('contact_info').value);
-        var args = 'name=' + name + '&genre=' + genre + '&description=' + description + '&contact_info=' + contact_info;
-        var req = new XMLHttpRequest();
-        req.onreadystatechange = function() {
-            if (req.readyState == XMLHttpRequest.DONE) {
-                window.location = 'https://go-portlethen.azurewebsites.net/profile';
-            }
-        };
-        req.open('POST', 'https://go-portlethen.azurewebsites.net/updateclub');
-        req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-        req.send(args);
+        if (name != '' && genre != '' && description !='' && contact_info != '') {
+             var args = 'name=' + name + '&genre=' + genre + '&description=' + description + '&contact_info=' + contact_info;
+            var req = new XMLHttpRequest();
+            req.onreadystatechange = function() {
+                if (req.readyState == XMLHttpRequest.DONE) {
+                 window.location = 'https://go-portlethen.azurewebsites.net/profile';
+                }
+            };
+            req.open('POST', 'https://go-portlethen.azurewebsites.net/updateclub');
+            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            req.send(args);
+        }
     }
     </script>
     ");
+
+    if (isset($_SESSION{"error"})) {
+        if($_SESSION["error"] == "club_name_already_exists") {
+            echo("<h1>Oops! Two clubs can't have the same name.</h1>");
+        }
+    }
 } else {
     echo("<h1>Club not found.</h1>");
 }

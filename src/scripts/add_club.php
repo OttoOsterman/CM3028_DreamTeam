@@ -6,7 +6,7 @@ $genre = mysqli_real_escape_string($db, stripslashes($_POST["genre"]));
 $description = mysqli_real_escape_string($db, stripslashes($_POST["description"]));
 $contact_info = mysqli_real_escape_string($db, stripslashes($_POST["contact_info"]));
 
-$sql = "SELECT name FROM Club WHERE name = {$name}";
+$sql = "SELECT name FROM Club WHERE name = '{$name}'";
 $result = $db->query($sql);
 if ($result->num_rows > 0) {
     $_SESSION["error"] = "club_already_exists";

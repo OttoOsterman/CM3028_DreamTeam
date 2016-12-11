@@ -12,12 +12,13 @@ session_start();
     <?php include('scripts/db_connect_test.php') ?>
 </head>
 <body>
-<div id="pageWidth">
+
 <?php include('scripts/navbar.php') ?>
 
-<div id="banner">
-    <img src="/src/images/go-portlethen.jpg"/>
-</div>
+<div id="pageWidth">
+    <!-- logo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 
 <!--Facebook include script -->
 <div id="fb-root"></div>
