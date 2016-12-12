@@ -42,6 +42,7 @@ if (isset($_SESSION["username"])) {
         $username = mysqli_real_escape_string($db, $username);
 
 		$sql = "SELECT username FROM User WHERE username = '{$username}'";
+		echo($sql);
 		$result = $db->query($sql);
 		if ($result->num_rows > 0) {
 			echo("<h2>Sorry, this e-mail is already in use.</h2>");
