@@ -28,9 +28,9 @@
 
 <body>
 
-<div id="pageWidth">
-
 <?php include('scripts/navbar.php') ?>
+
+<div id="pageWidth">
 
 <div id="clubContainer">
 
