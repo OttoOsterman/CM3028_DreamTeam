@@ -50,7 +50,7 @@ if ($res->num_rows > 0) {
     <input type='submit' value='submit' class='greenButton2' onclick='update_club()'>
     </div>
     </form>
-    
+    </div>
     <script>
     function update_club() {
         var name = encodeURIComponent(document.getElementById('name').value);
@@ -58,7 +58,7 @@ if ($res->num_rows > 0) {
         var description = encodeURIComponent(document.getElementById('description').value);
         var contact_info = encodeURIComponent(document.getElementById('contact_info').value);
         if (name != '' && genre != '' && description !='' && contact_info != '') {
-             var args = 'name=' + name + '&genre=' + genre + '&description=' + description + '&contact_info=' + contact_info;
+            var args = 'name=' + name + '&genre=' + genre + '&description=' + description + '&contact_info=' + contact_info;
             var req = new XMLHttpRequest();
             req.onreadystatechange = function() {
                 if (req.readyState == XMLHttpRequest.DONE) {
@@ -75,12 +75,30 @@ if ($res->num_rows > 0) {
 
     while ($row = $res->fetch_array()) {
         echo("
-            <form>
+            <form action='javascript:return remove_user({$row['user_id']})' id='{$row['user_id']}'>
             <label>{$row['username']}</label>
-            <input type='submit' value='remove' class='greenButton2'>
+            <input type='submit' value='remove' class='greenButton2' onclick='remove_user({$row['user_id']})'>
             </form>
         ");
     }
+
+    echo("
+        <script>
+        function remove_user(user_id) {
+            var retval = 'user_id=' + user_id;
+            var req = new XMLHttpRequest();
+            req.onreadystatechange = function() {
+                if(req.readyState == XMLHttpRequest.DONE) {
+                    var remove_form = document.getElementById(user_id);
+                    remove_form.parentNode.removeChild(node);
+                }
+            };
+            req.open('POST', 'https://go-portlethen.azurewebsites.net/remove_user_club');
+            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            req.send();
+        }
+        </script>
+    ");
 
     if (isset($_SESSION{"error"})) {
         if($_SESSION["error"] == "club_name_already_exists") {
@@ -91,5 +109,4 @@ if ($res->num_rows > 0) {
     echo("<h1>Club not found.</h1>");
 }
 ?>
-</div>
 </body>
