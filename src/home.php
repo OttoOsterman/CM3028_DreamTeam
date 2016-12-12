@@ -16,7 +16,7 @@ session_start();
 
 </head>
 
-<body onLoad="plusSlides(1)">
+<body>
 
 
 
