@@ -12,7 +12,9 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
 </head>
 <?php include("scripts/navbar.php") ?>
+
 <div class="pageWidth">
+	
 <?php
 if (isset($_SESSION["username"])) {
     echo("
