@@ -10,7 +10,6 @@ session_start();
     <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/clubs_societies.css"/>
-    <link rel="stylesheet" type="text/css" href="../src/css/profile.css"/>
     <!-- TODO: Remove testing code -->
     <!--Link to database-->
     <?php include('scripts/db_connect_test.php') ?>
