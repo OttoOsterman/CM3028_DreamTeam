@@ -125,14 +125,15 @@ session_start();
 		</div>
 		
 		<div class="box">
-			<img id="step-2" src="/src/images/box-2.png"/>
+			<button class="button-xlarge pure-button green">Step Two</button>
 			<img id="" src="/src/images/login.png"/>
 			<h1> Enter Your Details</h1>
 		</div>
 		
 		<div class="box">
+			<button class="button-xlarge pure-button green">Step Tree</button>
 			<h1> Welcome to Go-portlethen!</h1>
-			<img id="step-3" src="/src/images/box-3.png"/>
+
 		</div>
 		
 	</div>
