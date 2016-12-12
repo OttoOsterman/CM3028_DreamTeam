@@ -143,7 +143,6 @@ echo('
 	                    </form>
 	                    <!-- <section class="action-buttons"> -->
 	                        
-	                        
 	                    <!-- </section> -->
 	            ');
                 if($_SERVER['REQUEST_METHOD'] === 'POST') {
