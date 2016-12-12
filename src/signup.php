@@ -20,12 +20,12 @@ if (isset($_SESSION["username"])) {
     ");
 } else {
     echo("
-            <form id='signup_form' action='signup' method='POST'>
+            <form class='pure-form pure-form-stacked' id='signup_form' action='signup' method='POST'>
                 <label>Please enter an e-mail address</label>
                 <input type='text' name='username' required>
                 <label>Please enter a password</label>
                 <input type='password' name='password' required>
-                <button type='submit'>Submit</button>
+                <button class='pure-button greenButton' type='submit'>Submit</button>
             </form>
         ");
     if($_SERVER['REQUEST_METHOD'] === 'POST') {
