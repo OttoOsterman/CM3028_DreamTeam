@@ -121,10 +121,16 @@ session_start();
 		
 		<div id="box-1">
 			<img id="step-1" src="/src/images/box-1.png"/>
+
+			<p> Click Me In The Navigation Bar</p>
+			
+			<img id="click me" src="/src/images/sign%20up.png"/>
+
 		</div>
 		
 		<div id = "box-2">
 			<img id="step-2" src="/src/images/box-2.png"/>
+			<img id=""
 			<p> Enter Your Details</p>
 		</div>
 		

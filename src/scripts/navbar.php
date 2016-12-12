@@ -59,7 +59,7 @@ echo('
             echo('
             <li>
 		        <div class="purple slide">
-		            <a href="#popup2">Sign up</a>
+		            <a href="https://go-portlethen.azurewebsites.net/signup">Sign up</a>
                 </div>
                 <a href="#">
 			    <img src="">
@@ -120,39 +120,6 @@ echo('
 	        </div>
 	  </div>          
     ');
-            //Signup Pop-up
-            echo('
-                <div id="popup2" class="overlay">
-	                <div class="popup">
-	        ');
-            if (isset($_SESSION["username"])) {
-                echo("
-                    <h1>Please log out before attempting to create a new account.</h1>
-                ");
-            } else {
-                echo('
-                    <h2>Create Account</h2>
-	                <section class="content">
-	                    <form class="pure-form pure-form-stacked" id=\'signup_form\' action=\'signup\' method=\'POST\'>
-	                        <label for="username">Email</label>
-	                        <input class="text-box inputStyle" placeholder="Please enter an e-mail address" type="text" id="username" required>
-	                        <label for="password">Password</label>
-	                        <input class="text-box inputStyle" placeholder="Please enter a password" type="password" id="password" required>
-	                        <button class="pure-button pure-button-primary greenButton" type="submit">Create</button>
-	                        <a href="#"><button class="pure-button closebutton">Close</button></a>
-	                        <a href="https://go-portlethen.azurewebsites.net/signup"><button class="pure-button pure-button-primary">Backup Signup Form</button></a>
-	                    </form>
-	                    <!-- <section class="action-buttons"> -->
-	                        
-	                    <!-- </section> -->
-	            ');
-
-                echo('
-	            </section>
-	        </div>
-	  </div>          
-    ');
-            }
         }
 echo('</div>');
 ?>
