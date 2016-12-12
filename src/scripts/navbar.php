@@ -146,31 +146,6 @@ echo('
 	                        
 	                    <!-- </section> -->
 	            ');
-                if($_SERVER['REQUEST_METHOD'] === 'POST') {
-                    //TODO: REMOVE TESTING CODE
-                    include("scripts/db_connect_test.php");
-                    $username = $_POST["username"];
-                    $username = stripslashes($username);
-                    $username = mysqli_real_escape_string($db, $username);
-
-                    $sql = "SELECT username FROM User WHERE username = '{$username}'";
-                    $result = $db->query($sql);
-                    if ($result->num_rows > 0) {
-                        echo("<h2>Sorry, this e-mail is already in use.</h2>");
-                    } else {
-                        $password = $_POST["password"];
-                        $salt = date('U');
-                        $password_hash = hash('sha256', $password . $salt);
-                        $sql = "INSERT INTO User (username, hash, salt, acc_type) VALUES ('{$username}', '{$password_hash}', '{$salt}', 'general_user')";
-                        $db->query($sql);
-                        echo("
-				    <script>
-					    document.getElementById('signup_form').style.display = 'none';
-				    </script>
-				    <h2>Your account has been successfully created, please log in.</h2>
-				");
-                    }
-                }
 
                 echo('
 	            </section>
