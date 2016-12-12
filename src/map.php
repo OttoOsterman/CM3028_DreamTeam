@@ -42,7 +42,7 @@ session_start();
     	   		zoom: 10,
         		mapTypeId: 'satellite'
       		});
-			downloadUrl("https://go-portlethen.azurewebsites.net/location_data", function (data) {
+			downloadUrl("https://go-portlethen.azurewebsites.net/locations", function (data) {
 				var xml = data.responseXML;
 				var markers = xml.documentElement.getElementsByTagName("marker");
 				for (var i = 0; i < markers.length; i++) {
@@ -52,10 +52,10 @@ session_start();
 					);
 					var name = markers[i].getAttribute("name");
 					var html = "<h1>" + name + "</h1>";
-					html += "<br/><div>" + markers[i].getAttribute("description") + "</div>";
+					html += "<br><div>" + markers[i].getAttribute("description") + "</div>";
 					var media = markers[i].childNodes;
 					for (var iterator = 0; iterator < media.length; iterator++) {
-						html += "<br/><img src='";
+						html += "<br><img src='";
 						html += media[iterator].getAttribute("path");
 						html += "'></img>"
 					}

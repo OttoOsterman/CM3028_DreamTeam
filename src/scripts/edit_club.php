@@ -13,7 +13,6 @@ session_start();
 <body>
 
 <?php include ("navbar.php"); ?>
-<!--TODO: REMOVE TESTING CODE-->
 
 <!--Header for the page-->
     <h2 id="editClubHeader">Edit Club</h2>
@@ -22,6 +21,7 @@ session_start();
 
 <?php
 // Connect to database
+//TODO: REMOVE TESING CODE
 include ("db_connect_test.php");
 $sql = "SELECT * FROM Club WHERE club_id = {$_POST["club_id"]}";
 $res = $db->query($sql);
