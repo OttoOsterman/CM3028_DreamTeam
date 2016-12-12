@@ -17,7 +17,7 @@ session_start();
 	
 </head>
 
-<body onLoad="plusSlides(1)">
+<body>
 
 
 
@@ -29,7 +29,7 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 
-	
+
     <!--Image Slider-->
 <script>
 	
