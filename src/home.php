@@ -29,7 +29,7 @@ session_start();
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 	
 	
-	<!--Image Slider
+	<!--Image Slider -->
 	
 	<script>
 
@@ -62,7 +62,6 @@ session_start();
 		
 		
 	</script>
--->
 
 
 	<div class="slideshow-container">
