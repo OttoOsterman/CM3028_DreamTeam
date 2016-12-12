@@ -7,6 +7,7 @@ session_start();
     <meta charset="utf-8">
     <title>Profile</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure.css">
     <link rel="stylesheet" type="text/css" href="../src/css/profile.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>

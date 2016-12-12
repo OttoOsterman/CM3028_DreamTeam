@@ -25,6 +25,7 @@ session_start();
         }
         ?>
     </title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure.css">
     <link rel="stylesheet" type="text/css" href="https://go-portlethen.azurewebsites.net/src/css/club.css"/>
     <link rel="stylesheet" type="text/css" href="https://go-portlethen.azurewebsites.net/src/css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="https://go-portlethen.azurewebsites.net/src/css/general.css"/>
