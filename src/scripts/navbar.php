@@ -139,7 +139,7 @@ echo('
 	                        <label for="password">Password</label>
 	                        <input class="text-box" placeholder="Please enter a password" type="password" id="password" required>
 	                        <button class="pure-button pure-button-primary greenButton" type="submit">Create</button>
-	                        <a href="#"><button class="pure-button pure-button-primary">Close</button></a>
+	                        <a href="#"><button class="pure-button closebutton">Close</button></a>
 	                    </form>
 	                    <!-- <section class="action-buttons"> -->
 	                        

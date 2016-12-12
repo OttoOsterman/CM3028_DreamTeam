@@ -231,9 +231,6 @@
 
 .closebutton{
     background-color: #FF6138;
-    color: black;
-    border: 3px solid #FF6138;
-    float: left;
 }
 .closebutton:hover{
     background-color: #bd4829;
