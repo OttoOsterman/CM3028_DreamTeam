@@ -2,7 +2,6 @@
 define('INCLUDE_DIR', dirname(__FILE__) . '/src/');
 
 $rules = array(
-		'scripts/removeclubuser' => 'removeclubuser',
 		'scripts/locations' => "/locations",
 		'scripts/login' => '/login',
 		'scripts/logout' => '/logout',
@@ -10,6 +9,7 @@ $rules = array(
 		'scripts/updateclub' => '/updateclub',
 		'scripts/add_club' => '/add_club',
 		'scripts/remove_club' => '/remove_club',
+		'scripts/removeclubuser' => '/removeclubuser',
 
 		'home' => '/',
 		'clubs_societies' => '/clubs_societies',
