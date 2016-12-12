@@ -17,7 +17,7 @@ session_start();
 	
 </head>
 
-<body>
+<body onLoad="plusSlides(1)">
 
 
 
@@ -29,7 +29,7 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 
-
+	
     <!--Image Slider-->
 <script>
 	
@@ -101,7 +101,7 @@ session_start();
 			<img id="picture" src="/src/imageSlider/img3.jpg" style="width:100%">
 			<div class="text">Go Portlethen</div>
 
-			<!--
+			
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -111,7 +111,7 @@ session_start();
 
                 <br>
 
-            <!--add buttons here to take you to slide X
+            <!--add buttons here to take you to slide X-->
 
 	<div style="text-align:center">
 		<span class="dot" onclick="currentSlide(1)"></span>
@@ -120,7 +120,7 @@ session_start();
 	</div>
 	
 	
-	-->
+	
 
 	<div id="text-box">
 		<h2 id="title"> Go Portlethen! </h2> 

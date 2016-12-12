@@ -322,10 +322,8 @@ span.buttonText {
 	outline-width: 3px;
 	float:left;
 	padding-top:20px;
-	top:1000px;
-
 }
-/*
+
 #text-box{
 	width: 900px;
 	height:300px;
@@ -334,10 +332,9 @@ span.buttonText {
 	outline-width: 3px;
 	float:right;
 	padding-top:20px;
-	top:1000px;
 
 }
-*/
+
 #content{
 	Text-align:left;
 	font-style:oblique;
