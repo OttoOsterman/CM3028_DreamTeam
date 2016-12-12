@@ -118,14 +118,10 @@ session_start();
 			<h1 id="sign-up-text"> HOW TO SIGN UP </h1>
 
 	<div id="sign-up-box">
-		
 		<div class="box">
 			<button class="button-xlarge pure-button green">Step One</button>
-
 			<h1> Click Me In The Navigation Bar</h1>
-			
 			<img id="click-me" src="/src/images/sign%20up.png"/>
-
 		</div>
 		
 		<div class="box">
