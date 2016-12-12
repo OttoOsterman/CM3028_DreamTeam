@@ -108,31 +108,30 @@ session_start();
 
 	<div id="text-box">
 
-		<div id="information">
+		<div class="information">
 		<h1 id="title"> Portlethen & Sport </h1>
 		<p id="content"> Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation </p>
 		</div>
 
 
 
-		<div id="how to join">
-			<h2 id="title"> #3 Largest clubs </h2>
-			<p id="content">   here we will add the text for the page</p>
+		<div class="how-to-join">
+			<h2 id="Top 3- most popular clubs"> #3 Largest clubs </h2>
+
+			<!--  php code to get top 3 clubs based upon number of users -->
+			
 		</div>
 
 	</div>
 
 	<div id="find your club">
-		<h1 id="find your bluc"
+		<h1 id="top Clubs">  </h1>
 
 	</div>
 
 
 
 </div>
-
-	
-	
 
 </body>
 
