@@ -336,6 +336,12 @@ span.buttonText {
 		margin-right: auto;
 		background: #fafafa;
 	}
+	.information{
+		width:100%;
+		font-size:10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 /* about go-portlethen*/
@@ -357,6 +363,7 @@ span.buttonText {
 }
 
 
+
 .title{
 	position:fixed;
 	font-size:50px;
@@ -369,14 +376,17 @@ span.buttonText {
 }
 
 .sign-up{
-	width:600px;
+	width:1600px;
 	height:100px;
 	margin-left: auto;
 	margin-right: auto;
+	background: #fafafa;
+
 }
 
 #sign-up-text{
 	font-size:50px;
+
 }
 
 /*joining guide*/
