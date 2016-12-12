@@ -89,13 +89,13 @@ if ($res->num_rows > 0) {
             var req = new XMLHttpRequest();
             req.onreadystatechange = function() {
                 if(req.readyState == XMLHttpRequest.DONE) {
-                    var remove_form = document.getElementById(user_id);
-                    remove_form.parentNode.removeChild(node);
+                    var remove_form = document.getElementById('' + user_id);
+                    remove_form.parentNode.removeChild(remove_form);
                 }
             };
             req.open('POST', 'https://go-portlethen.azurewebsites.net/remove_user_club');
             req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-            req.send();
+            req.send(retval);
         }
         </script>
     ");
