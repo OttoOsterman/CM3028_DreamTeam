@@ -388,15 +388,25 @@ span.buttonText {
 
 #sign-up-text{
 	font-size:50px;
-
+	background: #fafafa;
 }
 
 /*joining guide*/
 
 .how-to-join{
 
-	width:1800px;
-	float:right;
+	width: 1800px;
+	height:600px;
+	outline-style: double;
+	outline-color: lightblue;
+	outline-width: 3px;
+	float:left;
+	padding-top:20px;
+	transition: width 0.3s ease;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fafafa;
+	padding-top:15px;
 
 }
 
