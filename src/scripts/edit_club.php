@@ -139,7 +139,7 @@ if ($res->num_rows > 0) {
                     username_input.type = 'hidden';
                     username_input.name = 'club_id';
                     username_input.value = {$_POST['club_id']};
-                    form.appendChild(club_id_input_input);
+                    form.appendChild(club_id_input);
                     
                     form.submit();
                     return false;
