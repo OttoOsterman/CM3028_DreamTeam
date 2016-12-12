@@ -101,13 +101,15 @@ if ($res->num_rows > 0) {
         </script>
     ");
 
-    $sql = "SELECT User.username, User.user_id FROM User LEFT JOIN ClubMember on User.user_id = ClubMember.user_id AND ClubMember.club_id != {$_POST["club_id"]}";
+    $sql = "SELECT User.username, User.user_id, ClubMember.club_id FROM User LEFT JOIN ClubMember on User.user_id = ClubMember.user_id";
     $res = $db->query($sql);
     echo("<select id='add_user_select'>");
     while ($row = $res->fetch_array()) {
-        echo ("
-        <option>{$row['username']}</option>
-        ");
+        if ($row['club_id'] != $_POST['club_id']) {
+            echo("
+            <option>{$row['username']}</option>
+            ");
+        }
     }
     echo("
     </select>
