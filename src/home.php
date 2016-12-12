@@ -120,6 +120,18 @@ session_start();
 	
 			<h1 id="sign-up-text"> HOW TO SIGN UP </h1>
 
+	<div id ="sign-up-box">
+		
+		<div id="box-1">   </div>
+		
+		<div id = "box-2"> </div>
+		
+		<div id="box-3">  </div>
+		
+	</div>
+	
+	
+	
 	</div>
 
 
