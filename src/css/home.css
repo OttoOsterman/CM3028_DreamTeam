@@ -182,6 +182,14 @@
 	margin-top: 20px;
 }
 
+#sign-up-box a{
+	text-decoration: none;
+	color: black;
+	font-family: Raleway-Regular, verdana;
+	font-weight: bold;
+	font-size: 28px;
+}
+
 #box-1
 {
 	width:875px;
