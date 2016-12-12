@@ -138,10 +138,12 @@ echo('
 	                        <input class="text-box" placeholder="Please enter an e-mail address" type="text" id="username" required>
 	                        <label for="password">Password</label>
 	                        <input class="text-box" placeholder="Please enter a password" type="password" id="password" required>
+	                        <button class="pure-button pure-button-primary" type="submit">Create</button>
+	                        <a href="#"><button class="pure-button pure-button-primary">Close</button></a>
 	                    </form>
 	                    <!-- <section class="action-buttons"> -->
-	                        <button class="pure-button pure-button-primary" type="submit">Create</button>
-	                        <a href="#"><button class="closebutton button">Close</button></a>
+	                        
+	                        
 	                    <!-- </section> -->
 	            ');
                 if($_SERVER['REQUEST_METHOD'] === 'POST') {
