@@ -125,7 +125,7 @@ if ($res->num_rows > 0) {
         var req = new XMLHttpRequest();
         req.onreadystatechange = function() {
             if(req.readyState == XMLHttpRequest.DONE) {
-                location.reload(true);
+                location.reload();
                 /*
                 var form = document.createElement('form');
                 form.method = 'POST';
