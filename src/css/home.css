@@ -97,22 +97,49 @@
 	background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
+
+#text-box{
+	width: 100%;
+	border-radius: 8px;
+	background-color: white;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+	float:left;
+	padding-top:20px;
+	transition: width 0.3s ease;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-wrap: normal;
 }
 
-@-webkit-keyframes fade {
-	from {opacity: .4}
-	to {opacity: 1}
-}
-
-@keyframes fade {
-	from {opacity: .4}
-	to {opacity: 1}
+@media (max-width:1800px){
+	#text-box {
+		width: 100%;
+		transition: width 0.3s ease;
+		background: #fafafa;
+	}
+	#content{
+		padding-top:10px;
+		font-family:verdana;
+		font-size:20px;
+		overflow-wrap: normal;
+	}
+	.information{
+		float:left;
+		font-size:20px;
+		padding-left:20px;
+		padding-right:20px;
+	}
+	#sign-up-box{
+		width: 100%;
+		border-radius: 8px;
+		background-color: white;
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+		padding-top:20px;
+		transition: width 0.3s ease;
+		margin-left: auto;
+		margin-right: auto;
+		overflow-wrap: normal;
+	}
 }
 
 /* about go-portlethen*/
