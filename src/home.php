@@ -122,7 +122,7 @@ session_start();
 		<div id="box-1">
 			<img id="step-1" src="/src/images/box-1.png"/>
 
-			<p> Click Me In The Navigation Bar</p>
+			<h1> Click Me In The Navigation Bar</h1>
 			
 			<img id="click-me" src="/src/images/sign%20up.png"/>
 
@@ -130,12 +130,12 @@ session_start();
 		
 		<div id = "box-2">
 			<img id="step-2" src="/src/images/box-2.png"/>
-			<img id=""
-			<p> Enter Your Details</p>
+			<img id="" src="/src/images/login.png"/>
+			<h1> Enter Your Details</h1>
 		</div>
 		
 		<div id="box-3">
-			<p> Welcome to Go-portlethen!</p>
+			<h1> Welcome to Go-portlethen!</h1>
 			<img id="step-3" src="/src/images/box-3.png"/>
 		</div>
 		
