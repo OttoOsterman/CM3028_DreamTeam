@@ -15,10 +15,13 @@ session_start();
 <?php include ("navbar.php"); ?>
 <!--TODO: REMOVE TESTING CODE-->
 
+<!--Header for the page-->
     <h2 id="editClubHeader">Edit Club</h2>
+<!--Container for content-->
 <div id="editContainer">
 
 <?php
+// Connect to database
 include ("db_connect_test.php");
 $sql = "SELECT * FROM Club WHERE club_id = {$_POST["club_id"]}";
 $res = $db->query($sql);
@@ -36,11 +39,7 @@ if ($res->num_rows > 0) {
     <label class='editLabel'>Club genre:</label>
     <input type='text' id='genre' value='{$genre}'>
     <label class='editLabel'>Club description:</label>
-    <!--<input type='text' id='description' value='{$description}'>-->
-    <textarea id='clubDescription' rows='10'></textarea>
-    <script>
-      document.getElementById('clubDescription').value = '{$description}';
-    </script>
+    <input type='text' id='description' value='{$description}'>
     <label class='editLabel'>Contact info:</label>
     <input type='text' id='contact_info' value='{$contact_info}'>
     <div id='buttonContainer'>

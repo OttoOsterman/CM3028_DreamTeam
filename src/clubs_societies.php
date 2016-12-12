@@ -4,21 +4,27 @@ session_start();
 
 <!DOCTYPE html>
 <head>
+    <!--Page title-->
     <title>Clubs and Societies</title>
+    <!--link navbar, general and clubs and societies CSS to the page-->
     <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/clubs_societies.css"/>
+    <link rel="stylesheet" type="text/css" href="../src/css/profile.css"/>
     <!-- TODO: Remove testing code -->
+    <!--Link to database-->
     <?php include('scripts/db_connect_test.php') ?>
 </head>
 <body>
 
+<!--Link navbar PHP-->
 <?php include('scripts/navbar.php') ?>
 
+<!--Set page width-->
 <div class="pageWidth">
     <!-- logo -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
+    <img id ="banner" src="/src/images/go-portlethen.jpg"/>
 
 <!--Facebook include script -->
 <div id="fb-root"></div>
@@ -42,6 +48,7 @@ session_start();
     </div>
 </div>
 
+    <!--Container including clubs-->
 <div id="clubContainer">
 
     <?php
@@ -49,28 +56,42 @@ session_start();
     $result = $db->query($sql);
 
     while ($row = $result->fetch_array()) {
+        /*If the club has a profile photo, do this*/
         if (isset($row['photo_path']) && $row['is_profile_photo'] == '1') {
             echo("
+            <!--Create an individual section for each club-->
             <section class='clubSection'>
                 <img class='clubImage' src={$row['photo_path']}>
                 <div class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></div>
                 <div class='clubGenre'>{$row['genre']}</div>
                 <div class='img-wrapper'></div>
                 <div class='clubDesc'>{$row['description']}</div>
+                <!--Button for joining a club-->
+                <input type='submit' class='greenButton' value='Join Club' onclick='join_club()'>
             </section>
 			");
+            /*If the club does not a have a profile photo, do this (use a placeholder image)*/
         } else if (!(isset($row['photo_path']))) {
             echo("
+            <!--Create an individual section for each club-->
 			<section class='clubSection'>
 			    <img class='clubImage' src='../src/images/placeholder.png'>
 			    <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
 			    <div class='clubGenre'>{$row['genre']}</div>
 			    <div class='clubDesc'>{$row['description']}</div>
+			    <!--Button for joining a club-->
+			    <input type='submit' class='greenButton' value='Join Club' onclick='join_club()'>
 			</section>
             ");
         }
     }
     ?>
+    <script>
+        /*Function for joining a club*/
+        function join_club() {
+
+        }
+    </script>
 </div>
 </div>
 </body>
