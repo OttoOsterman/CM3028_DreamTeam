@@ -91,9 +91,10 @@ if ($res->num_rows > 0) {
                 if(req.readyState == XMLHttpRequest.DONE) {
                     var remove_form = document.getElementById('' + user_id);
                     remove_form.parentNode.removeChild(remove_form);
+                    return false;
                 }
             };
-            req.open('POST', 'https://go-portlethen.azurewebsites.net/remove_user_club');
+            req.open('POST', 'https://go-portlethen.azurewebsites.net/removeclubuser');
             req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
             req.send(retval);
         }
