@@ -125,7 +125,7 @@ session_start();
 
 			<p> Click Me In The Navigation Bar</p>
 			
-			<img id="click me" src="/src/images/sign%20up.png"/>
+			<img id="click-me" src="/src/images/sign%20up.png"/>
 
 		</div>
 		
