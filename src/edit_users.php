@@ -61,8 +61,8 @@ session_start();
                 new_input.name = selected.item(i).id;
                 new_input.value = document.getElementById(new_input.name).options[document.getElementById(new_input.name).selectedIndex].text;
                 form.appendChild(new_input);
-                form.submit();
             }
+            form.submit();
         }
         </script>
         ");
