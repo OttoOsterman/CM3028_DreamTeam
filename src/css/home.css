@@ -393,7 +393,7 @@ span.buttonText {
 
 /*joining guide*/
 
-.how-to-join{
+#how-to-join{
 
 	width: 1800px;
 	height:600px;
@@ -407,8 +407,14 @@ span.buttonText {
 	margin-right: auto;
 	background: #fafafa;
 	padding-top:15px;
+	inset 4px 3px 10px 5px #00DDFF;
+	box-shadow:inset 4px 3px 10px 5px #00DDFF;
 
 }
 
+#step-one-title{
+	font-size:50px;
+	background: #fafafa;
+}
 
 
