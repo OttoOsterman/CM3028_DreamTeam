@@ -5,6 +5,7 @@ session_start();
 <head>
     <meta charset="utf-8">
     <title>Edit Users</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure.css">
     <link rel="stylesheet" type="text/css" href="../src/css/edit_club.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
@@ -41,12 +42,10 @@ session_start();
 
         //TODO: REMOVE DEBUG CODE
         echo("
-        <div id='debug'>
-        
-        </div>
-
         <form action='javascript:return edit_users()'>
-            <input type='submit' onclick='edit_users()'>
+        <div id='buttonContainer'>
+            <input type='submit' class='greenButton2' onclick='edit_users()'>
+            </div>
         </form>
         
         <form id='to_submit' action='edit_users' METHOD='POST'></form>
@@ -80,4 +79,12 @@ session_start();
     }
     ?>
 </div>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
 </body>

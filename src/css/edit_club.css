@@ -50,6 +50,10 @@ input[type=button], input[type=submit], input[type=reset] {
     border: 3px solid #00a388;
 }
 
+.greenButton2:hover{
+    background-color: #6a9938;
+}
+
 .editLabel {
     color: black;
     padding: 5px;

@@ -6,12 +6,16 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<title>Sign up</title>
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure.css">
 	<link rel="stylesheet" type="text/css" href="./src/css/signup.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
 </head>
+<?php include("scripts/navbar.php") ?>
+
+<div class="pageWidth">
+	
 <?php
-include("scripts/navbar.php");
 if (isset($_SESSION["username"])) {
     echo("
         <body>
@@ -20,12 +24,12 @@ if (isset($_SESSION["username"])) {
     ");
 } else {
     echo("
-            <form id='signup_form' action='signup' method='POST'>
-                <label>Please enter an e-mail address</label>
-                <input type='text' name='username' required>
-                <label>Please enter a password</label>
-                <input type='password' name='password' required>
-                <button type='submit'>Submit</button>
+            <form class='pure-form pure-form-stacked' id='signup_form' action='signup' method='POST'>
+                <label for='username'>Email</label>
+                <input class='text-box inputStyle' placeholder='Please enter an email address' type='text' id='username' required>
+                <label for='password'>Please enter a password</label>
+                <input class='text-box inputStyle' placeholder='Please enter a password' type='password' id='password' required>
+                <button class='pure-button greenButton' type='submit'>Submit</button>
             </form>
         ");
     if($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -56,3 +60,12 @@ if (isset($_SESSION["username"])) {
     }
 }
 ?>
+	</div>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+	window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+

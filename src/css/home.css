@@ -315,19 +315,151 @@ span.buttonText {
 
 
 #text-box{
-	width: 1800px;
-	height:300px;
-	outline-style: double;
-	outline-color: lightblue;
-	outline-width: 3px;
+	width: 100%;
+	border-radius: 8px;
+	background-color: white;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 	float:left;
 	padding-top:20px;
+	transition: width 0.3s ease;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-wrap: normal;
+}
 
+@media (max-width:1800px){
+	#text-box {
+		width: 100%;
+		transition: width 0.3s ease;
+		background: #fafafa;
+	}
+	#content{
+		padding-top:10px;
+		font-family:verdana;
+		font-size:20px;
+		overflow-wrap: normal;
+	}
+	.information{
+		float:left;
+		font-size:20px;
+		padding-left:20px;
+		padding-right:20px;
+	}
+	#sign-up-box{
+		width: 100%;
+		border-radius: 8px;
+		background-color: white;
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+		padding-top:20px;
+		transition: width 0.3s ease;
+		margin-left: auto;
+		margin-right: auto;
+		overflow-wrap: normal;
+	}
+}
+
+/* about go-portlethen*/
+
+#title{
+	font-size:45px;
+	font-color:blue;
+}
+
+.information{
+	float:left;
+	font-size:20px;
+	padding-left:300px;
+	padding-right:300px;
+}
+
+
+.title{
+	width:100%;
+	position:fixed;
+	font-size:50px;
+	font-family: Raleway-Regular, verdana;
 }
 
 #content{
+	padding-top:15px;
 	Text-align:left;
-	font-style:oblique;
-	font-size:10px;
+	font-family:verdana;
+	font-size:25px;
+	overflow-wrap: normal;
+	margin-bottom:50px;
+}
+
+
+/*how to sign up*/
+
+#sign-up-text{
+	font-size:50px;
+	color:white;
+	background-color:blue;
+	border-radius:15px;
+	text-align:center;
+}
+
+/*joining guide*/
+
+#sign-up-box{
+	width: 100%;
+	border-radius: 8px;
+	background-color: white;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+	padding-top:20px;
+	transition: width 0.3s ease;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-wrap: normal;
+}
+
+#box-1
+{
+	width:875px;
+	border-radius: 8px;
+	background-color: white;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+	float:left;
+	padding-top:20px;
+	transition: width 0.3s ease;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-wrap: normal;
+}
+
+#box-2
+{
+	width:875px;
+	border-radius: 8px;
+	background-color: white;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+	float:right;
+	padding-top:20px;
+	transition: width 0.3s ease;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-wrap: normal;
+}
+
+
+#box-3
+{
+	width:1790px;
+	border-radius: 8px;
+	background-color: white;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+	padding-top:20px;
+	transition: width 0.3s ease;
+	overflow-wrap: normal;
+	padding-top:15px;
+	margin-bottom:20px;
+}
+#step-2{
+	float:right;
+}
+
+#step-3{
+	padding-top:15px;
 }
 

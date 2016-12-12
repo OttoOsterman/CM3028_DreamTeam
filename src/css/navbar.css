@@ -137,23 +137,13 @@
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
 }
-.popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-}
-.popup .close:hover {
-    color: orangered;
-}
 .popup .content {
     max-height: 40%;
     padding-top: 10px;
     overflow: auto;
+}
+.content label{
+    width:80%;
 }
 
 .form-wrapper {
@@ -220,9 +210,6 @@
 
 .greenButton{
     background-color: #7cb342;
-    color: black;
-    border: 3px solid #7cb342;
-    float: left;
 }
 
 .greenButton:hover{
@@ -231,12 +218,15 @@
 
 .closebutton{
     background-color: #FF6138;
-    color: black;
-    border: 3px solid #FF6138;
-    float: left;
+    color: white;
 }
 .closebutton:hover{
     background-color: #bd4829;
+}
+
+.inputStyle{
+    width:70%;
+    margin-bottom: 3%;
 }
 
 /* End of Popup CSS */

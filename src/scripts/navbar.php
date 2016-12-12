@@ -132,15 +132,19 @@ echo('
             } else {
                 echo('
                     <h2>Create Account</h2>
-	                <section class="content form-wrapper">
-	                    <form id=\'signup_form\' action=\'signup\' method=\'POST\'>
-	                        <input class="text-box" placeholder="Please enter an e-mail address" type="text" id="username" required>
-	                        <input class="text-box" placeholder="Please enter a password" type="password" id="password" required>
+	                <section class="content">
+	                    <form class="pure-form pure-form-stacked" id=\'signup_form\' action=\'signup\' method=\'POST\'>
+	                        <label for="username">Email</label>
+	                        <input class="text-box inputStyle" placeholder="Please enter an e-mail address" type="text" id="username" required>
+	                        <label for="password">Password</label>
+	                        <input class="text-box inputStyle" placeholder="Please enter a password" type="password" id="password" required>
+	                        <button class="pure-button pure-button-primary greenButton" type="submit">Create</button>
+	                        <a href="#"><button class="pure-button closebutton">Close</button></a>
+	                        <a href="https://go-portlethen.azurewebsites.net/signup"><button class="pure-button pure-button-primary">Backup Signup Form</button></a>
 	                    </form>
-	                    <section class="action-buttons">
-	                        <button class="greenButton button" type="submit">Create</button>
-	                        <a href="#"><button class="closebutton button">Close</button></a>
-	                    </section>
+	                    <!-- <section class="action-buttons"> -->
+	                        
+	                    <!-- </section> -->
 	            ');
                 if($_SERVER['REQUEST_METHOD'] === 'POST') {
                     //TODO: REMOVE TESTING CODE
