@@ -140,7 +140,7 @@ echo('
 	                        <input class="text-box" placeholder="Please enter a password" type="password" id="password" required>
 	                        <button class="pure-button pure-button-primary greenButton" type="submit">Create</button>
 	                        <a href="#"><button class="pure-button closebutton">Close</button></a>
-	                        <a href="https://go-portlethen.azurewebsites.net/signup"><button class="pure-button closebutton">Backup Signup Form</button></a>
+	                        <a href="https://go-portlethen.azurewebsites.net/signup"><button class="pure-button">Backup Signup Form</button></a>
 	                    </form>
 	                    <!-- <section class="action-buttons"> -->
 	                        
