@@ -315,7 +315,7 @@ span.buttonText {
 
 
 #text-box{
-	width: 900px;
+	width: 18000px;
 	height:300px;
 	outline-style: double;
 	outline-color: lightblue;
@@ -324,15 +324,20 @@ span.buttonText {
 	padding-top:20px;
 }
 
-#text-box{
-	width: 900px;
-	height:300px;
+#information{
+	width:900px;
+	float:left;
 	outline-style: double;
 	outline-color: lightblue;
 	outline-width: 3px;
-	float:right;
-	padding-top:20px;
+}
 
+#how to join{
+	width:900px;
+	float:right;
+	outline-style: double;
+	outline-color: lightblue;
+	outline-width: 3px;
 }
 
 #content{

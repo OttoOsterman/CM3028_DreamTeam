@@ -12,9 +12,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="./src/css/home.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
-	<link rel="script" type="text/javascript" href="./src/JavaScript/general.js"/>
 
-	
 </head>
 
 <body onLoad="plusSlides(1)">
@@ -29,7 +27,42 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 
-	
+	<script>
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+		}
+		
+		
+		
+		
+		
+		
+		
+	</script>
     <!--Image Slider-->
 
 
@@ -75,12 +108,17 @@ session_start();
 	
 
 	<div id="text-box">
+
+		<div id="information">
 		<h2 id="title"> Go Portlethen! </h2> 
 		<p id="content">   here we will add the text for the page</p>
-		<div id="text-box-2">
+		</div>
+
+		<div id="how to join">
 			<h2 id="title"> Go Portlethen! </h2>
 			<p id="content">   here we will add the text for the page</p>
 		</div>
+
 	</div>
 
 
