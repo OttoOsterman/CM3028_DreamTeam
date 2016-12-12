@@ -48,10 +48,21 @@ session_start();
         <form action='javascript:return edit_users()'>
             <input type='submit' onclick='edit_users()'>
         </form>
+        
+        <form id='to_submit' action='edit_users.php'></form>
 
         <script>
         function edit_users() {
             var selected = document.getElementsByClassName('selected');
+            var form = document.getElementById('to_submit');
+            for (var i = 0; i < selected.length; i++) {
+                var new_input = document.createElement('input');
+                new_input.type = 'hidden';
+                new_input.name = selected.item(i).id;
+                new_input.value = document.getElementById(new_input.name).options[document.getElementById(new_input.name).selectedIndex].text;
+                form.appendChild(new_input);
+            }
+            
             var retval = selected.item(0).id + '=' + document.getElementById(selected.item(0).id).options[document.getElementById(selected.item(0).id).selectedIndex].text;
             for (var i = 1; i < selected.length; i++) {
                 retval  = retval + '&' + selected.item(i).id + '=' + document.getElementById(selected.item(i).id).options[document.getElementById(selected.item(i).id).selectedIndex].text;
@@ -61,10 +72,18 @@ session_start();
         }
         </script>
         ");
+    } else {
+        //This is really, REALLY expensive and should only be done sparingly
+        $sql = "SELECT user_id FROM User";
+        $result = $db->query($sql);
+        while ($row = $result->fetch_array()) {
+            if (isset($_POST[$row['user_id']])) {
+                $sql = "UPDATE User SET acc_type = " . $_POST[$row["user_id"]] . "WHERE user_id = " . $row["user_id"];
+                $db->query($sql);
+            }
+        }
+        header("Location: https://go-portlethen.azurewebsites.net/profile");
     }
-
-
-    $sql = "UPDATE User SET acc_type";
     ?>
 </div>
 </body>
