@@ -33,7 +33,7 @@ if ($res->num_rows > 0) {
     $description = htmlspecialchars($row["description"], ENT_QUOTES | ENT_HTML5);
     $contact_info = htmlspecialchars($row["contact_info"], ENT_QUOTES | ENT_HTML5);
 
-    $sql = "SELECT * FROM User LEFT JOIN ClubMember ON User.user_id = ClubMember.user_id WHERE club_id = {$_SESSION['curr_club']}";
+    $sql = "SELECT * FROM User LEFT JOIN ClubMember ON User.user_id = ClubMember.user_id WHERE club_id = {$_POST["club_id"]}";
     $res = $db->query($sql);
 
     echo ("
@@ -121,7 +121,7 @@ if ($res->num_rows > 0) {
     function add_to_group() {
         var username = document.getElementById('add_user_select').options[document.getElementById('add_user_select').selectedIndex].text;
         
-        var retval = 'username=' + username;
+        var retval = 'username=' + username + '&club_id=' + {$_POST['club_id']};
             var req = new XMLHttpRequest();
             req.onreadystatechange = function() {
                 if(req.readyState == XMLHttpRequest.DONE) {
