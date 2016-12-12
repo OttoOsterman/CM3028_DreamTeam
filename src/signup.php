@@ -6,6 +6,7 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<title>Sign up</title>
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure.css">
 	<link rel="stylesheet" type="text/css" href="./src/css/signup.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/navbar.css"/>
 	<link rel="stylesheet" type="text/css" href="./src/css/general.css"/>
