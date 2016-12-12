@@ -327,17 +327,12 @@ span.buttonText {
 #information{
 	width:900px;
 	float:left;
-	outline-style: double;
-	outline-color: lightblue;
-	outline-width: 3px;
 }
 
 #how to join{
 	width:900px;
 	float:right;
-	outline-style: double;
-	outline-color: lightblue;
-	outline-width: 3px;
+
 }
 
 #content{
