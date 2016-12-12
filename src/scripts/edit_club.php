@@ -125,7 +125,23 @@ if ($res->num_rows > 0) {
             var req = new XMLHttpRequest();
             req.onreadystatechange = function() {
                 if(req.readyState == XMLHttpRequest.DONE) {
-                    document.reload();
+                    var form = document.createElement('form');
+                    form.method = 'POST';
+                    form.action = 'https://go-portlether.azurewebsites.net/edit_club';
+                    
+                    var username_input = document.createElement('input');
+                    username_input.type = 'hidden';
+                    username_input.name = 'username';
+                    username_input.value = username;
+                    form.appendChild(username_input);
+                    
+                    var club_id_input = document.createElement('input');
+                    username_input.type = 'hidden';
+                    username_input.name = 'club_id';
+                    username_input.value = {$_POST['club_id']};
+                    form.appendChild(club_id_input_input);
+                    
+                    form.submit();
                     return false;
                 }
             };
