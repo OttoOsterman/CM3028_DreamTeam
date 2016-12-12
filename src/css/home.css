@@ -170,7 +170,7 @@
 	font-size:50px;
 	color:white;
 	background-color:#1e88e5;
-	border-radius:15px;
+	border-radius:8px;
 	text-align:center;
 }
 
@@ -193,8 +193,6 @@
 
 .box
 {
-	padding: 30px;
-	padding-right: 0px;
 	color: white;
 	overflow: auto;
 	background-color: white;
