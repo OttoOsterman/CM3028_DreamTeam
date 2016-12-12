@@ -125,8 +125,7 @@ session_start();
 		<div id="box-1">
 			<img id="step-1" src="/src/images/box-1.png"/>
 		</div>
-
-		<p>Step</p>
+		
 		<div id = "box-2">
 			<img id="step-2" src="/src/images/box-2.png"/>
 		</div>
