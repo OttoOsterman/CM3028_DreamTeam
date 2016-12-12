@@ -31,55 +31,7 @@ session_start();
 
 	
     <!--Image Slider-->
-<script>
-	
-	var slideIndex = 1;
-	showSlides(slideIndex);
 
-	function plusSlides(n) {
-		showSlides(slideIndex += n);
-	}
-
-	function currentSlide(n) {
-		showSlides(slideIndex = n);
-	}
-
-	function showSlides(n) {
-		var i;
-		var slides = document.getElementsByClassName("mySlides");
-		var dots = document.getElementsByClassName("dot");
-		if (n > slides.length) {slideIndex = 1}
-		if (n < 1) {slideIndex = slides.length}
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-		}
-		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		}
-		slides[slideIndex-1].style.display = "block";
-		dots[slideIndex-1].className += " active";
-	}
-/* automated image slider. glitchy
-
-	var slideIndex = 0;
-	showSlides();
-
-	function showSlides() {
-		var i;
-		var slides = document.getElementsByClassName("mySlides");
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-		}
-		slideIndex++;
-		if (slideIndex> slides.length) {slideIndex = 1}
-		slides[slideIndex-1].style.display = "block";
-		setTimeout(showSlides, 5000); // Change image every 2 seconds
-	}
-*/
-
-
-</script>
-	
 
 	<div class="slideshow-container">
 		<div class="mySlides fade">
@@ -125,12 +77,13 @@ session_start();
 	<div id="text-box">
 		<h2 id="title"> Go Portlethen! </h2> 
 		<p id="content">   here we will add the text for the page</p>
+		<div id="text-box-2">
+			<h2 id="title"> Go Portlethen! </h2>
+			<p id="content">   here we will add the text for the page</p>
+		</div>
 	</div>
 
-	<div id="text-box-2">
-		<h2 id="title"> Go Portlethen! </h2>
-		<p id="content">   here we will add the text for the page</p>
-	</div>
+
 
 
 </div>
