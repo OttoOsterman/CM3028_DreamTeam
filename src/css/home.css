@@ -385,10 +385,12 @@ span.buttonText {
 	margin-right: auto;
 	background: #fafafa;
 }
-
+/*how to sign up*/
 #sign-up-text{
 	font-size:50px;
 	background: #fafafa;
+	color: blue;
+	text-shadow: 2px 2px 10px #250DFF;
 }
 
 /*joining guide*/
@@ -415,6 +417,8 @@ span.buttonText {
 #step-one-title{
 	font-size:50px;
 	background: #fafafa;
+
+	text-shadow: 2px 2px 10px #250DFF;
 }
 
 
