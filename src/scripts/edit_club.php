@@ -105,7 +105,7 @@ if ($res->num_rows > 0) {
     $res = $db->query($sql);
     echo("<select id='add_user_select'>");
     while ($row = $res->fetch_array()) {
-        if ($row['club_id'] != $_POST['club_id']) {
+        if ($row['club_id'] != $_SESSION['curr_club']) {
             echo("
             <option>{$row['username']}</option>
             ");
@@ -121,32 +121,11 @@ if ($res->num_rows > 0) {
     function add_to_group() {
         var username = document.getElementById('add_user_select').options[document.getElementById('add_user_select').selectedIndex].text;
         
-        var retval = 'username=' + username + '&club_id=' + {$_POST['club_id']};
+        var retval = 'username=' + username + '&club_id=' + {$_SESSION['curr_club']};
         var req = new XMLHttpRequest();
         req.onreadystatechange = function() {
             if(req.readyState == XMLHttpRequest.DONE) {
                 location.reload();
-                /*
-                var form = document.createElement('form');
-                form.method = 'POST';
-                form.action = 'https://go-portlethen.azurewebsites.net/edit_club';
-                    
-                var username_input = document.createElement('input');
-                username_input.type = 'hidden';
-                username_input.name = 'username';
-                username_input.value = username;
-                form.appendChild(username_input);
-                    
-                var club_id_input = document.createElement('input');
-                username_input.type = 'hidden';
-                username_input.name = 'club_id';
-                username_input.value = 
-                form.appendChild(club_id_input);
-                    
-                form.submit();
-                */
-                
-                
             }
         };
         req.open('POST', 'https://go-portlethen.azurewebsites.net/add_club_user');
