@@ -14,7 +14,9 @@ session_start();
 <?php include("scripts/navbar.php") ?>
 
 <div class="pageWidth">
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<img id ="banner" src="/src/images/go-portlethen.jpg"/>
+
 <?php
 if (isset($_SESSION["username"])) {
     echo("
