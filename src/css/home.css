@@ -371,6 +371,7 @@ span.buttonText {
 }
 
 #content{
+	padding-top:15px;
 	Text-align:left;
 	font-family:verdana;
 	font-size:25px;
