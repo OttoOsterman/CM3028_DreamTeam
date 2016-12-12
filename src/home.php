@@ -16,7 +16,7 @@ session_start();
 
 </head>
 
-<body onLoad="plusSlides(1)">
+<body>
 
 
 
@@ -29,8 +29,7 @@ session_start();
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 	
 	
-	
-	<!--Image Slider-->
+	<!--Image Slider -->
 	
 	<script>
 
@@ -65,7 +64,6 @@ session_start();
 	</script>
 
 
-
 	<div class="slideshow-container">
 		<div class="mySlides fade">
 			<div class="numbertext">1 / 3</div>
@@ -96,7 +94,7 @@ session_start();
 
                 <br>
 	
-            <!--add buttons here to take you to slide X-->
+            <!--add buttons here to take you to slide X -->
 	
 	<div style="text-align:center">
 		<span class="dot" onclick="currentSlide(1)"></span>

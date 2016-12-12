@@ -34,7 +34,6 @@ if (isset($_SESSION["username"])) {
                 <button class='pure-button greenButton' type='submit'>Submit</button>
             </form>
         ");
-	echo ($_SERVER['REQUEST_METHOD']);
     if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         //TODO: REMOVE TESTING CODE
