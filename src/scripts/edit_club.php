@@ -142,7 +142,6 @@ if ($res->num_rows > 0) {
                     form.appendChild(club_id_input);
                     
                     form.submit();
-                    return false;
                 }
             };
             req.open('POST', 'https://go-portlethen.azurewebsites.net/add_club_user');
