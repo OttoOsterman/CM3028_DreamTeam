@@ -443,6 +443,20 @@ span.buttonText {
 }
 
 
-
+#box-3
+{
+	width:1570px;
+	padding-left:15px;
+	pading-right:15px;
+	padding-top:15px;
+	border-radius: 8px;
+	background-color: white;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+	padding-top:20px;
+	transition: width 0.3s ease;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-wrap: normal;
+}
 
 
