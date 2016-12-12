@@ -26,7 +26,11 @@ session_start();
 <!-- logo -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
-
+	
+	
+	
+	<!--Image Slider-->
+	
 	<script>
 
 		var slideIndex = 1;
@@ -57,13 +61,8 @@ session_start();
 		}
 		
 		
-		
-		
-		
-		
-		
 	</script>
-    <!--Image Slider-->
+
 
 
 	<div class="slideshow-container">
