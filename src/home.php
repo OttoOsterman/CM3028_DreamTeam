@@ -131,7 +131,7 @@ session_start();
 	<div id="How to join">
 		
         <div class="step1">
-
+			<h1 id="step-one-title"> Step One </h1>
 		<!--
         <img id="step1" src="/src/images/Step1.jpg";/>
 		-->
