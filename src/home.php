@@ -120,7 +120,7 @@ session_start();
 	</div>
 
 		<div class="sign-up">
-			<h1 id="sign-up-text"> HOW TO SIGN UP! </h1>
+			<h1 id="sign-up-text"> HOW TO SIGN UP </h1>
 		</div>
 
 	</center>
