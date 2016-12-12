@@ -375,6 +375,7 @@ span.buttonText {
 	Text-align:left;
 	font-family:verdana;
 	font-size:25px;
+	overflow:auto;
 }
 
 
