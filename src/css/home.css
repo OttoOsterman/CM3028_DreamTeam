@@ -129,12 +129,6 @@
 		padding-left:20px;
 		padding-right:20px;
 	}
-	#sign-up-box{
-		width: 60%;
-		margin: 30px;
-		display: inline-block;
-		margin-top: 20px;
-	}
 
 
 /* about go-portlethen*/
@@ -182,15 +176,10 @@
 /*joining guide*/
 
 #sign-up-box{
-	width: 100%;
-	border-radius: 8px;
-	background-color: white;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-	padding-top:20px;
-	transition: width 0.3s ease;
-	margin-left: auto;
-	margin-right: auto;
-	overflow-wrap: normal;
+	width: 60%;
+	margin: 30px;
+	display: inline-block;
+	margin-top: 20px;
 }
 
 #box-1
