@@ -114,8 +114,9 @@ session_start();
 			  
 		<p id="content"> Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation </p>
 		</div>
-		
-		<center>
+
+
+
         
 	</div>
 
@@ -123,7 +124,7 @@ session_start();
 			<h1 id="sign-up-text"> HOW TO SIGN UP </h1>
 		</div>
 
-	</center>
+
 	
 	
 	<div id="How to join">
