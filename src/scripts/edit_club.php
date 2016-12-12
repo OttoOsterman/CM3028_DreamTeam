@@ -125,6 +125,8 @@ if ($res->num_rows > 0) {
         var req = new XMLHttpRequest();
         req.onreadystatechange = function() {
             if(req.readyState == XMLHttpRequest.DONE) {
+                location.reload(true);
+                /*
                 var form = document.createElement('form');
                 form.method = 'POST';
                 form.action = 'https://go-portlethen.azurewebsites.net/edit_club';
@@ -138,10 +140,13 @@ if ($res->num_rows > 0) {
                 var club_id_input = document.createElement('input');
                 username_input.type = 'hidden';
                 username_input.name = 'club_id';
-                username_input.value = {$_POST['club_id']};
+                username_input.value = 
                 form.appendChild(club_id_input);
                     
                 form.submit();
+                */
+                
+                
             }
         };
         req.open('POST', 'https://go-portlethen.azurewebsites.net/add_club_user');
