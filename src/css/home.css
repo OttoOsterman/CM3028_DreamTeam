@@ -206,6 +206,14 @@
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
+.box h1{
+	text-decoration: none;
+	color: black;
+	font-family: Raleway-Regular, verdana;
+	font-weight: bold;
+	font-size: 18px;
+}
+
 .button-xlarge{
 	font-size: 200%;
 	color: white;
@@ -214,6 +222,7 @@
 	background-color: #7cb342;
 	cursor: default;
 }
+
 
 #click-me{
 	position:center;
