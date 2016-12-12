@@ -118,20 +118,13 @@ session_start();
 
 	</div>
 	
-	
-	<center>
-		
 		<div id="sign-up">
 			
 			<h1 id="sign-up-text"> HOW TO SIGN UP </h1>
 			
 		</div>
-		
-	</center>
-
 	
 	</div>
-
 
 
 </body>
