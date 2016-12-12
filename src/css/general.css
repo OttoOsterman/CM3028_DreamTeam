@@ -8,12 +8,6 @@
 }
 
 html {
-	background: url(../images/background.jpg) no-repeat center center fixed;
 	background-size: cover;
 	background-color:white;
-}
-
-.banner{
-	width:100%;
-
 }
