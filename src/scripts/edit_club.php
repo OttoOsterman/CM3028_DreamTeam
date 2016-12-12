@@ -122,31 +122,31 @@ if ($res->num_rows > 0) {
         var username = document.getElementById('add_user_select').options[document.getElementById('add_user_select').selectedIndex].text;
         
         var retval = 'username=' + username + '&club_id=' + {$_POST['club_id']};
-            var req = new XMLHttpRequest();
-            req.onreadystatechange = function() {
-                if(req.readyState == XMLHttpRequest.DONE) {
-                    var form = document.createElement('form');
-                    form.method = 'POST';
-                    form.action = 'https://go-portlether.azurewebsites.net/edit_club';
+        var req = new XMLHttpRequest();
+        req.onreadystatechange = function() {
+            if(req.readyState == XMLHttpRequest.DONE) {
+                var form = document.createElement('form');
+                form.method = 'POST';
+                form.action = 'https://go-portlether.azurewebsites.net/edit_club';
                     
-                    var username_input = document.createElement('input');
-                    username_input.type = 'hidden';
-                    username_input.name = 'username';
-                    username_input.value = username;
-                    form.appendChild(username_input);
+                var username_input = document.createElement('input');
+                username_input.type = 'hidden';
+                username_input.name = 'username';
+                username_input.value = username;
+                form.appendChild(username_input);
                     
-                    var club_id_input = document.createElement('input');
-                    username_input.type = 'hidden';
-                    username_input.name = 'club_id';
-                    username_input.value = {$_POST['club_id']};
-                    form.appendChild(club_id_input);
+                var club_id_input = document.createElement('input');
+                username_input.type = 'hidden';
+                username_input.name = 'club_id';
+                username_input.value = {$_POST['club_id']};
+                form.appendChild(club_id_input);
                     
-                    form.submit();
-                }
-            };
-            req.open('POST', 'https://go-portlethen.azurewebsites.net/add_club_user');
-            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-            req.send(retval);
+                form.submit();
+            }
+        };
+        req.open('POST', 'https://go-portlethen.azurewebsites.net/add_club_user');
+        req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        req.send(retval);
     }
     </script>
     ");
