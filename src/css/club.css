@@ -25,6 +25,7 @@
     transition: width 0.3s ease;
     margin-left: auto;
     margin-right: auto;
+    background-color: #fafafa;
 }
 
 .clubName {

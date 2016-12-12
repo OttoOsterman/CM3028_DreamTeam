@@ -49,7 +49,6 @@ session_start();
 
     <!--Container including clubs-->
 <div id="clubContainer">
-
     <?php
     $sql = "SELECT Club.club_id, Club.name, Club.genre, Club.description, Photo.photo_path, Photo.is_profile_photo FROM Club LEFT JOIN Photo ON Club.club_id = Photo.club_id";
     $result = $db->query($sql);
@@ -59,14 +58,11 @@ session_start();
         if (isset($row['photo_path']) && $row['is_profile_photo'] == '1') {
             echo("
             <!--Create an individual section for each club-->
-            <section class='clubSection'>
-                <img class='clubImage' src={$row['photo_path']}>
-                <div class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></div>
+                <section class='clubSection'>
                 <div class='clubGenre'>{$row['genre']}</div>
-                <div class='img-wrapper'></div>
+                <img class='clubImage' src={$row['photo_path']}>
+                <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
                 <div class='clubDesc'>{$row['description']}</div>
-                <!--Button for joining a club-->
-                <input type='submit' class='greenButton' value='Join Club' onclick='join_club()'>
             </section>
 			");
             /*If the club does not a have a profile photo, do this (use a placeholder image)*/
@@ -74,23 +70,15 @@ session_start();
             echo("
             <!--Create an individual section for each club-->
 			<section class='clubSection'>
+			    <div class='clubGenre'>{$row['genre']}</div>
 			    <img class='clubImage' src='../src/images/placeholder.png'>
 			    <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
-			    <div class='clubGenre'>{$row['genre']}</div>
 			    <div class='clubDesc'>{$row['description']}</div>
-			    <!--Button for joining a club-->
-			    <input type='submit' class='greenButton' value='Join Club' onclick='join_club()'>
 			</section>
             ");
         }
     }
     ?>
-    <script>
-        /*Function for joining a club*/
-        function join_club() {
-
-        }
-    </script>
 </div>
 </div>
-</body>
+</body> 

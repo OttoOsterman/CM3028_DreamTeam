@@ -41,12 +41,8 @@ session_start();
 
         //TODO: REMOVE DEBUG CODE
         echo("
-        <div id='debug'>
-        
-        </div>
-
         <form action='javascript:return edit_users()'>
-            <input type='submit' onclick='edit_users()'>
+            <input type='submit' class='greenButton2' onclick='edit_users()'>
         </form>
         
         <form id='to_submit' action='edit_users' METHOD='POST'></form>

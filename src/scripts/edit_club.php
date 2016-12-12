@@ -32,6 +32,10 @@ if ($res->num_rows > 0) {
     $genre = htmlspecialchars($row["genre"], ENT_QUOTES | ENT_HTML5);
     $description = htmlspecialchars($row["description"], ENT_QUOTES | ENT_HTML5);
     $contact_info = htmlspecialchars($row["contact_info"], ENT_QUOTES | ENT_HTML5);
+
+    $sql = "SELECT * FROM User LEFT JOIN ClubMember ON User.user_id = ClubMember.user_id WHERE club_id = {$_POST["club_id"]}";
+    $res = $db->query($sql);
+
     echo ("
     <form action='javascript:return update_club()'>
     <label class='editLabel'>Club name:</label>
@@ -46,7 +50,7 @@ if ($res->num_rows > 0) {
     <input type='submit' value='submit' class='greenButton2' onclick='update_club()'>
     </div>
     </form>
-    
+    </div>
     <script>
     function update_club() {
         var name = encodeURIComponent(document.getElementById('name').value);
@@ -54,7 +58,7 @@ if ($res->num_rows > 0) {
         var description = encodeURIComponent(document.getElementById('description').value);
         var contact_info = encodeURIComponent(document.getElementById('contact_info').value);
         if (name != '' && genre != '' && description !='' && contact_info != '') {
-             var args = 'name=' + name + '&genre=' + genre + '&description=' + description + '&contact_info=' + contact_info;
+            var args = 'name=' + name + '&genre=' + genre + '&description=' + description + '&contact_info=' + contact_info;
             var req = new XMLHttpRequest();
             req.onreadystatechange = function() {
                 if (req.readyState == XMLHttpRequest.DONE) {
@@ -69,6 +73,70 @@ if ($res->num_rows > 0) {
     </script>
     ");
 
+    while ($row = $res->fetch_array()) {
+        echo("
+            <form action='javascript:return remove_user({$row['user_id']})' id='{$row['user_id']}'>
+            <label>{$row['username']}</label>
+            <input type='submit' value='remove' class='greenButton2' onclick='remove_user({$row['user_id']})'>
+            </form>
+        ");
+    }
+
+    echo("
+        <script>
+        function remove_user(user_id) {
+            var retval = 'user_id=' + user_id;
+            var req = new XMLHttpRequest();
+            req.onreadystatechange = function() {
+                if(req.readyState == XMLHttpRequest.DONE) {
+                    var remove_form = document.getElementById('' + user_id);
+                    remove_form.parentNode.removeChild(remove_form);
+                    return false;
+                }
+            };
+            req.open('POST', 'https://go-portlethen.azurewebsites.net/removeclubuser');
+            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            req.send(retval);
+        }
+        </script>
+    ");
+
+    $sql = "SELECT User.username, User.user_id, ClubMember.club_id FROM User LEFT JOIN ClubMember on User.user_id = ClubMember.user_id";
+    $res = $db->query($sql);
+    echo("<select id='add_user_select'>");
+    while ($row = $res->fetch_array()) {
+        if ($row['club_id'] != $_SESSION['curr_club']) {
+            echo("
+            <option>{$row['username']}</option>
+            ");
+        }
+    }
+    echo("
+    </select>
+    <form action='javascript:return add_to_group()'>
+        <input type='submit' class='greenButton2' value='Add to group' onclick='add_to_group()'>
+    </form>
+    
+    <script>
+    function add_to_group() {
+        var username = document.getElementById('add_user_select').options[document.getElementById('add_user_select').selectedIndex].text;
+        
+        var retval = 'username=' + username + '&club_id=' + {$_SESSION['curr_club']};
+        var req = new XMLHttpRequest();
+        req.onreadystatechange = function() {
+            if(req.readyState == XMLHttpRequest.DONE) {
+                document.reload(true);
+            }
+        };
+        req.open('POST', 'https://go-portlethen.azurewebsites.net/add_club_user');
+        req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        req.send(retval);
+    }
+    </script>
+    ");
+
+
+
     if (isset($_SESSION{"error"})) {
         if($_SESSION["error"] == "club_name_already_exists") {
             echo("<h1>Oops! Two clubs can't have the same name.</h1>");
@@ -78,5 +146,4 @@ if ($res->num_rows > 0) {
     echo("<h1>Club not found.</h1>");
 }
 ?>
-</div>
 </body>
