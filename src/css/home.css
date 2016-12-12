@@ -212,6 +212,7 @@
 }
 .button-xlarge:hover{
 	background-color: #7cb342;
+	cursor: default;
 }
 
 #click-me{
