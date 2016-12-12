@@ -61,14 +61,8 @@ session_start();
                 new_input.name = selected.item(i).id;
                 new_input.value = document.getElementById(new_input.name).options[document.getElementById(new_input.name).selectedIndex].text;
                 form.appendChild(new_input);
+                form.submit();
             }
-            
-            var retval = selected.item(0).id + '=' + document.getElementById(selected.item(0).id).options[document.getElementById(selected.item(0).id).selectedIndex].text;
-            for (var i = 1; i < selected.length; i++) {
-                retval  = retval + '&' + selected.item(i).id + '=' + document.getElementById(selected.item(i).id).options[document.getElementById(selected.item(i).id).selectedIndex].text;
-            }
-            document.getElementById('debug').innerHTML = retval;
-            
         }
         </script>
         ");
