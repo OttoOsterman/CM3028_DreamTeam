@@ -78,7 +78,7 @@ session_start();
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
             if (isset($_POST[$row['user_id']])) {
-                $sql = "UPDATE User SET acc_type = " . $_POST[$row["user_id"]] . "WHERE user_id = " . $row["user_id"];
+                $sql = "UPDATE User SET acc_type = '" . $_POST[$row["user_id"]] . "'WHERE user_id = " . $row["user_id"];
                 $db->query($sql);
             }
         }
