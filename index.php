@@ -32,6 +32,6 @@ foreach($rules as $action => $rule) {
         exit();
     }
 }
-
+ 
 include(INCLUDE_DIR . '404.php');
 ?>
