@@ -355,7 +355,9 @@ span.buttonText {
 		background: #fafafa;
 	}
 }
-
+.title{
+	float:left;
+}
 
 #content{
 	Text-align:left;
