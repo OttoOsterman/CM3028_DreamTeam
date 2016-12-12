@@ -101,11 +101,44 @@ if ($res->num_rows > 0) {
         </script>
     ");
 
+    $sql = "SELECT username, user_id FROM User LEFT JOIN ClubMember on User.user_id = ClubMember.user_id AND ClubMember.club_id != {$_SESSION["curr_club"]}";
+    $res = $db->query($sql);
+    echo("<select id='add_user_select'>");
+    while ($row = $res->fetch_array()) {
+        echo ("
+        <option>{$row['username']}</option>
+        ");
+    }
+    echo("
+    </select>
+    <form action='javascript:return add_to_group()'>
+        <input type='submit' value='Add to group' onclick='add_to_group()'>
+    </form>
+    
+    <script>
+    function add_to_group() {
+        var username = document.getElementById('add_user_select').options[document.getElementById('add_user_select')].text;
+        
+        var retval = 'username=' + username;
+            var req = new XMLHttpRequest();
+            req.onreadystatechange = function() {
+                if(req.readyState == XMLHttpRequest.DONE) {
+                    document.reload();
+                    return false;
+                }
+            };
+            req.open('POST', 'https://go-portlethen.azurewebsites.net/add_club_user');
+            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            req.send(retval);
+    }
+    </script>
+    ");
+
+
+
     if (isset($_SESSION{"error"})) {
         if($_SESSION["error"] == "club_name_already_exists") {
             echo("<h1>Oops! Two clubs can't have the same name.</h1>");
-        } else {
-            echo($_SESSION["error"]);
         }
     }
 } else {
