@@ -194,11 +194,12 @@
 .box
 {
 	padding: 30px;
+	padding-right: 0px;
 	color: white;
 	overflow: auto;
 	background-color: white;
 	display: inline-block;
-	width: 40%;
+	width: 44%;
 	height:400px;
 	float: left;
 	margin: 1%;
