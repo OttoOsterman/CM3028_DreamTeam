@@ -103,6 +103,8 @@ if ($res->num_rows > 0) {
     if (isset($_SESSION{"error"})) {
         if($_SESSION["error"] == "club_name_already_exists") {
             echo("<h1>Oops! Two clubs can't have the same name.</h1>");
+        } else {
+            echo($_SESSION["error"]);
         }
     }
 } else {
