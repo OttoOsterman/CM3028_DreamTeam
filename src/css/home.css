@@ -316,15 +316,14 @@ span.buttonText {
 
 #text-box{
 	width: 100%;
-	outline-style: double;
-	outline-color: lightblue;
-	outline-width: 3px;
+	border-radius: 8px;
+	background-color: white;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 	float:left;
 	padding-top:20px;
 	transition: width 0.3s ease;
 	margin-left: auto;
 	margin-right: auto;
-	background: #fafafa;
 	overflow-wrap: normal;
 }
 
@@ -385,7 +384,7 @@ span.buttonText {
 #sign-up-text{
 	font-size:50px;
 	color:white;
-	backgroun-color:blue;
+	background-color:blue;
 	border-radius:15px;
 	text-align:center;
 }
