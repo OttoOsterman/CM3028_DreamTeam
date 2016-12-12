@@ -9,6 +9,7 @@ $rules = array(
 		'scripts/updateclub' => '/updateclub',
 		'scripts/add_club' => '/add_club',
 		'scripts/remove_club' => '/remove_club',
+		'scripts/remove_user_club' => 'remove_user_club',
 
 		'home' => '/',
 		'clubs_societies' => '/clubs_societies',
