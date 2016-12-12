@@ -28,9 +28,9 @@ if (isset($_SESSION["username"])) {
     echo("
             <form class='pure-form pure-form-stacked' id='signup_form' action='signup' method='POST'>
                 <label for='username'>Email</label>
-                <input class='text-box inputStyle' placeholder='Please enter an email address' type='text' id='username' required>
+                <input class='text-box inputStyle' placeholder='Please enter an email address' type='text' name='username' required>
                 <label for='password'>Please enter a password</label>
-                <input class='text-box inputStyle' placeholder='Please enter a password' type='password' id='password' required>
+                <input class='text-box inputStyle' placeholder='Please enter a password' type='password' name='password' required>
                 <button class='pure-button greenButton' type='submit'>Submit</button>
             </form>
         ");
