@@ -119,7 +119,7 @@ session_start();
 
 	<div id="sign-up-box">
 		<div class="box">
-			<button class="button-xlarge pure-button green">Step One</button>
+			<button class="button-xlarge button green">Step One</button>
 			<h1> Click Me In The Navigation Bar</h1>
 			<img id="click-me" src="/src/images/sign%20up.png"/>
 		</div>
