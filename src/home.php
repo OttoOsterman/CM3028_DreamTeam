@@ -126,10 +126,14 @@ session_start();
 		<h2 id="title"> Go Portlethen! </h2> 
 		<p id="content">   here we will add the text for the page</p>
 	</div>
-	
-		
-		
+
+	<div id="text-box-2">
+		<h2 id="title"> Go Portlethen! </h2>
+		<p id="content">   here we will add the text for the page</p>
 	</div>
+
+
+</div>
 
 	
 	
