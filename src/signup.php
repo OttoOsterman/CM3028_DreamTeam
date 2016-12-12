@@ -34,7 +34,9 @@ if (isset($_SESSION["username"])) {
                 <button class='pure-button greenButton' type='submit'>Submit</button>
             </form>
         ");
+	echo ($_SERVER['REQUEST_METHOD']);
     if($_SERVER['REQUEST_METHOD'] === 'POST') {
+
         //TODO: REMOVE TESTING CODE
         include("scripts/db_connect_test.php");
         $username = $_POST["username"];
@@ -42,7 +44,6 @@ if (isset($_SESSION["username"])) {
         $username = mysqli_real_escape_string($db, $username);
 
 		$sql = "SELECT username FROM User WHERE username = '{$username}'";
-		echo($sql);
 		$result = $db->query($sql);
 		if ($result->num_rows > 0) {
 			echo("<h2>Sorry, this e-mail is already in use.</h2>");
