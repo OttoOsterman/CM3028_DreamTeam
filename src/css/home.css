@@ -355,7 +355,9 @@ span.buttonText {
 		background: #fafafa;
 	}
 }
-
+.title{
+	float:left;
+}
 
 #content{
 	Text-align:left;
@@ -363,8 +365,14 @@ span.buttonText {
 	font-size:10px;
 }
 
+.sign-up{
+	width:100px;
+	height:40px;
+}
 
-
+#sign-up-text{
+	font-size:50px;
+}
 /*joining guide*/
 .how-to-join{
 
