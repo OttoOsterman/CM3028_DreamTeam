@@ -117,7 +117,7 @@ if ($res->num_rows > 0) {
     
     <script>
     function add_to_group() {
-        var username = document.getElementById('add_user_select').options[document.getElementById('add_user_select')].text;
+        var username = document.getElementById('add_user_select').options[document.getElementById('add_user_select').selectedIndex].text;
         
         var retval = 'username=' + username;
             var req = new XMLHttpRequest();
