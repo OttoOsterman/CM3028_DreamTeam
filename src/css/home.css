@@ -191,7 +191,7 @@
 	font-size: 28px;
 }
 
-#box-1
+.box
 {
 	width:875px;
 	border-radius: 8px;
@@ -205,33 +205,6 @@
 	overflow-wrap: normal;
 }
 
-#box-2
-{
-	width:875px;
-	border-radius: 8px;
-	background-color: white;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-	float:right;
-	padding-top:20px;
-	transition: width 0.3s ease;
-	margin-left: auto;
-	margin-right: auto;
-	overflow-wrap: normal;
-}
-
-
-#box-3
-{
-	width:1790px;
-	border-radius: 8px;
-	background-color: white;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-	padding-top:20px;
-	transition: width 0.3s ease;
-	overflow-wrap: normal;
-	padding-top:15px;
-	margin-bottom:20px;
-}
 #step-2{
 
 }

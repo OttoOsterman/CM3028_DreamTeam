@@ -117,9 +117,9 @@ session_start();
 	
 			<h1 id="sign-up-text"> HOW TO SIGN UP </h1>
 
-	<div id ="sign-up-box">
+	<div id="sign-up-box">
 		
-		<div id="box-1">
+		<div class="box">
 			<img id="step-1" src="/src/images/box-1.png"/>
 
 			<h1> Click Me In The Navigation Bar</h1>
@@ -128,13 +128,13 @@ session_start();
 
 		</div>
 		
-		<div id = "box-2">
+		<div class="box">
 			<img id="step-2" src="/src/images/box-2.png"/>
 			<img id="" src="/src/images/login.png"/>
 			<h1> Enter Your Details</h1>
 		</div>
 		
-		<div id="box-3">
+		<div class="box">
 			<h1> Welcome to Go-portlethen!</h1>
 			<img id="step-3" src="/src/images/box-3.png"/>
 		</div>
