@@ -9,6 +9,7 @@ if (isset($_SESSION["acc_type"]) && isset($_POST["username"]) && isset($_POST["c
         $res = $db->query($sql);
         if ($res->num_rows == 1) {
             $sql = "INSERT INTO ClubMember (user_id, club_id) VALUES ({$row["user_id"]}, {$_SESSION{"curr_club"}})";
+            $db->query($sql);
         }
     }
 }
