@@ -113,36 +113,24 @@ session_start();
             
 		<h1 id="title"> Portlethen & Sport </h1>
 			  
-		<p id="content"> Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation
-			Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation
-			Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation
-			Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation
-			Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation</p>
+		<p id="content"> Portlethen is aiming to improve the social hub for sporting and extra-curricular activities within the community. Go-portlethen aims to facilitate the role for people wishing to create, join, view or sponsor a club within the community. Clubs are able to share information such as upcoming events, photos, create routes on maps. The website also contains a route option where popular routes within North-Kincardineshire that have areas of historical significance can be selected and a route generated.</p>
 		</div>
-        
 
+	</div>
+	
+	
 	<center>
 		<div id="sign-up">
 			<h1 id="sign-up-text"> HOW TO SIGN UP </h1>
 		</div>
 	</center>
 
-		
-        <div class="step1">
-
-			<h1 id="step-one-title"> Step One </h1>
-		<!--
-        <img id="step1" src="/src/images/Step1.jpg";/>
-		-->
-
-		<h1 id="">  </h1>
+	
 			
 
 	</div>
 
-	</div>
 
-</div>
 
 </body>
 
