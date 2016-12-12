@@ -7,6 +7,7 @@ session_start();
     <!--Page title-->
     <title>Clubs and Societies</title>
     <!--link navbar, general and clubs and societies CSS to the page-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/base-min.css">
     <link rel="stylesheet" type="text/css" href="../src/css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/general.css"/>
     <link rel="stylesheet" type="text/css" href="../src/css/clubs_societies.css"/>
