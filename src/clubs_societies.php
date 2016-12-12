@@ -59,10 +59,10 @@ session_start();
         if (isset($row['photo_path']) && $row['is_profile_photo'] == '1') {
             echo("
             <!--Create an individual section for each club-->
+                <section class='clubSection'>
                 <div class='clubGenre'>{$row['genre']}</div>
-                <div class='img-wrapper'></div>  <section class='clubSection'>
                 <img class='clubImage' src={$row['photo_path']}>
-                <div class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></div
+                <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
                 <div class='clubDesc'>{$row['description']}</div>
             </section>
 			");
@@ -71,9 +71,9 @@ session_start();
             echo("
             <!--Create an individual section for each club-->
 			<section class='clubSection'>
+			    <div class='clubGenre'>{$row['genre']}</div>
 			    <img class='clubImage' src='../src/images/placeholder.png'>
 			    <h1 class='clubName'><a href='club/{$row['club_id']}'>{$row['name']}</a></h1>
-			    <div class='clubGenre'>{$row['genre']}</div>
 			    <div class='clubDesc'>{$row['description']}</div>
 			</section>
             ");
