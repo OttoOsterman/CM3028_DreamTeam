@@ -120,6 +120,24 @@ session_start();
 	
 			<h1 id="sign-up-text"> HOW TO SIGN UP </h1>
 
+	<div id ="sign-up-box">
+		
+		<div id="box-1">
+			<img id="step-1" src="/src/images/box-1.png"/>
+		</div>
+		
+		<div id = "box-2">
+			<img id="step-2" src="/src/images/box-2.png"/>
+		</div>
+		
+		<div id="box-3">
+			<img id="step-3" src="/src/images/box-3.png"/>
+		</div>
+		
+	</div>
+	
+	
+	
 	</div>
 
 
