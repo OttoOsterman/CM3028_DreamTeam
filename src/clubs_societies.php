@@ -59,7 +59,6 @@ session_start();
         if (isset($row['photo_path']) && $row['is_profile_photo'] == '1') {
             echo("
             <!--Create an individual section for each club-->
-          >
                 <div class='clubGenre'>{$row['genre']}</div>
                 <div class='img-wrapper'></div>  <section class='clubSection'>
                 <img class='clubImage' src={$row['photo_path']}>
