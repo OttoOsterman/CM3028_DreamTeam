@@ -29,6 +29,7 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 
+	
     <!--Image Slider-->
 <script>
 	
@@ -60,8 +61,6 @@ session_start();
 	}
 
 
-/*   Do not un-comment if you suffer from epilepsy....
-
 	var slideIndex = 0;
 	showSlides();
 
@@ -74,10 +73,10 @@ session_start();
 		slideIndex++;
 		if (slideIndex> slides.length) {slideIndex = 1}
 		slides[slideIndex-1].style.display = "block";
-		setTimeout(showSlides, 7000); // Change image every 2 seconds
+		setTimeout(showSlides, 5000); // Change image every 2 seconds
 	}
 	
-*/
+
 
 </script>
 	
@@ -102,17 +101,17 @@ session_start();
 			<img id="picture" src="/src/imageSlider/img3.jpg" style="width:100%">
 			<div class="text">Go Portlethen</div>
 
+			<!--
+                    </div>
 
-		</div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-		
-	</div>
+                </div>
 
-	<br>
+                <br>
 
-<!--add buttons here to take you to slide X-->
+            <!--add buttons here to take you to slide X
 
 	<div style="text-align:center">
 		<span class="dot" onclick="currentSlide(1)"></span>
@@ -121,7 +120,8 @@ session_start();
 	</div>
 	
 	
-	
+	-->
+
 	<div id="text-box">
 		<h2 id="title"> Go Portlethen! </h2> 
 		<p id="content">   here we will add the text for the page</p>
