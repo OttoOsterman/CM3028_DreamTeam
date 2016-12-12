@@ -49,7 +49,7 @@ session_start();
             <input type='submit' onclick='edit_users()'>
         </form>
         
-        <form id='to_submit' action='edit_users.php'></form>
+        <form id='to_submit' action='edit_users.php' METHOD='POST'></form>
 
         <script>
         function edit_users() {
