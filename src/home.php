@@ -123,16 +123,16 @@ session_start();
 	<div id ="sign-up-box">
 		
 		<div id="box-1">
-			<img id="step-1" src="/src/images/box-1.psd"/>
+			<img id="step-1" src="/src/images/box-1.png"/>
 		</div>
 
 		<p>Step</p>
 		<div id = "box-2">
-			<img id="step-2" src="/src/images/box-2.psd"/>
+			<img id="step-2" src="/src/images/box-2.png"/>
 		</div>
 		
 		<div id="box-3">
-			<img id="step-3" src="/src/images/box-3.psd"/>
+			<img id="step-3" src="/src/images/box-3.png"/>
 		</div>
 		
 	</div>
