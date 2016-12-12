@@ -112,7 +112,7 @@ if ($res->num_rows > 0) {
     echo("
     </select>
     <form action='javascript:return add_to_group()'>
-        <input type='submit' value='Add to group' onclick='add_to_group()'>
+        <input type='submit' class='greenButton2' value='Add to group' onclick='add_to_group()'>
     </form>
     
     <script>
