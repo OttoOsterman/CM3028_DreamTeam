@@ -128,9 +128,11 @@ session_start();
 		
 		<div id = "box-2">
 			<img id="step-2" src="/src/images/box-2.png"/>
+			<p> Enter Your Details</p>
 		</div>
 		
 		<div id="box-3">
+			<p> Welcome to Go-portlethen!</p>
 			<img id="step-3" src="/src/images/box-3.png"/>
 		</div>
 		
