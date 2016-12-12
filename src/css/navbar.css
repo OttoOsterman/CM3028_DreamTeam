@@ -223,9 +223,6 @@
 
 .greenButton{
     background-color: #7cb342;
-    color: black;
-    border: 3px solid #7cb342;
-    float: left;
 }
 
 .greenButton:hover{
