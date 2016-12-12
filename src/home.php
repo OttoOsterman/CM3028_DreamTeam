@@ -109,17 +109,23 @@ session_start();
 	<div id="text-box">
 
 		<div id="information">
-		<h2 id="title"> Go Portlethen! </h2> 
-		<p id="content">   here we will add the text for the page</p>
+		<h1 id="title"> Portlethen & Sport </h1>
+		<p id="content"> Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation </p>
 		</div>
 
+
+
 		<div id="how to join">
-			<h2 id="title"> Go Portlethen! </h2>
+			<h2 id="title"> #3 Largest clubs </h2>
 			<p id="content">   here we will add the text for the page</p>
 		</div>
 
 	</div>
 
+	<div id="find your club">
+		<h1 id="find your bluc"
+
+	</div>
 
 
 
