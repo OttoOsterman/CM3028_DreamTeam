@@ -95,9 +95,9 @@ session_start();
                 </div>
 
                 <br>
-
+	
             <!--add buttons here to take you to slide X-->
-
+	
 	<div style="text-align:center">
 		<span class="dot" onclick="currentSlide(1)"></span>
 		<span class="dot" onclick="currentSlide(2)"></span>
@@ -120,14 +120,16 @@ session_start();
 	
 	
 	<center>
+		
 		<div id="sign-up">
+			
 			<h1 id="sign-up-text"> HOW TO SIGN UP </h1>
+			
 		</div>
+		
 	</center>
 
 	
-			
-
 	</div>
 
 
