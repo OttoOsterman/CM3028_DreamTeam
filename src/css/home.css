@@ -359,12 +359,13 @@ span.buttonText {
 
 .title{
 	position:fixed;
+	font-size:50px;
 }
 
 #content{
 	Text-align:left;
 	font-style:oblique;
-	font-size:10px;
+	font-size:30px;
 }
 
 .sign-up{
