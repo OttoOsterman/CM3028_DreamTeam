@@ -155,6 +155,9 @@
     padding-top: 10px;
     overflow: auto;
 }
+.content label{
+    width:70%;
+}
 
 .form-wrapper {
     width:100%;
