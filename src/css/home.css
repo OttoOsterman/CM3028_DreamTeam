@@ -376,6 +376,7 @@ span.buttonText {
 	font-family:verdana;
 	font-size:25px;
 	overflow-wrap: normal;
+	margin-bottom:50px;
 }
 
 
@@ -383,12 +384,10 @@ span.buttonText {
 
 #sign-up-text{
 	font-size:50px;
-	background: #fafafa;
 	color:white;
 	backgroun-color:blue;
 	border-radius:15px;
-
-
+	text-align:center;
 }
 
 /*joining guide*/
