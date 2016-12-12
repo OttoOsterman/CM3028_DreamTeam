@@ -315,7 +315,7 @@ span.buttonText {
 
 
 #text-box{
-	width: 1600px;
+	width: 1800px;
 	height:300px;
 	outline-style: double;
 	outline-color: lightblue;
@@ -330,15 +330,18 @@ span.buttonText {
 
 
 /* about go-portlethen*/
+
 #title{
 	font-size:40px;
 	font-color:blue;
 }
 
 .information{
-	width:800px;
+	width:1600px;
 	float:left;
 	font-size:15px;
+	padding-left:100px;
+	padding-right:100px;
 }
 
 #content{
@@ -347,12 +350,18 @@ span.buttonText {
 	font-size:10px;
 }
 
-/*largest clubs*/
 
+
+/*joining guide*/
 .how-to-join{
-	width:800px;
+
+	width:1800px;
 	float:right;
 
+}
+
+#step1{
+	float:left;
 }
 
 

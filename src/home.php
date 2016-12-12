@@ -104,32 +104,30 @@ session_start();
 	</div>
 	
 	
-	
+	<center>
 
 	<div id="text-box">
 
 		<div class="information">
+            
 		<h1 id="title"> Portlethen & Sport </h1>
+            
 		<p id="content"> Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation </p>
 		</div>
-
-
-
-		<div class="how-to-join">
-			<h2 id="Top 3- most popular clubs"> #3 Largest clubs </h2>
-
-			<!--  php code to get top 3 clubs based upon number of users -->
-			
-		</div>
-
-	</div>
-
-	<div id="find your club">
-		<h1 id="top Clubs">  </h1>
-
+        
+        
 	</div>
 
 
+	<div id="How to join">
+        <div class="step1">
+        <img id="step1" src="/src/images/Step1.psd">
+		<h1 id="">  </h1>
+            
+    </div>
+	</div>
+
+    </center>
 
 </div>
 
