@@ -32,6 +32,10 @@ if ($res->num_rows > 0) {
     $genre = htmlspecialchars($row["genre"], ENT_QUOTES | ENT_HTML5);
     $description = htmlspecialchars($row["description"], ENT_QUOTES | ENT_HTML5);
     $contact_info = htmlspecialchars($row["contact_info"], ENT_QUOTES | ENT_HTML5);
+
+    $sql = "SELECT * FROM User LEFT JOIN ClubMember ON User.user_id = ClubMember.user_id WHERE club_id = {$_SESSION['curr_club']}";
+    $res = $db->query($sql);
+
     echo ("
     <form action='javascript:return update_club()'>
     <label class='editLabel'>Club name:</label>
@@ -68,6 +72,15 @@ if ($res->num_rows > 0) {
     }
     </script>
     ");
+
+    while ($row = $res->fetch_array()) {
+        echo("
+            <form>
+            <label>{$row['username']}</label>
+            <input type='submit' value='remove' class='greenButton2'>
+            </form>
+        ");
+    }
 
     if (isset($_SESSION{"error"})) {
         if($_SESSION["error"] == "club_name_already_exists") {

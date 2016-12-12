@@ -84,22 +84,6 @@ if ($_SESSION["acc_type"] == "admin") {
         <input type='submit' class='greenButton' value='Edit Users'>
     </form>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <form id='clubForm' action='javascript:return add_club()'>
     <label id='clubLabel'>Club Name:   </label>
     <input type='text' id='name' required>
@@ -114,7 +98,6 @@ if ($_SESSION["acc_type"] == "admin") {
     <input type='text' id='contact_info' required>
     <br>
     <input type='submit' class='greenButton' value='Add Club' onclick='add_club()'>
-    
     
     <script>
     function add_club() {
