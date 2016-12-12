@@ -127,7 +127,7 @@ if ($res->num_rows > 0) {
             if(req.readyState == XMLHttpRequest.DONE) {
                 var form = document.createElement('form');
                 form.method = 'POST';
-                form.action = 'https://go-portlether.azurewebsites.net/edit_club';
+                form.action = 'https://go-portlethen.azurewebsites.net/edit_club';
                     
                 var username_input = document.createElement('input');
                 username_input.type = 'hidden';
