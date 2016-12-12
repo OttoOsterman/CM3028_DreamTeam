@@ -112,12 +112,16 @@ session_start();
             
 		<h1 id="title"> Portlethen & Sport </h1>
 			  
-		<p id="content"> Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation </p>
+		<p id="content"> Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation
+			Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation
+			Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation
+			Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation
+			Portlethen is aiming to improve the social hub for all sports and extra caricular activities being undertaking within the community through the creation</p>
 		</div>
         
 
 	<center>
-		<div class="sign-up">
+		<div id="sign-up">
 			<h1 id="sign-up-text"> HOW TO SIGN UP </h1>
 		</div>
 	</center>
