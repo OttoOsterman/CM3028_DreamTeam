@@ -120,20 +120,22 @@ session_start();
         
 	</div>
 
-	
+	<center>
 		<div class="sign-up">
 			<h1 id="sign-up-text"> HOW TO SIGN UP </h1>
 		</div>
-
+	</center>
 
 	
 	
 	<div id="How to join">
 		
         <div class="step1">
-			
+
+		<!--
         <img id="step1" src="/src/images/Step1.jpg";/>
-			
+		-->
+
 		<h1 id="">  </h1>
 			
     	</div>
