@@ -378,9 +378,9 @@ span.buttonText {
 }
 
 
-.sign-up{
+#sign-up{
 	width:1800px;
-	height:100px;
+	height:500px;
 	margin-left: auto;
 	margin-right: auto;
 	colour:blue;
@@ -388,6 +388,7 @@ span.buttonText {
 	padding-bottom:10px;
 	border-radius: 10px;
 }
+
 /*how to sign up*/
 #sign-up-text{
 	font-size:50px;
