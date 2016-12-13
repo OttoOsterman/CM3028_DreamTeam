@@ -128,13 +128,17 @@ session_start();
 		
 		<div class="box">
 			<h2 id="sign-up-text"> Step Two </h2>
-			<h1> Enter Your Details</h1>
-			<img src="/src/images/login.png"/>
+			<div class="box-content">
+				<h1> Enter Your Details</h1>
+				<img src="/src/images/login.png"/>
+			</div>
 		</div>
 		
 		<div class="box">
 			<h2 id="sign-up-text"> Step Three </h2>
-			<h1> Welcome to Go-portlethen!</h1>
+			<div class="box-content">
+				<h1> Welcome to Go-portlethen!</h1>
+			</div>
 
 		</div>
 		

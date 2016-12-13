@@ -216,12 +216,13 @@
 	font-size: 24px;
 }
 .box img{
-	width:60%;
+	width:100%;
 	overflow: hidden;
 }
 .box-content{
-	margin-left: auto;
-	margin-right: auto;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 4%;
 }
 
 
