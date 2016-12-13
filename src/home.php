@@ -134,14 +134,6 @@ session_start();
 			</div>
 		</div>
 		
-		<div class="box">
-			<h2 id="sign-up-text"> Step Three </h2>
-			<div class="box-content">
-				<h1> Welcome to Go-portlethen!</h1>
-			</div>
-
-		</div>
-		
 	</div>
 	
 	
