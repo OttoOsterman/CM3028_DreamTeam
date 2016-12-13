@@ -123,7 +123,7 @@ session_start();
 			<div class="box-content">
 				<h1> Click Me In The Navigation Bar</h1>
 				<a href="https://go-portlethen.azurewebsites.net/signup"><img src="/src/images/sign%20up.png"/></a>
-				</div>
+			</div>
 		</div>
 		
 		<div class="box">
