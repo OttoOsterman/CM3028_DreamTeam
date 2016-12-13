@@ -183,6 +183,7 @@
 	margin: 30px;
 	display: inline-block;
 	margin-top: 20px;
+	padding: 5px;
 }
 
 #sign-up-box a{
@@ -213,15 +214,6 @@
 	font-family: Raleway-Regular, verdana;
 	font-weight: bold;
 	font-size: 24px;
-}
-
-.button-xlarge{
-	font-size: 200%;
-	color: white;
-}
-.button-xlarge:hover{
-	background-color: #7cb342;
-	cursor: default;
 }
 
 

@@ -120,19 +120,18 @@ session_start();
 	<div id="sign-up-box">
 		<div class="box">
 			<h2 id="sign-up-text"> Step One </h2>
-			<button class="button-xlarge pure-button green">Step One</button>
 			<h1> Click Me In The Navigation Bar</h1>
 			<img id="click-me" src="/src/images/sign%20up.png"/>
 		</div>
 		
 		<div class="box">
-			<button class="button-xlarge pure-button green">Step Two</button>
+			<h2 id="sign-up-text"> Step Two </h2>
 			<img id="" src="/src/images/login.png"/>
 			<h1> Enter Your Details</h1>
 		</div>
 		
 		<div class="box">
-			<button class="button-xlarge pure-button green">Step Tree</button>
+			<h2 id="sign-up-text"> Step Three </h2>
 			<h1> Welcome to Go-portlethen!</h1>
 
 		</div>
