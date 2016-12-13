@@ -74,6 +74,7 @@ session_start();
 <body onload="load()">
 <?php include('scripts/navbar.php'); ?>
 
+<div class="pageWidth">
 <div class="banner">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
@@ -83,6 +84,7 @@ session_start();
 </noscript>
 <h1 id="mapHeader">Discover North Kincardineshire</h1>
 <div id="map" style="width: 1600px; height: 800px"></div>
+	</div>
 
 <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
 <script type="text/javascript">
