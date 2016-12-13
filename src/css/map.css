@@ -1,13 +1,25 @@
 @CHARSET "UTF-8";
 
-#mapHeader {
-    text-align: center;
-    margin-top: 100px;
+@media (min-width:1800px) {
+    .pageWidth {
+        width: 1800px;
+        transition: width 0.3s ease;
+        margin-left: auto;
+        margin-right: auto;
+        background: #fafafa;
+    }
+}
+@media (max-width:1800px){
+    .pageWidth {
+        width: 100%;
+        transition: width 0.3s ease;
+        margin-left: auto;
+        margin-right: auto;
+        background: #fafafa;
+    }
 }
 
-#map {
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+#banner{
+    width:100%;
+    margin-top: 10px;
 }

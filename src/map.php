@@ -75,8 +75,8 @@ session_start();
 <?php include('scripts/navbar.php'); ?>
 
 <div class="banner">
-	<img src="../src/images/go-portlethen.jpg"/>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<img id ="banner" src="/src/images/go-portlethen.jpg" ;/>
 </div>
 <noscript>
 	<h1>Please enable javascript to access the maps feature of this website.</h1>
