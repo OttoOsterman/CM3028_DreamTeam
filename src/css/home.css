@@ -217,9 +217,11 @@
 }
 .box img{
 	width:60%;
+	overflow: hidden;
+}
+.box-content{
 	margin-left: auto;
 	margin-right: auto;
-	overflow: hidden;
 }
 
 

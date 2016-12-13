@@ -120,8 +120,10 @@ session_start();
 	<div id="sign-up-box">
 		<div class="box">
 			<h2 id="sign-up-text"> Step One </h2>
-			<h1> Click Me In The Navigation Bar</h1>
-			<a href="https://go-portlethen.azurewebsites.net/signup"><img src="/src/images/sign%20up.png"/></a>
+			<div class="box-content">
+				<h1> Click Me In The Navigation Bar</h1>
+				<a href="https://go-portlethen.azurewebsites.net/signup"><img src="/src/images/sign%20up.png"/></a>
+				</div>
 		</div>
 		
 		<div class="box">
