@@ -126,8 +126,8 @@ session_start();
 		
 		<div class="box">
 			<h2 id="sign-up-text"> Step Two </h2>
-			<img src="/src/images/login.png"/>
 			<h1> Enter Your Details</h1>
+			<img src="/src/images/login.png"/>
 		</div>
 		
 		<div class="box">
