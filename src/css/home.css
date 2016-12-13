@@ -215,6 +215,9 @@
 	font-weight: bold;
 	font-size: 24px;
 }
+.box img{
+	width:100%;
+}
 
 
 #click-me{
