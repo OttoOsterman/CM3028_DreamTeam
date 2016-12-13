@@ -216,7 +216,8 @@
 	font-size: 24px;
 }
 .box img{
-	width:80%;
+	width:60%;
+	align-content: center;
 	overflow: hidden;
 }
 
